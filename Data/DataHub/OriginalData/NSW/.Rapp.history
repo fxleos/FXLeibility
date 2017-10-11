@@ -1,0 +1,205 @@
+print(getwd())
+setwd("/documents/MasterThesis")
+setwd("/Documents/MasterThesis")
+setwd("/Documents/")
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+Sys.setenv(TZ='AEST')
+year = 2007:2016
+print(year)
+for (y in year){}
+month = c ('01',02,03,04,05,06,07,08,09,10,11,12)
+print(month)
+month = c ('01','02','03','04','05','06','07','08','09','10','11','12')
+print(month)
+"01"+"02"
+for (y in year){#
+	for (m in month){#
+		paste("PRICE_AND_DEMAND_",y,m,"_NSW1.csv",sep=NULL,collapse = NULL)#
+	}#
+}
+print(paste("PRICE_AND_DEMAND_",y,m,"_NSW1.csv",sep="",collapse = NULL))
+for (y in year){#
+	for (m in month){#
+		print(paste("PRICE_AND_DEMAND_",y,m,"_NSW1.csv",sep="",collapse = NULL))#
+	}#
+}
+filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)
+data_file = read.csv(filename)
+data_file = read.csv("PRICE_AND_DEMAND_201612_NSW1.csv")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/NSW")#
+#
+Sys.setenv(TZ='AEST')
+data_file = read.csv(filename)
+data_dt = data_file$SETTLEMENTDATE
+print(data_dt)
+data_dt = strptime(data_dt,format="%Y/%m/%d %I:%M:%S)
+print(data_dt[1,])
+print(data_dt[1])
+data_dt = strptime(data_dt,format="%Y/%m/%d %I:%M:%S)
+data_dt = strptime(data_dt,format="%Y/%m/%d %I:%M:%S")
+Sys.setenv(TZ='AEST')
+data_dt = strptime(data_dt,format="%Y/%m/%d %I:%M:%S")
+print(data_dt[1])
+print(data_dt)
+Sys.setenv(TZ='AEST')
+Sys.setenv(TZ='UTC')
+data_file = read.csv(filename)
+data_dt = data_file$SETTLEMENTDATE
+data_dt = strptime(data_dt,format="%Y/%m/%d %I:%M:%S")
+print(data_dt)
+print(data_file$SETTLEMENTDATE)
+data_file$SETTLEMENTDATE[1]
+print(strptime(data_file$SETTLEMENTDATE[1],format="%Y/%m/%d %I:%M:%S"))
+print(strptime(data_file$SETTLEMENTDATE[1],format="%Y/%M/%D %I:%M:%S"))
+print(strptime(data_file$SETTLEMENTDATE[1],format="%Y/%m/%D %I:%M:%S"))
+print(strptime(data_file$SETTLEMENTDATE[1],format="%Y/%m/%D %H:%M:%S"))
+print(strptime(data_file$SETTLEMENTDATE[1],format="%Y/%m/%d %I:%M:%S")
+)
+Sys.setenv(TZ='AEST')
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/NSW")
+y = 2007
+m = "01"
+filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE
+strptime(data_dt,format="%Y/%m/%d %I:%M:%S")
+Sys.setenv(TZ='Australia/Sydney')
+strptime(data_dt,format="%Y/%m/%d %I:%M:%S")
+data_file$SETTLEMENTDATE[1]
+strptime("2007/01/01 00:30:00",format="%Y/%m/%d %I:%M:%S")
+strptime("2007/01/01 01:30:00",format="%Y/%m/%d %I:%M:%S")
+strptime("2007/01/01 00:30:00",format="%Y/%m/%d %I:%M:%S")
+strptime("2007/01/01 00:00:00",format="%Y/%m/%d %I:%M:%S")
+strptime("2007/01/01 00:00:01",format="%Y/%m/%d %I:%M:%S")
+strptime("2007/01/01 00:00:01",format="%Y/%m/%d %H:%M:%S")
+data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")
+print(data_dt)
+x = NULL
+y = c(1,2,3)
+z = c(x,y)
+print(z)
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/NSW")#
+#
+Sys.setenv(TZ='Australia/Sydney')#
+year = 2007:2016#
+month = c ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')#
+datetime = NULL#
+price = NULL#
+load = NULL#
+for (y in year){#
+	for (m in month){#
+		filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")#
+		datetime = c(datetime,data_dt)#
+		price = c(price,data_file$RRP)#
+		load = c(load,data_file$TOTALDEMAND)#
+#
+	}#
+}
+data_nsw = data.frame(datetime=datetime,price = price, load=load)
+datetime = NULL#
+price = NULL#
+load = NULL#
+for (y in year){#
+	for (m in month){#
+		filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")#
+		datetime = c(datetime,data_dt)#
+		price = c(price,data_file$RRP)#
+		load = c(load,data_file$TOTALDEMAND)#
+		print(length(datetime))#
+		print(length(price))#
+		print(length(load))#
+#
+	}#
+}
+datetime = NULL#
+price = NULL#
+load = NULL
+y = 2006
+y = 2007
+m = "01"
+filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")
+print(data_dt)
+datetime = c(datetime,data_dt)
+print(datetime)
+print(data_dt)
+rm(list=ls())
+year = 2007:2016#
+month = c ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')#
+i = 0#
+for (y in year){#
+	for (m in month){#
+		filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")#
+		if (i == 0){#
+			datetime = data_dt#
+		}else{#
+			datetime = c(datetime,data_dt)#
+			price = c(price,data_file$RRP)#
+			load = c(load,data_file$TOTALDEMAND)#
+		}#
+		i = i +1#
+#
+	}#
+}
+rm(list=ls())
+year = 2007:2016#
+month = c ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')#
+i = 0#
+for (y in year){#
+	for (m in month){#
+		filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")#
+		if (i == 0){#
+			datetime = data_dt#
+			price = data_file$RRP#
+			load = data_file$TOTALDEMAND#
+		}else{#
+			datetime = c(datetime,data_dt)#
+			price = c(price,data_file$RRP)#
+			load = c(load,data_file$TOTALDEMAND)#
+		}#
+		i = i +1#
+#
+	}#
+}
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/NSW")#
+#
+Sys.setenv(TZ='Australia/Sydney')#
+year = 2007:2016#
+month = c ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12')#
+i = 0#
+for (y in year){#
+	for (m in month){#
+		filename = paste("PRICE_AND_DEMAND_", y, m, "_NSW1.csv", sep="", collapse = NULL)#
+		data_file = read.csv(filename)#
+		data_dt = data_file$SETTLEMENTDATE#
+		data_dt = strptime(data_dt,format="%Y/%m/%d %H:%M:%S")#
+		if (i == 0){#
+			datetime = data_dt#
+			price = data_file$RRP#
+			load = data_file$TOTALDEMAND#
+		}else{#
+			datetime = c(datetime,data_dt)#
+			price = c(price,data_file$RRP)#
+			load = c(load,data_file$TOTALDEMAND)#
+		}#
+		i = i +1#
+#
+	}#
+}
+data_nsw = data.frame(datetime=datetime,price = price, load=load)
+write.csv(data_nsw,"NSW.csv")

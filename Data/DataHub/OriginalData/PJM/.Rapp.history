@@ -1,0 +1,140 @@
+print(getwd())
+setwd("/documents/MasterThesis")
+setwd("/Documents/MasterThesis")
+setwd("/Documents/")
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+source('~/Documents/MasterThesis/FXLeibility/FXLeibility/Data/DataHub/DataRetrival.R', chdir = TRUE)
+getwd()
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub")
+data
+print(data)
+data_nsw <- read.csv("PRICE_AND_DEMAN_200701_NSE1.csv")
+getwd()
+data_nsw <- read.csv("PRICE_AND_DEMAND_200701_NSW1.csv")
+print(data_nsw$RRP)
+price <- data_nsw$RRP
+plot(price,l, "time", "price")
+plot(price,"l", "time", "price")
+plot(price,"l")
+plot(price,type = "l","time","price")
+plot(price,type = "l")
+plot(price,type = "l",ylim=range(0,200))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub")
+file_name <- paste(getwd(),"NSW",sep = "/")
+print file_name
+print(file_name)
+file_name <- paste(getwd(),"NSW",sep = "/",collapse = null)
+file_name <- paste(getwd(),"NSW",sep = "/",collapse = NULL)
+print(file_name)
+file_name <- paste(file_name,"PRICE_AND_DEMAND_200701_NSW1.csv",sep = "/",collapse = NULL)
+data_new <- read.csv(file_name)
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/PJM")
+data_load <- read.csv("load.csv")
+load_time = data_load$datetime_beginning_UTC
+print(load_time)
+print(data_load)
+load_time = data_load$datetime_beginning_utc
+print(load_time)
+data_load[with(data_load,order(datetime_beginning_utc))]
+data_load[with(data_load,order(datetime_beginning_utc)),]
+data_load
+str(data_load)
+data_load[with(data_load,order(date.frame)),]
+ls()
+rm(ls())
+rm(list = ls())
+print(ls())
+etwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub")
+Rstcript DataRetrival.r
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Datahub/OriginalData/PJM")
+data_load = read.csv("load.csv")
+load_dt = data_load$datetime_beginning_utc
+load_dt = strptime(load_dt,format="%m/%d/%Y %I:%M:%S %p")
+data_load$datetime = load_dt
+data_load[with(data_load,order(datetime)),]
+str(data_load)
+print(data_load$datetime)
+rm(list=ls())
+Sys.setenv(TZ='UTC')
+data_load = read.csv("load.csv")
+load_dt = data_load$datetime_beginning_utc#
+load_dt = strptime(load_dt,format="%m/%d/%Y %I:%M:%S %p")#
+data_load$datetime = load_dt
+data_load[with(data_load,order(datetime)),]
+print(load_data$datatime)
+print(load_data$datetime)
+str(load_data)
+print(data_load$datetime)
+data_load[with(data_load,order(datetime,decreasing = FALSE)),]
+print(data_load$datetime)
+data_load[with(data_load,order(datetime,decreasing = TURE)),]
+data_load[with(data_load,order(datetime,decreasing = TRUE)),]
+print(data_load$datetime)
+data_load[with(data_load,order(datetime,decreasing = FALSE)),]
+print(summary(data_load))
+data_load[1:2]
+data_load[1:2,]
+data_load = data_load[order(datetime),]
+data_load = data_load[order(data_load$datetime),]
+data_load[1:2,]
+data_price = read.csv("price.csv")
+price_dt = data_price$datetime_beginning_utc
+price_dt = strptime(price_dt,format="%m/%d/%Y %I:%M:%S %p")
+price_dt[1:2]
+data_load$datetime)[1:2]
+data_load$datetime[1:2]
+data_load$datetime - price_dt
+data_load$datetime)[87686:87688]
+data_load$datetime[87686:87688]
+price_dt[87686:87688]
+data_price$datetime = price_dt
+data_price = data_price[order(data_price$datetime),]
+data_price$datetime - data_load$datetime
+data_price$datetime_beginning_utc - data_load$datetime_beginning_utc
+load_dt = data_load$datetime_beginning_ept
+load_dt = strptime(load_dt,format="%m/%d/%Y %I:%M:%S %p")#
+data_load$datetime = load_dt#
+data_load = data_load[order(data_load$datetime),]#
+load = data_load$hrly_da_demand_bid
+price_dt = data_price$datetime_beginning_ept
+price_dt = strptime(price_dt,format="%m/%d/%Y %I:%M:%S %p")#
+data_price$datetime = price_dt#
+data_price = data_price[order(data_price$datetime),]#
+price = data_price$hrly_da_demand_bid
+data_price$datetime - data_load$datetime
+data_price$datetime[7369:7377]
+data_load$datetime[7369:7377]
+load_dt = data_load$datetime_beginning_utc#
+load_dt = strptime(load_dt,format="%m/%d/%Y %I:%M:%S %p")#
+data_load$datetime = load_dt#
+data_load = data_load[order(data_load$datetime),]#
+load = data_load$hrly_da_demand_bid
+price_dt = data_price$datetime_beginning_utc#
+price_dt = strptime(price_dt,format="%m/%d/%Y %I:%M:%S %p")#
+data_price$datetime = price_dt#
+data_price = data_price[order(data_price$datetime),]#
+price = data_price$hrly_da_demand_bid
+data_load$datetime[7369:7377]
+data_price$datetime[7369:7377]
+match(data_load$datetime,data_price$datetime)
+load_alighed[match(data_load$datetime,data_price$datetime)] = load
+mode(load)
+load_aligned = vector(mode="numeric",length = 87686)
+load_alighed[match(data_load$datetime,data_price$datetime)] = load
+load_aligned[match(data_load$datetime,data_price$datetime)] = load
+load_aligned[7369:7377]
+data_pjm = data.frame(datetime=data_price$datetime,price,load_aligned)
+data_pjm = data.frame(datetime=data_price$datetime,price = price,load = load_aligned)
+str(price)
+price = data_price$hrly_da_demand_bid
+str(price)
+str(data_price)
+price = data_price$total_lmp_da
+data_pjm = data.frame(datetime=data_price$datetime,price = price,load = load_aligned)
+plot(data_pjm$price[1:100])
+plot(data_pjm$price[1:100],"l")
+plot(data_pjm$price[1:100],type="l")
+line(data_pjm$load[1:100],type="l")
+line(data_pjm$load[1:100])
+write.csv(data_pjm,"PJM.csv")
