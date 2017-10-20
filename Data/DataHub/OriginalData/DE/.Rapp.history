@@ -1,0 +1,695 @@
+RawCostBY = c(sum(RawCost[1:Ends[2]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[2]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[2]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[2]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[2]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+yx = RawCostBY-FlatCostDayBY
+plot(yx)
+FlatCostDayBY
+RawCostBY
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+yx = RawCostBY-FlatCostDayBY
+plot(yx)
+yx
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDayBY[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+yx = RawCostBY-FlatCostDayBY
+plot(yx)
+yx
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+yx = RawCostBY-FlatCostDayBY
+plot(yx)
+plot(yx,type ="l")
+yx = RawCostBY-FlatCostYearBY
+lines(yx,type = "l")
+yx = RawCostBY-FlatCostWeekBY
+lines(yx,type = "l")
+source('~/Documents/MasterThesis/FXLeibility/FXLeibility/Data/FlatLoad.R', chdir = TRUE)
+region = "PJM"
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)
+source('~/Documents/MasterThesis/FXLeibility/FXLeibility/Data/FlatLoad.R', chdir = TRUE)#
+#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+#
+daily = load.flat(Raw$load,Raw$datetime,"day")#
+weekly = load.flat(Raw$load,Raw$datetime,"week")#
+monthly = load.flat(Raw$load,Raw$datetime,"month")#
+yearly = load.flat(Raw$load,Raw$datetime,"year")#
+#
+newdt = data.frame(datetime = Raw$datetime,daily = daily, weekly = weekly, monthly = monthly, yearly = yearly)#
+#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+write.csv(newdt,filename)
+Raw$datetime[8756]
+Raw$datetime[8755]
+Raw$datetime[1]
+17540 - 8756
+region = "PJM"
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv("NSW_YearEnd.csv")#
+Ends = YearEnd$DatePoint#
+#
+Years = 2007:2016#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+ys = RawCostBY- FlatCostDayBY
+plot(ys,type = "l")
+FlatCostDayBY
+FlatCostDay
+plot(FlatCostDay)
+plot(FlatCostDay,type ="l")
+is.na(FlatCostDay)
+FlatCostDay[is.na(FlatCostDay)]
+Ends
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+FlatCostDayBY
+sum(FlatCostDay[Ends[5]:Ends[6]-1])
+sum(FlatCostDay[Ends[5]:Ends[6]])
+sum(FlatCostDay[Ends[5]:Ends[6]-1])
+Ends[5]
+Ends[6]-1
+sum(FlatCostDay[87648:105215])
+FlatCostDay[87648:105215]
+FlatCostDay[87648+50]
+FlatCostDay[87648+49]
+FlatCostDay[87648+48]
+87648+49
+Flat$daily[87687]
+Raw$price[87687]
+Flat$daily[87697]
+Raw$price[87697]
+length(Raw$price)
+rm(list = ls())
+region = "PJM"
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = YearEnd$DatePoint#
+#
+Years = 2007:2016#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+yx = RawCostBY - FlatCostDayBY
+plot(yx,type = "l")
+yx = RawCostBY - FlatCostYearBY
+plot(yx,type = "l")
+yx = RawCostBY - FlatCostMonthBY
+plot(yx,type = "l")
+yx = RawCostBY - FlatCostWeekhBY
+yx = RawCostBY - FlatCostWeekBY
+plot(yx,type = "l")
+yx = RawCostBY - FlatCostDayBY
+line(yx,type = "l")
+lines(yx,type = "l")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+#
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = YearEnd$DatePoint#
+#
+Years = 2007:2016#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}#
+#
+value = RawCostBY - FlatCostDayBY#
+plot(Years, value, type = "l", col = "red")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+#
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = YearEnd$DatePoint#
+#
+Years = 2007:2016#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly
+Plot(as.Date(Raw$datetime),RawCost,type="l",col = "black")
+plot(as.Date(Raw$datetime),RawCost,type="l",col = "black")
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black")
+lines(as.Date(Raw$datetime),Raw$daily,type="l",col = "red")
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black")
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "white")
+legend("topleft",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","white"))
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","white"))
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black")#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "white")
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","white"))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black")#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "white")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","white"))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",ylim = range(50000:150000))#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "white")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","white"))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",ylim = range(50000:150000))#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black")#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",xlab = "Time [year]", ylab = "Load [MW]")#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",xlab = "Time [year]", ylab = "Load [MW]",ylim = range(50000:150000))#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+#
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",xlab = "Time [year]", ylab = "Load [MW]",ylim = range(50000:180000))#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+plot(as.Date(Raw$datetime),Raw$load,type="l",col = "black",xlab = "Time [year]", ylab = "Load [MW]",ylim = range(40000:160000))#
+lines(as.Date(Raw$datetime),Flat$daily,type="l",col = "red")#
+lines(as.Date(Raw$datetime),Flat$weekly,type="l",col = "yellow")#
+lines(as.Date(Raw$datetime),Flat$monthly,type="l",col = "blue")#
+lines(as.Date(Raw$datetime),Flat$yearly,type="l",col = "green")#
+legend("topright",c("Original Load","Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("black","red","yellow","blue","green"))
+ource('~/Documents/MasterThesis/FXLeibility/FXLeibility/Data/FUN_FlatLoad.R', chdir = TRUE)#
+#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)
+time = as.Date(Raw$datetime)
+i_start = 1
+i_end = 1
+library(lubridate)
+time = month(Raw$datetime)
+i_start = 1
+i_end = 1
+thedate = time[1]
+MonthEnds = vector("numeric")
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MOnthEnds,i)}}
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i)}}
+MonthEnds
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i), thedate=time[i]}}
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i)
+thedate=time[i]}}
+MonthEnds = vector("numeric")
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i)
+thedate=time[i]}}
+MonthEnds
+region
+write.csv(MonthEnds,"PJM_MoenthEnds.csv")
+stru(Raw)
+str(Raw)
+Raw = read.csv("NSW.csv")
+time = month(Raw$datetime)
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i)
+thedate=time[i]}}
+MonthEnds = vector("numeric")
+for (i in 1:length(time)){if(thedate != time[i]){MonthEnds=c(MonthEnds,i)
+thedate=time[i]}}
+MonthEnds
+write.csv(MonthEnds,"NSW_MoenthEnds.csv")
+str(Raw)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = YearEnd$DatePoint#
+#
+Years = 2007:2016#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}#
+#
+value = RawCostBY - FlatCostDayBY#
+plot(Years, value, type = "l", col = "red")
+value = RawCostBY - FlatCostWeekBY
+plot(Years, value, type = "l", col = "yellow")
+value = RawCostBY - FlatCostWeekBY
+value = RawCostBY - FlatCostDayBY
+plot(Years, value, type = "l", col = "red")
+value = RawCostBY - FlatCostWeekBY
+lines(Years, value, type = "l", col = "yellow")
+value = RawCostBY - FlatCostMonthBY
+lines(Years, value, type = "l", col = "blue")
+value = RawCostBY - FlatCostYearBY
+lines(Years, value, type = "l", col = "green")
+plot(Years, value, type = "l", col = "green")
+value = RawCostBY - FlatCostDayBY
+lines(Years, value, type = "l", col = "red")
+value = RawCostBY - FlatCostYearBY
+region
+value = (RawCostBY - FlatCostYearBY)/2000000
+plot(Years, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]")
+value = (RawCostBY - FlatCostDayBY)/2000000
+if (region == "NSW"){#
+	value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Years, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]")#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Years, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Years, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Years, value, type = "l", col = "blue")#
+}
+if (region == "NSW"){#
+	value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Years, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:700))#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Years, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Years, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Years, value, type = "l", col = "blue")#
+}
+legend("topright",c("Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("red","yellow","blue","green"))
+Ends = MonthEnd$MonthEnd
+filename = paste(region,"MonthEnd.csv",sep = "_")#
+MonthEnd = read.csv(filename)
+Ends = MonthEnd$MonthEnd
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+newdt = seq.POSIXt(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+newdt = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+newdt
+newdt = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month",format ="%Y-%m")
+newdt
+newdt = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+as.Date("2008-01")
+Time = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+length(FlatCostYearBY)
+length(Time)
+region
+Time = seq.Date(as.Date("2007-01-01"), as.Date("2016-12-31"), by = "month")
+length(Time)
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:700))#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:400))#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:500))#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+legend("topright",c("Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("red","yellow","blue","green"))
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:500))#
+	value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+legend("topright",c("Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("red","yellow","blue","green"))
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+filename = paste(region,"MonthEnd.csv",sep = "_")#
+MonthEnd = read.csv(filename)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+Raw = read.csv(filename)#
+filename = paste(region,"FlatLoad.csv",sep = "_")#
+Flat = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+filename = paste(region,"MonthEnd.csv",sep = "_")#
+MonthEnd = read.csv(filename)
+Ends = YearEnd$DatePoint#
+#
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+Years = 2007:2017#
+	Time = Years
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:700))
+length(value)
+Years = 2007:2016#
+	Time = Years#
+	value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:700))
+plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mAUD]",ylim=range(0:700))
+plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]")
+plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]",ylim=range(0:1800))
+value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+legend("bottomright",c("Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("red","yellow","blue","green"))
+Months = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+Ends = MonthEnd$MonthEnd
+RawCost = Raw$price * Raw$load#
+FlatCostDay = Raw$price * Flat$daily#
+FlatCostWeek = Raw$price * Flat$weekly#
+FlatCostMonth = Raw$price * Flat$monthly#
+FlatCostYear = Raw$price * Flat$yearly#
+#
+RawCostBY = c(sum(RawCost[1:Ends[1]-1]))#
+FlatCostDayBY = c(sum(FlatCostDay[1:Ends[1]-1]))#
+FlatCostWeekBY = c(sum(FlatCostWeek[1:Ends[1]-1]))#
+FlatCostMonthBY = c(sum(FlatCostMonth[1:Ends[1]-1]))#
+FlatCostYearBY = c(sum(FlatCostYear[1:Ends[1]-1]))#
+for (i in 2:length(Ends)){#
+	RawCostBY = c(RawCostBY,sum(RawCost[Ends[i-1]:Ends[i]-1]))#
+	FlatCostDayBY = c(FlatCostDayBY,sum(FlatCostDay[Ends[i-1]:Ends[i]-1]))#
+	FlatCostWeekBY = c(FlatCostWeekBY,sum(FlatCostWeek[Ends[i-1]:Ends[i]-1]))#
+	FlatCostMonthBY = c(FlatCostMonthBY,sum(FlatCostMonth[Ends[i-1]:Ends[i]-1]))#
+	FlatCostYearBY = c(FlatCostYearBY,sum(FlatCostYear[Ends[i-1]:Ends[i]-1]))#
+}
+length(FlatCostDayBY)
+Months = seq.Date(as.Date("2007-01-01"), as.Date("2017-01-01"), by = "month")
+Time = Months
+length(Time)
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]",ylim=range(0:1800))
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]",ylim=range(0:1500))
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]")
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]",ylim=range(0:1200))
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]")
+value = (RawCostBY - FlatCostYearBY)/2000000#
+	plot(Time, value, type = "l", col = "green",xlab = "Time [Year]", ylab ="Saving [mUSD]",ylim=range(-200:1200))
+value = (RawCostBY - FlatCostDayBY)/2000000#
+	lines(Time, value, type = "l", col = "red")#
+	value = (RawCostBY - FlatCostWeekBY)/2000000#
+	lines(Time, value, type = "l", col = "yellow")#
+	value = (RawCostBY - FlatCostMonthBY)/2000000#
+	lines(Time, value, type = "l", col = "blue")
+legend("topleft",c("Daily-flexibility","Weekly-flexibility","Monthly-flexibility", "Yearly-flexibility"),fill=c("red","yellow","blue","green"))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+#
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+data_file = read.csv(filename)
+plot(as.Date(data_file$datetime),data_file$load_avg,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+plot(as.Date(data_file$datetime),data_file$load,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+plot(as.Date(data_file$datetime),data_file$load_avg,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]"
+)
+par(new=TRUE)
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]")
+par(new=TRUE)
+plot(as.Date(data_file$datetime),data_file$load,type="l",col="blue",xlab="Time[Year]",ylab="Load[MW]")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+#
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+data_file = read.csv(filename)
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]")
+par(new=TRUE)
+plot(as.Date(data_file$datetime),data_file$load,type="l", col = "blue",axes=FALSE,bty="n",xlab="",ylab="")
+axis(side=4,at = pretty(range(0:4)))
+axis(side=4,at = pretty(range(data_file$load)))
+axis(side=4,at = pretty(range(0:15000)))
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]")
+par(new=TRUE)
+plot(as.Date(data_file$datetime),data_file$load,type="l", col = "blue",axes=FALSE,bty="n",xlab="",ylab="")
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]")
+par(new=TRUE)
+plot(as.Date(data_file$datetime),data_file$load,type="l", col = "blue",axes=FALSE,bty="n",xlab="",ylab="",ylim = range(0:15000))
+axis(side=4,at = pretty(range(data_file$load)))
+axis(side=4,at = pretty(range(0:15000)))
+plot(as.Date(data_file$datetime),data_file$price,type="l",col="black",xlab="Time[Year]",ylab="Price[$/MWh]")#
+par(new=TRUE)#
+plot(as.Date(data_file$datetime),data_file$load,type="l", col = "blue",axes=FALSE,bty="n",xlab="",ylab="",ylim = range(0:15000))
+axis(side=4,at = pretty(range(0:15000)))
+mtext("Load[MW]",side = 4)
+legend("topleft",c("Price","Load"),fill=c("blue","black"))
+legend("topleft",c("Price","Load"),fill=c("black","blue"))
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/DataHub/OriginalData")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/DataHub/OriginalData/DE")
+de1 = read.csv("DE1.csv")
+de2 = read.csv("DE2.csv")
+de = rbind(de1,de2)
+de$datetime
+str(de)
+de1 = read.csv("DE1.csv")
+str(de1)
+de1 = read.csv("DE1.csv")
+str(de1)
+plot(price,type = "l")
+plot(de1$price,type = "l")
+plot(de1$load,type = "l")

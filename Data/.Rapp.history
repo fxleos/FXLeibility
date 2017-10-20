@@ -1,0 +1,1650 @@
+print(getwd())
+setwd("/documents/MasterThesis")
+setwd("/Documents/MasterThesis")
+setwd("/Documents/")
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")
+de = read.csv("DE.csv")
+library(lubridate)
+hour(de$datetime[1])
+de$X(hour(de$datetime) == 0)
+de$X[hour(de$datetime) == 0]
+de$X[hour(de$datetime) == 0 && year(de$datetime) == 2006]
+de$X[hour(de$datetime) == 0 & year(de$datetime) == 2006]
+str(de)
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/")#
+library(lubridate)#
+#
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+#
+for(y = 2006:2015){#
+	price_avg = vector('numeric')#
+	for (h = 0:23){#
+		price_avg = c(price,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y])#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 2006:2015){#
+	price_avg = vector('numeric')#
+	for (h in 0:23){#
+		price_avg = c(price,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y])#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)
+price_avg = vector('numeric')
+h = 0
+y = 2006
+rice_avg = c(price,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y])
+for(y in 2006:2015){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 2006:2015){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+y = 2006
+price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)
+length(price_avg)
+price_avg = vector('numeric')
+y
+h = 0
+for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime) == h & year(df$datetime) ==y]))#
+	    print(h)#
+}
+plot(price_avg,type="l")
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+YearEnd = c(1,YearEnd)
+length(YearEnd)
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+YearEnd = c(1,YearEnd$YearEnd)
+length(YearEnd)
+filename = paste(region,"YearEnd.csv",sep = "_")#
+> YearEnd = read.csv(filename)
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)
+YearEnd
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DataPoint)
+length(Ends)
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)
+YearEnd$DataPoint
+str(YearEnd)
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)
+length(Ends)
+price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends(y):Ends(y+1)]) == h]))
+rm(list=ls())
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]):Ends[y+1]) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+h = 0
+price_avg = vector('numeric')
+y = 1
+price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]))
+plot(price_avg,type="l")
+price_avg
+h = 2
+h =1
+price_avg = vector('numeric')
+for (h in 0:23) {#
++ 		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]))#
++ 	}
+for (h in 0:23) {#
++ 		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]))#
++ 	}
+for (h in 0:23) {#
++ 		price_avg = c(price_avg,mean(df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]))#
++ }
+df$price[hour(df$datetime[Ends[y]:Ends[y+1]]) == h]
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price(Ends[y]:Ends[y+1])#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(price_range) == h])))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price(Ends[y]:Ends[y+1])#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(price_range) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(price_range) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+price_avg = vector('numeric')
+price_range = df$price[Ends[y]:Ends[y+1]]
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l")#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",ylim=range(0:1000))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",ylim=range(-100:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = y*6, ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = y*7, ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = y, ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = heat.colors(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color(y), ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = heat.colors(10)
+l_color
+l_color = heat.colors(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = terrian.colors(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = cm.colors(10,alpha = 3)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = cm.colors(10,alpha = 1)
+l_color = cm.colors(10,alpha = 2)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow.colors(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",axes=FALSE, bty = "n", col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	plot(price_avg,type="l",axes=FALSE, col = l_color[y], ylim=range(0:100))#
+	par(new=TRUE)#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y = 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	}else{#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	}else{#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	}else {#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	}#
+	if (y != 1){#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	}#
+	if (y != 1){#
+		par(new=TRUE)#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+		par(new=TRUE)#
+	} else {	#
+		plot(price_avg,type="l",axes=FALSE, bty ="n" col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+		par(new=TRUE)#
+	} else {	#
+		plot(price_avg,type="l",axes=FALSE, bty ="n", col = l_color[y], ylim=range(0:100))#
+	}#
+}
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}
+labels = 2006:2015
+labels = c("1","2")
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+text(locator(),labels = 2006:2015)
+text(locator(),labels = 2006:2015)
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}
+legend(2005:2016,fill = l_colors)
+legend(legend = 2005:2016,fill = l_colors)
+legend("topleft",2005:2016,fill = l_colors)
+a = 2006:2015
+class(a) = "factor"
+legend("topleft",a,fill = l_colors)
+a = c("a","b")
+class(a)
+a = 2006:2015
+class(a) = "character"
+legend("topleft",a,fill = l_colors)
+legend("topleft",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100))#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]")
+plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]",lty = 2)
+plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]",lty = 3)
+plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]",lty = 4)
+plot(price_avg,type="l", col = l_color[y], ylim=range(-200:1000),xlab = "Hour", ylab = "Price[$/MWh]",lty = 2)
+plot(price_avg,type="l", col = l_color[y], ylim=range(-200:1000),xlab = "Hour", ylab = "Price[$/MWh]",lty = 2,log="y")
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:1000),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:1000),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-100:100),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-50:150),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-150:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-150:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-200:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-200:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:200),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:200),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:2500),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:500),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:600),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:1000),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:2000),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+plot(price_avg,type="l", col = l_color[y],xlab = "Hour", ylab = "Price[$/MWh]")
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,max(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:10000),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:100),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,mean(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(0:200),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-50:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-150:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomleft",a,fill = l_color)
+Ends
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	price_avg = vector('numeric')#
+	price_range = df$price[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(price_avg,min(price_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(price_avg,type="l", col = l_color[y], ylim=range(-200:50),xlab = "Hour", ylab = "Price[$/MWh]")#
+	} else {	#
+		lines(price_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("bottomleft",a,fill = l_color)
+test = df$price[year(df$datetime) == 2012]
+plot(test, type = "l")
+par(new=TRUE)
+test = df$price[year(df$datetime) == 2011]
+plot(test, type = "l")
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	load_avg = vector('numeric')#
+	load_range = df$load[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		price_avg = c(load_avg,mean(load_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(load_avg,type="l", col = l_color[y], ylim=range(0:10000),xlab = "Hour", ylab = "Load[MW]")#
+	} else {	#
+		lines(load_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+load_avg,mean(load_range[hour(time_range) == h])
+mean(load_range[hour(time_range) == h])
+load_avg
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	load_avg = vector('numeric')#
+	load_range = df$load[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		load_avg = c(load_avg,mean(load_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(load_avg,type="l", col = l_color[y], ylim=range(0:10000),xlab = "Hour", ylab = "Load[MW]")#
+	} else {	#
+		lines(load_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+load_avg
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	load_avg = vector('numeric')#
+	load_range = df$load[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		load_avg = c(load_avg,mean(load_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(load_avg,type="l", col = l_color[y], ylim=range(5000:35000),xlab = "Hour", ylab = "Load[MW]")#
+	} else {	#
+		lines(load_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	load_avg = vector('numeric')#
+	load_range = df$load[Ends[y]:Ends[y+1]]#
+	time_range = df$datetime[Ends[y]:Ends[y+1]]#
+	for (h in 0:23) {#
+		load_avg = c(load_avg,mean(load_range[hour(time_range) == h]))#
+	}#
+	if (y == 1){#
+		plot(load_avg,type="l", col = l_color[y], ylim=range(5000:35000),xlab = "Hour", ylab = "Load[MW]")#
+	} else {	#
+		lines(load_avg,type="l", col = l_color[y])#
+	}#
+}#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+plot(load_avg,type="l", col = l_color[y],xlab = "Hour", ylab = "Load[MW]")
+fdc {hydroTSM}
+install.package("hydroTSM")
+install.packages("hydroTSM")
+library(hydroTSM)
+fdc(df$load)
+fdc(df$load[1:1000])
+fdc(df$load[1:Ends[2]])
+par(new=TRUE)
+fdc(df$load[Ends[2]:Ends[3]])
+fdc(df$price[Ends[2]:Ends[3]])
+par(new=TRUE)
+fdc(df$price[Ends[1]:Ends[2]],ylim=range(0:1000))
+par(new=TRUE)
+fdc(df$price[Ends[2]:Ends[3]],ylim=range(0:1000))
+fdc(df$price[Ends[1]:Ends[2]],ylim=range(0:1000))
+fdc(df$price[Ends[2]:Ends[3]],ylim=range(0:1000),new=FALSE)
+fdc(df$price[Ends[1]:Ends[2]],ylim=range(0:1000),col="blue")
+fdc(df$price[Ends[1]:Ends[2]],col="blue")
+fdc(df$price[Ends[2]:Ends[3]],col="black",new=FALSE)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$price[Ends[y]:Ends[y+1]],col=l_color[y])#
+	}#
+	fdc(df$price[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y])#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}
+fdc(df$load[Ends[10]:Ends[11]],col=l_color[10])#
+#
+for(y in 1:9){#
+	#if(y==1){#
+	#	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y])#
+	#}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000))#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000))#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000))#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),cex.axis = 10000)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000),cex.axis = 10000))#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),cex.axis = 10000)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000),cex.axis = 10000)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),cex.lab = 10000)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000),cex.lab = 10000)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),cex.lab = 1)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000),cex.lab = 1)#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),xlab = "% Time load above", ylab = "Load [MW]")#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000))#
+}
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000))#
+}
+legend("topleft",c("a","b"))
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:100000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topleft",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(50000:150000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(50000:150000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE)#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(5000:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(5000:15000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(5000:15000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:15000))#
+}#
+#
+legend_text = 2006:2015#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:15000))#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:150000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:150000))#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:150000),lQ.thr = 0, hQ.thr = 150000, xlab = "% Time load above", ylab = "Load [MW]", main = NULL)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],lQ.thr = 0, hQ.thr = 150000,new = FALSE,ylim=range(0:150000))#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:15000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:15000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "DE"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:50000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:50000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:150000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:150000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:150000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:150000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",a,fill = l_color)
+legend_text = 2007:2016
+region = "PJM"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:150000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:150000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",legend_text,fill = l_color)
+region = "NSW"#
+filename = paste(region,"csv",sep = ".")#
+df = read.csv(filename)#
+filename = paste(region,"YearEnd.csv",sep = "_")#
+YearEnd = read.csv(filename)#
+Ends = c(1,YearEnd$DatePoint)#
+l_color = rainbow(10)#
+for(y in 1:10){#
+	if(y==1){#
+		fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],ylim=range(0:15000),xlab = "% Time load above", ylab = "Load [MW]", main = NULL,thr.shw=FALSE)#
+	}#
+	fdc(df$load[Ends[y]:Ends[y+1]],col=l_color[y],new = FALSE,ylim=range(0:15000),thr.shw=FALSE)#
+}#
+#
+legend_text = 2007:2016#
+class(legend_text) = "character"#
+legend("topright",legend_text,fill = l_color)
