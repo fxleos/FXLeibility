@@ -1,0 +1,22 @@
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{List of Acronyms}{ix}
+\contentsline {chapter}{List of Symbols}{xi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Model Decription}{3}
+\contentsline {section}{\numberline {2.1}Input Model}{3}
+\contentsline {subsection}{\numberline {2.1.1}Renewable}{3}
+\contentsline {section}{\numberline {2.2}Optimization}{3}
+\contentsline {subsection}{\numberline {2.2.1}Objective Function}{3}
+\contentsline {subsection}{\numberline {2.2.2}Constraints}{4}
+\contentsline {chapter}{\numberline {3}Simulation Environment}{5}
+\contentsline {chapter}{\numberline {4}System setup and component modeling}{7}
+\contentsline {chapter}{\numberline {5}Simulation results}{9}
+\contentsline {chapter}{\numberline {6}Sensitivity analysis}{11}
+\contentsline {chapter}{\numberline {7}Real-time price control}{13}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{15}
+\contentsline {chapter}{\numberline {A}Model parameters}{17}
+\contentsline {chapter}{\numberline {B}System state, input and disturbance}{19}
+\contentsline {chapter}{\numberline {C}Comparison between radiator and heat pump}{21}
+\contentsline {chapter}{\numberline {D}EWH analysis}{23}
+\contentsline {chapter}{\numberline {E}Results of real-time price control}{25}
