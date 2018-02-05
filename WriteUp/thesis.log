@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  24 NOV 2017 13:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  5 FEB 2018 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,117 +782,133 @@ Package pdftex.def Info: Figures/PSL_logo.pdf used on input line 6.
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figur
 es/eth_logo_lang_pos.pdf> <./Figures/PSL_logo.pdf>]) [2
 
-] [3] [4
-
-] [5] [6
-
-] (./thesis.toc)
+] (./thesis.toc [3])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [7] [8
-
-] [9] [10
-
-] [11] [12
-
-]
-Chapter 1.
-[1
-
-] [2
-
-]
-Chapter 2.
-
-Overfull \hbox (80.44023pt too wide) detected at line 129
-[] []
- []
-
-
-Overfull \hbox (12.38503pt too wide) detected at line 170
-[] []
- []
-
-[3] [4]
-Chapter 3.
-[5
+ [4] [5
 
 ] [6
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 109.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
+
+Overfull \hbox (1.27191pt too wide) in paragraph at lines 131--132
+[]$\OML/cmm/m/it/10.95 l[]$\T1/aer/m/n/10.95 : The trad-ing vol-ume (load) in d
+ay-ahead mar-ket at time t, MWh/h 
+ []
+
+[7]
+Overfull \hbox (11.62434pt too wide) in paragraph at lines 133--134
+[]$\OML/cmm/m/it/10.95 l[]$\T1/aer/m/n/10.95 : The max-i-mum trad-ing vol-ume (
+load) in day-ahead mar-ket, MWh/h 
+ []
+
+[8]
+Chapter 1.
+
+Overfull \hbox (6.00754pt too wide) in paragraph at lines 167--167
+[]\T1/aer/bx/n/14.4 Technologies: op-tions for sys-tem flex-i-bil-ity pro-
+ []
+
+[1
+
+
+] [2] (./LitRev.tex [3] [4
+
+]
+Chapter 2.
+[5]) (./Methodology.tex [6]
+Chapter 3.
+[7
+
+]
+Overfull \hbox (285.74919pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 8 \T1/aer/m/sl/10.95 CHAPTER 3.  METHODOLOGY FOR VALUATION OF
+ SELECTED FLEXIBILITY TECHNOLOGIES IN SELECTED MARKETS
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+) (./Market.tex [9]
+Overfull \hbox (291.22418pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 10 \T1/aer/m/sl/10.95 CHAPTER 3.  METHODOLOGY FOR VALUATION O
+F SELECTED FLEXIBILITY TECHNOLOGIES IN SELECTED MARKETS
+ []
+
+[10
+
+]
 Chapter 4.
-[7] [8
+) [11]
+Overfull \hbox (529.08296pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 12 \T1/aer/m/sl/10.95 CHAPTER 4.  POWER MARKET FRAMEWORK AND 
+PROPOSED BUSINESS MODEL FOR FLEXIBILITY MANAGEMENT IN SELECTED SEGMENTS AND GEO
+GRAPHIES
+ []
+
+[12
 
 ]
 Chapter 5.
-[9] [10
-
-]
-Chapter 6.
-[11] [12
-
-]
-Chapter 7.
 [13] [14
 
 ]
-Chapter 8.
+Chapter 6.
 [15] [16
+
+]
+Chapter 7.
+[17] [18
+
+]
+Chapter 8.
+[19] [20
 
 
 ]
 Appendix A.
-[17] [18
+[21] [22
 
 
-]
-Appendix B.
-[19] [20
-
-]
-Appendix C.
-[21]
-Overfull \hbox (23.20813pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 22 \T1/aer/m/sl/10.95 APPENDIX C.  COMPARISON BETWEEN RADIATO
-R AND HEAT PUMP
- []
-
-[22
-
-]
-Appendix D.
-[23] [24
-
-]
-Appendix E.
-[25] [26
+] (./thesis.bbl) [23
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15356 strings out of 493089
- 297718 string characters out of 6134841
- 349102 words of memory out of 5000000
- 18625 multiletter control sequences out of 15000+600000
- 41952 words of font info for 86 fonts, out of 8000000 for 9000
+ 15395 strings out of 493089
+ 298274 string characters out of 6134841
+ 348077 words of memory out of 5000000
+ 18644 multiletter control sequences out of 15000+600000
+ 53057 words of font info for 93 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,12n,42p,10373b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,6n,42p,10373b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
->
-Output written on thesis.pdf (38 pages, 730939 bytes).
+/cm/cmbxti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
+10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb>
+Output written on thesis.pdf (31 pages, 776595 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 165 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

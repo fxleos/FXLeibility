@@ -1,0 +1,158 @@
+\section{Market-based modules}
+\subsection{Revenue modules}
+
+\subsection{Market simulation modules}
+\begin{algorithm}
+	\caption{Revenue modules}\label{RevenueModule}
+	\KwIn{$\hat{\pi}^g, \kappa, \alpha, $}
+	\KwOut{$\pi_t$}
+	\KwResult{b}
+	\For{$x \in X$}{
+		s 
+		
+	}
+\end{algorithm}
+
+
+
+
+\section{Optimization}
+Generally the objective function is formulated as maximizing the revenue which consists of revenues from selling both energy and reserve capacity net cost of purchasing energy.
+
+\begin{equation}
+\label{eq:obj-general}
+\begin{aligned}
+& \underset{e_t^d, e_t^c, r^{RU}_t, r^{RD}_t}{\text{maximize}}
+& & \sum_t^{t \in T} \mathrm{Revenue_t} \\
+& & &= \sum_t^{t \in T} [(p_t^{e, d}-C^d) e_t^d - (p_t^{e, c}+C^c) e_t^c ...\\
+& & & ... + (p_t^{e, RU}-C^d) \delta_t^{RU} r_t^{RU} - (p_t^{e, RD}+C^c) \delta^{RD}_t r^{RD}_t ... \\
+& & & ...  + p_t^{r, RU} r^{RU}_t + p_t^{r,RD} r^{RD}_t]\\
+\end{aligned}
+\end{equation}
+
+$\delta^{RU}_t$ and $\delta^{RD}_t$ are usually calculated from a regional average of all resource:
+\begin{equation*}
+	\delta^{RU}_t = \frac{\sum_{i}^{i \in I} e_{t,i}^{RU}}{\sum_{i}^{i \in I} r_{t,i}^{RU}} = \frac{e_t^{RU, total}}{r_t^{RU, total}}
+\end{equation*}
+
+\begin{equation*}
+\delta^{RD}_t = \frac{\sum_{i}^{i \in I} e_{t,i}^{RD}}{\sum_{i}^{i \in I} r_{t,i}^{RD}} = \frac{e_t^{RD, total}}{r_t^{RD, total}}
+\end{equation*}
+
+This revenue subjects to a list of constraints which can be categorized into two groups:
+\begin{itemize}
+	\item \textbf{Technology Constraints}: associated with the dynamics of the flexible asset, which are determined by their technical nature
+	\item \textbf{Market Constrains}: associated with the market conditions including market rules and liquid volumes in the market
+\end{itemize}
+
+\section{Market constraints}
+
+A constaint is taken to prevent the provision of flexible energy from replacing the base generation and charging of flexible energy from activating the peak loads. 
+\begin{equation}
+\label{eq:market-da-high}
+e_t^{total} - e_t^{total, peak} \leq e_t^{d} - e_t^{c} + \delta_t^{RU} r_t^{RU} - \delta_t^{RD} r_t^{RD} \leq e_t^{total} - e_t^{total,base}
+\end{equation}
+
+For reserve market, the rule is 
+
+\begin{equation}
+\label{eq:market-ru-high}
+r_t^{RU} \leq r_t^{RU,total}
+\end{equation}
+
+\begin{equation}
+\label{eq:market-rd-high}
+r_t^{RD} \leq r_t^{RD,total}
+\end{equation}
+
+\section{Different regimes}
+\subsection{PJM}
+\subsubsection{Day-ahead market}
+Only $e_t^d$ and $e_t^c$ are to be optimized (terms for reserve are zero)
+
+\begin{equation*}
+p_t^{e, d} = p_t^{e, c} = p_t^{e,DA}
+\end{equation*}
+
+\subsubsection{Regulation market coupled with real-time market}
+
+Since the total energy transaction associated with RegD and RegA are mixed in the datasets, an average ratio is taken:
+
+\begin{equation*}
+\delta^{Reg}_t = \delta^{RegD}_t =\delta^{RegA}_t   = \frac{e_t^{Reg, total}}{r_t^{Reg, total}}
+\end{equation*}
+
+We then seperate it into two components:
+
+\begin{equation*}
+\begin{cases} 
+\delta^{Reg+}_t = \delta^{Reg}_t &\mbox{if } \delta^{Reg}_t \geq 0 \\ 
+\delta^{Reg-}_t = -\delta^{Reg}_t & \mbox{if } \delta^{Reg}_t < 0 
+\end{cases} 
+\end{equation*}
+
+\begin{equation*}
+p_t^{e, d} = p_t^{e, c} = p_t^{e, RU}  = p_t^{e, RD}  = p_t^{e,RT}
+\end{equation*}
+
+Regulation market are divided to two segments, i.e. RegD and RegA. The price can be calculated as (assuming benefit factor being 1)
+\begin{equation*}
+p_t^{r, RegD} = (p_t^{RMCCP} + p_t^{RMPCP} * \gamma_t^{Mileage, RegD}) * \gamma_t^{Performance}
+\end{equation*}
+
+\begin{equation*}
+p_t^{r, RegA} = (p_t^{RMCCP} + p_t^{RMPCP} * \gamma_t^{Mileage, RegA}) * \gamma_t^{Performance}
+\end{equation*}
+
+Lost opportunity credits are not accounted as our system is not a energy-providing resource.
+
+Finally, \ref{eq:obj-general} is formulated as:
+\begin{equation}
+\begin{aligned}
+& \underset{e_t^d, e_t^c, r^{RegD}_t, r^{RegA}_t}{\text{maximize}}
+& & \sum_t^{t \in T} \mathrm{Revenue_t} \\
+& & &= \sum_t^{t \in T} [(p_t^{e,RT}-C^d) (e_t^d + \delta_t^{Reg+} (r_t^{RegD} + r_t^{RegA})) ...\\
+& & & ... -[(p_t^{e,RT}+C^c) (e_t^c + \delta_t^{Reg-} (r_t^{RegD} + r_t^{RegA})) ... \\
+& & & ...  + p_t^{r, RegD} r^{RegD}_t + p_t^{r, RegA} r^{RegA}_t]\\
+\end{aligned}
+\end{equation}
+
+
+\section{Technology Constraints}
+
+\subsection{Electric Storage System}
+\subsubsection{Energy contraints}
+
+\begin{equation}
+\label{eq:state-ess}
+S_t = \eta_s S_{t-1} + \eta_c (e_t^c+\delta^{RD}_t r^{RD}_t)  - (1/\eta_d) (e_t^d+\delta^{RU}_t r^{RU}_t)
+\end{equation}
+
+The state of charge is limited so as to fulfill the need for deliver sufficient energy at time t:
+\begin{equation}
+\label{eq:limit-state}
+0 \leq S_t \leq S_t^{max} %- \eta_c\delta_t^{RD} r^{RD}_t
+\end{equation}
+
+\subsubsection{Capacity constraints}
+
+Capacity constraints guarantee there are enough margin in charging/ discharging capacity that has been committeed for reserve purpose:
+\begin{equation}
+\label{eq:limit-discharge-rate}
+e_t^d / \Delta t + r^{RU}_t \leq r^{d, max}
+\end{equation}
+
+\begin{equation}
+\label{eq:limit-charge-rate}
+e_t^c / \Delta t + r^{RD}_t \leq r^{c, max}
+\end{equation}
+
+Non-negativity conditions:
+\begin{equation}
+e_t^d, e_t^c, r_t^{RU}, r_t^{RD} \geq 0
+\end{equation}
+
+All the constraints above shall be valid at any time:
+\begin{equation*}
+\forall t \in [1, 2, ..., T]
+\end{equation*}

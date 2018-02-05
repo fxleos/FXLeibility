@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: unsrt.bst
+Database file #1: thesis.bib
+I was expecting a `,' or a `}'---line 6 of file thesis.bib
+ :  year = {2017}
+ :               ;
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 13 of file thesis.bib
+ :  year = {2015}
+ :               ;
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 20 of file thesis.bib
+ :  year = {2008}
+ :               ;
+I'm skipping whatever remains of this entry
+Warning--empty journal in Electricity-price-curve
+Warning--there's a number but no volume in Byrne2012
+Too many commas in name 1 of "John Birge, Ali Hortaçsu, Ignacia Mercadal, Michael Pavlin" for entry Limit-visual-bid
+while executing---line 944 of file unsrt.bst
+Warning--empty publisher in Limit-visual-bid
+Warning--empty publisher in Transport-data
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            475 strings with 4284 characters,
+and the built_in function-call counts, 892 in all, are:
+= -- 73
+> -- 31
+< -- 0
++ -- 13
+- -- 8
+* -- 50
+:= -- 149
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 46
+empty$ -- 97
+format.name$ -- 8
+if$ -- 193
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 7
+newline$ -- 28
+num.names$ -- 5
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 37
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 8
+width$ -- 6
+write$ -- 51
+(There were 4 error messages)

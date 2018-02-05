@@ -1,0 +1,104 @@
+\chapter{Methodology for valuation of selected flexibility technologies in selected markets}
+
+\section{Modular approach to build valuation models}
+
+\section{Market-based modules}
+
+\subsection{Revenue module}
+
+As is defined in the scope, only explicit revenues from power markets are accounted in our study. At each time step ($t \in T$), the revenue is calculate as the  amount of energy ($e$, in MWh) offered in each energy market segment ($i \in I$), and/or amount of reserve ($r$, in MW) offered in each reserve market segment ($j \in J$), mutiplied by their corresponding prices ($\pi$, in \$/MWh or \$/MW). In reserve market, there are additional revenues from energy provision while the committed capacities are activated by the system operators. The amounts of energy delivered in reserve market are computed using a ratio ($\delta$, in MWh/MW). Equation \ref{eq:module-revenue} illustrates how the overal revenue is determined. 
+
+\begin{equation}
+\label{eq:module-revenue}
+Revenue = \sum_{t}^{t \in T} \left( \sum_{i}^{i \in I}  \pi_t^{e,i} (e_t^{d,i} - e_t^{c,i})  + \sum_{j}^{j \in J} (\pi_t^{e,r,j} \delta_t^{j} + \pi_t^{r,j}) r_t^j \right)
+\end{equation}
+
+where, $d$ and $c$ in the superscripts denote "discharge" (to release energy from flexiblity resrouces to grids) and "charge" (to intake energy from girds to flexiblity resrouces) respectively. $e_t^{d,i}$, $e_t^{c,i}$, $r_t^{j}$, are decision variables.
+
+$I$ and $J$ are subsets of the selected market segments, which vary from region to region depending on their market structure.
+
+The superset of I is the set of selected energy market segments in different geographies:
+
+\begin{equation*}
+I \subseteq  \begin{cases}
+\{Day~Ahead, Real~Time\} & PJM \\
+\{Day~Ahead, Intraday, Balancing\} & Germany \\
+\{Real~Time\} & NSW
+\end{cases}
+\end{equation*}
+
+The superset of I is the set of selected reserve market segments in different geographies:
+
+\begin{equation*}
+J \subseteq  \begin{cases}
+\{RegA, RegD, SR, NSR, DASR\} & PJM \\
+\{PCR, SCR+, SCR-, TCR+, TCR-\} & Germany \\
+\{Lower, Raise\} \times \{REG, 6SEC, 60SEC, 5MIN\} & NSW
+\end{cases}
+\end{equation*}
+
+$I$ and $J$ are sliced according to the business case being studied. For example, we can set $I = \{Day~ahead\}$ and $J=\emptyset$ in order to value the offerings in day-ahead market of PJM. If there are multiple elements in $I \cup J$, it means the flexiblity resource can be reallocated to make offers to different market segments. In these cases, additional market contraits will be required in avoidance of violating actual market rules.
+
+The ratios $delta$ are computed from the real data, as the system average ratios using the total capacity ($\hat{e}_t^{r,j}$) and total activated energy ($\hat{e}_t^{r,j}$) at each time step.
+
+\begin{equation*}
+\delta_t^j = \frac{\hat{e}_t^{r,j}}{\hat{r}_t^j}
+\end{equation*}
+
+Price signals, $\pi_t^{e,i}, i \in \{Day~Ahead, Real~Time\}$, can be obtained eith directly from the datasets or from the outputs of the market simulation module described in proceeding section.
+
+$\pi_t^{e,i}, i \in \{Balancing\}$, is the the price for balancing energy (reBAP), which exist only in Germany and has been introduced in Section \ref{market:germany}. It is also available to be retrieved from datasets directly.
+
+Determination of prices in reserve markets, $\pi_t^{r,j}$ and $\pi_t^{e,r,j}$ varies between market geopraphies. While the general rules have be discussed in Chapter \ref{ch:market}, hereby we will illustrate the formulations and calculations of $\pi_t^{r,j}$ and $\pi_t^{e,r,j}$, mathematically and respectively for each market.
+
+\textbf{PJM:}
+
+The energy deviated from day-ahead planned schedule is accounted based on real-time market price, shown as following.
+
+\begin{equation*}
+\pi_t^{e,r,j} = \pi_t^{e,i} ~~~~ i \in \{Real~Time\}, j \in \{RegD, RegA, SR, NSR, DASR\}
+\end{equation*}
+
+The capacity prices of reserves are computed using a complex algorithm, taking into account a list of specifications of the resrouce, e.g. the performance \& historical performance, benefits factor, milleage, etc. The detailed calculations can be found in appendix. As outputs, we will get deterministic values for $j \in \{RegA, SR, NSR, DASR\}$, and the upper and lower bounds, $\overline{\pi}_t^{r,j}$ and $\underline{\pi}_t^{r,j}$, for $i \in \{RegD\}$.
+
+\textbf{Germany:}
+
+$\pi_t^{r,j}$ and $\pi_t^{e,r,j}$ are based on principle of pay-as-bid. The weighted-average values are available in the datasets.
+
+\textbf{Australia:}
+
+The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,r,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geopraphies.
+
+~\newline
+
+Since the revenue module will be used in optimizations, we re-formulate it as following:
+
+\begin{equation*}
+Revenue = \textit{\textbf{f X}}
+\end{equation*}
+
+
+
+\subsection{Market simulation module}
+
+The revenue from arbitrage depends extensively on the movement of the price, which can be influence by factors including the activities of arbitrage themselves. 
+
+
+
+\subsection{Market constraints}
+
+Energy constraints:
+
+Day-ahead
+\begin{equation}
+\hat{e}_t^i - \hat{e}_t^{peak} \leq e_t^{d,i} - e_t^{c,i} \leq \hat{e}_t^i - \hat{e}_t^{base} ~~~ i \in \{Day~Ahead\}
+\end{equation}
+
+Real-time
+
+
+
+Capacity constraints:
+\begin{equation}
+r_t^j \leq \hat{r}_t^j
+\end{equation}

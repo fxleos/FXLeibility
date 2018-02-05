@@ -1,0 +1,55 @@
+\chapter{Study on US-PJM}
+
+\section{Market}
+In markets with capacity obligations such as PJM, all resources that have a commitment must submit an offer in the day-ahead market.
+\subsection{Overview}
+\subsection{Market participants}
+Market buyer
+Market seller: 
+Load serving entities: can be buyer or seller as described above
+Curtailment service provider:
+
+\subsection{Energy Market}
+Day-ahead:
+The Day-ahead Market is a forward market in which hourly clearing prices are calculated for each hour of the next operating day based on generation offers, demand bids, Increment offers, Decrement bids and bilateral transaction schedules submitted into the Day- ahead Market.
+
+Real-time balancing market:
+The balancing market is the real-time energy market in which the clearing prices are calculated every five minutes based on the actual system operations security-constrained economic dispatch.
+
+Separate accounting settlements are performed for each market, the Day- ahead Market settlement is based on scheduled hourly quantities and on day-ahead hourly prices, the balancing settlement is based on actual hourly (integrated) quantity deviations from day-ahead scheduled quantities and on real-time prices integrated over the hour. The day- ahead price calculations and the balancing (real-time) price calculations are based on the concept of Locational Marginal Pricing.
+
+\subsection{Ancillary Service Market}
+Battery storage can participate in PJM?s frequency regulation market, but in Jan. 2017 participation rules changed. PJM altered the benefits factor between the two types of frequency regulation it allows: RegA9 and RegD10 resources. In this adjustment PJM did two things that directly affect energy storage:
+§ RegD resources are no longer only used for short-duration (a few minutes) service provision, requiring battery storage to draw power from the grid for longer durations.
+§ RegD resources procured during morning and evening ramp times are capped at no more than 26.2\% of the regulation procurement requirement.
+Under the new rules, batteries participating in PJM's frequency market as RegD resources are being asked to operate in a longer-duration manner that they were not designed for, which has significant impacts on the economics of these projects. 
+%SEPA_2017_Utility_Energy_Storage_Market_Snapshot.pdf
+%
+\section{Business case}
+
+\begin{itemize}
+	\item Day-ahead only
+	\item Energy only (Day-ahead + Real-time)
+	\item Regulation
+	\item Synchronized reserve
+	\item Non-synchronized reserve
+	\item Day-ahead scheduling reserve (30-min supplementary reserve)
+	\item Service mutualization (Day-ahead + Real-time + Regulation/SR/NR + DASR)
+\end{itemize}
+
+\section{Model}
+
+\section{Implementation}
+
+\subsection{Optimization}
+
+\subsection{Data}
+
+\section{Result and discussion}
+
+\chapter{AU-NSW}
+
+The NEM consists of five interconnected regions, with the dispatch process centrally managed by the market operator AEMO. Wholesale Regional Reference Prices (RRP) are calculated for each region and set the settlement price for all generators in the region. All transaction is the NEM are settled against a half-hourly spot price. However, dispatch within the NEM is optimised by the operator on 5 min intervals, and as such is considered a ‘fast market’. Fast markets (with short dispatch intervals) provide incentives for dispatchable, flexible capacity rather which would otherwise be met by regulation reserves.
+%Riesz J, Gilmore J, Hindsberger M. Market design for the integration of variable generation. In: Evolution of global electricity markets. Elsevier; 2013. p. 757–89.
+This is reflected in the relative small size of the Frequency Control Ancillary Services (FCAS) mar- ket relative to wholesale spot market. In 2014, payments through the FCAS market (regulation and contingency) totalled \$30 million, while payments through the spot market totalled \$10.8 billion.
+%Estimating the value of electricity storage in an energy-only wholesale market
