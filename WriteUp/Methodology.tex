@@ -39,7 +39,7 @@ J \subseteq  \begin{cases}
 
 $I$ and $J$ are sliced according to the business case being studied. For example, we can set $I = \{Day~ahead\}$ and $J=\emptyset$ in order to value the offerings in day-ahead market of PJM. If there are multiple elements in $I \cup J$, it means the flexiblity resource can be reallocated to make offers to different market segments. In these cases, additional market contraits will be required in avoidance of violating actual market rules.
 
-The ratios $delta$ are computed from the real data, as the system average ratios using the total capacity ($\hat{e}_t^{r,j}$) and total activated energy ($\hat{e}_t^{r,j}$) at each time step.
+The ratios $\delta$ are computed from the real data, as the system average ratios using the total capacity ($\hat{e}_t^{r,j}$) and total activated energy ($\hat{e}_t^{r,j}$) at each time step.
 
 \begin{equation*}
 \delta_t^j = \frac{\hat{e}_t^{r,j}}{\hat{r}_t^j}
@@ -53,7 +53,7 @@ Determination of prices in reserve markets, $\pi_t^{r,j}$ and $\pi_t^{e,r,j}$ va
 
 \textbf{PJM:}
 
-The energy deviated from day-ahead planned schedule is accounted based on real-time market price, shown as following.
+The real-time market price is applied for all deviations from day-ahead planned schedule, including Regulation, Primary and Supplementary Reserves.
 
 \begin{equation*}
 \pi_t^{e,r,j} = \pi_t^{e,i} ~~~~ i \in \{Real~Time\}, j \in \{RegD, RegA, SR, NSR, DASR\}
@@ -74,8 +74,99 @@ The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,r,j}$, are not 
 Since the revenue module will be used in optimizations, we re-formulate it as following:
 
 \begin{equation*}
-Revenue = \textit{\textbf{f X}}
+Revenue = \textit{\textbf{f}}~X
 \end{equation*}
+
+where $X$ is the vector for all desicion variables. For certain sets of market segments $I$ and $J$, $X$ can be derived using Equation \eqref{eq:decision-variable-1} $\sim$ \eqref{eq:decision-variable-end} with $i \in I$ and $j \in J$.
+\begin{equation}
+\label{eq:decision-variable-1}
+X =
+\begin{bmatrix}
+E^d \\ E^c \\ R
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+E^d =
+\begin{bmatrix}
+E^{d,I(1)} \\ \vdots \\ E^{d,i} \\ \vdots \\ E^{d,I(|I|)}
+\end{bmatrix} \\
+E^{d,i} = 
+\begin{bmatrix}
+e_1^{d,i}~e_2^{d,i}~\dots~e_T^{d,i}
+\end{bmatrix}^T
+\end{equation}
+
+\begin{equation}
+E^c =
+\begin{bmatrix}
+E^{c,I(1)} \\ \vdots \\ E^{c,i} \\ \vdots\\ E^{c,I(|I|)}
+\end{bmatrix} \\
+E^{c,i} = 
+\begin{bmatrix}
+e_1^{c,i}~e_2^{c,i}~\dots~e_T^{c,i}
+\end{bmatrix}^T
+\end{equation}
+
+\begin{equation}
+\label{eq:decision-variable-end}
+R =
+\begin{bmatrix}
+R^{J(1)} \\ \vdots \\R^{j} \\ \vdots \\ R^{J(|J|)}
+\end{bmatrix} ~~~\\
+R^{j} = 
+\begin{bmatrix}
+r_1^{j}~r_2^{j}~\dots~r_T^{j}
+\end{bmatrix}^T
+\end{equation}
+
+Function $\textbf{f}$ can be obtained analogously using Eqution \eqref{eq:decision-f-revenue-1} $\sim$ \eqref{eq:decision-f-revenue-end} with $i \in I$ and $j \in J$.
+\begin{equation}
+\label{eq:decision-f-revenue-1}
+\textit{\textbf{f}} =
+\begin{bmatrix}
+\Pi^e~|~&-\Pi^e~|~&\Pi^{e,r} \Delta + \Pi^r
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\Pi^e =
+\begin{bmatrix}
+\Pi^{e,I(1)}~|~&\dots~|~&\Pi^{e,I(|I|)}
+\end{bmatrix} ~~~\\
+\Pi^{e,i} = 
+\begin{bmatrix}
+\pi_1^{e,i}~\pi_2^{e,i}~\dots~\pi_T^{e,i}
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\Pi^{e,r} =
+\begin{bmatrix}
+\Pi^{e,r,J(1)}~|~&\dots~|~&\Pi^{e,r,J(|J|)}
+\end{bmatrix} ~~~\\
+\Pi^{e,r,j} = 
+\begin{bmatrix}
+\pi_1^{e,r,j}~\pi_2^{e,r,j}~\dots~\pi_T^{e,r,j}
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\Pi^r =
+\begin{bmatrix}
+\Pi^{r,J(1)}~|~&\dots~|~&\Pi^{r,J(|J|)}
+\end{bmatrix} ~~~\\
+\Pi^{r,j} = 
+\begin{bmatrix}
+\pi_1^{r,j}~\pi_2^{r,j}~\dots~\pi_T^{r,j}
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\label{eq:decision-f-revenue-end}
+\Delta = diag (
+\delta_1^{J(1)}, \dots , \delta_T^{J(1)}, \dots, \delta_1^{J(|J|)}, \dots, \delta_T^{J(|J|)})
+\end{equation}
 
 
 
@@ -102,3 +193,120 @@ Capacity constraints:
 \begin{equation}
 r_t^j \leq \hat{r}_t^j
 \end{equation}
+
+
+\section{Technology-based modules}
+
+\subsection{Cost module}
+
+\subsection{Technology simulation module}
+
+\subsubsection{Energy Storage}
+
+\begin{equation}
+\label{eq:tech-ESS}
+s_t = \eta_s s_{t-1} + \eta_c (\sum_{i}^{i \in I} e_t^{c,i} + \sum_{j}^{j \in J}\delta_t^{j,-}r_t^j)- \frac{1}{\eta_d} (\sum_{i}^{i \in I} e_t^{d,i} + \sum_{j}^{j \in J}\delta_t^{j,+}r_t^j)
+\end{equation} 
+
+where, the energy to reserve ratios are separated to positive and negative components:
+
+\begin{equation}
+\label{eq:ratio-pos}
+\delta_t^{j,+} = \begin{cases}
+\delta_t^j & \delta_t^j  \geq 0\\
+0 & \delta_t^j  < 0
+\end{cases}
+\end{equation}
+\begin{equation}
+\label{eq:ratio-neg}
+\delta_t^{j,-} = \begin{cases}
+0 & \delta_t^j  \geq 0\\
+-\delta_t^j & \delta_t^j  < 0
+\end{cases}
+\end{equation}
+\newline
+In order to formulate Equation \eqref{eq:tech-ESS}, we first introduce a matrix denoted $M$:
+\[
+M
+=
+\begin{bmatrix}
+\eta_s^0 & 0 & 0 &  \dots & 0 \\
+\eta_s^1 & \eta_s^0 & 0 &  \dots & 0 \\
+\eta_s^2 & \eta_s^1 & \eta_s^0 &  \dots & 0 \\
+\vdots & \vdots & \vdots &  \ddots & \vdots \\
+\eta_s^{T-1} & \eta_s^{T-2} & \eta_s^{T-3} & \dots & \eta_s^0 \\
+\end{bmatrix}
+\]
+\newline
+Then $M$ is used to construct $M^I$ and $M^J$ with a given pair of sets of market segments $I$ and $J$.
+\begin{equation*}
+M^I = \begin{bmatrix}
+M^{I(1)}~~|&\dots~~|&M^i~~|&\dots~~|&M^{I(|I|)}
+\end{bmatrix}~~~
+M^i = M ~~~ \forall i \in I
+\end{equation*}
+\begin{equation*}
+M^J = \begin{bmatrix}
+M^{J(1)}~~|&\dots~~|&M^j~~|&\dots~~|&M^{J(|J|)}
+\end{bmatrix}~~~
+M^j = M ~~~ \forall j \in J
+\end{equation*}
+\newline
+Similar to Equation \eqref{eq:decision-f-revenue-end}, we reconstruct the diagonal matrices with the decomposed ratios from Equation \eqref{eq:ratio-pos} and \eqref{eq:ratio-neg}.
+\begin{equation*}
+\Delta^+ = diag (
+\delta_1^{J(1),+}, \dots , \delta_T^{J(1),+}, \dots, \delta_1^{J(|J|),+}, \dots, \delta_T^{J(|J|),+})
+\end{equation*}
+\begin{equation*}
+\Delta^- = diag (
+\delta_1^{J(1),-}, \dots , \delta_T^{J(1),-}, \dots, \delta_1^{J(|J|),-}, \dots, \delta_T^{J(|J|),-})
+\end{equation*}
+\newline
+Finally, we can derive the matrix form of Equation \ref{eq:tech-ESS}.
+\begin{equation}
+S = \eta_s M S_0 + \begin{bmatrix}
+-\frac{1}{\eta_d} M^I~~|& \eta_c M^I~~|& M^J (-\frac{1}{\eta_d} {\Delta^{+}}^T + \eta_c {\Delta^{-}}^T)
+\end{bmatrix} X
+\end{equation}
+where, $S$ and $S_0$ are vectors for the temporal and initial state, respectively.
+\begin{equation*}
+S = \begin{bmatrix}
+s_1~~s_2~~\dots~~s_T
+\end{bmatrix}^T
+\end{equation*}
+\begin{equation*}
+S_0 = \begin{bmatrix}
+s_0~~s_0~~\dots~~s_0
+\end{bmatrix}^T
+\end{equation*}
+\subsubsection{Electric Vehicle}
+Electric vehicle to grid systems are fundamentally battery energy storage systems in term of their physical dynamics. Therefore, they can be modeled generally using the same approach as in preceding paragraphs. However, there are several attributes that uniquely characterize electric vehicle to grid systems compared to normal battery storages:
+
+\begin{itemize}
+	\item The availability of an EV2G system, in terms of delivering both energy (in MWh) and capacity reserve (in MW), is dynamic rather than static, since the number of EVs connected in the power grid is changing all the time with the behaviors of plug-in/ plug-out.
+	\item The energy stored in the system will be consumed not only for delivering our targeted services (arbitrage or balancing), but also for driving of EVs themselves. This part of costs will be implicitly captured by the revenue module using Equation \eqref{eq:module-revenue}, which will distort the real value of services provided for the grid. 
+\end{itemize}
+
+Therefore, two main modifications are made to adapt the model of ESSs for better representing the EV2G systems: 
+
+\begin{enumerate}
+	\item The EV2G system is modeled as a dynamic ESS by taking into consideration the connection/ disconnection of EVs to/ from the grids.
+	\item The costs of energy consumed for driving are accounted, following the original plan, i.e. without controlling algorithm for grid services, and added back to the revenue in Equation
+\end{enumerate}
+
+In order to implement the first measure, we introduce additional terms to represent the number of EVs entering ($n_t^+$), leaving ($n_t^1$) and remain in ($n_t$) the system at each time step. 
+\begin{equation}
+n_t = n_{t-1} + n_t^+ - n_t^-
+\end{equation}
+
+Thereby the state equation for an EV2G system is written as:
+\begin{equation}
+\label{eq:tech-EV}
+\begin{aligned}
+s_t = & \eta_s s_{t-1} + \eta_c (\sum_{i}^{i \in I} e_t^{c,i} + \sum_{j}^{j \in J}\delta_t^{j,-}r_t^j)- \frac{1}{\eta_d} (\sum_{i}^{i \in I} e_t^{d,i} + \sum_{j}^{j \in J}\delta_t^{j,+}r_t^j) \\
+&+ s^+ n_t^+ - s^- n_t^-
+\end{aligned}
+\end{equation} 
+
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  5 FEB 2018 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  7 FEB 2018 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -840,75 +840,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-) (./Market.tex [9]
+[9]
 Overfull \hbox (291.22418pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 10 \T1/aer/m/sl/10.95 CHAPTER 3.  METHODOLOGY FOR VALUATION O
 F SELECTED FLEXIBILITY TECHNOLOGIES IN SELECTED MARKETS
  []
 
-[10
+[10] [11]) (./Market.tex
+Overfull \hbox (291.22418pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 12 \T1/aer/m/sl/10.95 CHAPTER 3.  METHODOLOGY FOR VALUATION O
+F SELECTED FLEXIBILITY TECHNOLOGIES IN SELECTED MARKETS
+ []
+
+[12]
+Chapter 4.
+) [13
 
 ]
-Chapter 4.
-) [11]
 Overfull \hbox (529.08296pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 12 \T1/aer/m/sl/10.95 CHAPTER 4.  POWER MARKET FRAMEWORK AND 
+\T1/aer/m/n/10.95 14 \T1/aer/m/sl/10.95 CHAPTER 4.  POWER MARKET FRAMEWORK AND 
 PROPOSED BUSINESS MODEL FOR FLEXIBILITY MANAGEMENT IN SELECTED SEGMENTS AND GEO
 GRAPHIES
  []
 
-[12
+[14
 
 ]
 Chapter 5.
-[13] [14
-
-]
-Chapter 6.
 [15] [16
 
 ]
-Chapter 7.
+Chapter 6.
 [17] [18
 
 ]
-Chapter 8.
+Chapter 7.
 [19] [20
+
+]
+Chapter 8.
+[21] [22
 
 
 ]
 Appendix A.
-[21] [22
+[23] [24
 
 
-] (./thesis.bbl) [23
+] (./thesis.bbl) [25
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15395 strings out of 493089
- 298274 string characters out of 6134841
- 348077 words of memory out of 5000000
- 18644 multiletter control sequences out of 15000+600000
- 53057 words of font info for 93 fonts, out of 8000000 for 9000
+ 15407 strings out of 493089
+ 298465 string characters out of 6134841
+ 351169 words of memory out of 5000000
+ 18654 multiletter control sequences out of 15000+600000
+ 56077 words of font info for 95 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,6n,42p,10373b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,42p,10373b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbxti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb>
-Output written on thesis.pdf (31 pages, 776595 bytes).
+cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+>
+Output written on thesis.pdf (33 pages, 796349 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 175 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

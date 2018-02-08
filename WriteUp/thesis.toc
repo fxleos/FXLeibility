@@ -37,41 +37,46 @@
 \contentsline {section}{\numberline {3.1}Modular approach to build valuation models}{7}
 \contentsline {section}{\numberline {3.2}Market-based modules}{7}
 \contentsline {subsection}{\numberline {3.2.1}Revenue module}{7}
-\contentsline {subsection}{\numberline {3.2.2}Market simulation module}{9}
-\contentsline {subsection}{\numberline {3.2.3}Market constraints}{9}
-\contentsline {chapter}{\numberline {4}Power Market Framework and Proposed Business Model for Flexibility Management in Selected Segments and Geographies}{11}
-\contentsline {section}{\numberline {4.1}Power market framework}{11}
-\contentsline {subsection}{\numberline {4.1.1}PJM}{11}
-\contentsline {subsection}{\numberline {4.1.2}Germany}{11}
-\contentsline {subsection}{\numberline {4.1.3}Balancing Energy Market}{11}
-\contentsline {chapter}{\numberline {5}Market Regimes}{13}
-\contentsline {section}{\numberline {5.1}Overview}{13}
-\contentsline {subsection}{\numberline {5.1.1}Energy market}{13}
-\contentsline {subsection}{\numberline {5.1.2}Ancillary service market}{13}
-\contentsline {subsection}{\numberline {5.1.3}Capacity remuneartion mechanism}{13}
-\contentsline {section}{\numberline {5.2}Power market design and structure}{13}
-\contentsline {subsection}{\numberline {5.2.1}PJM}{13}
-\contentsline {subsection}{\numberline {5.2.2}Germany}{13}
-\contentsline {subsection}{\numberline {5.2.3}Australia}{13}
-\contentsline {section}{\numberline {5.3}Regulatory and market framework for flexibility resourses}{13}
-\contentsline {chapter}{\numberline {6}Model and implementation}{15}
-\contentsline {section}{\numberline {6.1}Overview}{15}
-\contentsline {section}{\numberline {6.2}Market-based modules}{15}
-\contentsline {subsection}{\numberline {6.2.1}Revenue modules}{15}
-\contentsline {subsection}{\numberline {6.2.2}Market simulation module}{15}
-\contentsline {subsection}{\numberline {6.2.3}Market constraints}{15}
-\contentsline {section}{\numberline {6.3}Technology-based modules}{15}
-\contentsline {subsection}{\numberline {6.3.1}Cost modules}{15}
-\contentsline {subsection}{\numberline {6.3.2}Technology simulation module}{15}
-\contentsline {subsection}{\numberline {6.3.3}Technology constraints}{15}
-\contentsline {section}{\numberline {6.4}Optimization engine}{15}
-\contentsline {section}{\numberline {6.5}Data}{15}
-\contentsline {chapter}{\numberline {7}Result and discussion}{17}
-\contentsline {section}{\numberline {7.1}Market size and profitabilty in current set-up}{17}
-\contentsline {section}{\numberline {7.2}Impact of technological developments}{17}
-\contentsline {section}{\numberline {7.3}Impact of high penetration of flexibility}{17}
-\contentsline {section}{\numberline {7.4}Impact of renewables integration}{17}
-\contentsline {section}{\numberline {7.5}Impact of changes of regulatory and market frameworks}{17}
-\contentsline {section}{\numberline {7.6}Sensitivity analysis of other parameters}{17}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{19}
-\contentsline {chapter}{\numberline {A}Model parameters}{21}
+\contentsline {subsection}{\numberline {3.2.2}Market simulation module}{10}
+\contentsline {subsection}{\numberline {3.2.3}Market constraints}{10}
+\contentsline {section}{\numberline {3.3}Technology-based modules}{11}
+\contentsline {subsection}{\numberline {3.3.1}Cost module}{11}
+\contentsline {subsection}{\numberline {3.3.2}Technology simulation module}{11}
+\contentsline {subsubsection}{Energy Storage}{11}
+\contentsline {subsubsection}{Electric Vehicle}{12}
+\contentsline {chapter}{\numberline {4}Power Market Framework and Proposed Business Model for Flexibility Management in Selected Segments and Geographies}{13}
+\contentsline {section}{\numberline {4.1}Power market framework}{13}
+\contentsline {subsection}{\numberline {4.1.1}PJM}{13}
+\contentsline {subsection}{\numberline {4.1.2}Germany}{13}
+\contentsline {subsection}{\numberline {4.1.3}Balancing Energy Market}{13}
+\contentsline {chapter}{\numberline {5}Market Regimes}{15}
+\contentsline {section}{\numberline {5.1}Overview}{15}
+\contentsline {subsection}{\numberline {5.1.1}Energy market}{15}
+\contentsline {subsection}{\numberline {5.1.2}Ancillary service market}{15}
+\contentsline {subsection}{\numberline {5.1.3}Capacity remuneartion mechanism}{15}
+\contentsline {section}{\numberline {5.2}Power market design and structure}{15}
+\contentsline {subsection}{\numberline {5.2.1}PJM}{15}
+\contentsline {subsection}{\numberline {5.2.2}Germany}{15}
+\contentsline {subsection}{\numberline {5.2.3}Australia}{15}
+\contentsline {section}{\numberline {5.3}Regulatory and market framework for flexibility resourses}{15}
+\contentsline {chapter}{\numberline {6}Model and implementation}{17}
+\contentsline {section}{\numberline {6.1}Overview}{17}
+\contentsline {section}{\numberline {6.2}Market-based modules}{17}
+\contentsline {subsection}{\numberline {6.2.1}Revenue modules}{17}
+\contentsline {subsection}{\numberline {6.2.2}Market simulation module}{17}
+\contentsline {subsection}{\numberline {6.2.3}Market constraints}{17}
+\contentsline {section}{\numberline {6.3}Technology-based modules}{17}
+\contentsline {subsection}{\numberline {6.3.1}Cost modules}{17}
+\contentsline {subsection}{\numberline {6.3.2}Technology simulation module}{17}
+\contentsline {subsection}{\numberline {6.3.3}Technology constraints}{17}
+\contentsline {section}{\numberline {6.4}Optimization engine}{17}
+\contentsline {section}{\numberline {6.5}Data}{17}
+\contentsline {chapter}{\numberline {7}Result and discussion}{19}
+\contentsline {section}{\numberline {7.1}Market size and profitabilty in current set-up}{19}
+\contentsline {section}{\numberline {7.2}Impact of technological developments}{19}
+\contentsline {section}{\numberline {7.3}Impact of high penetration of flexibility}{19}
+\contentsline {section}{\numberline {7.4}Impact of renewables integration}{19}
+\contentsline {section}{\numberline {7.5}Impact of changes of regulatory and market frameworks}{19}
+\contentsline {section}{\numberline {7.6}Sensitivity analysis of other parameters}{19}
+\contentsline {chapter}{\numberline {8}Conclusions and outlook}{21}
+\contentsline {chapter}{\numberline {A}Model parameters}{23}
