@@ -1,7 +1,5 @@
 \select@language {english}
 \select@language {english}
-\contentsline {chapter}{List of Acronyms}{v}
-\contentsline {chapter}{List of Symbols}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Background}{1}
 \contentsline {section}{\numberline {1.2}Technologies: options for system flexibility provision}{1}
@@ -13,70 +11,79 @@
 \contentsline {subsection}{\numberline {1.3.2}In vertically integrated market}{2}
 \contentsline {section}{\numberline {1.4}Scope and research questions}{2}
 \contentsline {chapter}{\numberline {2}Literature Review}{5}
-\contentsline {section}{\numberline {2.1}Purpose and stakeholder}{5}
-\contentsline {section}{\numberline {2.2}Modelling methodology}{5}
-\contentsline {subsection}{\numberline {2.2.1}Overview}{5}
-\contentsline {subsection}{\numberline {2.2.2}Engineering model}{5}
-\contentsline {subsection}{\numberline {2.2.3}System model}{5}
-\contentsline {section}{\numberline {2.3}Affecting factor}{5}
-\contentsline {subsection}{\numberline {2.3.1}Techno-economic characteristics of power system}{5}
-\contentsline {subsubsection}{Generation}{5}
-\contentsline {subsubsection}{Climate and weather}{5}
-\contentsline {subsubsection}{Transmission}{5}
+\contentsline {section}{\numberline {2.1}Purpose and stakeholder}{6}
+\contentsline {section}{\numberline {2.2}Modelling methodology}{6}
+\contentsline {subsection}{\numberline {2.2.1}Overview}{6}
+\contentsline {subsection}{\numberline {2.2.2}Engineering model}{6}
+\contentsline {subsection}{\numberline {2.2.3}System model}{6}
+\contentsline {section}{\numberline {2.3}Affecting factor}{6}
+\contentsline {subsection}{\numberline {2.3.1}Techno-economic characteristics of power system}{6}
+\contentsline {subsubsection}{Generation}{6}
+\contentsline {subsubsection}{Climate and weather}{6}
+\contentsline {subsubsection}{Transmission}{6}
 \contentsline {subsubsection}{Consumption}{6}
-\contentsline {subsection}{\numberline {2.3.2}Power market degisn and policy regulation}{6}
-\contentsline {subsubsection}{Player and competitive landscape}{6}
-\contentsline {subsubsection}{Renewable Support Scheme}{6}
-\contentsline {subsubsection}{Power Market Design}{6}
-\contentsline {subsubsection}{Ownership and dispatch}{6}
-\contentsline {subsubsection}{Direct policy support}{6}
-\contentsline {section}{\numberline {2.4}Value of results for reference}{6}
-\contentsline {subsection}{\numberline {2.4.1}Demand for flexiblity in power system}{6}
-\contentsline {subsection}{\numberline {2.4.2}Profitability of flexibility solutions}{6}
-\contentsline {chapter}{\numberline {3}Methodology for valuation of selected flexibility technologies in selected markets}{7}
-\contentsline {section}{\numberline {3.1}Modular approach to build valuation models}{7}
-\contentsline {section}{\numberline {3.2}Market-based modules}{7}
-\contentsline {subsection}{\numberline {3.2.1}Revenue module}{7}
-\contentsline {subsection}{\numberline {3.2.2}Market simulation module}{10}
-\contentsline {subsection}{\numberline {3.2.3}Market constraints}{10}
-\contentsline {section}{\numberline {3.3}Technology-based modules}{11}
-\contentsline {subsection}{\numberline {3.3.1}Cost module}{11}
-\contentsline {subsection}{\numberline {3.3.2}Technology simulation module}{11}
-\contentsline {subsubsection}{Energy Storage}{11}
-\contentsline {subsubsection}{Electric Vehicle}{12}
-\contentsline {chapter}{\numberline {4}Power Market Framework and Proposed Business Model for Flexibility Management in Selected Segments and Geographies}{13}
-\contentsline {section}{\numberline {4.1}Power market framework}{13}
-\contentsline {subsection}{\numberline {4.1.1}PJM}{13}
-\contentsline {subsection}{\numberline {4.1.2}Germany}{13}
-\contentsline {subsection}{\numberline {4.1.3}Balancing Energy Market}{13}
-\contentsline {chapter}{\numberline {5}Market Regimes}{15}
-\contentsline {section}{\numberline {5.1}Overview}{15}
-\contentsline {subsection}{\numberline {5.1.1}Energy market}{15}
-\contentsline {subsection}{\numberline {5.1.2}Ancillary service market}{15}
-\contentsline {subsection}{\numberline {5.1.3}Capacity remuneartion mechanism}{15}
-\contentsline {section}{\numberline {5.2}Power market design and structure}{15}
-\contentsline {subsection}{\numberline {5.2.1}PJM}{15}
-\contentsline {subsection}{\numberline {5.2.2}Germany}{15}
-\contentsline {subsection}{\numberline {5.2.3}Australia}{15}
-\contentsline {section}{\numberline {5.3}Regulatory and market framework for flexibility resourses}{15}
-\contentsline {chapter}{\numberline {6}Model and implementation}{17}
-\contentsline {section}{\numberline {6.1}Overview}{17}
-\contentsline {section}{\numberline {6.2}Market-based modules}{17}
-\contentsline {subsection}{\numberline {6.2.1}Revenue modules}{17}
-\contentsline {subsection}{\numberline {6.2.2}Market simulation module}{17}
-\contentsline {subsection}{\numberline {6.2.3}Market constraints}{17}
-\contentsline {section}{\numberline {6.3}Technology-based modules}{17}
-\contentsline {subsection}{\numberline {6.3.1}Cost modules}{17}
-\contentsline {subsection}{\numberline {6.3.2}Technology simulation module}{17}
-\contentsline {subsection}{\numberline {6.3.3}Technology constraints}{17}
-\contentsline {section}{\numberline {6.4}Optimization engine}{17}
-\contentsline {section}{\numberline {6.5}Data}{17}
-\contentsline {chapter}{\numberline {7}Result and discussion}{19}
-\contentsline {section}{\numberline {7.1}Market size and profitabilty in current set-up}{19}
-\contentsline {section}{\numberline {7.2}Impact of technological developments}{19}
-\contentsline {section}{\numberline {7.3}Impact of high penetration of flexibility}{19}
-\contentsline {section}{\numberline {7.4}Impact of renewables integration}{19}
-\contentsline {section}{\numberline {7.5}Impact of changes of regulatory and market frameworks}{19}
-\contentsline {section}{\numberline {7.6}Sensitivity analysis of other parameters}{19}
-\contentsline {chapter}{\numberline {8}Conclusions and outlook}{21}
-\contentsline {chapter}{\numberline {A}Model parameters}{23}
+\contentsline {subsubsection}{Merit-order model}{6}
+\contentsline {subsection}{\numberline {2.3.2}Statistic model}{6}
+\contentsline {subsection}{\numberline {2.3.3}Perfect forecast}{6}
+\contentsline {subsection}{\numberline {2.3.4}Power market degisn and policy regulation}{7}
+\contentsline {subsubsection}{Player and competitive landscape}{7}
+\contentsline {subsubsection}{Renewable Support Scheme}{7}
+\contentsline {subsubsection}{Power Market Design}{7}
+\contentsline {subsubsection}{Ownership and dispatch}{7}
+\contentsline {subsubsection}{Direct policy support}{7}
+\contentsline {section}{\numberline {2.4}Value of results for reference}{7}
+\contentsline {subsection}{\numberline {2.4.1}Demand for flexiblity in power system}{7}
+\contentsline {subsection}{\numberline {2.4.2}Profitability of flexibility solutions}{7}
+\contentsline {chapter}{\numberline {3}Power Markets and The Role of Flexiblity Management}{9}
+\contentsline {section}{\numberline {3.1}Power market frameworks}{9}
+\contentsline {subsection}{\numberline {3.1.1}General stucture of power markets}{10}
+\contentsline {subsection}{\numberline {3.1.2}Key attributes of power market stucture}{10}
+\contentsline {section}{\numberline {3.2}Overview}{10}
+\contentsline {subsection}{\numberline {3.2.1}Energy market}{10}
+\contentsline {subsection}{\numberline {3.2.2}Ancillary service market}{10}
+\contentsline {subsection}{\numberline {3.2.3}Capacity remuneartion mechanism}{10}
+\contentsline {section}{\numberline {3.3}Power market design and structure}{10}
+\contentsline {subsection}{\numberline {3.3.1}PJM}{10}
+\contentsline {subsection}{\numberline {3.3.2}Germany}{10}
+\contentsline {subsection}{\numberline {3.3.3}Australia}{10}
+\contentsline {section}{\numberline {3.4}Regulatory and market framework for flexibility resourses}{10}
+\contentsline {chapter}{\numberline {4}Methodology for Quantitative Valuation of Flexibility Management Markets}{43}
+\contentsline {section}{\numberline {4.1}Modular approach to build valuation models}{43}
+\contentsline {section}{\numberline {4.2}Market-based modules}{45}
+\contentsline {subsection}{\numberline {4.2.1}Revenue module}{45}
+\contentsline {subsection}{\numberline {4.2.2}Risk module}{47}
+\contentsline {subsection}{\numberline {4.2.3}Market simulation module}{49}
+\contentsline {subsubsection}{Day-ahead energy market}{50}
+\contentsline {subsubsection}{Real-time energy market and reserve market}{53}
+\contentsline {subsection}{\numberline {4.2.4}Market constraints}{53}
+\contentsline {section}{\numberline {4.3}Technology-based modules}{54}
+\contentsline {subsection}{\numberline {4.3.1}Cost module}{54}
+\contentsline {subsubsection}{Operation-independent costs}{54}
+\contentsline {subsubsection}{Operation-dependent costs}{55}
+\contentsline {subsection}{\numberline {4.3.2}Technology simulation module}{56}
+\contentsline {subsubsection}{Energy Storage}{57}
+\contentsline {subsubsection}{Electric Vehicle}{58}
+\contentsline {subsection}{\numberline {4.3.3}Technology constraints}{59}
+\contentsline {subsubsection}{Energy storage}{59}
+\contentsline {subsubsection}{Electric vehicle to grid}{60}
+\contentsline {section}{\numberline {4.4}Optimization Engine}{61}
+\contentsline {section}{\numberline {4.5}Addtional measures for speical cases}{61}
+\contentsline {subsection}{\numberline {4.5.1}Backcast technique to reduce the predictability of price}{61}
+\contentsline {subsection}{\numberline {4.5.2}Coupling day-ahead and real-time energy market}{62}
+\contentsline {subsection}{\numberline {4.5.3}Dealing with non-energy-neutral signal for frequency control}{62}
+\contentsline {subsection}{\numberline {4.5.4}Final adjusted profit calculation}{63}
+\contentsline {chapter}{\numberline {5}Case Studies}{65}
+\contentsline {section}{\numberline {5.1}Analyzing the power market structures and business opportunities in select cases}{65}
+\contentsline {subsection}{\numberline {5.1.1}PJM}{65}
+\contentsline {subsubsection}{Organization of PJM power markets}{65}
+\contentsline {subsubsection}{Players}{65}
+\contentsline {subsubsection}{Balancing mechanism}{66}
+\contentsline {subsubsection}{PJM DR}{66}
+\contentsline {subsubsection}{Identify business model}{66}
+\contentsline {subsubsection}{Accounting}{66}
+\contentsline {subsection}{\numberline {5.1.2}Germany}{67}
+\contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{67}
+\contentsline {section}{\numberline {5.2}Accounting rules and data preparation}{67}
+\contentsline {section}{\numberline {5.3}Results and discussion}{67}
+\contentsline {chapter}{\numberline {6}Conclusions and outlook}{69}
+\contentsline {chapter}{\numberline {A}Model parameters}{71}

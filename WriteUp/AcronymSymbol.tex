@@ -1,0 +1,49 @@
+% If you use a lot of special acronyms a normal\frac{}{} power engineer doesn't know,
+% please explain them here.
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+%\input{acronyms}
+
+
+% If you are also using lots of equations and symbols, define them in a list of symbols.
+
+
+\chapter*{List of Symbols}
+\addcontentsline{toc}{chapter}{List of Symbols}
+%\input{symbols}
+
+\begin{itemize}
+	\item $e_t^d$: (Discharged) Energy sold at time t, MWh
+	\item $e_t^c$: (Charged) Energy bought at time t, MWh
+	\item $e_t^{d-DA}$: (Discharged) Energy sold in day-ahead market at time t, MWh
+	\item $e_t^{c-DA}$: (Charged) Energy bought  in day-ahead market at time t, MWh
+	\item $e_t^{d-RT}$: (Discharged) Energy sold in real-time market at time t, MWh
+	\item $e_t^{c-RT}$: (Charged) Energy bought  in real-time market at time t, MWh
+	\item $r_t$: Reserve sold in frequency control market at time t, MWh/h
+	\item $\delta_t^{RU}$: The ratio of energy to be delivered in proportion to the capacity provided for up reserve, MWh/MW
+	\item $\delta_t^{RD}$: The ratio of energy to be recieved in proportion to the capacity provided for down reserve, MWh/MW
+	
+	\item $p_t^{DA}$: Electricity price in day-ahead market at time t, \$/MWh
+	\item $p_t^{RT}$: Electricity price in real-time market at time t, \$/MWh
+	\item $\delta_t^{RU}$: The probability that regulation-up control is called
+	\item $\delta_t^{RD}$: The possibility that regulation-down control is called
+	\item $\delta_t^r$: The risk premium factor for regulation reserve
+	\item $S_t$: The state of system at time t, MWh
+	\item $\eta_s$: Self-sustained efficiency (1 minus self-discharged rate)
+	\item $\eta_d$: Charging efficiency
+	\item $\eta_d$: Discharging efficiency
+	\item $d_t^{max}$: Maximum discharging rate, MWh/h
+	\item $c_t^{max}$: Maximum charging rate, MWh/h
+	\item $s_t^{max}$: The maximum state of charge, MWh
+	\item $l_t^{DA}$: The trading volume (load) in day-ahead market at time t, MWh/h
+	\item $l_t^{RT}$: The trading volume (load) in real-time market at time t, MWh/h
+	\item $l_{max}^{DA}$: The maximum trading volume (load) in day-ahead market, MWh/h
+	\item $l_{max}^{RT}$: The trading volume (load) in real-time market, MWh/h
+	\item $s^+$: The state of charge of a single EV while connected to the grid, MWh
+	\item $s^-$: The state of charge of a single EV while disconnected from the grid, MWh
+	\item $H^c$: The hours to complete charging of a EV, h
+	\item $n_t$: The number of EVs on the grid at time t
+	\item $n_t^+$: The number of EVs connected to the grid at time t
+	\item $n_t^-$: The number of EVs disconnected from the grid at time t
+	
+\end{itemize}

@@ -1,0 +1,12 @@
+#name:FXLcase1
+#status:Closed
+#des:DsjkadhaskdhsajkdhsajkdshkadhsjkaBiubiubiu
+dsahdksahdjkas
+hdsjakdhsajkd
+
+#geo:Germany
+#typeoftech:EV2G
+#arbitrage.day-ahead-energy-market:1
+#arbitrage.xxx:0
+#balancing.regulation-dynamic:0
+#energy-to-power-ratior:4.1

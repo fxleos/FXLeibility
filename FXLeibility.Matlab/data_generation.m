@@ -15,7 +15,7 @@ index = Data_missing >0;
 Capacity_peak = zeros(Si,1);
 Threshold_peak = 0.1;   % 10%
 Capacity_base = zeros(Si,1);
-Threshold_base = 0.9;
+Threshold_base = 0.99;
 Capacity_min = zeros(Si,1);
 Capacity_max = zeros(Si,1);
 

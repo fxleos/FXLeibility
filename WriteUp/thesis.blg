@@ -3,63 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 6 of file thesis.bib
- :  year = {2017}
- :               ;
+Warning--entry type for "GE" isn't style-file defined
+--line 3492 of file thesis.bib
+Warning--entry type for "Siemens" isn't style-file defined
+--line 3500 of file thesis.bib
+Repeated entry---line 3547 of file thesis.bib
+ : @article{Sioshansi2009
+ :                       ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 13 of file thesis.bib
- :  year = {2015}
- :               ;
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 20 of file thesis.bib
- :  year = {2008}
- :               ;
-I'm skipping whatever remains of this entry
-Warning--empty journal in Electricity-price-curve
-Warning--there's a number but no volume in Byrne2012
-Too many commas in name 1 of "John Birge, Ali Hortaçsu, Ignacia Mercadal, Michael Pavlin" for entry Limit-visual-bid
-while executing---line 944 of file unsrt.bst
-Warning--empty publisher in Limit-visual-bid
-Warning--empty publisher in Transport-data
-You've used 5 entries,
+Warning--empty institution in Wartsila2014
+Warning--there's a number but no series in Grunewald2012
+Warning--empty school in Grunewald2012a
+You've used 49 entries,
             1791 wiz_defined-function locations,
-            475 strings with 4284 characters,
-and the built_in function-call counts, 892 in all, are:
-= -- 73
-> -- 31
-< -- 0
-+ -- 13
-- -- 8
-* -- 50
-:= -- 149
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 3
+            746 strings with 12727 characters,
+and the built_in function-call counts, 10757 in all, are:
+= -- 957
+> -- 532
+< -- 6
++ -- 198
+- -- 149
+* -- 782
+:= -- 1778
+add.period$ -- 142
+call.type$ -- 49
+change.case$ -- 49
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 46
-empty$ -- 97
-format.name$ -- 8
-if$ -- 193
+cite$ -- 52
+duplicate$ -- 408
+empty$ -- 1026
+format.name$ -- 149
+if$ -- 2301
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 7
-newline$ -- 28
-num.names$ -- 5
-pop$ -- 24
+int.to.str$ -- 49
+missing$ -- 33
+newline$ -- 242
+num.names$ -- 49
+pop$ -- 111
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 12
+skip$ -- 147
 stack$ -- 0
-substring$ -- 37
-swap$ -- 4
-text.length$ -- 0
+substring$ -- 799
+swap$ -- 55
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 8
-width$ -- 6
-write$ -- 51
-(There were 4 error messages)
+warning$ -- 3
+while$ -- 112
+width$ -- 51
+write$ -- 521
+(There was 1 error message)

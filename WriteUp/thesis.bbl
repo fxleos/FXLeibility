@@ -1,31 +1,292 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Electricity-price-curve}
-Xiaoming~Huo Jie~Chen, Shi-Jie~Deng.
-\newblock {Electricity Price Curve Modeling and Forecasting by Manifold
-  Learning}.
-\newblock 2008.
+\bibitem{Sensfuss2008}
+Frank Sensfu{\ss}, Mario Ragwitz, and Massimo Genoese.
+\newblock {The merit-order effect: A detailed analysis of the price effect of
+  renewable electricity generation on spot market prices in Germany}.
+\newblock {\em Energy Policy}, 36(8):3076--3084, 2008.
+
+\bibitem{SaenzdeMiera2008}
+Gonzalo {S{\'{a}}enz de Miera}, Pablo {del R{\'{i}}o Gonz{\'{a}}lez}, and
+  Ignacio Vizca{\'{i}}no.
+\newblock {Analysing the impact of renewable electricity support schemes on
+  power prices: The case of wind electricity in Spain}.
+\newblock {\em Energy Policy}, 36(9):3345--3359, 2008.
+
+\bibitem{Tveten2013}
+{\AA}sa~Grytli Tveten, Torjus~Folsland Bolkesj{\o}, Thomas Martinsen, and
+  H{\aa}vard Hvarnes.
+\newblock {Solar feed-in tariffs and the merit order effect: A study of the
+  German electricity market}.
+\newblock {\em Energy Policy}, 61(June 2011):761--770, 2013.
+
+\bibitem{McConnell2013}
+Dylan McConnell, Patrick Hearps, Dominic Eales, Mike Sandiford, Rebecca Dunn,
+  Matthew Wright, and Lachlan Bateman.
+\newblock {Retrospective modeling of the merit-order effect on wholesale
+  electricity prices from distributed photovoltaic generation in the Australian
+  National Electricity Market}.
+\newblock {\em Energy Policy}, 58:17--27, 2013.
+
+\bibitem{Gelabert2011}
+Liliana Gelabert, Xavier Labandeira, and Pedro Linares.
+\newblock {An ex-post analysis of the effect of renewables and cogeneration on
+  Spanish electricity prices}.
+\newblock {\em Energy Economics}, 33(SUPPL. 1):S59--S65, 2011.
+
+\bibitem{Clo2015}
+Stefano Cl{\`{o}}, Alessandra Cataldi, and Pietro Zoppoli.
+\newblock {The merit-order effect in the Italian power market: The impact of
+  solar and wind generation on national wholesale electricity prices}.
+\newblock {\em Energy Policy}, 77:79--88, 2015.
+
+\bibitem{Woo2016}
+C.~K. Woo, J.~Moore, B.~Schneiderman, T.~Ho, A.~Olson, L.~Alagappan, K.~Chawla,
+  N.~Toyama, and J.~Zarnikau.
+\newblock {Merit-order effects of renewable energy and price divergence in
+  California's day-ahead and real-time electricity markets}.
+\newblock {\em Energy Policy}, 92:299--312, 2016.
+
+\bibitem{Cludius2014}
+Johanna Cludius, Hauke Hermann, Felix~Chr Matthes, and Verena Graichen.
+\newblock {The merit order effect of wind and photovoltaic electricity
+  generation in Germany 2008-2016 estimation and distributional implications}.
+\newblock {\em Energy Economics}, 44(2014):302--313, 2014.
+
+\bibitem{He2013}
+Yang He, Marcus Hildmann, Florian Herzog, and Goran Andersson.
+\newblock {Modeling the merit order curve of the european energy exchange power
+  market in Germany}.
+\newblock {\em IEEE Transactions on Power Systems}, 28(3):3155--3164, 2013.
+
+\bibitem{Mulder2013}
+Machiel Mulder and Bert Sctens.
+\newblock {The impact of renewable energy on electricity prices in the
+  Netherlands}.
+\newblock {\em Renewable Energy}, 57:94--100, 2013.
+
+\bibitem{Alipour2017}
+Manijeh Alipour, Behnam Mohammadi-Ivatloo, Mohammad Moradi-Dalvand, and Kazem
+  Zare.
+\newblock {Stochastic scheduling of aggregators of plug-in electric vehicles
+  for participation in energy and ancillary service markets}.
+\newblock {\em Energy}, 118:1168--1179, 2017.
+
+\bibitem{He2011}
+Xian He, Erik Delarue, William D'haeseleer, and Jean~Michel Glachant.
+\newblock {A novel business model for aggregating the values of electricity
+  storage}.
+\newblock {\em Energy Policy}, 39(3):1575--1585, 2011.
+
+\bibitem{Sioshansi2009}
+Ramteen Sioshansi, Paul Denholm, Thomas Jenkin, and Jurgen Weiss.
+\newblock {Estimating the value of electricity storage in PJM: Arbitrage and
+  some welfare effects}.
+\newblock {\em Energy Economics}, 31(2):269--277, 2009.
+
+\bibitem{Bathurst2003}
+Graeme~N. Bathurst and Goran Strbac.
+\newblock {Value of combining energy storage and wind in short-term energy and
+  balancing markets}.
+\newblock {\em Electric Power Systems Research}, 67(1):1--8, 2003.
+
+\bibitem{Drury2011}
+Easan Drury, Paul Denholm, and Ramteen Sioshansi.
+\newblock {The value of compressed air energy storage in energy and reserve
+  markets}.
+\newblock {\em Energy}, 36(8):4959--4973, 2011.
+
+\bibitem{Connolly2012}
+D.~Connolly, H.~Lund, B.~V. Mathiesen, E.~Pican, and M.~Leahy.
+\newblock {The technical and economic implications of integrating fluctuating
+  renewable energy using energy storage}.
+\newblock {\em Renewable Energy}, 43:47--60, 2012.
+
+\bibitem{Wartsila2014}
+Wartsila.
+\newblock {Delivering flexibility in the German electricity markets: are
+  current arrangements fit for purpose?}
+\newblock Technical report, 2014.
+
+\bibitem{Moller2010}
+Christoph M{\"{o}}ller.
+\newblock {\em {Balancing energy in the German market design}}.
+\newblock PhD thesis, Universitat Karlsruhe, 2010.
+
+\bibitem{Srivastava2011}
+Anurag~K. Srivastava, Sukumar Kamalasadan, Daxa Patel, Sandhya Sankar, and
+  Khalid~S. AlOlimat.
+\newblock {Electricity markets: an overview and comparative study}.
+\newblock {\em International Journal of Energy Sector Management},
+  5(2):169--200, 2011.
+
+\bibitem{Ziel2015}
+Florian Ziel, Rick Steinert, and Sven Husmann.
+\newblock {Efficient modeling and forecasting of electricity spot prices}.
+\newblock {\em Energy Economics}, 47:98--111, 2015.
+
+\bibitem{Han2017}
+Xuejiao Han, Evaggelos~G Kardakos, and Gabriela Hug.
+\newblock {Trading strategy for decentralized energy resources in sequential
+  electricity markets : A Swiss case study}.
+\newblock In {\em 7th Innovation Smart Grid Technologies}. IEEE, 2017.
+
+\bibitem{Mohammadi-Ivatloo2013}
+Behnam Mohammadi-Ivatloo, Hamidreza Zareipour, Nima Amjady, and Mehdi Ehsan.
+\newblock {Application of information-gap decision theory to risk-constrained
+  self-scheduling of GenCos}.
+\newblock {\em IEEE Transactions on Power Systems}, 28(2):1093--1102, 2013.
+
+\bibitem{Rockafellar2000}
+R.~Tyrrell Rockafellar and Stanislav Uryasev.
+\newblock {Optimization of conditional value-at-risk}.
+\newblock {\em Journal of Risk}, 2:21--41, 2000.
+
+\bibitem{Rastler2010}
+D.~Rastler.
+\newblock {Electric Energy Storage Technology Options: A White Paper Primer on
+  Applications, Costs and Benefits}.
+\newblock Technical report, Electric Power Research Institute, 2010.
+
+\bibitem{Eyer2010}
+Jim Eyer and Garth Corey.
+\newblock {Energy Storage for the Electricity Grid: Benefits and Market
+  Potential Assessment Guide: A Study for the DOE Energy Storage Systems
+  Program}.
+\newblock Technical Report February, Sandia National Laboratories, 2010.
+
+\bibitem{Grunewald2012}
+Philipp Gr{\"{u}}newald.
+\newblock {Electricity storage in future GB networks - a market failure?}
+\newblock In {\em BIEE 9th Accademic Conference}, number August 2012, pages
+  1--23, 2012.
+
+\bibitem{Grunewald2012a}
+Philipp Gr{\"{u}}newald.
+\newblock {\em {The role of electricity storage in low carbon energy systems}}.
+\newblock PhD thesis, 2012.
+
+\bibitem{Cox2009}
+James Cox.
+\newblock {How wind variability could change the shape of the British and Irish
+  electricity markets}.
+\newblock Technical Report September, P{\"{o}}yry Energy Ltd, 2009.
+
+\bibitem{AgoraEnergiewende2017}
+{Agora Energiewende}.
+\newblock {Flexibility in thermal power plants with a focus on existing
+  coal-fired power plants}.
+\newblock Technical report, Agora Energiewende, 2017.
+
+\bibitem{Siemens}
+General~Electric Company.
+\newblock {Siemens gas turbine portfolio}, 2016.
+
+\bibitem{GE}
+General~Electric Company.
+\newblock {9HA.01/.02 GAS TURBINE}, 2015.
+
+\bibitem{Kardakos2013}
+Evaggelos~G. Kardakos, Christos~K. Simoglou, and Anastasios~G. Bakirtzis.
+\newblock {Short-term electricity market simulation for pool-based multi-period
+  auctions}.
+\newblock {\em IEEE Transactions on Power Systems}, 28(3):2526--2535, 2013.
+
+\bibitem{Megel2017}
+Olivier Megel.
+\newblock {\em {Storage in Power Systems : Frequency Control , Scheduling of
+  Multiple Applications, and Computational Complexity}}.
+\newblock PhD thesis, ETH Zurich, 2017.
+
+\bibitem{Nykvist2015}
+Bj{\"{o}}rn Nykvist and M{\aa}ns Nilsson.
+\newblock {Rapidly falling costs of battery packs for electric vehicles}.
+\newblock {\em Nature Climate Change}, 5(4):329--332, 2015.
+
+\bibitem{Barre2013}
+Anthony Barr{\'{e}}, Benjamin Deguilhem, S{\'{e}}bastien Grolleau, Mathias
+  G{\'{e}}rard, Fr{\'{e}}d{\'{e}}ric Suard, and Delphine Riu.
+\newblock {A review on lithium-ion battery ageing mechanisms and estimations
+  for automotive applications}, 2013.
+
+\bibitem{Bradbury2014}
+Kyle Bradbury, Lincoln Pratson, and Dalia Pati{\~{n}}o-Echeverri.
+\newblock {Economic viability of energy storage systems based on price
+  arbitrage potential in real-time U.S. electricity markets}.
+\newblock {\em Applied Energy}, 114:512--519, 2014.
+
+\bibitem{Zafirakis2016}
+Dimitrios Zafirakis, Konstantinos~J. Chalvatzis, Giovanni Baiocchi, and
+  Georgios Daskalakis.
+\newblock {The value of arbitrage for energy storage: Evidence from European
+  electricity markets}.
+\newblock {\em Applied Energy}, 184:971--986, 2016.
+
+\bibitem{Connolly2011}
+D.~Connolly, H.~Lund, P.~Finn, B.~V. Mathiesen, and M.~Leahy.
+\newblock {Practical operation strategies for pumped hydroelectric energy
+  storage (PHES) utilising electricity price arbitrage}.
+\newblock {\em Energy Policy}, 39(7):4189--4196, 2011.
+
+\bibitem{Byrne2012}
+Raymond~H. Byrne and C{\'{e}}sar~A. Silva-Monroy.
+\newblock {Estimating the Maximum Potential Revenue for Grid Connected
+  Electricity Storage: Arbitrage and Regulation}.
+\newblock Technical Report December, Sandia National Laboratories, 2012.
+
+\bibitem{McConnell2015}
+Dylan McConnell, Tim Forcey, and Mike Sandiford.
+\newblock {Estimating the value of electricity storage in an energy-only
+  wholesale market}.
+\newblock {\em Applied Energy}, 159:422--432, 2015.
 
 \bibitem{Berrada2016}
 Asmae Berrada, Khalid Loudiyi, and Izeddine Zorkani.
 \newblock {Valuation of energy storage in energy and regulation markets}.
 \newblock {\em Energy}, 115:1109--1118, 2016.
 
-\bibitem{Byrne2012}
-Raymond~H. Byrne and C{\'{e}}sar~A. Silva-Monroy.
-\newblock {Estimating the Maximum Potential Revenue for Grid Connected
-  Electricity Storage: Arbitrage and Regulation}.
-\newblock {\em Sand2012-3863}, (December):64, 2012.
+\bibitem{Oudalov2007}
+A~Oudalov, D~Chartouni, and C~Ohler.
+\newblock {Optimizing a Battery Energy Storage System for Primary Frequency
+  Control}.
+\newblock {\em IEEE Transactions on Power Systems}, 22(3):1259--1266, 2007.
 
-\bibitem{Limit-visual-bid}
-Ignacia Mercadal Michael~Pavlin John~Birge, Ali~Hortaçsu.
-\newblock {\em {Limits to arbitrage in electricity markets: A Case Study of
-  MISO}}.
-\newblock 2017.
+\bibitem{Borsche2013}
+Theodor Borsche, Andreas Ulbig, Michael Koller, and Goran Andersson.
+\newblock {Power and energy capacity requirements of storages providing
+  frequency control reserves}.
+\newblock In {\em IEEE Power and Energy Society General Meeting}, 2013.
 
-\bibitem{Transport-data}
-N.~R.~E. Laboratory.
-\newblock {\em {Transportation secure data center}}.
-\newblock 2015.
+\bibitem{Jin2014}
+Chunlian Jin, Ning Lu, Shuai Lu, Yuri~V. Makarov, and Roger~A. Dougal.
+\newblock {A coordinating algorithm for dispatching regulation services between
+  slow and fast power regulating resources}.
+\newblock {\em IEEE Transactions on Smart Grid}, 5(2):1043--1050, 2014.
+
+\bibitem{PJM2017b}
+PJM.
+\newblock {PJM Manual 11 : Energy {\&} Ancillary Services Market Operations},
+  2017.
+
+\bibitem{Wang2015}
+Qi~Wang, Chunyu Zhang, Yi~Ding, George Xydis, Jianhui Wang, and Jacob
+  {\O}stergaard.
+\newblock {Review of real-time electricity markets for integrating Distributed
+  Energy Resources and Demand Response}.
+\newblock {\em Applied Energy}, 138:695--706, 2015.
+
+\bibitem{PJMInterconnection2017}
+{PJM Interconnection}.
+\newblock {Demand Response Strategy}, 2017.
+
+\bibitem{PJM2017c}
+PJM.
+\newblock {PJM Manual 12: Balancing Operations}, 2017.
+
+\bibitem{Brown2015}
+Toby Brown, Samuel Newell, David Oates, and Kathleen Spees.
+\newblock {International Review of Demand Response Mechanisms}.
+\newblock Technical Report October, Brattle Group on behalf of the Australian
+  Energy Market Commission, 2015.
 
 \end{thebibliography}
