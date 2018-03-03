@@ -1,0 +1,15 @@
+%% Fixed Cost
+
+function [Cost_fixed] = FixCost (Parameters,Cost, MP, mode)
+    if strcmp(mode,'ESS')
+        Capacity_P = Parameters.r*MP;
+        Capacity_E = Capacity_P * Parameters.E2P_ratio;
+    else
+        Capacity_P =  Parameters.r(i_case)*MP*Parameters.BpEV;
+        Capacity_E = Capacity_P * Parameters.E2P_ratio;
+    end
+    Cost_total = Cost.InvP * Capacity_P + Cost.InvE * Capacity_E + Cost.InvT;
+    Cost_eac = (Cost_total * Cost.discount) / (1-1/(1+Cost.discount)^Cost.life_nm);
+    Cost_fOaM = Cost_total * 0.02;
+    Cost_fixed = Cost_eac + Cost_fOaM;
+end

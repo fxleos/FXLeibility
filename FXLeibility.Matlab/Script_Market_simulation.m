@@ -73,7 +73,7 @@ rng('default')
 opts = statset('nlinfit');
 opts.RobustWgtFun = 'bisquare';
 beta0 = [30;1000;4];
-beta = nlinfit(x,y,modelfun,beta0,opts)
+beta = nlinfit(x,y,modelfun,beta0,opts);
 % inflex
 x = 1 - G_inflex(index_inflex) ./ C_inflex(index_inflex);
 y = P_E_DA(index_inflex);

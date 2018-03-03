@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  21 FEB 2018 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  28 FEB 2018 09:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,48 +1014,28 @@ OF FLEXIBLITY MANAGEMENT
 ]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
-[]|\T1/aer/bx/n/10.95 Module
+Underfull \hbox (badness 1331) in paragraph at lines 17--17
+\T1/aer/m/n/10.95 nate part), Fre-quency
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 17--17
-\T1/aer/m/n/10.95 part), Fre-quency con-trol
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 17--17
-\T1/aer/m/n/10.95 sin-gals, Sets of tar-geted
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/aer/m/n/10.95 Price sig-nals (Dis-tri-bu-
- []
-
-
-Underfull \hbox (badness 2150) in paragraph at lines 20--20
-\T1/aer/m/n/10.95 tion of stochas-tic part),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-\T1/aer/m/n/10.95 Fre-quency con-trol sin-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 1242) in paragraph at lines 20--20
 \T1/aer/m/n/10.95 gals, Sets of tar-geted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 2980) in paragraph at lines 20--22
 \T1/aer/m/n/10.95 calu-cat-ing Con-di-tional
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 23--23
-[]|\T1/aer/m/n/10.95 Market sim-u-
+Underfull \hbox (badness 3281) in paragraph at lines 23--23
+[]|\T1/aer/m/n/10.95 Market sim-u-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\T1/aer/m/n/10.95 Generation by fuel
  []
 
 
@@ -1064,42 +1044,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--26
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 32--32
-\T1/aer/m/n/10.95 life time, Op-er-at-ing life
+Underfull \hbox (badness 8170) in paragraph at lines 26--28
+[]|\T1/aer/m/n/10.95 Constraints for op-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\T1/aer/m/n/10.95 Technology
+Underfull \hbox (badness 4995) in paragraph at lines 32--32
+[]|\T1/aer/m/n/10.95 Investment cost, De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-\T1/aer/m/n/10.95 sim-u-la-tion
+Underfull \hbox (badness 4608) in paragraph at lines 35--35
+\T1/aer/m/n/10.95 dis-charg-ing and stor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]|\T1/aer/m/n/10.95 Efficiencies of charg-ing,
- []
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 35--35
-\T1/aer/m/n/10.95 dis-charg-ing and stor-ing;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[]|\T1/aer/m/n/10.95 Technology
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 38--38
-[]|\T1/aer/m/n/10.95 Historical data (Gen-er-a-
- []
-
-
-Overfull \hbox (4.80666pt too wide) in paragraph at lines 10--42
+Overfull \hbox (38.5462pt too wide) in paragraph at lines 10--42
  [] 
  []
 
@@ -1132,7 +1092,22 @@ E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
  []
 
 [48] [49]
-Underfull \vbox (badness 5924) has occurred while \output is active []
+<Figures/PowerPlantFlexibility.pdf, id=213, 845.1575pt x 597.23125pt>
+File: Figures/PowerPlantFlexibility.pdf Graphic file (type pdf)
+
+<use Figures/PowerPlantFlexibility.pdf>
+Package pdftex.def Info: Figures/PowerPlantFlexibility.pdf used on input line 2
+98.
+(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (13.94264pt too wide) in paragraph at lines 302--303
+[]\T1/aer/m/n/10.95 The flex-i-bil-ity of a power plant can be char-ac-ter-ized
+ by three key features[[]]
+ []
 
 
 Overfull \hbox (236.56546pt too wide) has occurred while \output is active
@@ -1140,28 +1115,18 @@ Overfull \hbox (236.56546pt too wide) has occurred while \output is active
 E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
  []
 
-[50] <Figures/PowerPlantFlexibility.pdf, id=219, 845.1575pt x 597.23125pt>
-File: Figures/PowerPlantFlexibility.pdf Graphic file (type pdf)
-
-<use Figures/PowerPlantFlexibility.pdf>
-Package pdftex.def Info: Figures/PowerPlantFlexibility.pdf used on input line 2
-96.
-(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
-
-Overfull \hbox (13.39514pt too wide) in paragraph at lines 300--301
-[]\T1/aer/m/n/10.95 The flex-i-bil-ity of a power plant can be char-ac-terised 
-by three key features[[]]
- []
-
-[51 <./Figures/PowerPlantFlexibility.pdf>]
-<Figures/BoundedFlexibility.pdf, id=236, 859.21pt x 238.8925pt>
+[50] <Figures/BoundedFlexibility.pdf, id=220, 859.21pt x 238.8925pt>
 File: Figures/BoundedFlexibility.pdf Graphic file (type pdf)
 
 <use Figures/BoundedFlexibility.pdf>
-Package pdftex.def Info: Figures/BoundedFlexibility.pdf used on input line 316.
+Package pdftex.def Info: Figures/BoundedFlexibility.pdf used on input line 318.
 
 (pdftex.def)             Requested size: 343.67792pt x 95.5553pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[51 <./Figures/PowerPlantFlexibility.pdf>]
 Overfull \hbox (236.56546pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 52 \T1/aer/m/sl/10.95 CHAPTER 4.  METHODOLOGY FOR QUANTITATIV
 E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
@@ -1192,52 +1157,46 @@ E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
  []
 
 [60] [61]
+Underfull \hbox (badness 10000) in paragraph at lines 804--805
+
+ []
+
+) (./CaseStudy.tex
 Overfull \hbox (236.56546pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 62 \T1/aer/m/sl/10.95 CHAPTER 4.  METHODOLOGY FOR QUANTITATIV
 E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
-
- []
-
-) (./CaseStudy.tex [63]
-Overfull \hbox (236.56546pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 64 \T1/aer/m/sl/10.95 CHAPTER 4.  METHODOLOGY FOR QUANTITATIV
-E VALUATION OF FLEXIBILITY MANAGEMENT MARKETS
- []
-
-[64
-
-]
 Chapter 5.
-[65] [66]) [67] [68
+[63
+
+] [64]) [65] [66
 
 ]
 Chapter 6.
-[69] [70
+[67] [68
 
 
 ]
 Appendix A.
-[71] [72
+[69] [70
 
 
-] (./thesis.bbl [73
+] (./thesis.bbl [71
 
-] [74]
+] [72]
 Underfull \hbox (badness 2573) in paragraph at lines 190--194
 \T1/aer/m/n/10.95 multi-period auc-tions.  \T1/aer/m/it/10.95 IEEE Trans-ac-tio
 ns on Power Sys-tems\T1/aer/m/n/10.95 ,
  []
 
-[75] [76]) [77] (./thesis.aux) ) 
+[73] [74]) [75] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15501 strings out of 493089
- 300032 string characters out of 6134841
- 350648 words of memory out of 5000000
- 18737 multiletter control sequences out of 15000+600000
+ 15504 strings out of 493089
+ 300104 string characters out of 6134841
+ 351686 words of memory out of 5000000
+ 18740 multiletter control sequences out of 15000+600000
  56729 words of font info for 97 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,14n,42p,10373b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1259,10 +1218,10 @@ ts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on thesis.pdf (81 pages, 1385176 bytes).
+Output written on thesis.pdf (79 pages, 1386181 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
+ 399 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

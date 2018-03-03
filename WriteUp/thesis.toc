@@ -53,37 +53,37 @@
 \contentsline {subsection}{\numberline {4.2.1}Revenue module}{45}
 \contentsline {subsection}{\numberline {4.2.2}Risk module}{47}
 \contentsline {subsection}{\numberline {4.2.3}Market simulation module}{49}
-\contentsline {subsubsection}{Day-ahead energy market}{50}
+\contentsline {subsubsection}{Day-ahead energy market}{49}
 \contentsline {subsubsection}{Real-time energy market and reserve market}{53}
 \contentsline {subsection}{\numberline {4.2.4}Market constraints}{53}
-\contentsline {section}{\numberline {4.3}Technology-based modules}{54}
-\contentsline {subsection}{\numberline {4.3.1}Cost module}{54}
-\contentsline {subsubsection}{Operation-independent costs}{54}
-\contentsline {subsubsection}{Operation-dependent costs}{55}
+\contentsline {section}{\numberline {4.3}Technology-based modules}{53}
+\contentsline {subsection}{\numberline {4.3.1}Cost module}{53}
+\contentsline {subsubsection}{Operation-independent costs}{53}
+\contentsline {subsubsection}{Operation-dependent costs}{54}
 \contentsline {subsection}{\numberline {4.3.2}Technology simulation module}{56}
-\contentsline {subsubsection}{Energy Storage}{57}
-\contentsline {subsubsection}{Electric Vehicle}{58}
+\contentsline {subsubsection}{Energy Storage}{56}
+\contentsline {subsubsection}{Electric Vehicle}{57}
 \contentsline {subsection}{\numberline {4.3.3}Technology constraints}{59}
 \contentsline {subsubsection}{Energy storage}{59}
 \contentsline {subsubsection}{Electric vehicle to grid}{60}
-\contentsline {section}{\numberline {4.4}Optimization Engine}{61}
-\contentsline {section}{\numberline {4.5}Addtional measures for speical cases}{61}
+\contentsline {section}{\numberline {4.4}Optimization Engine}{60}
+\contentsline {section}{\numberline {4.5}Addtional measures for special cases}{61}
 \contentsline {subsection}{\numberline {4.5.1}Backcast technique to reduce the predictability of price}{61}
-\contentsline {subsection}{\numberline {4.5.2}Coupling day-ahead and real-time energy market}{62}
+\contentsline {subsection}{\numberline {4.5.2}Coupling day-ahead and real-time energy market}{61}
 \contentsline {subsection}{\numberline {4.5.3}Dealing with non-energy-neutral signal for frequency control}{62}
-\contentsline {subsection}{\numberline {4.5.4}Final adjusted profit calculation}{63}
-\contentsline {chapter}{\numberline {5}Case Studies}{65}
-\contentsline {section}{\numberline {5.1}Analyzing the power market structures and business opportunities in select cases}{65}
-\contentsline {subsection}{\numberline {5.1.1}PJM}{65}
-\contentsline {subsubsection}{Organization of PJM power markets}{65}
-\contentsline {subsubsection}{Players}{65}
-\contentsline {subsubsection}{Balancing mechanism}{66}
-\contentsline {subsubsection}{PJM DR}{66}
-\contentsline {subsubsection}{Identify business model}{66}
-\contentsline {subsubsection}{Accounting}{66}
-\contentsline {subsection}{\numberline {5.1.2}Germany}{67}
-\contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{67}
-\contentsline {section}{\numberline {5.2}Accounting rules and data preparation}{67}
-\contentsline {section}{\numberline {5.3}Results and discussion}{67}
-\contentsline {chapter}{\numberline {6}Conclusions and outlook}{69}
-\contentsline {chapter}{\numberline {A}Model parameters}{71}
+\contentsline {subsection}{\numberline {4.5.4}Final adjusted profit calculation}{62}
+\contentsline {chapter}{\numberline {5}Case Studies}{63}
+\contentsline {section}{\numberline {5.1}Analyzing the power market structures and business opportunities in select cases}{63}
+\contentsline {subsection}{\numberline {5.1.1}PJM}{63}
+\contentsline {subsubsection}{Organization of PJM power markets}{63}
+\contentsline {subsubsection}{Players}{63}
+\contentsline {subsubsection}{Balancing mechanism}{64}
+\contentsline {subsubsection}{PJM DR}{64}
+\contentsline {subsubsection}{Identify business model}{64}
+\contentsline {subsubsection}{Accounting}{64}
+\contentsline {subsection}{\numberline {5.1.2}Germany}{65}
+\contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{65}
+\contentsline {section}{\numberline {5.2}Accounting rules and data preparation}{65}
+\contentsline {section}{\numberline {5.3}Results and discussion}{65}
+\contentsline {chapter}{\numberline {6}Conclusions and outlook}{67}
+\contentsline {chapter}{\numberline {A}Model parameters}{69}

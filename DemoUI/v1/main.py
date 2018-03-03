@@ -1,3 +1,5 @@
+import sys
+sys.path.append("/usr/local/Cellar/pyqt/5.10/lib/python3.6/site-packages/PyQt5")
 from PyQt5 import uic, QtWidgets
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QColor
@@ -8,13 +10,13 @@ from collections import defaultdict
 
 
 
-import sys
+
 import glob
 import os
 if os.name=="nt":
     slash = "\\"
 else:
-    slash = slash
+    slash = "/"
 
 # Load UI file
 form_class = uic.loadUiType("mainWindow.ui")[0]

@@ -1,4 +1,4 @@
-setwd("/Users/fxleos/Downloads/PJM_data/2016")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/PJM_data/2016")
 
 
 Sys.setenv(TZ='UTC')
