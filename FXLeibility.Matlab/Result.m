@@ -9,9 +9,19 @@ load(CaseFileName);
 Directory = strcat('/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data','/',Regime,'/',num2str(Year));
 cd(Directory)
 DATA = struct();
-DATA.PI_e_I = xlsread('Pi_E_I.xlsx');
-DATA.PI_e_J = xlsread('Pi_E_J.xlsx');
-DATA.PI_r_J = xlsread('Pi_R_J.xlsx');
+if strcmp(Regime,'PJM')
+    MP = 30331401;
+    EX = 1.0;
+elseif strcmp(Regime,'DE') || strcmp(Regime,'Germany')
+    MP = 51869730;
+    EX = 1.2; %2018-01-01
+else
+    EX = 0.78;
+end
+         
+DATA.PI_e_I = xlsread('Pi_E_I.xlsx')*EX;
+DATA.PI_e_J = xlsread('Pi_E_J.xlsx')*EX;
+DATA.PI_r_J = xlsread('Pi_R_J.xlsx')*EX;
 DATA.DELTA_J = xlsread('Delta_J.xlsx');
 DATA.DELTA_PLUS_J = xlsread('Delta_p_J.xlsx');
 DATA.DELTA_MINUS_J = xlsread('Delta_n_J.xlsx');
@@ -57,5 +67,79 @@ for i_case =1:length(r_list)
     Result_rev_cost(i_case, 6) = S_driving * mean(DATA.PI_e_I(1));
 end
 
+Result_SystemSize = Result_rev_cost(:,1);
+Result_Revenue = Result_rev_cost(:,3)-Result_rev_cost(:,6);
+Result_OperatingProfit = Result_rev_cost(:,3) -Result_rev_cost(:,4)-Result_rev_cost(:,6);
+Result_Profit = Result_rev_cost(:,3) -Result_rev_cost(:,4)-Result_rev_cost(:,5)-Result_rev_cost(:,6);
+Result_FixedCost = Result_rev_cost(:,5);
+Result_OperatingCost = Result_rev_cost(:,4);
+Result_EVDrivingCost = -Result_rev_cost(:,6);
 
-%TechOutput = Technology (Parameters, DATA, Option.type);
+Scenarios= cell(0);
+Result_summary = zeros(3,4);
+for i_case =2:length(r_list)
+    if (Result_Revenue(i_case)/Result_Revenue(i_case-1)-1 )/(Result_SystemSize(i_case)/ Result_SystemSize(i_case-1)-1) < 0.05
+        Scenarios{end+1} = 'Max Revenue';
+        Result_summary(1,1) = Result_Revenue(i_case-1);
+        Result_summary(1,2) = Result_OperatingProfit(i_case-1);
+        Result_summary(1,3) = Result_Profit(i_case-1);
+        Result_summary(1,4) = Result_SystemSize(i_case-1);
+        break
+    elseif i_case == length(r_list)
+        Scenarios{end+1} = 'Max Revenue (not ultimate)';
+        Result_summary(1,1) = Result_Revenue(i_case);
+        Result_summary(1,2) = Result_OperatingProfit(i_case);
+        Result_summary(1,3) = Result_Profit(i_case);
+        Result_summary(1,4) = Result_SystemSize(i_case);
+        break
+    end
+end
+for i_case = 1:length(r_list)
+    if Result_Profit(i_case) < 0
+        if i_case == 1
+            Scenarios{end+1} = 'Max Size (no result)';
+            Result_summary(2,1) = 0;
+            Result_summary(2,2) = 0;
+            Result_summary(2,3) = 0;
+            Result_summary(2,4) = 0;
+            break
+        else
+            Scenarios{end+1} = 'Max Size';
+            x1 = Result_SystemSize(i_case-1);
+            x2 = Result_SystemSize(i_case,1);
+            y1 = Result_Profit(i_case-1);
+            y2 = Result_Profit(i_case);
+            x = (x2*y1-x1*y2)/(y1-y2);
+            Result_summary(2,1) = (Result_Revenue(i_case)-Result_Revenue(i_case-1))/(x2-x1)*x+Result_Revenue(i_case-1);
+            Result_summary(2,2) = (Result_OperatingProfit(i_case) - Result_OperatingProfit(i_case-1))/(x2-x1)*x + Result_OperatingProfit(i_case-1);
+            Result_summary(2,3) = 0;
+            Result_summary(2,4) = x;
+            break
+        end
+    end
+end
+
+if strcmp(Scenarios{end},'Max Size (no result)')
+    Scenarios{end+1} = 'Max Profit (no result)';
+    Result_summary(3,1) = 0;
+    Result_summary(3,2) = 0;
+    Result_summary(3,3) = 0;
+    Result_summary(3,4) = 0;
+else
+    max_profit = 0;
+    for i_case =1:length(r_list)
+        if Result_Profit(i_case) < max_profit
+            Scenarios{end+1} = 'Max Profit';
+            Result_summary(3,1) = Result_Revenue(i_case-1);
+            Result_summary(3,2) = Result_OperatingProfit(i_case-1);
+            Result_summary(3,3) = max_profit;
+            Result_summary(3,4) = Result_SystemSize(i_case -1);
+            break
+        else
+            max_profit = Result_Profit(i_case);
+        end
+    end
+end
+
+Result_summary(:,1:3) = round(Result_summary(:,1:3)/1000000); %mUSD
+Result_summary(:,4) = round(Result_summary(:,4)/1000); %MW or k
