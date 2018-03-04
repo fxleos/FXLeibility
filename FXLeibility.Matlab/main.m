@@ -19,19 +19,45 @@ n_minus = n_minus * mean(n_plus)/mean(n_minus);
 Directory = strcat('/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data','/',Regime,'/',num2str(Year));
 cd(Directory)
 DATA = struct();
-DATA.PI_e_I = xlsread('Pi_E_I.xlsx');
-DATA.PI_e_J = xlsread('Pi_E_J.xlsx');
-DATA.PI_r_J = xlsread('Pi_R_J.xlsx');
-DATA.DELTA_J = xlsread('Delta_J.xlsx');
-DATA.DELTA_PLUS_J = xlsread('Delta_p_J.xlsx');
-DATA.DELTA_MINUS_J = xlsread('Delta_n_J.xlsx');
-DATA.e_hat = xlsread('E-hat_I.xlsx');
-DATA.r_hat = xlsread('R-hat_J.xlsx');
-time_vector = datetime(Year,01,01,00,30,00):(1/24*Parameters.delta_t):datetime(Year,12,31,23,59,59);
+if strcmp(Regime,'PJM')
+    EX = 1.0;
+elseif strcmp(Regime,'DE') || strcmp(Regime,'Germany')
+    EX = 1.2; %2018-01-01
+else
+    EX = 0.78;
+end
+try
+    DATA.PI_e_I = xlsread('Pi_E_I.xlsx')*EX;
+end
+try
+    DATA.PI_e_J = xlsread('Pi_E_J.xlsx')*EX;
+end
+try
+    DATA.PI_r_J = xlsread('Pi_R_J.xlsx')*EX;
+end
+try
+    DATA.DELTA_J = xlsread('Delta_J.xlsx');
+    DATA.DELTA_PLUS_J = xlsread('Delta_p_J.xlsx');
+    DATA.DELTA_MINUS_J = xlsread('Delta_n_J.xlsx');
+end
+try
+    DATA.e_hat = xlsread('E-hat_I.xlsx');
+end
+try
+    DATA.r_hat = xlsread('R-hat_J.xlsx');
+end
+
+time_vector = datetime(Year,01,01,00,30*Parameters.delta_t,00):(1/24*Parameters.delta_t):datetime(Year,12,31,23,59,59);
 time_vector = time_vector';
 DATA.time_vector = time_vector;
 
 cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/
+% For Germany we take the total consumption (generation instead of DA
+% exchange limit
+if strcmp(Regime,'DE') || strcmp(Regime,'Germany')
+    filename = strcat('DE_',num2str(Year),'_GEN.xlsx');
+    DATA.e_hat(:,1) = sum(xlsread(filename),2);
+end
 % Market simulation
 [e_peak, e_base] = Market_Simulation_basic(Regime,Year,DATA);
 DATA.e_peak = e_peak;

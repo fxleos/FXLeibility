@@ -138,7 +138,7 @@ error_3 = y(i) - modelmid(b_3,x(i));
 b_2 = [(modelmid(b_1,0.35) - modelmid(b_3,0.65)); 0.35*modelmid(b_3,0.65) - 0.65*modelmid(b_1,0.35)]/(-0.3);
 error_2 = y(i) - modelmid(b_2,x(i));
 
-%{
+
 % Result
 figure;
 %subplot(2,1,1)
@@ -155,7 +155,7 @@ title('Regressed merit-order curve','FontSize',18);
 ylabel('Price($/MWh)','FontSize',16);
 xlabel('Ratio of Production to Available Capacity','FontSize',16);
 
-Parameters = struct('beta_inflex',beta_inflex, 'b_1',b_1, 'b_2',b_2, 'b_3', b_3,'beta_peak',beta_peak);
+Mdl_merit = struct('beta_inflex',beta_inflex, 'b_1',b_1, 'b_2',b_2, 'b_3', b_3,'beta_peak',beta_peak);
 price_sim = zeros(Ti,1);
 Data= struct();
 for ti = 1:Ti
@@ -164,9 +164,8 @@ for ti = 1:Ti
         Data.C_flex = C_flex(ti);
         Data.C_peak = C_peak(ti);
         Data.G_residual = G_residual(ti);
-        price_sim(ti) = MarketSimulation(Data,Parameters);
+        price_sim(ti) = MarketSimulation(Data,Mdl_merit);
     else
         price_sim(ti) = 0;
     end
 end
-%}

@@ -5,7 +5,7 @@
 % Notice: n_plus/minus, s_plus, s_minus, start at SUN-00:00
 function [Output] = Technology (Parameters, DATA, mode)
     Output = struct();
-    T = size (DATA.DELTA_PLUS_J,1);
+    T = size (DATA.time_vector,1);
     H = zeros(T);
     for i = 1:T
         for j = 1:i

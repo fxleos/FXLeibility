@@ -5,9 +5,10 @@ function [e_peak, e_base] = Market_Simulation_basic(Regime, Year, DATA)
         Mode = struct();
         Mode.Threshold_peak = 0.1;
         Mode.Threshold_base = 0.9;
-        Output = FlexAnalyze (DATA.E-hat_I(:,2), Mode);
-        e_peak = Output.Capacity_peak;
-        e_base = Output.Capacity_base;
+        T = length(DATA.e_hat(:,2));
+        G_sorted = sort(DATA.e_hat(:,2),'descend');
+        e_peak = (G_sorted(ceil(T*Mode.Threshold_peak))+G_sorted(floor(T*Mode.Threshold_peak)))/2*ones(T,1);
+        e_base = (G_sorted(ceil(T*Mode.Threshold_base))+G_sorted(floor(T*Mode.Threshold_base)))/2*ones(T,1);
     else
         
         if strcmp(Regime,'Germany') || strcmp(Regime,'de')
