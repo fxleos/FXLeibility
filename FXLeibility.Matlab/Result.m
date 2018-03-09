@@ -1,7 +1,13 @@
 %% Post - analysis
 
 % Get the case file
-cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases
+try
+    cd(case_path);
+catch
+    main_path = '/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab';
+    case_path = '/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases/';
+    cd(case_path);
+end
 CaseFileName = strcat(CaseName,'.mat');
 load(CaseFileName);
 
@@ -46,7 +52,7 @@ DATA.time_vector = time_vector;
 
 % Go the result file
 
-CaseFolderName = strcat('/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases/',CaseName);
+CaseFolderName = strcat(case_path,CaseName);
 
 %% Calculate
 r_list = Parameters.r;
@@ -54,11 +60,15 @@ r_list = Parameters.r;
 % The revenue and cost line (power capacity,  energy capacity, Revenue,
 % Degradation Cost, Fixed Cost, EV energy cost for driving
 Result_rev_cost = zeros(length(r_list),6);
+N_window = zeros(length(r_list),1);
+N_window_nan = zeros(length(r_list),1);
 for i_case =1:length(r_list)
     cd(CaseFolderName)
     CaseResultFileName = strcat(num2str(i_case),'.mat');
     load(CaseResultFileName);
-    cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/
+    cd(main_path);
+    N_window = n_window;
+    N_window_nan(i_case) = n_window_nan;
     f_Revenue = Revenue(DATA,Parameters);
     f_Degradation = Degradation(DATA,Parameters);
     X = [];
@@ -93,12 +103,13 @@ Scenarios= cell(0);
 Result_summary = zeros(6,4);
 % Max Revenue
 for i_case =2:length(r_list)
+    i_s = 1;
     if (Result_Revenue(i_case)/Result_Revenue(i_case-1)-1 )/(Result_SystemSize(i_case)/ Result_SystemSize(i_case-1)-1) < 0.05
         Scenarios{end+1} = 'Max Revenue';
-        Result_summary(1,1) = Result_Revenue(i_case-1);
-        Result_summary(1,2) = Result_OperatingProfit(i_case-1);
-        Result_summary(1,3) = Result_Profit(i_case-1);
-        Result_summary(1,4) = Result_SystemSize(i_case-1);
+        Result_summary(i_s,1) = Result_Revenue(i_case-1);
+        Result_summary(i_s,2) = Result_OperatingProfit(i_case-1);
+        Result_summary(i_s,3) = Result_Profit(i_case-1);
+        Result_summary(i_s,4) = Result_SystemSize(i_case-1);
         break
     elseif i_case == length(r_list)
         Scenarios{end+1} = 'Max Revenue (not ultimate)';
@@ -223,3 +234,32 @@ Result_summary(6,1) = Result_Revenue(1)/1000000;
 Result_summary(6,2) = Result_OperatingProfit(1)/1000000;
 Result_summary(6,3) = Result_Profit(1)/1000000;
 Result_summary(6,4) = Result_SystemSize(1)/1000;
+
+%{
+plot(Result_SystemSize/1000, Result_Revenue/1000000,'LineWidth',3);
+hold on
+plot(Result_SystemSize/1000, Result_OperatingProfit/1000000,'LineWidth',3);
+plot(Result_SystemSize/1000, Result_Profit/1000000,'LineWidth',3);
+plot(Result_SystemSize/1000, (Result_OperatingProfit - Result_Profit)/1000000,'LineWidth',3);
+xlim([0,max(Result_SystemSize/1000)])
+legend({'Revenue','Operating Profit','Profit','Fixed Cost'},'FontSize',14,'Location','southeast')
+set(gca,'linewidth',2)
+set(gca, 'FontSize', 12)
+set(gca,'YTick',[0:200:800],'ylim',[0,800])
+ylabel('Revenue or cost (mUSD)','FontSize',16);
+xlabel('System Size (MW)','FontSize',16);
+
+xlim([0,300])
+ylim([0,80])
+
+
+plot(Result_SystemSize/1000, Result_Revenue/1000000,'LineWidth',8);
+hold on
+plot(Result_SystemSize/1000, Result_OperatingProfit/1000000,'LineWidth',8);
+plot(Result_SystemSize/1000, (Result_OperatingProfit - Result_Profit)/1000000,'LineWidth',8);
+plot(Result_SystemSize/1000, Result_Profit/1000000,'LineWidth',8);
+xlim([0,250])
+ylim([0 70])
+set(gca,'linewidth',8)
+set(gca, 'FontSize', 28)
+%}

@@ -7,6 +7,7 @@
 
 error = price_sim - P_E_DA;
 
+
 Mdl = arima('Constant',0,'ARLags',[1,2],'SARLags',[24,168],'D',0,...
 'Seasonality',0,'MALags',[1,2],'SMALags',168);
 Mdl = arima('Constant',0,'ARLags',[1,2],'SARLags',[24,168],'D',0,...

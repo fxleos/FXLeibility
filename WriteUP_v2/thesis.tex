@@ -1,0 +1,166 @@
+% Martin Geidl, April 2004
+% Theodor Borsche, April 2015
+% Andrew Hamann, February 2018
+
+\documentclass[a4paper,11pt,twoside,onecolumn]{book}
+% Paper (210 x 297)
+\usepackage[]{geometry}
+\geometry{left=30mm,right=30mm,bindingoffset=0mm}
+\geometry{bottom=30mm,footskip=13mm}
+\geometry{top=30mm,headsep=8mm,headheight=5mm}
+
+% Language
+\usepackage[latin1]{inputenc} % Encoding of the input file
+\usepackage[USenglish]{babel} % Language packages for hyphenation
+\usepackage{ae} % Some additional fonts and symbols
+\usepackage[stretch=3,shrink=3]{microtype} % Improves typography greatly
+% Math
+\usepackage{amstext,amssymb,amsbsy,amsmath}
+\interdisplaylinepenalty=2500
+\usepackage{mathtools} % Additional symbols and fixes
+% Tables
+\usepackage{booktabs}
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top} % Ensure caption is above table
+\usepackage{multirow}
+% Miscellaneous
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{url}
+\usepackage[ruled,vlined]{algorithm2e}
+% Adjust float placement
+\usepackage{float} % Additional float definitions and control
+\renewcommand{\textfraction}{0.15} % Minimum amount of text on a page
+\renewcommand{\topfraction}{0.85} % Maximum amount a figure at top may use
+\renewcommand{\bottomfraction}{0.6} % Maximum amount a figure at bottom may use
+\renewcommand{\floatpagefraction}{0.55} % Minimum amount a figure on its own page must use
+\setcounter{totalnumber}{4} % Maximum number of figures per page
+\setcounter{topnumber}{3} % Maximum number of figures at top
+\setcounter{bottomnumber}{2} % Maximum number of figures at bottom
+% Chapters and sections
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\filcenter}{\textit{\textbf{\huge \chaptertitlename\ \thechapter}}\vspace{7mm}}{0mm}{\Huge\textbf}
+\titleformat{\section}[block]{\LARGE\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}[block]{\Large\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}[block]{\large\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\chapter}{0mm}{17mm}{23mm}[0mm]
+
+% Correct bad hyphenations
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{lipsum}
+
+\begin{document}
+\frontmatter
+
+% Title
+\thispagestyle{empty}
+
+\begin{center}
+
+\vspace*{\fill}
+
+\vspace*{\fill}
+
+\textbf{\Huge Template for SAMA Reports}
+
+\vspace*{\fill}
+
+%
+
+\textit{\large Student}
+
+\textbf{\large Student Name}
+
+\vspace{\baselineskip}
+
+%
+
+\textit{\large Supervisors}
+
+{\large Assistant Uno}
+
+{\large Dr.\ Post Doc}
+
+\vspace*{\baselineskip}
+
+%
+
+\textit{\large Examiner}
+
+{\large Prof.\ Dr.\ Gabriela Hug}
+
+\vspace{\baselineskip}
+
+%
+
+\textit{\large Project Number}
+
+{\large 1800}
+
+\vspace{\baselineskip}
+
+%
+
+\textit{\large Report Date}
+
+{\large February 8, 2018}
+
+%
+
+\vspace*{\fill}
+
+\vspace*{\fill}
+
+\textit{\large Power Systems Laboratory}
+
+\vspace{0.5\baselineskip}
+
+\textit{\large ETH Zurich}
+
+\end{center}
+
+%\noindent\includegraphics[height=11mm]{logos/psl.pdf}
+%\noindent\includegraphics[height=17mm]{logos/eth.pdf}
+
+\chapter*{Abstract}
+\lipsum[1-3]
+
+\chapter*{Acknowledgements}
+\lipsum[1-3]
+
+\tableofcontents
+\newpage
+
+%\chapter*{List of Acronyms}
+%\addcontentsline{toc}{chapter}{List of Acronyms}
+
+%\chapter*{List of Symbols}
+%\addcontentsline{toc}{chapter}{List of Symbols}
+
+\mainmatter
+
+\input{Introduction}
+
+\input{LitRev}
+
+\input{Market}
+
+%\input{Methodology}
+
+\input{CaseStudy}
+
+\appendix
+
+\chapter{Excess Data}
+\lipsum[1-3]
+
+\backmatter
+
+\chapter*{Bibliography}
+\chaptermark{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+Put your references here.
+\lipsum[1-5]
+
+\end{document}

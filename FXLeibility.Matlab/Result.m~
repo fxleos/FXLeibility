@@ -1,7 +1,13 @@
 %% Post - analysis
 
 % Get the case file
-cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases
+try
+    cd(case_path);
+catch
+    main_path = '/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab';
+    case_path = '/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases/';
+    cd(case_path);
+end
 CaseFileName = strcat(CaseName,'.mat');
 load(CaseFileName);
 
@@ -16,24 +22,37 @@ elseif strcmp(Regime,'DE') || strcmp(Regime,'Germany')
     MP = 51869730;
     EX = 1.2; %2018-01-01
 else
+    MP = 3364428;
     EX = 0.78;
 end
-         
-DATA.PI_e_I = xlsread('Pi_E_I.xlsx')*EX;
-DATA.PI_e_J = xlsread('Pi_E_J.xlsx')*EX;
-DATA.PI_r_J = xlsread('Pi_R_J.xlsx')*EX;
-DATA.DELTA_J = xlsread('Delta_J.xlsx');
-DATA.DELTA_PLUS_J = xlsread('Delta_p_J.xlsx');
-DATA.DELTA_MINUS_J = xlsread('Delta_n_J.xlsx');
-DATA.e_hat = xlsread('E-hat_I.xlsx');
-DATA.r_hat = xlsread('R-hat_J.xlsx');
-time_vector = datetime(Year,01,01,00,30,00):(1/24*Parameters.delta_t):datetime(Year,12,31,23,59,59);
+try
+    DATA.PI_e_I = xlsread('Pi_E_I.xlsx')*EX;
+end
+try
+    DATA.PI_e_J = xlsread('Pi_E_J.xlsx')*EX;
+end
+try
+    DATA.PI_r_J = xlsread('Pi_R_J.xlsx')*EX;
+end
+try
+    DATA.DELTA_J = xlsread('Delta_J.xlsx');
+    DATA.DELTA_PLUS_J = xlsread('Delta_p_J.xlsx');
+    DATA.DELTA_MINUS_J = xlsread('Delta_n_J.xlsx');
+end
+try
+    DATA.e_hat = xlsread('E-hat_I.xlsx');
+end
+try
+    DATA.r_hat = xlsread('R-hat_J.xlsx');
+end
+
+time_vector = datetime(Year,01,01,00,30*Parameters.delta_t,00):(1/24*Parameters.delta_t):datetime(Year,12,31,23,59,59);
 time_vector = time_vector';
 DATA.time_vector = time_vector;
 
 % Go the result file
 
-CaseFolderName = strcat('/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases/',CaseName);
+CaseFolderName = strcat(case_path,CaseName);
 
 %% Calculate
 r_list = Parameters.r;
@@ -41,11 +60,12 @@ r_list = Parameters.r;
 % The revenue and cost line (power capacity,  energy capacity, Revenue,
 % Degradation Cost, Fixed Cost, EV energy cost for driving
 Result_rev_cost = zeros(length(r_list),6);
+N_w = 
 for i_case =1:length(r_list)
     cd(CaseFolderName)
     CaseResultFileName = strcat(num2str(i_case),'.mat');
     load(CaseResultFileName);
-    cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/
+    cd(main_path);
     f_Revenue = Revenue(DATA,Parameters);
     f_Degradation = Degradation(DATA,Parameters);
     X = [];
@@ -80,12 +100,13 @@ Scenarios= cell(0);
 Result_summary = zeros(6,4);
 % Max Revenue
 for i_case =2:length(r_list)
+    i_s = 1;
     if (Result_Revenue(i_case)/Result_Revenue(i_case-1)-1 )/(Result_SystemSize(i_case)/ Result_SystemSize(i_case-1)-1) < 0.05
         Scenarios{end+1} = 'Max Revenue';
-        Result_summary(1,1) = Result_Revenue(i_case-1);
-        Result_summary(1,2) = Result_OperatingProfit(i_case-1);
-        Result_summary(1,3) = Result_Profit(i_case-1);
-        Result_summary(1,4) = Result_SystemSize(i_case-1);
+        Result_summary(i_s,1) = Result_Revenue(i_case-1);
+        Result_summary(i_s,2) = Result_OperatingProfit(i_case-1);
+        Result_summary(i_s,3) = Result_Profit(i_case-1);
+        Result_summary(i_s,4) = Result_SystemSize(i_case-1);
         break
     elseif i_case == length(r_list)
         Scenarios{end+1} = 'Max Revenue (not ultimate)';
@@ -183,7 +204,7 @@ if strcmp(Scenarios{end},'Max Operating-Profitable Size (no result)')
     Result_summary(5,3) = 0;
     Result_summary(5,4) = 0;
 else
-    for i_case =1:length(r_list)
+    for i_case =2:length(r_list)
         if (Result_OperatingProfit(i_case)/Result_OperatingProfit(i_case-1)-1 )/(Result_SystemSize(i_case)/ Result_SystemSize(i_case-1)-1) < 0.05
             Scenarios{end+1} = 'Max Operating Profit';
             Result_summary(5,1) = Result_Revenue(i_case-1);
@@ -191,24 +212,22 @@ else
             Result_summary(5,3) = Result_Profit(i_case-1);
             Result_summary(5,4) = Result_SystemSize(i_case -1);
             break
-        else
-            max_profit = Result_OperatingProfit(i_case);
+        elseif i_case == length(r_list)
+            Scenarios{end+1} = 'Max Operating Profit (not ultimate)';
+            Result_summary(5,1) = Result_Revenue(i_case);
+            Result_summary(5,2) = Result_OperatingProfit(i_case);
+            Result_summary(5,3) = Result_Profit(i_case);
+            Result_summary(5,4) = Result_SystemSize(i_case);
+            break
         end
     end
 end
-    elseif (Result_OperatingProfit(i_case)/Result_OperatingProfit(i_case-1)-1 )/(Result_SystemSize(i_case)/ Result_SystemSize(i_case-1)-1) < 0.05
-        Scenarios{end+1} = 'Max Operating-Profitable Size';
-        Result_summary(4,1) = Result_Revenue(i_case-1);
-        Result_summary(4,2) = Result_OperatingProfit(i_case-1);
-        Result_summary(4,3) = Result_Profit(i_case-1);
-        Result_summary(4,4) = Result_SystemSize(i_case-1);
-        break
+
+Result_summary(1:5,1:3) = round(Result_summary(1:5,1:3)/1000000); %mUSD
+Result_summary(1:5,4) = round(Result_summary(1:5,4)/1000); %MW or k
 % Small Size
 Scenarios{end+1} = 'Small Size';
-Result_summary(6,1) = Result_Revenue(1);
-Result_summary(6,2) = Result_OperatingProfit(1);
-Result_summary(6,3) = Result_Profit(1);
-Result_summary(6,4) = Result_SystemSize(1);
-
-Result_summary(:,1:3) = round(Result_summary(:,1:3)/1000000); %mUSD
-Result_summary(:,4) = round(Result_summary(:,4)/1000); %MW or k
+Result_summary(6,1) = Result_Revenue(1)/1000000;
+Result_summary(6,2) = Result_OperatingProfit(1)/1000000;
+Result_summary(6,3) = Result_Profit(1)/1000000;
+Result_summary(6,4) = Result_SystemSize(1)/1000;

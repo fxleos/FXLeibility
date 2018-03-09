@@ -1,0 +1,923 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  6 MAR 2018 16:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
+\babel@savecnt=\count91
+\U@D=\dimen111
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks18
+\MT@count=\count92
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen112
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count93
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip43
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen113
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen114
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count94
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count95
+\leftroot@=\count96
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count97
+\DOTSCASE@=\count98
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
+\dotsspace@=\muskip10
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
+\tag@help=\toks20
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
+\andhelp@=\toks21
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks22
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count106
+\calc@Bcount=\count107
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count108
+\calc@Cskip=\skip49
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count109
+\l_MT_multwidth_dim=\dimen124
+\origjot=\skip50
+\l_MT_shortvdotswithinadjustabove_dim=\dimen125
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen126
+\l_MT_above_intertext_sep=\dimen127
+\l_MT_below_intertext_sep=\dimen128
+\l_MT_above_shortintertext_sep=\dimen129
+\l_MT_below_shortintertext_sep=\dimen130
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen131
+\lightrulewidth=\dimen132
+\cmidrulewidth=\dimen133
+\belowrulesep=\dimen134
+\belowbottomsep=\dimen135
+\aboverulesep=\dimen136
+\abovetopsep=\dimen137
+\cmidrulesep=\dimen138
+\cmidrulekern=\dimen139
+\defaultaddspace=\dimen140
+\@cmidla=\count110
+\@cmidlb=\count111
+\@aboverulesep=\dimen141
+\@belowrulesep=\dimen142
+\@thisruleclass=\count112
+\@lastruleclass=\count113
+\@thisrulewidth=\dimen143
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@tempdima=\dimen147
+\caption@indent=\dimen148
+\caption@parindent=\dimen149
+\caption@hangindent=\dimen150
+)
+\c@float@type=\count114
+\float@exts=\toks24
+\float@box=\box28
+\@floatcapt=\box29
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks25
+\flrow@foot=\insert233
+\FB@wd=\dimen151
+\FBo@wd=\dimen152
+\FBc@wd=\dimen153
+\FBo@ht=\skip51
+\FBc@ht=\skip52
+\FBf@ht=\skip53
+\FBo@max=\skip54
+\FBc@max=\skip55
+\FBf@max=\skip56
+\c@FBl@b=\count115
+\floatbox@depth=\count116
+\c@FRobj=\count117
+\c@FRsobj=\count118
+\Xhsize=\skip57
+\sXhsize=\skip58
+\Zhsize=\skip59
+\sZhsize=\skip60
+\flrow@rowbox=\box30
+\FR@Zunitlength=\dimen154
+\c@FBcnt=\count119
+\FPOScnt=\count120
+\LTleft=\skip61
+\LTright=\skip62
+\LTleft=\skip63
+\LTright=\skip64
+\flrow@types=\toks26
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen155
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count121
+))
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count122
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip65
+\skiplinenumber=\skip66
+\skiprule=\skip67
+\skiphlne=\skip68
+\skiptext=\skip69
+\skiplength=\skip70
+\algomargin=\skip71
+\skipalgocfslide=\skip72
+\algowidth=\dimen158
+\inoutsize=\dimen159
+\inoutindent=\dimen160
+\interspacetitleruled=\dimen161
+\interspacealgoruled=\dimen162
+\interspacetitleboxruled=\dimen163
+\algocf@inoutbox=\box31
+\algocf@inputbox=\box32
+\AlCapSkip=\skip73
+\AlCapHSkip=\skip74
+\algoskipindent=\skip75
+\algocf@nlbox=\box33
+\algocf@hangingbox=\box34
+\algocf@untilbox=\box35
+\algocf@skipuntil=\skip76
+\algocf@capbox=\box36
+\algoheightruledefault=\skip77
+\algoheightrule=\skip78
+\algotitleheightruledefault=\skip79
+\algotitleheightrule=\skip80
+\c@algocfline=\count123
+\c@algocfproc=\count124
+\c@algocf=\count125
+\algocf@algoframe=\box37
+\algocf@algobox=\box38
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box39
+\beforetitleunit=\skip81
+\aftertitleunit=\skip82
+\ttl@plus=\dimen164
+\ttl@minus=\dimen165
+\ttl@toksa=\toks27
+\titlewidth=\dimen166
+\titlewidthlast=\dimen167
+\titlewidthfirst=\dimen168
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/block.tss
+File: block.tss 2011/12/15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count126
+) (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.90028pt
+* \headheight=14.22636pt
+* \headsep=22.76219pt
+* \topskip=11.0pt
+* \footskip=36.98857pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 53.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 3, shrink: 3, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen169
+\scratchbox=\box40
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen170
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
+
+] [3] [4
+
+] [5] [6
+
+] (./thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [7])
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
+
+
+[8] (./Introduction.tex
+Chapter 1.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 22.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+ [1
+
+
+] [2])
+(./LitRev.tex [3] [4
+
+]
+Chapter 2.
+[5]
+
+LaTeX Warning: Citation `Sensfuss2008' on page 6 undefined on input line 59.
+
+
+LaTeX Warning: Citation `SaenzdeMiera2008' on page 6 undefined on input line 61
+.
+
+
+LaTeX Warning: Citation `Tveten2013' on page 6 undefined on input line 62.
+
+
+LaTeX Warning: Citation `McConnell2013' on page 6 undefined on input line 63.
+
+
+LaTeX Warning: Citation `Gelabert2011' on page 6 undefined on input line 64.
+
+
+LaTeX Warning: Citation `Clo2015' on page 6 undefined on input line 65.
+
+
+LaTeX Warning: Citation `Woo2016' on page 6 undefined on input line 66.
+
+
+LaTeX Warning: Citation `Cludius2014' on page 6 undefined on input line 67.
+
+
+LaTeX Warning: Citation `He2013' on page 6 undefined on input line 68.
+
+
+LaTeX Warning: Citation `Mulder2013' on page 6 undefined on input line 69.
+
+
+LaTeX Warning: Citation `Alipour2017' on page 6 undefined on input line 72.
+
+
+LaTeX Warning: Citation `He2011' on page 6 undefined on input line 76.
+
+
+LaTeX Warning: Citation `Sioshansi2009' on page 6 undefined on input line 77.
+
+
+LaTeX Warning: Citation `Bathurst2003' on page 6 undefined on input line 78.
+
+
+LaTeX Warning: Citation `Drury2011' on page 6 undefined on input line 79.
+
+
+LaTeX Warning: Citation `Connolly2012' on page 6 undefined on input line 80.
+
+
+LaTeX Warning: Citation `Wartsila2014' on page 6 undefined on input line 93.
+
+
+LaTeX Warning: Citation `Moller2010' on page 6 undefined on input line 93.
+
+[6]) (./Market.tex [7] [8
+
+]
+Chapter 3.
+
+LaTeX Warning: Citation `Srivastava2011' on page 9 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Ziel2015' on page 9 undefined on input line 7.
+
+[9]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 10 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[10]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 11
+ []
+
+[11]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 12 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[12]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 13
+ []
+
+[13]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 14 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[14]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 15
+ []
+
+[15]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 16 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[16]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 17
+ []
+
+[17]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 18 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[18]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 19
+ []
+
+[19]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 20 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[20]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 21
+ []
+
+[21]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 22 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[22]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 23
+ []
+
+[23]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 24 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[24]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 25
+ []
+
+[25]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 26 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[26]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 27
+ []
+
+[27]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 28 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[28]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 29
+ []
+
+[29]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 30 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[30]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 31
+ []
+
+[31]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 32 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[32]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 33
+ []
+
+[33]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 34 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[34]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 35
+ []
+
+[35]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 36 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[36]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 37
+ []
+
+[37]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 38 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[38]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 39
+ []
+
+[39]
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 40 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[40]
+Overfull \hbox (14.30789pt too wide) has occurred while \output is active
+\T1/aer/m/sl/10.95 3.4.  REGULATORY AND MARKET FRAMEWORK FOR FLEXIBILITY RESOUR
+SES \T1/aer/m/n/10.95 41
+ []
+
+[41]) (./CaseStudy.tex
+Overfull \hbox (19.63945pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 42 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
+OF FLEXIBLITY MANAGEMENT
+ []
+
+[42
+
+]
+Chapter 4.
+
+Overfull \hbox (10.74467pt too wide) in paragraph at lines 2--2
+|\T1/aer/bx/n/17.28 4.1 An-a-lyz-ing the power mar-ket struc-tures and busi-
+ []
+
+
+LaTeX Warning: Citation `PJM2017b' on page 43 undefined on input line 30.
+
+
+LaTeX Warning: Citation `PJM2017b' on page 43 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Wang2015' on page 43 undefined on input line 32.
+
+
+LaTeX Warning: Citation `PJMInterconnection2017' on page 43 undefined on input 
+line 32.
+
+[43]
+
+LaTeX Warning: Citation `PJM2017c' on page 44 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Wartsila2014' on page 44 undefined on input line 39.
+
+
+LaTeX Warning: Citation `PJMInterconnection2017' on page 44 undefined on input 
+line 47.
+
+
+LaTeX Warning: Citation `Brown2015' on page 44 undefined on input line 49.
+
+[44]) [45] [46
+
+]
+Appendix A.
+[47] [48
+
+] [49
+
+] [50] (./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9516 strings out of 493089
+ 139611 string characters out of 6134841
+ 381204 words of memory out of 5000000
+ 12656 multiletter control sequences out of 15000+600000
+ 53867 words of font info for 172 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 38i,7n,44p,665b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (58 pages, 214364 bytes).
+PDF statistics:
+ 240 PDF objects out of 1000 (max. 8388607)
+ 166 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 45057 words of extra memory for PDF output out of 51595 (max. 10000000)
+

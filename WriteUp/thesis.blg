@@ -11,48 +11,70 @@ Repeated entry---line 3547 of file thesis.bib
  : @article{Sioshansi2009
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "Tesla1" isn't style-file defined
+--line 3611 of file thesis.bib
+Warning--entry type for "Tesla2" isn't style-file defined
+--line 3617 of file thesis.bib
+Warning--entry type for "Tesla3" isn't style-file defined
+--line 3623 of file thesis.bib
+Warning--entry type for "NREL_TSDC" isn't style-file defined
+--line 3643 of file thesis.bib
+Warning--entry type for "KBA2017" isn't style-file defined
+--line 3650 of file thesis.bib
+I was expecting a `,' or a `}'---line 3654 of file thesis.bib
+ :  
+ :  urldate = {2018-01-12}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "Eurostat_de_v" isn't style-file defined
+--line 3657 of file thesis.bib
+I was expecting a `,' or a `}'---line 3661 of file thesis.bib
+ :  
+ :  urldate = {2018-03-04}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--empty institution in Wartsila2014
 Warning--there's a number but no series in Grunewald2012
 Warning--empty school in Grunewald2012a
-You've used 49 entries,
+You've used 61 entries,
             1791 wiz_defined-function locations,
-            746 strings with 12727 characters,
-and the built_in function-call counts, 10757 in all, are:
-= -- 957
-> -- 532
-< -- 6
-+ -- 198
-- -- 149
-* -- 782
-:= -- 1778
-add.period$ -- 142
-call.type$ -- 49
-change.case$ -- 49
+            804 strings with 14370 characters,
+and the built_in function-call counts, 12786 in all, are:
+= -- 1120
+> -- 633
+< -- 8
++ -- 238
+- -- 177
+* -- 881
+:= -- 2108
+add.period$ -- 172
+call.type$ -- 61
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 408
-empty$ -- 1026
-format.name$ -- 149
-if$ -- 2301
+cite$ -- 64
+duplicate$ -- 488
+empty$ -- 1248
+format.name$ -- 177
+if$ -- 2745
 int.to.chr$ -- 0
-int.to.str$ -- 49
-missing$ -- 33
-newline$ -- 242
-num.names$ -- 49
-pop$ -- 111
+int.to.str$ -- 61
+missing$ -- 37
+newline$ -- 296
+num.names$ -- 61
+pop$ -- 147
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 147
+skip$ -- 205
 stack$ -- 0
-substring$ -- 799
-swap$ -- 55
-text.length$ -- 6
+substring$ -- 893
+swap$ -- 67
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 112
-width$ -- 51
-write$ -- 521
-(There was 1 error message)
+while$ -- 132
+width$ -- 63
+write$ -- 631
+(There were 3 error messages)

@@ -44,3 +44,27 @@ for i = 1:length(id)
         end
     end
 end
+
+time_vector = datetime(2018,01,07,00,30,00):(1/24):datetime(2018,01,13,23,59,59);
+plot(time_vector,n_plus/n_total,'LineWidth',3)
+hold on
+plot(time_vector,n_minus/n_total,'LineWidth',3)
+datetick('x','ddd-HH')
+legend({'Plug-in','Plug-out'},'FontSize',14,'Location','northeast')
+set(gca,'linewidth',2)
+set(gca, 'FontSize', 12)
+set(gca,'YTick',[0:0.05:0.2])
+ylabel('Probability','FontSize',16);
+xlabel('Time','FontSize',16);
+
+hold off
+plot(time_vector,s_plus./n_plus,'LineWidth',3)
+hold on
+plot(time_vector,s_minus./n_minus,'LineWidth',3)
+datetick('x','ddd-HH')
+legend({'Plug-in','Plug-out'},'FontSize',14,'Location','southeast')
+set(gca,'linewidth',2)
+set(gca, 'FontSize', 12)
+set(gca,'YTick',[0:25:100],'ylim',[0,100])
+ylabel('State-of-Charge','FontSize',16);
+xlabel('Time','FontSize',16);

@@ -289,4 +289,69 @@ Toby Brown, Samuel Newell, David Oates, and Kathleen Spees.
 \newblock Technical Report October, Brattle Group on behalf of the Australian
   Energy Market Commission, 2015.
 
+\bibitem{IRENA2017}
+IRENA.
+\newblock {Electricity storage and renewables: costs and market to 2030}.
+\newblock Technical Report October, International Renewable Energy Agency, Abu
+  Dhabi, 2017.
+
+\bibitem{Tesla1}
+Tesla Inc.
+\newblock {POWERPACK Utility and Business Energy Storage}.
+
+\bibitem{Akhil2015}
+Abbas {A. Akhil}, Georgianne Huff, Aileen {B. Currie}, Benjamin {C. Kaun}, Dan
+  {M. Rastler}, Stella~Bingqing Chen, Andrew {L. Cotter}, Dale {T. Bradshaw},
+  and Wiliam {D. Gauntlett}.
+\newblock {DOE/EPRI 2013 electricity storage handbook in collaboration with
+  NRECA}.
+\newblock Technical Report January, Sandia National Laboratories, Livermore,
+  California, 2015.
+
+\bibitem{Tesla2}
+Tesla Inc.
+\newblock {Home Charging Installation}.
+
+\bibitem{Tesla3}
+Tesla Inc.
+\newblock {Tesla Model S}.
+
+\bibitem{NREL_TSDC}
+National Renewable~Energy Laboratory.
+\newblock {Transportation Secure Data Center}.
+
+\bibitem{Eurostat_de_v}
+European Commission.
+\newblock {Passenger cars in the EU}.
+
+\bibitem{KBA2017}
+Kraftfahrt-Bundesamtes (KBA).
+\newblock {Monatliche Neuzulassungen}.
+
+\bibitem{Peng2017}
+Chao Peng, Jianxiao Zou, Lian Lian, and Liying Li.
+\newblock {An optimal dispatching strategy for V2G aggregator participating in
+  supplementary frequency regulation considering EV driving demand and
+  aggregator's benefits}.
+\newblock {\em Applied Energy}, 190:591--599, 2017.
+
+\bibitem{Shafie-Khah2015}
+M.~Shafie-Khah, M.~P. Moghaddam, M.~K. Sheikh-El-Eslami, and J.~P.S.
+  Catal{\~{a}}o.
+\newblock {Optimised performance of a plug-in electric vehicle aggregator in
+  energy and reserve markets}.
+\newblock {\em Energy Conversion and Management}, 97:393--408, 2015.
+
+\bibitem{Bessa2014}
+R.~J. Bessa and M.~A. Matos.
+\newblock {Optimization models for an EV aggregator selling secondary reserve
+  in the electricity market}.
+\newblock {\em Electric Power Systems Research}, 106:36--50, 2014.
+
+\bibitem{Bessa2013}
+R.~J. Bessa and M.~A. Matos.
+\newblock {Global against divided optimization for the participation of an EV
+  aggregator in the day-ahead electricity market. Part II: Numerical analysis}.
+\newblock {\em Electric Power Systems Research}, 95:309--318, 2013.
+
 \end{thebibliography}

@@ -1,0 +1,63 @@
+\select@language {USenglish}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{1}
+\contentsline {section}{\numberline {1.2}Technologies: options for system flexibility provision}{1}
+\contentsline {section}{\numberline {1.3}Applications, benefits and business models}{2}
+\contentsline {subsection}{\numberline {1.3.1}In liberalized market}{2}
+\contentsline {subsubsection}{Needs of different plyaers}{2}
+\contentsline {subsubsection}{Energy Markets}{2}
+\contentsline {subsubsection}{Ancillary Service Markets}{2}
+\contentsline {subsection}{\numberline {1.3.2}In vertically integrated market}{2}
+\contentsline {section}{\numberline {1.4}Scope and research questions}{2}
+\contentsline {chapter}{\numberline {2}Literature Review}{5}
+\contentsline {section}{\numberline {2.1}Purpose and stakeholder}{5}
+\contentsline {section}{\numberline {2.2}Modelling methodology}{5}
+\contentsline {subsection}{\numberline {2.2.1}Overview}{5}
+\contentsline {subsection}{\numberline {2.2.2}Engineering model}{6}
+\contentsline {subsection}{\numberline {2.2.3}System model}{6}
+\contentsline {section}{\numberline {2.3}Affecting factor}{6}
+\contentsline {subsection}{\numberline {2.3.1}Techno-economic characteristics of power system}{6}
+\contentsline {subsubsection}{Generation}{6}
+\contentsline {subsubsection}{Climate and weather}{6}
+\contentsline {subsubsection}{Transmission}{6}
+\contentsline {subsubsection}{Consumption}{6}
+\contentsline {subsubsection}{Merit-order model}{6}
+\contentsline {subsection}{\numberline {2.3.2}Statistic model}{6}
+\contentsline {subsection}{\numberline {2.3.3}Perfect forecast}{6}
+\contentsline {subsection}{\numberline {2.3.4}Power market degisn and policy regulation}{6}
+\contentsline {subsubsection}{Player and competitive landscape}{6}
+\contentsline {subsubsection}{Renewable Support Scheme}{6}
+\contentsline {subsubsection}{Power Market Design}{6}
+\contentsline {subsubsection}{Ownership and dispatch}{7}
+\contentsline {subsubsection}{Direct policy support}{7}
+\contentsline {section}{\numberline {2.4}Value of results for reference}{7}
+\contentsline {subsection}{\numberline {2.4.1}Demand for flexiblity in power system}{7}
+\contentsline {subsection}{\numberline {2.4.2}Profitability of flexibility solutions}{7}
+\contentsline {chapter}{\numberline {3}Power Markets and The Role of Flexiblity Management}{9}
+\contentsline {section}{\numberline {3.1}Power market frameworks}{9}
+\contentsline {subsection}{\numberline {3.1.1}General stucture of power markets}{9}
+\contentsline {subsection}{\numberline {3.1.2}Key attributes of power market stucture}{9}
+\contentsline {section}{\numberline {3.2}Overview}{9}
+\contentsline {subsection}{\numberline {3.2.1}Energy market}{10}
+\contentsline {subsection}{\numberline {3.2.2}Ancillary service market}{10}
+\contentsline {subsection}{\numberline {3.2.3}Capacity remuneartion mechanism}{10}
+\contentsline {section}{\numberline {3.3}Power market design and structure}{10}
+\contentsline {subsection}{\numberline {3.3.1}PJM}{10}
+\contentsline {subsection}{\numberline {3.3.2}Germany}{10}
+\contentsline {subsection}{\numberline {3.3.3}Australia}{10}
+\contentsline {section}{\numberline {3.4}Regulatory and market framework for flexibility resourses}{10}
+\contentsline {chapter}{\numberline {4}Case Studies}{43}
+\contentsline {section}{\numberline {4.1}Analyzing the power market structures and business opportunities in select cases}{43}
+\contentsline {subsection}{\numberline {4.1.1}PJM}{43}
+\contentsline {subsubsection}{Organization of PJM power markets}{43}
+\contentsline {subsubsection}{Players}{43}
+\contentsline {subsubsection}{Balancing mechanism}{44}
+\contentsline {subsubsection}{PJM DR}{44}
+\contentsline {subsubsection}{Identify business model}{44}
+\contentsline {subsubsection}{Accounting}{44}
+\contentsline {subsection}{\numberline {4.1.2}Germany}{44}
+\contentsline {subsection}{\numberline {4.1.3}Australia-New South Walse}{45}
+\contentsline {section}{\numberline {4.2}Accounting rules and data preparation}{45}
+\contentsline {section}{\numberline {4.3}Results and discussion}{45}
+\contentsline {chapter}{\numberline {A}Excess Data}{47}
+\contentsline {chapter}{Bibliography}{49}

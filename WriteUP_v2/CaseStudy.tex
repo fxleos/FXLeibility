@@ -1,0 +1,100 @@
+\chapter{Case Studies}
+\section{Analyzing the power market structures and business opportunities in select cases}
+
+The superset of I is the set of selected energy market segments in different geographies:
+
+\begin{equation*}
+I \subseteq  \begin{cases}
+\{Day~Ahead, Real~Time\} & PJM \\
+\{Day~Ahead, Intraday, Balancing\} & Germany \\
+\{Real~Time\} & NSW
+\end{cases}
+\end{equation*}
+
+The superset of I is the set of selected reserve market segments in different geographies:
+
+\begin{equation*}
+J \subseteq  \begin{cases}
+\{RegA, RegD, SR, NSR, DASR\} & PJM \\
+\{PCR, SCR+, SCR-, TCR+, TCR-\} & Germany \\
+\{Lower, Raise\} \times \{REG, 6SEC, 60SEC, 5MIN\} & NSW
+\end{cases}
+\end{equation*}
+
+\subsection{PJM}
+\subsubsection{Organization of PJM power markets}
+Marketplaces
+Timeline
+
+\subsubsection{Players}
+A Load Serving Entity (LSE), as is defined officially by PJM, is "any entity that has been granted authority or has an obligation pursuant to state or local law, regulation, or franchise to sell electric energy to end-users that are located within the PJM RTO. An LSE may be a Market Buyer or a Market Seller"\cite{PJM2017b}. Therefore, LSEs refer to all market participates in PJM who have rights and obiligation to act in all the power marketplaces of PJM, including the energy, capacity and ancillary services markets. 
+
+Curtailment Service Providers (CSPs) are members in PJM markets specializing in demand response. A CSP is an intermitted agency that provides the end-user DR to the wholesale market. \cite{PJM2017b} \cite{Wang2015} The role of the CSP is actually a legacy product from the liberalization of retail markets in PJM. Once the retail competition began, PJM allowed LSEs to provide DR not only for their own customer but also for customers of other LSEs. The role of the CSP was created to facilitate the liberalization and competition. \cite{PJMInterconnection2017}
+
+\subsubsection{Balancing mechanism}
+submit offer - rebid - update information up to 65 mins - deviation charged with real-time
+
+reviewed the participation, violating -> suspend activity, enter enforcement
+
+LSE obiligate to purchase (or self-schedule) reserve, obiligation as a proportion to its contributing flow to the grid. \cite{PJM2017c} This incents liquidity in the market with competitions on both buyer's and seller's side. However, the obiligation does not reflect their actual needs.\cite{Wartsila2014}
+
+CSP
+intermitted agency
+allowed to voluntarily respond to the LMP
+
+\subsubsection{PJM DR}
+
+PJM DR is the umbrella for all distributed energy resources, including DR, behind-the-meter generations, storage, etc. since PJM does not specify how the load is reduced. However, PJM DR program does not allow energy injection beyond the meter and receive wholesale compensation.\cite{PJMInterconnection2017}. This issue is currently under discussion in Special Market Implementation Committee meetings.
+
+DR emergency fast changing over years \cite{Brown2015}
+Since the DR in the wholesale market as a supply recouse will cause double payment issue where a customer may receive wholesale energy revenue and retail cost savings for the same MW of load reduction, PJM states that DR participation in the retail market on the demand side would be more ideal. And they are discussing to revisit the mechanism. Therefore, this value is not fully modeled in our study.
+
+LSE
+buyer or seller in Energy, and reserve market
+
+\subsubsection{Identify business model}
+
+\subsubsection{Accounting}
+
+
+
+
+
+The real-time market price is applied for all deviations from day-ahead planned schedule, including Regulation, Primary and Supplementary Reserves.
+
+\begin{equation*}
+\pi_t^{e,j} = \pi_t^{e,i} ~~~~ i \in \{Real~Time\}, j \in \{RegD, RegA, SR, NSR, DASR\}
+\end{equation*}
+
+The capacity prices of reserves are computed using a complex algorithm, taking into account a list of specifications of the resrouce, e.g. the performance \& historical performance, benefits factor, milleage, etc. The detailed calculations can be found in appendix. As outputs, we will get deterministic values for $j \in \{RegA, SR, NSR, DASR\}$, and the upper and lower bounds, $\overline{\pi}_t^{r,j}$ and $\underline{\pi}_t^{r,j}$, for $i \in \{RegD\}$.
+
+%Reg = RMCCP + RMPCP + LOC
+%LOC = 0
+%RMCCP = 
+%RMPCP = Milleage
+%Effective MW = BF * MW
+%BF is determined with the average and upper, lower bounds
+
+\subsection{Germany}
+$\pi_t^{e,i}, i \in \{Balancing\}$, is the the price for balancing energy (reBAP), which exist only in Germany
+
+$\pi_t^{r,j}$ and $\pi_t^{e,j}$ are based on principle of pay-as-bid. The weighted-average values are available in the datasets.
+
+%Market participants in Germany are organised into balancing groups, known as Bilanzkreise (BK). BK can range from individual large generators to aggregations of smaller renewable generations, to a Stadwerke representing large portions of aggregated demand.
+
+%Every balancing group operator is responsible for following a planned schedule with a 15-minute resolution. Deviations from the planned schedule are balanced physically by the TSOs and settled financially with the BK. There is a legal obligation on Bilanzkreise to balance their positions to the best of their ability.
+
+Prices for balacning energy are unified across TSOs and determined according to the  balancing energy price settlement system (BK6-12-024) developed by Federal Network Agency (FNA) as of 01/12/2012.
+
+\begin{equation}
+reBAP = \frac{\sum net imbalance energy cost}{\sum net imbalance energy volume}
+\end{equation}
+
+\subsection{Australia-New South Walse}
+The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geopraphies.
+
+\section{Accounting rules and data preparation}
+
+
+\section{Results and discussion}
+

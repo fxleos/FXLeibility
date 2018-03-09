@@ -7,7 +7,7 @@ In this thesis, a list of different markets and two different technologies are b
 \begin{table}
 	\label{tb:modules}
 	\begin{center}
-		\begin{tabular}{|m{1.5cm}| m{2.75 cm} | m{4 cm} | m{4cm} |}
+		\begin{tabular}{|L{1.5cm}| L{2.75 cm} | L{4 cm} | L{4cm} |}
 			\hline
 			\textbf{Section} &\textbf{Module name} & \textbf{Input} & \textbf{Output} %& \textbf{Parameters}
 			\\[0.5ex]
@@ -405,6 +405,7 @@ The first group mainly including the initial capital outlay for purchasing the d
 The initial capital cost for a storage system can be divided into two components: an energy-based component, approximately linear to the energy capacity of the system (denoted $\overline{s}$, in MWh), and a power-based component, approximately linear to the power rate of the system (denoted $\overline{r}$, in MW) \cite{Megel2017}. Additionally, we add a component representing the size-invariant costs such as the cost for software. Thereby, the initial capital cost can be computed as:
 
 \begin{equation}
+\label{eq:initial-cost}
 C^{ini} = C^s \overline{s} + C^r \overline{r} + C^0
 \end{equation}
 
@@ -499,6 +500,7 @@ Z^i = \zeta \cdot I_{T\times T} ~~~ \forall i \in I
 $I_{T \times T}$ is a ($T \times T$) identity matrix. 
 
 \subsection{Technology simulation module}
+\label{sec:tech-simulation-module}
 The technology simulation is applied to determine the state of the system, which would be used primarily for calibration of technology constraints but also for \textit{ex-post} analysis.
 
 \subsubsection{Energy Storage}
@@ -634,7 +636,8 @@ n_1^-~~n_2^-~~\dots~~n_T^-
 \end{bmatrix}^T
 \end{equation*}
 \begin{equation*}
-S^+ = diag(s_1^+, s_2^+, \dots, s_T^+)
+S^+ = diag(s_1^+, s_2^+, \dots, s_T^+
+)
 \end{equation*}
 \begin{equation*}
 S^- = diag(s_1^-, s_2^-, \dots, s_T^-)

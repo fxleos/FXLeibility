@@ -58,10 +58,11 @@ time_vector = time_vector';
 P_E_DA = DE_data(1:length(time_vector),1)*EX;
 %% Original data
 figure;
-scatter(G_total(index),P_E_DA(index));
-title('Germany Day-Ahead Market Data 2016','FontSize',18);
+fig1=scatter(G_total(index),P_E_DA(index),20,'MarkerEdgeColor',[0 0 0],'MarkerFaceColor',[0 0 0 ]);
+%title('Germany Day-Ahead Market Data 2016','FontSize',18);
 xlabel('Volume (MWh)','FontSize',16);
 ylabel('Price($/MWh)','FontSize',16);
+legend('Original data','Location','southeast')
 
 %% Classification
 index_inflex = G_residual <= C_inflex;
@@ -75,22 +76,22 @@ index_peak = index_peak & index;
 G_peak = G_residual - C_inflex - C_flex;
 
 % Result
-figure;
 %subplot(2,1,1)
-scatter((1+G_peak(index_peak) ./ C_peak(index_peak)),P_E_DA(index_peak));
+fig2 = scatter((1+G_peak(index_peak) ./ C_peak(index_peak)),P_E_DA(index_peak),20,'MarkerEdgeColor',[1 0 0],'MarkerFaceColor',[1 0 0 ]);
 hold on
-scatter(G_flex(index_flex) ./ C_flex (index_flex), P_E_DA(index_flex));
-scatter(-(G_inflex(index_inflex) ./ C_inflex(index_inflex)),P_E_DA(index_inflex));
-title('Processed Day-Ahead Market Data','FontSize',18);
+scatter(G_flex(index_flex) ./ C_flex (index_flex), P_E_DA(index_flex),20,'MarkerEdgeColor',[0 1 1],'MarkerFaceColor',[0 1 1 ]);
+scatter(-(G_inflex(index_inflex) ./ C_inflex(index_inflex)),P_E_DA(index_inflex),20,'MarkerEdgeColor',[0 0 1],'MarkerFaceColor',[0 0 1]);
+%title('Processed Day-Ahead Market Data','FontSize',18);
 ylabel('Price($/MWh)','FontSize',16);
 xlabel('Ratio of Production to Available Capacity','FontSize',16);
-figure;
+legend('Peak','Mid.','Inflex.','Location','southeast')
+hold off
 %subplot(2,1,2)
-scatter(G_total(index_peak),P_E_DA(index_peak));
+fig3=scatter(G_total(index_peak),P_E_DA(index_peak),20,'MarkerEdgeColor',[1 0 0],'MarkerFaceColor',[1 0 0 ]);
 hold on
-scatter(G_total(index_flex),P_E_DA(index_flex));
-scatter(G_total(index_inflex),P_E_DA(index_inflex));
-title('Classification of Day-Ahead Market Data','FontSize',18);
+scatter(G_total(index_flex),P_E_DA(index_flex),20,'MarkerEdgeColor',[0 1 1],'MarkerFaceColor',[0 1 1 ]);
+scatter(G_total(index_inflex),P_E_DA(index_inflex),20,'MarkerEdgeColor',[0 0 1],'MarkerFaceColor',[0 0 1]);
+%title('Classification of Day-Ahead Market Data','FontSize',18);
 xlabel('Volume (MWh)','FontSize',16);
 ylabel('Price($/MWh)','FontSize',16);
 legend('Peak','Mid.','Inflex.','Location','southeast')
@@ -140,21 +141,22 @@ error_2 = y(i) - modelmid(b_2,x(i));
 
 
 % Result
-figure;
-%subplot(2,1,1)
-scatter((1+G_peak(index_peak) ./ C_peak(index_peak)),P_E_DA(index_peak));%,'MarkerEdgeColor',[0 0.4470 0.7410],'MarkerFaceColor',[0 0.4470 0.7410]);
+fig4 = scatter((1+G_peak(index_peak) ./ C_peak(index_peak)),P_E_DA(index_peak),20,'MarkerEdgeColor',[1 0 0],'MarkerFaceColor',[1 0 0 ]);
 hold on
-scatter(G_flex(index_flex) ./ C_flex (index_flex), P_E_DA(index_flex));%,'MarkerEdgeColor',[0 0.4470 0.7410],'MarkerFaceColor',[0 0.4470 0.7410]);
-scatter(-(G_inflex(index_inflex) ./ C_inflex(index_inflex)),P_E_DA(index_inflex));%,'MarkerEdgeColor',[0 0.4470 0.7410],'MarkerFaceColor',[0 0.4470 0.7410]);
-plot(2-sort(x_peak),modelfun(beta_peak, sort(x_peak)), 'Color','r','LineWidth',3)
-plot(sort(x(x<=0.35)),modelmid(b_1,sort(x(x<=0.35))), 'Color','r','LineWidth',3);
-plot(sort(x(x>0.35 & x < 0.65)),modelmid(b_2,sort(x(x>0.35 & x < 0.65))), 'Color','r','LineWidth',3);
-plot(sort(x(x>=0.65)),modelmid(b_3,sort(x(x>=0.65))), 'Color','r','LineWidth',3);
-plot(sort(x_inflex)-1,modelfun(beta_inflex, sort(x_inflex)), 'Color','r','LineWidth',3)
-title('Regressed merit-order curve','FontSize',18);
+scatter(G_flex(index_flex) ./ C_flex (index_flex), P_E_DA(index_flex),20,'MarkerEdgeColor',[0 1 1],'MarkerFaceColor',[0 1 1 ]);
+scatter(-(G_inflex(index_inflex) ./ C_inflex(index_inflex)),P_E_DA(index_inflex),20,'MarkerEdgeColor',[0 0 1],'MarkerFaceColor',[0 0 1]);
+
+plot(2-sort(x_peak),modelfun(beta_peak, sort(x_peak)), 'Color','k','LineWidth',3)
+plot(sort(x(x<=0.35)),modelmid(b_1,sort(x(x<=0.35))), 'Color','k','LineWidth',3);
+plot(sort(x(x>0.35 & x < 0.65)),modelmid(b_2,sort(x(x>0.35 & x < 0.65))), 'Color','k','LineWidth',3);
+plot(sort(x(x>=0.65)),modelmid(b_3,sort(x(x>=0.65))), 'Color','k','LineWidth',3);
+plot(sort(x_inflex)-1,modelfun(beta_inflex, sort(x_inflex)), 'Color','k','LineWidth',3)
+%title('Regressed merit-order curve','FontSize',18);
 ylabel('Price($/MWh)','FontSize',16);
 xlabel('Ratio of Production to Available Capacity','FontSize',16);
+legend('Peak','Mid.','Inflex.','Fitted merit-order curve','Location','southeast')
 
+%{
 Mdl_merit = struct('beta_inflex',beta_inflex, 'b_1',b_1, 'b_2',b_2, 'b_3', b_3,'beta_peak',beta_peak);
 price_sim = zeros(Ti,1);
 Data= struct();
@@ -169,3 +171,37 @@ for ti = 1:Ti
         price_sim(ti) = 0;
     end
 end
+error = price_sim - P_E_DA;
+figure_histfit = histfit(error,48,'tlocationscale');
+figure_histfit(1).FaceColor = [0.9 0.9 0.9];
+figure_histfit(2).Color = [0 0 1];
+xlabel('Deviation of actual price from fitted merit-order price ($/MWh)','FontSize',16);
+ylabel('Frequency','FontSize',16);
+legend({'Discrete distribution of actual data','Fitted t-distribution'},'FontSize',12);
+
+% Stochastic model
+Mdl = arima('Constant',0,'ARLags',[1,2],'SARLags',[24,168],'D',0,...
+'Seasonality',0,'MALags',[1,2],'SMALags',168);
+[EstMdl_stochastic,EstParamCov] = estimate(Mdl,error(171:end),'Y0',error(1:170));
+
+figure
+Y = [];
+a = 50;
+[Y1,E1] = simulate(EstMdl_stochastic,240);
+Y = [Y,Y1];
+l3=plot(price_sim(a+(1:240))+Y1(1:240),'Color',[0.5 0.5 0.5],'LineWidth',2);
+hold on
+for i = 2:50
+    [Y1,E1] = simulate(EstMdl_stochastic,240);
+    Y = [Y,Y1];
+    plot(price_sim(a+(1:240))+Y1(1:240),'Color',[0.5 0.5 0.5],'LineWidth',2);
+end
+l1=plot(P_E_DA(a+(1:240)),'r','LineWidth',2);
+l2=plot(price_sim(a+(1:240)),'b','LineWidth',2);
+xlabel('Hour(h)','FontSize',16);
+ylabel('Price ($/MWh)','FontSize',16);
+xlim([0 240])
+legend([l1 l2 l3],{'Actual price','Fitted merit-order price','Fitted merit-order price with stochastic movement (50 scenarios)'});
+
+save('DE_MarketSimulation.mat','Mdl_merit','EstMdl_stochastic','price_sim')
+%}
