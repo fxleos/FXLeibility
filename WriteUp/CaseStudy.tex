@@ -108,33 +108,33 @@ The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not av
 \section{Quantitative studies and results}
 
 \subsection{Value of markets with current market conditions}
-We first examined the value of markets under current market conditions, i.e. based on historical observations without involving the market simulation module (Section \ref{sec:market-simulation}). The impact of possible changes in market conditions such as renewable penetration will be discussed later in Section \ref{sec:impact-market-condition}.
+We first examined the value of markets for flexibility management under current market conditions, i.e. based on historical observations without involving the market simulation module (Section \ref{sec:market-simulation}). The impact of possible changes in market conditions such as renewable penetration will be discussed later in Section \ref{sec:impact-market-condition}.
 
-The electricity market data that were taken for all case studies in this section corresponds to the actual market data from January 1st 2016 to December 31st 2016 and were pre-processed according to different accounting rules in different geographies as is described in Section \ref{sec:accounting-data-prepare}.
+The electricity market data in this section corresponds to the actual market data from January 1st 2016 to December 31st 2016 and were pre-processed according to different accounting rules in different geographies as is described in Section \ref{sec:accounting-data-prepare}.
 
-For cost determinations, we applied two scenarios, i.e. present scenario and future scenario with reduced costs,  primarily based on findings and forecasts by the International Renewable Energy Agency\cite{IRENA2017}. The cost for battery energy storage systems was analyzed as proportional to their energy capacity, $\overline{s}$, and the energy cost coefficient, $C^s$, for state-of-the-art lithium-ion batteries were reported to be ca. $\$350/kWh$ in 2016 and predicted to decrease by up to 60\% by 2030. The replacement cost were based on actual price from Tesla\cite{Tesla1}, one of the leaders in battery and electric vehicle markets. The operating life is set to be 6000 FCEs, which corresponds to an optimistic estimation by Sandia National Laboratories\cite{Akhil2015}. Designed life time is assumed to be 10 years. Discount rate is made as 10\% as is discussed in Section \ref{sec:cost}. The technology costs were made to be zero so that the derived profits will be the margins that can be possibly realized by technology vendors. All the parameters for cost calculation are summarized in Table \ref{table:cost-parameters}. 
+For cost determinations, we would first use figures based on the present market pricing level, and then make scenarios with reduced costs to find the break-even point if it is not yet profitable. According to the International Renewable Energy Agency\cite{IRENA2017}, the cost for battery energy storage systems was analyzed as proportional to their energy capacity, $\overline{s}$, and the energy cost coefficient, $C^s$, for state-of-the-art lithium-ion batteries were reported to be ca. $\$350/kWh$ in 2016. The replacement cost were based on actual price from Tesla\cite{Tesla1}, one of the leaders in battery and electric vehicle markets. The operating life is set to be 6000 FCEs, which corresponds to an optimistic estimation by Sandia National Laboratories\cite{Akhil2015}. Designed life time is assumed to be 10 years. Discount rate is made as 10\% as is discussed in Section \ref{sec:cost}. The technology costs were made to be zero so that the derived profits will be the margins that can be possibly realized by technology vendors. All the parameters for cost calculation are summarized in Table \ref{table:cost-parameters}. 
 
 \begin{table}[h!]
 	\label{table:cost-parameters}
 	\begin{center}
-		\begin{tabular}{| l | R{2.7cm} | R{2.7cm} |}
+		\begin{tabular}{| l | l | R{2.7cm} |} %R{2.7cm} |}
 			\hline
-			\textbf{Items} & \textbf{Present Cost} & \textbf{Reduced Cost} \\
+			\textbf{Items} & \textbf{Unit} & \textbf{Value} \\% & \textbf{Reduced Cost} \\
 			\hline
 			\hline
-			Energy cost coefficient, $C^s~\$/kWh$ & 350 & 140 \\
+			Energy cost coefficient, $C^s$ & $\$/kWh$ & 350 \\%& 140 \\
 			\hline
-			Power cost coefficient, $C^s~\$/kW$ & 0 & 0 \\
+			Power cost coefficient, $C^r$ & $\$/kW$ & 0\\% & 0 \\
 			\hline
-			Technology cost, $\$$ & 0 &0\\
+			Technology cos,t $C^0$ &$\$$ & 0\\% &0\\
 			\hline
-			Replacement cost coefficient, $C^s~\$/kWh$ & 150 & 60 \\
+			Replacement cost coefficient, $C^s$ &$ \$/kWh$ & 150\\% & 60 \\
 			\hline
-			Designed life time, \textit{year} & \multicolumn{2}{c|}{10}\\
+			Designed life time & \textit{year} & 10\\% \multicolumn{2}{c|}{10}\\
 			\hline
-			Operating life time, \textit{FCE} & \multicolumn{2}{c|}{6000}\\
+			Operating life time & \textit{FCE} & 6000\\% \multicolumn{2}{c|}{6000}\\
 			\hline
-			Discount rate, $\%$ & \multicolumn{2}{c|}{10}\\
+			Discount rate &$\%$ & 10\\% \multicolumn{2}{c|}{10}\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -150,7 +150,7 @@ In terms of EV2G studies, we first determined the battery parameters of EVs.
 	\item The battery energy capacity per EV of 75kWh is taken from one of the most popular EV models\cite{Tesla3}.
 \end{itemize}
 
-Then simulation is performed to get EV driving profiles. The simulations are based upon data from the California Department of Transportation's California Household Travel Survey for 2010-2012\cite{NREL_TSDC}. This survey carried out multiple objectives and included 79011 vehicles. For our work we focus on a proportion of the vehilces, 2910, which were fitted with GPS. These vehicles were monitored continuously for a 7-day window with the 1-second resolution. The GPS data is then processed into trip profiles, while include information of the location of each EV at each time step as well as the trips made by each EV. Furthermore, together with the parameters of the EV model we have selected above we simulated the SoC time series of the EV batteries. Finally, from the simulated results, we can statistically derive the value of probability distribution of EV plug-in $n^+$, plug-out $n^-$, and average state-of-charge (SoC) of batteries plug-in $s^+$, plug-out $s^-$, as introduced in Section \ref{sec:tech-simulation-module}. The results are shown as Figure \ref{fig:data-ev-number}-\ref{fig:data-soc}.
+Simulations are then performed to get EV driving profiles, which are based upon data from the California Department of Transportation's California Household Travel Survey for 2010-2012\cite{NREL_TSDC}. This survey carried out multiple objectives and included 79011 vehicles. For our work we focus on a proportion of the vehicles, 2910, which were fitted with GPS. These vehicles were monitored continuously for a 7-day window with the 1-second resolution. The GPS data is then processed into trip profiles, while include information of the location of each EV at each time step as well as the trips made by each EV. Furthermore, together with the parameters of the EV model we have selected above we simulated the SoC time series of the EV batteries. Finally, from the simulated results, we can statistically derive the value of probability distribution of EV plug-in $n^+$, plug-out $n^-$, and average state-of-charge (SoC) of batteries plug-in $s^+$, plug-out $s^-$, as introduced in Section \ref{sec:tech-simulation-module}. The results are shown as Figure \ref{fig:data-ev-number}-\ref{fig:data-soc}.
 
 \begin{figure}[h!]
 	\centering
@@ -167,19 +167,18 @@ Then simulation is performed to get EV driving profiles. The simulations are bas
 		\label{fig:data-soc}
 \end{figure}
 
-The criteria to evaluate the system performance are different between ESS and EV2G. For ESS, these criteria include
+The metrics to evaluate the system performance are slightly different between ESS and EV2G. For ESS, the criteria in the evaluation metrics include
 \begin{itemize}
 	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue}
-	\item \textbf{Operating Profits}: the total revenue net of operation-dependent costs (degradation cost)
-	\item \textbf{Profits:} the total revenue net of both operation-dependent and fixed costs
+	\item \textbf{Operating Profit}: the total revenue net of operation-dependent costs (degradation cost)
+	\item \textbf{Profit:} the total revenue net of both operation-dependent and fixed costs
 \end{itemize}
 
-For EV2G, the fixed cost that is mainly related to procuring the battery stocks shall not be considered for a technology vendor. Furthermore, the implicit charging cost to compensate the energy consumed by EV driving shall be added back for final profit calculation. Therefore, the criteria are altered as:
+For EV2G, the fixed cost that is mainly related to procuring the battery stocks shall not be considered for a technology vendor. Furthermore, the implicit charging cost to compensate the energy consumed by EV driving are listed separately. Depending on the specific business model in practice, a portion of the implicit charging cost may be recovered by the technology vendors from the end-users, although in this thesis we did not exclude it from calculating the profit. As a result, the criteria are altered as:
 \begin{itemize}
-	\item \textbf{Explicit Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue}
+	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue}
 	\item \textbf{Implicit Charging Cost}: the cost of energy compensation for EV driving demands, calculated as the total energy consumption multiplied by average price over the span of one operational cycle
-	\item \textbf{Total Revenue:} the aggregation of explicit revenue and add-back of implicit charging cost
-	\item \textbf{Profit:} total revenue net of operational costs. The investments on technology is made to be zero as is discussed at the beginning of this section 
+	\item \textbf{Profit:}: revenue net of costs including the implicit charging cost and battery degradation. The investments on technology are made to be zero as is discussed at the beginning of this section
 \end{itemize}
 
 As a result, the profit of a EV2G system is closed to the concept of operating profits for a ESS, which excludes the investment of procuring batteries. This implies two disparate business models. Cautions shall be raised while comparisons between these two technologies are made.
@@ -193,10 +192,10 @@ In order to determine the market size and profitability of ESS, we evaluated the
 	\end{equation*}
 	Since in our studies, we found the operating profits are always in line with revenue, so this state is equivalent to``\textbf{max. Operating Profit}".
 	
-	This scenario can present a reference of the maximum market potential to the technology vendors as they might be able to develop technologies whose costs are lower than what we calculated in the case studies. 
+	This scenario can present a reference of the maximum market potential to technology vendors as they might be able to develop technologies with lower costs than what we calculated in the case studies. 
 	\item ``\textbf{max. System Size with pos. Profit}": the state indicating maximum possible system size where the profit is barely above zero. Since in our studies the profits either drop monotonically or decrease after an initial rise, this state is obtained when the profit falls to be 0.
 	
-	Since our case studies applied idealized conditions, the results are viewed as upper bounds of the actual market value. Without revolutionary innovations on technologies, comparing values derived in this scenario to the current market data would offer implications to the technology vendors whether the market is saturated or not.
+	This scenario would inform technology vendors about when the market would be saturated. Without revolutionary innovations on technologies or drastic changes on market conditions, expanding the flexibility fleet beyond this scenario is likely to create losses rather profits. 
 	
 	\item ``\textbf{max. Profit}": the state where the profit is maximized.
 	
@@ -204,7 +203,7 @@ In order to determine the market size and profitability of ESS, we evaluated the
    
 	\item ``\textbf{max. marginal Revenue}": the state where the marginal increment is maximized. 
 	
-	We would also present the values in per unit for this scenario so that the maximum potential return per unit system can be understood more intuitively.
+	This scenario is presented to allow the readers to have a more intuitive understanding about the maximum potential return per unit system.
 	
 \end{itemize}
 
@@ -218,7 +217,25 @@ The 4 scenarios can be illustrated by Figure \ref{fig:scenario-illustration} usi
 
 In terms of EV2G, the size of the system (number of EVs) are not strongly related to the profitability of EV2G, if at all. Therefore, it makes no sense to analyze the optimal system size in relation to the profitability. Instead, we would show the market values under certain scenarios where the number of EVs is determined externally. 
 
-Finally, in order to make cross-regional comparison, we have aligned the currencies to USD. The currency exchange rate is determined using the data as of January 1st 2018, when 1 EUR is equal to 1.2 USD and 1 AUD is equal to 0.79 USD. 
+Finally, the overall scale of the market in a geography is represented according to the metering points (MPs). We would refer to the value per MP to make cross-regional comparison. The statistics are provided by commercial market data provider, Northeast Group\cite{NortheastGroup2016}\cite{NortheastGroup2017}\cite{NortheastGroup2017a}, and listed in Table \ref{tab:MP}.
+
+\begin{table}
+	\label{tab:MP}
+	\centering
+	\begin{tabular}{| l | R{2.7cm} |}
+		\hline
+		\textbf{Geography} & \textbf{MP} \\
+		\hline
+		\hline
+		Germany & \num{51869730}\\
+		PJM & \num{30331401}\\
+		NSW & \num{3364428}\\
+		\hline
+	\end{tabular}
+\caption{The number of metering points in each geography}
+\end{table}
+
+The currency exchange rates are determined as the real market data as of January 1st 2018, when 1 EUR is equal to 1.20 USD and 1 AUD is equal to 0.78 USD\cite{Bloomberg}.
 
 \subsubsection{Market size and profitability of ESS in Germany}
 Figure \ref{fig:germany-ess} summarizes the market size and profitability of all cases for ESSs in Germany electricity markets. 
@@ -230,15 +247,21 @@ Figure \ref{fig:germany-ess} summarizes the market size and profitability of all
 	\label{fig:germany-ess}
 \end{figure}
 
-It was found that the only profitable case is delivering balancing energy. As is analyzed in Section \ref{sec:qualitative-analysis}, this case corresponds to the situation of self-balancing where the players turn to the flexibility resource in avoidance of charges by TSOs for their imbalances. It can be noticed that using BESSs for self-balancing is more economic viable than selling frequency control service to TSOs. Under same system size, the revenue from self-balance is significantly higher than from selling frequency control products, while theoretically these two values shall be symmetric as the balancing energy charges are designed to recover the costs of purchasing frequency control services. This implies that the current design of frequency control markets is not economically efficient to integrate the emerging BESS resources, which verifies our analysis in Section \ref{sec:qualitative-analysis}. We have argued that hurdles exist against emerging BESS to participate in frequency control markets with the non-energy-neutral signals and block-wise offering, especially for SCRs which demand significantly higher energy delivery than PCRs.
+It was found that the only profitable case is delivering balancing energy. As is analyzed in Section \ref{sec:qualitative-analysis}, this case corresponds to the situation of self-balancing where the players turn to the flexibility resource in avoidance of charges by TSOs for their imbalances. 
 
-Although systems with optimal sizes and optimized operations can generate profits in balancing energy market, it is challenging to determine the optimal size and operational plan of a specific project in practice. If a system is designed to large enough and tackle almost all imbalance events, it corresponds to a situation as the ``max. Revenue" scenario where we see negative profits. On the other hand, if the system's size is limited, it is not practically feasible to find the best operational plans using optimization. As is discussed in Section \ref{sec:accounting-data-prepare}, the balancing energy price, reBAP, is calculated \textit{ex-post} and highly volatile, hardly predictable. 
+It can be seen from Figure \ref{fig:germany-ess}, if being operated optimally BESSs with a overall size of up to 60MW can generate profits by serving balancing energy. Nevertheless, it is challenging to be realized in practice. Market players do not have the right information to optimize their operational plans, since the balancing energy price, reBAP, is calculated \textit{ex-post} and highly volatile, hardly predictable, as is discussed in Section \ref{sec:accounting-data-prepare}. On the contrary, if a system is designed to be just ``large enough" and tackle almost all imbalance events, it corresponds to a situation as the ``max. Revenue" scenario where we see negative profits.
 
-As a conclusion on providing balancing services, although the BESSs can contribute to imbalance settlement in certain conditions where the avoided costs are higher than investments in BESS infrastructure, there exist no market frameworks so far to make it feasible for the market participates. Players of BESSs face either lack of information transparency in the balancing energy market or unfavorable market rules in the frequency control market.
+On the other hand, we noticed that selling frequency control service to TSOs is less economically viable than using BESSs for self-balancing. Under same system size, the revenue from self-balance is significantly higher than from selling frequency control products, while ideally the situation shall be reversed. The balancing energy charges are designed to recover the costs of activating frequency control services (calling for energy delivery) while the costs paid for securing capacity commitment are socialized, as have been fully discussed in Section \ref{sec:accounting-data-prepare}. Theoretically, players shall get higher turnover in the frequency control markets than avoided balancing energy charges. Our results imply that the current design of frequency control markets is not economically efficient to integrate the emerging BESS resources, which verifies our analysis in Section \ref{sec:qualitative-analysis}. We have argued that hurdles exist against emerging BESS to participate in frequency control markets with the non-energy-neutral signals and block-wise offering, especially for SCRs which demand significantly higher energy delivery than PCRs.
 
-Regarding arbitrages value in energy market, the losses are about 10-20 times of the revenue, even in the scenario of maximum unit return. It is clear that the heavy investments on batteries cannot be recovered from making arbitrage in energy market. However, since the operating profits are always positive, if the technology vendors are able to enable similar functions as BESS using technology with smaller capital costs like certain types of DR, it is still possible to make profits from arbitrage in energy market.
+Facing either lack of information transparency in balancing energy charges or unfavorable market rules in frequency control markets, BESS players have no feasible options in the current market setup to make profits.
 
-As has been discussed qualitatively, in order to increase the profitability, we may stack operations in day-ahead, intra-day and secondary control reserve for multitasking. Figure \ref{fig:germany-ess-multitasking} shows the effects of multitasking.
+However, we may argue this situation shall not be long-lasting. We have already see that certain amount of BESS will be a cheaper option to defer the expense on imbalance settlements compared to what are currently incurred. The market operators shall develop well-designed framework to encourage the participation of these resources that are beneficial to lower the overall system costs. In reality, there are indeed debates proposing possible solutions on this issue, e.g. letting TSOs who have the most abundance of information own and dispatch the storage resources\cite{He2012}, re-engineering the pricing mechanism of balancing energy\cite{Wartsila2014} and implementing favorable frequency control products for storage\cite{Megel2017}, etc.
+
+As an implication for technology vendors, these possible movements on market designs shall be taken care of as it could suddenly turn over the feasibly profitability of using BESSs for balancing services.
+
+Regarding arbitrages value in energy market, although the potential revenues are 239 mUSD/a in day-ahead and 120 mUSD/a in intra-day market, the losses would be incredibly high in order to materialize the revenue using BESSs. Even in the scenario of maximum unit return, the losses are about 10-20 times of the revenue. It is clear that the heavy investments on batteries cannot be recovered from making arbitrage in energy market. However, since the operating profits are always positive, if technology vendors can enable similar functions as BESS using technologies with smaller capital costs such as certain types of DR, it is still possible to make profits out of the market worth over 300 mUSD per annum.
+
+As has been discussed qualitatively, in order to increase the profitability and find a way to neutralize the frequency control signals, we may stack operations in day-ahead, intra-day and secondary control reserve for multitasking. Figure \ref{fig:germany-ess-multitasking} shows the effects of multitasking.
 
 \begin{figure}[h!]
 	\centering
@@ -247,7 +270,9 @@ As has been discussed qualitatively, in order to increase the profitability, we 
 	\label{fig:germany-ess-multitasking}
 \end{figure}
 
-While there are no significant synergies between day-ahead and intra-day markets, stacking secondary control reserve with these energy marketplaces will significantly improve the unit return as well as the maximum revenue potential. This corresponds to our previous analysis that the issue of non-energy-neutral signals can be tackled by introducing third-party energy for offset. Nonetheless, these  two cases with multitasking are still not profitable. 
+While there are no significant synergies between day-ahead and intra-day markets, stacking secondary control reserve with these energy marketplaces will significantly improve the unit return as well as the maximum revenue potential. This corresponds to our previous analysis that the issue of non-energy-neutral signals can be tackled by introducing third-party energy for offset. Nonetheless, these  two cases with multitasking are still not profitable.
+
+To sum up, technology vendors shall consider other technologies than BESSs or expect drastic cost reduction of BESSs to unlock the arbitrage value worth over 300 mUSD/a in Germany. Profits from balancing market are more technically tangible, yet adjustments on market frameworks are required.
 
 \subsubsection{Market size and profitability of ESS in PJM}
 The results of case studies in PJM power markets are illustrated in Figure \ref{fig:pjm-ess}.
@@ -257,9 +282,9 @@ The results of case studies in PJM power markets are illustrated in Figure \ref{
 	\caption{Market Size and Profitability of ESS in PJM Electricity Markets}
 	\label{fig:pjm-ess}
 \end{figure}
-As we can clearly see, the RegD marketplace that is specially designed for emerging flexible technologies is indeed profitable. By introducing the concept of mileage ratio and implementing energy-neutral signals, the market with a total size of 45 mUSD can be realized by players of flexibility without writing a loss, although the margin is very niche, barely above zero. 
+As we can clearly see, the RegD marketplace that is specially designed for emerging flexible technologies is indeed profitable. By implementing energy-neutral signals as well as introducing concept of mileage ratio and beneficial factor to shift the RegD price against RegA, the market with a total size of 45 mUSD can be materialized by 154MW BESSs without writing a loss, although the margin is very niche, barely above zero. 
 
-Stacking it with the energy market does not significantly improve the profitability. The energy-neutral signals allows a BESS to sustain the provision of RegD service over a period without involving transactions in energy markets. The advantage of multitasking in this case is only to allow the decision makers to have more choices so that they can better schedule their plan by responding to the price trend. PJM allows participates to alter their RegD offers in hourly block which offers additional operational flexibility compared to the arrangement in Germany's frequency control markets. However, as we can see from Figure \ref{fig:pjm-multitasking}, RegD is preferred due to its higher profitability and resources are rarely allocated to deliver day-ahead or real-time energy in the optimized plan.
+Stacking it with the energy market does not significantly improve the profitability. The energy-neutral signals allows a BESS to sustain the provision of RegD service over a period without involving transactions in energy markets. The advantage of multitasking in this case is only to allow the decision makers to have more choices so that they can better schedule their plan by responding to the price trend. PJM allows participates to alter their RegD offers in hourly block which grants additional operational flexibility compared to the arrangement in Germany's frequency control markets. However, as we can see from Figure \ref{fig:pjm-multitasking}, RegD is preferred due to its higher profitability and resources are rarely allocated to deliver day-ahead or real-time energy in the optimized plan.
 
 \begin{figure}[h!]
 	\centering
@@ -273,13 +298,23 @@ Apart from RegD market, there are no other profiting opportunities existing in P
 Arbitrage in the energy market with flexibility through the so-called economic DR program, as is discussed in Section \ref{sec:qualitative-analysis}, is deemed not an ideal choice, especially in recent years when the electricity prices had fallen drastically with the shell gas revolution. As is discussed in Section \ref{sec:qualitative-analysis}, participating in the emergency DR program is a better option. However, the involvement of capacity market is not within our scope of quantifying the value, but the profiting mechanism is straightforward as is fully explained in the qualitative analysis.
 
 \subsubsection{Market Size and Profitability of ESS in NSW}
-In New South Wales power markets, we only studied the real-time energy market due to the limitation of data availability. As is shown by Figure \ref{fig:nsw-ess}, even though the operating profit per unit is about 6 times the values in the other geographies studied previously, it is still not sufficient to recover the expenses on the battery stocks. 
+In New South Wales power markets, we only studied the real-time energy market due to the limitation of data availability. Only information about total payment are available for the frequency control products. The total payment in these unaddressed markets is worth 23.4 mUSD in 2016, which are significantly smaller compared to the total payment in the real-time energy market that is 8.7 bUSD, and even much lower than merely the arbitrage value of over 1.8 bUSD/a as shown by Figure \ref{fig:nsw-ess}. This reflects the philosophy of market design that the real-time energy market is fully exploited to response to the system imbalances which are otherwise tackled by frequency control markets\cite{AEMO2010}\cite{McConnell2015}. This also explains the fact that the arbitrage value is 3-5 times the maximum arbitrage revenue in the other markets in absolute value and 30-75 times higher while normalized to their metering points.
+
+Nonetheless, even though the total arbitrage potential is much higher and the operating profit per unit is also about 6 times the values in the other geographies, it is still not a profitable business to deploy BESS.
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Figures/NSW_ESS}
 	\caption{Market Size and Profitability of ESS in NSW Electricity Markets}
 	\label{fig:nsw-ess}
 \end{figure}
+
+\subsubsection{Impact of cost reduction}
+According to the results above, using BESSs for balancing is already technically feasible while limitations lie in the aspect of market design. The value of arbitrage is far away from profitable due to expensive battery prices. Moreover, there are no evidences 
+Overturn of profitability will rely exclusively cost, market condition
+
+\textit{(This subsection will come later. As a short summary, only PCR in Germany and RegA in PJM switched their profitability to be profitable. The other cases of arbitrage that were shown to be unprofitable still lead to losses even with the cost reduced by 60\%.)}
+
 
 \subsubsection{Market Size and Profitability of EV2G  in Germany}
 Implementing EV as a grid resource is not as straightforward as using a generic ESS that is discussed above. The main issue is that the energy demand for EV driving itself poses challenges to grid. It is not possible to deliver any services without incorporate a large-volume energy market. Therefore, the day-ahead energy market is always included for all the cases for EV2G. Moreover, in our case studies, it is found even with the day-ahead market, charging the EVs is not feasible while their number reached a certain level. In the optimization framework, the technology constraints would violate market constraints with large number of EV fleet, especially the one that we set to restrict the activation of peak generation during non-peak hours. This corresponds to the situation that spare generation resources in the power system are not sufficient  to fulfill the energy needs of EVs. The electricity price may raise significantly in those scenarios compared to nowadays. As is shown by Figure \ref{fig:EV_nan_percentageg}, when the number of EV is higher than 1 million, it start to stress the electricity supply with present generation fleet. 
@@ -348,8 +383,6 @@ Figure \ref{fig:PJM_EV} summarizes the results of cases in PJM. Compared the res
 \textit{(An issue was found related to this case while analyzing the data, so the results will be ready later.)}
 
 
-\subsubsection{Contribution of cost reduction}
-\textit{(This subsection will come later. As a short summary, only PCR in Germany and RegA in PJM switched their profitability to be profitable. The other cases of arbitrage that were shown to be unprofitable still lead to losses even with the cost reduced by 60\%.)}
 
 \subsection{Impact analysis of changing market conditions}
 \label{sec:impact-market-condition}
@@ -430,7 +463,7 @@ Therefore, we applied the seasonal auto-regressed moving-average (SARMA) model a
 		$\phi_1 = 1.811$ & $\theta_1 = -1.063$ \\
 		$\phi_2 = -0.813$ & $\theta_{24} =0.692$ \\
 		$\phi_{24} = 0.090$ & $\theta_{168} = -0.600$ \\
-		$/phi_168 = 0.692$ & \\
+		$\phi_{168} = 0.692$ & \\
 		\hline
 	\end{tabular}
 \caption{Parameters of the stochastic price movement of SARMA models}

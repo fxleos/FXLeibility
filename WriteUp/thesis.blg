@@ -4,77 +4,82 @@ The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
 Warning--entry type for "GE" isn't style-file defined
---line 3492 of file thesis.bib
-Warning--entry type for "Siemens" isn't style-file defined
 --line 3500 of file thesis.bib
-Repeated entry---line 3547 of file thesis.bib
+Warning--entry type for "Siemens" isn't style-file defined
+--line 3508 of file thesis.bib
+Repeated entry---line 3555 of file thesis.bib
  : @article{Sioshansi2009
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Tesla1" isn't style-file defined
---line 3611 of file thesis.bib
+--line 3619 of file thesis.bib
 Warning--entry type for "Tesla2" isn't style-file defined
---line 3617 of file thesis.bib
+--line 3625 of file thesis.bib
 Warning--entry type for "Tesla3" isn't style-file defined
---line 3623 of file thesis.bib
+--line 3631 of file thesis.bib
 Warning--entry type for "NREL_TSDC" isn't style-file defined
---line 3643 of file thesis.bib
+--line 3651 of file thesis.bib
 Warning--entry type for "KBA2017" isn't style-file defined
---line 3650 of file thesis.bib
-I was expecting a `,' or a `}'---line 3654 of file thesis.bib
+--line 3658 of file thesis.bib
+I was expecting a `,' or a `}'---line 3662 of file thesis.bib
  :  
  :  urldate = {2018-01-12}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "Eurostat_de_v" isn't style-file defined
---line 3657 of file thesis.bib
-I was expecting a `,' or a `}'---line 3661 of file thesis.bib
+--line 3665 of file thesis.bib
+I was expecting a `,' or a `}'---line 3669 of file thesis.bib
  :  
  :  urldate = {2018-03-04}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "Bloomberg" isn't style-file defined
+--line 3671 of file thesis.bib
 Warning--empty institution in Wartsila2014
 Warning--there's a number but no series in Grunewald2012
 Warning--empty school in Grunewald2012a
-You've used 61 entries,
+Warning--empty institution in NortheastGroup2016
+Warning--empty journal in He2012
+Warning--there's a number but no volume in He2012
+You've used 66 entries,
             1791 wiz_defined-function locations,
-            804 strings with 14370 characters,
-and the built_in function-call counts, 12786 in all, are:
-= -- 1120
-> -- 633
-< -- 8
-+ -- 238
-- -- 177
-* -- 881
-:= -- 2108
-add.period$ -- 172
-call.type$ -- 61
-change.case$ -- 61
+            823 strings with 14865 characters,
+and the built_in function-call counts, 13510 in all, are:
+= -- 1179
+> -- 663
+< -- 11
++ -- 251
+- -- 185
+* -- 917
+:= -- 2234
+add.period$ -- 185
+call.type$ -- 66
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 488
-empty$ -- 1248
-format.name$ -- 177
-if$ -- 2745
+cite$ -- 72
+duplicate$ -- 523
+empty$ -- 1323
+format.name$ -- 185
+if$ -- 2898
 int.to.chr$ -- 0
-int.to.str$ -- 61
-missing$ -- 37
-newline$ -- 296
-num.names$ -- 61
-pop$ -- 147
+int.to.str$ -- 66
+missing$ -- 38
+newline$ -- 319
+num.names$ -- 66
+pop$ -- 162
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 205
+skip$ -- 219
 stack$ -- 0
-substring$ -- 893
-swap$ -- 67
-text.length$ -- 8
+substring$ -- 909
+swap$ -- 71
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 132
-width$ -- 63
-write$ -- 631
+warning$ -- 6
+while$ -- 139
+width$ -- 68
+write$ -- 678
 (There were 3 error messages)

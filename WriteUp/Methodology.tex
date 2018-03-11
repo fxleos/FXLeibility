@@ -579,8 +579,7 @@ where
 \end{equation}
 \subsubsection{Electric Vehicle}
 
-%Charging rate: https://www.tesla.com/support/home-charging-installation
-Electric vehicle to grid systems are fundamentally battery energy storage systems in term of their physical dynamics. Therefore, they can be modeled generally using the same approach as in preceding paragraphs. However, there are several attributes that uniquely characterize electric vehicle to grid systems compared to normal battery storages:
+Electric vehicle to grid systems are fundamentally battery energy storage systems in term of their physical dynamics. Therefore, they can be modeled generally using the same approach as in preceding paragraphs. However, there are several attributes that uniquely characterize electric vehicle to grid systems compared to normal battery storage:
 
 \begin{itemize}
 	\item The availability of an EV2G system, in terms of delivering both energy (in MWh) and capacity reserve (in MW), is dynamic rather than static, since the number of EVs connected in the power grid is changing all the time with the behaviors of plug-in/ plug-out.
@@ -591,14 +590,18 @@ Therefore, two main modifications are made to adapt the model of ESSs for better
 
 \begin{enumerate}
 	\item The EV2G system is modeled as a dynamic ESS by taking into consideration the connection/ disconnection of EVs to/ from the grids.
-	\item The costs of energy consumed for driving are accounted, following the original plan, i.e. without controlling algorithm for grid services, and added back to the revenue in Equation \eqref{eq:module-revenue}.
+	\item The costs of energy consumed for driving are accounted and analyzed separately
 \end{enumerate}
 
-In order to implement the first measure, we introduce additional terms to represent the number of EVs entering ($n_t^+$), leaving ($n_t^-$) and remain in ($n_t$) the system at each time step. 
+It shall be noticed with the dynamic storage model, only the overall state on the whole system level, i.e. the aggregation of all EVs in the system, is monitored and complied with the technological constraints. Performing simulation and optimization for each EV with a distributed approach is beyond the scope of this study. 
+
+In order to transform the model for ESS to be dynamic in size and availability, we introduce additional terms to represent the number of EVs entering ($n_t^+$), leaving ($n_t^-$) and remain in ($n_t$) the system at each time step.
 \begin{equation}
 \label{eq:EV-number}
 n_t = n_{t-1} + n_t^+ - n_t^-
 \end{equation}
+
+The energy stored in each EV while being plugged-in or plugged-out are denoted as $s_t^+$ and $s_t^-$, respectively. $n_t^+$, $n_t^-$, $s_t^+$ and $s_t^-$ can be determined statistically from real vehicle driving profiles. 
 
 Thereby the state equation for an EV2G system is written as:
 \begin{equation}
