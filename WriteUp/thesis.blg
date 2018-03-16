@@ -41,45 +41,45 @@ Warning--empty school in Grunewald2012a
 Warning--empty institution in NortheastGroup2016
 Warning--empty journal in He2012
 Warning--there's a number but no volume in He2012
-You've used 66 entries,
+You've used 67 entries,
             1791 wiz_defined-function locations,
-            823 strings with 14865 characters,
-and the built_in function-call counts, 13510 in all, are:
-= -- 1179
-> -- 663
+            827 strings with 14945 characters,
+and the built_in function-call counts, 13628 in all, are:
+= -- 1187
+> -- 667
 < -- 11
-+ -- 251
-- -- 185
-* -- 917
-:= -- 2234
-add.period$ -- 185
-call.type$ -- 66
-change.case$ -- 65
++ -- 253
+- -- 186
+* -- 918
+:= -- 2251
+add.period$ -- 187
+call.type$ -- 67
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 523
-empty$ -- 1323
-format.name$ -- 185
-if$ -- 2898
+cite$ -- 73
+duplicate$ -- 528
+empty$ -- 1341
+format.name$ -- 186
+if$ -- 2926
 int.to.chr$ -- 0
-int.to.str$ -- 66
+int.to.str$ -- 67
 missing$ -- 38
-newline$ -- 319
-num.names$ -- 66
-pop$ -- 162
+newline$ -- 323
+num.names$ -- 67
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 219
+skip$ -- 223
 stack$ -- 0
 substring$ -- 909
-swap$ -- 71
+swap$ -- 72
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 139
-width$ -- 68
-write$ -- 678
+while$ -- 140
+width$ -- 69
+write$ -- 686
 (There were 3 error messages)

@@ -1,6 +1,7 @@
 %% Model Validation Germany - DA
 load('DE_MarketSimulation.mat')
-price_sim = p_sim;
+%load('price_sim_2017.mat')
+%price_sim = p_sim;
 CaseName = 'Germany_DA_ESS';
 cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab
 % Get parameters
@@ -67,7 +68,7 @@ DATA.e_peak = e_peak;
 DATA.e_base = e_base;
 %Initialization
 Y = [];
-nb_scenario = 10;
+nb_scenario = 100;
 OperatingProfit_scenario = zeros(nb_scenario+2,length(Parameters.r));
 for i_scenario = 1:nb_scenario+2
     if i_scenario == nb_scenario+2
@@ -186,20 +187,22 @@ for i_scenario = 1:nb_scenario+2
             Date = Date+ Parameters.T*Parameters.delta_t/24;
             OperatingProfit_scenario(i_scenario,i_case) = OperatingProfit_scenario(i_scenario,i_case)+result.objval;
         end
-        OperatingProfit_scenario
+        [OperatingProfit_scenario(1,:);OperatingProfit_scenario(i_scenario,:)]
     end
     
 end
 cd(CaseFolderName)
 %save(strcat(CaseName,'.mat'),'OperatingProfit_scenario')
-plot(Parameters.r*MP/1000,OperatingProfit_scenario(1,:)/1000000,'Color',[1 0 0],'LineWidth',3)
+l5 = plot(Parameters.r*MP/1000,OperatingProfit_scenario(2,:)/1000000,':','Color',[0.5 0.5 0.5],'LineWidth',1);
 hold on
-plot(Parameters.r*MP/1000,OperatingProfit_scenario(end,:)/1000000,'Color',[0 0 1],'LineWidth',3)
-plot(Parameters.r*MP/1000,mean(OperatingProfit_scenario(2:end-1,:),1)/1000000,'Color',[0 0 0],'LineWidth',3)
-for i_scenario = 1:nb_scenario
+for i_scenario = 2:nb_scenario
     plot(Parameters.r*MP/1000,OperatingProfit_scenario(i_scenario+1,:)/1000000,':','Color',[0.5 0.5 0.5],'LineWidth',1)
 end
-legend({'Actual price','Fitted merit-order price','Fitted merit-order price with stochastic movement (Average of scenarios)','Fitted merit-order price with stochastic movement (10 scenarios)'},'Location','southeast')   
+l1 = plot(Parameters.r*MP/1000,OperatingProfit_scenario(1,:)/1000000,'Color',[ 0.8500    0.3250    0.0980],'LineWidth',3);
+l2 = plot(Parameters.r*MP/1000,OperatingProfit_scenario(end,:)/1000000,'Color',[0.4940    0.1840    0.5560],'LineWidth',3);
+l3 =plot(Parameters.r*MP/1000,mean(OperatingProfit_scenario(2:end-1,:),1)/1000000,'Color',[0.4660    0.6740    0.1880],'LineWidth',3);
+l4 =plot(Parameters.r*MP/1000,median(OperatingProfit_scenario(2:end-1,:),1)/1000000,'Color',[0.3010    0.7450    0.9330],'LineWidth',3);
+legend([l1,l2,l3,l4,l5],{'Actual price','Fitted merit-order price','Fitted merit-order price with stochastic movement (Average of scenarios)','Fitted merit-order price with stochastic movement (Median of scenarios)','Fitted merit-order price with stochastic movement (100 scenarios)'},'Location','southeast')   
 ylabel('Operating Profit (mUSD)','FontSize',16);
 xlabel('System Size (MW)','FontSize',16);
 xlim([0,max(Parameters.r*MP/1000)])

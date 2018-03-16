@@ -87,7 +87,11 @@ for i_case =1:length(r_list)
     Result_rev_cost(i_case, 3) = f_Revenue * X;
     Result_rev_cost(i_case, 4) = f_Degradation * X;
     Result_rev_cost(i_case, 5) = FixCost(Parameters,Cost, Result_rev_cost(i_case, 1), Option.type);
-    Result_rev_cost(i_case, 6) = S_driving * mean(DATA.PI_e_I(1));
+    if ~strcmp(Regime,'AEMO-NSW')
+        Result_rev_cost(i_case, 6) = S_driving * mean(DATA.PI_e_I(:,1));
+    else
+        Result_rev_cost(i_case, 6) = S_driving * mean(DATA.PI_e_I(:,2));
+    end
 end
 
 Result_SystemSize = Result_rev_cost(:,1);
@@ -256,8 +260,8 @@ ylim([0,80])
 plot(Result_SystemSize/1000, Result_Revenue/1000000,'LineWidth',8);
 hold on
 plot(Result_SystemSize/1000, Result_OperatingProfit/1000000,'LineWidth',8);
-plot(Result_SystemSize/1000, (Result_OperatingProfit - Result_Profit)/1000000,'LineWidth',8);
 plot(Result_SystemSize/1000, Result_Profit/1000000,'LineWidth',8);
+plot(Result_SystemSize/1000, (Result_OperatingProfit - Result_Profit)/1000000,'LineWidth',8);
 xlim([0,250])
 ylim([0 70])
 set(gca,'linewidth',8)

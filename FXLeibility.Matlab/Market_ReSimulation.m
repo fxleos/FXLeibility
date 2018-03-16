@@ -4,7 +4,7 @@ load(strcat(CaseName,'.mat'))
 %% Germany
 cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/
 load('DE_MarketSimulation.mat');
-filename = 'DE_2016_GEN.xlsx';
+filename = 'DE_2017_GEN.xlsx';
 data_file = xlsread(filename);
 [Ti, Si] = size(data_file);
 
@@ -55,7 +55,11 @@ end
 
 G_nondispatch = G_nondispatch*MSOption.nondispatch;
 C_peak = (C_inflex*MSOption.inflex + C_flex * MSOption.flex)/(C_inflex+C_flex)*C_peak;
-C_inflex2flex = C_inflex * MSOption.inflex2flex;
+try
+    C_inflex2flex = C_inflex * MSOption.inflex2flex;
+catch
+    C_inflex2flex = 0;
+end
 C_inflex = C_inflex*MSOption.inflex - C_inflex2flex;
 C_flex = C_flex * MSOption.flex + C_inflex2flex;
 

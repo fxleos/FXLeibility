@@ -57,6 +57,9 @@ cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matl
 if strcmp(Regime,'DE') || strcmp(Regime,'Germany')
     filename = strcat('DE_',num2str(Year),'_GEN.xlsx');
     DATA.e_hat(:,1) = sum(xlsread(filename),2);
+elseif strcmp(Regime,'AEMO-NSW') || strcmp(Regime,'NSW')
+    % in AEMO the demand's unit is MW instead of MWh
+    DATA.e_hat = DATA.e_hat*Parameters.delta_t;
 end
 % Market simulation
 [e_peak, e_base] = Market_Simulation_basic(Regime,Year,DATA);
