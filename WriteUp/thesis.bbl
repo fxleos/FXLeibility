@@ -179,12 +179,20 @@ James Cox.
 \newblock Technical report, Agora Energiewende, 2017.
 
 \bibitem{Siemens}
-General~Electric Company.
-\newblock {Siemens gas turbine portfolio}, 2016.
+Siemens AG.
+\newblock {Siemens gas turbine portfolio}.
+\newblock
+  \url{https://www.siemens.com/press/pool/de/feature/2016/power-gas/2016-04-1000-gasturbine/siemens-gas-turbine-portfolio-e.pdf},
+  2016.
+\newblock Updated: 2016-04.
 
 \bibitem{GE}
 General~Electric Company.
-\newblock {9HA.01/.02 GAS TURBINE}, 2015.
+\newblock {9HA.01/.02 GAS TURBINE}.
+\newblock
+  \url{https://www.gepower.com/content/dam/gepower-pgdp/global/en_US/documents/product/gas%20turbines/Fact%20Sheet/9ha-fact-sheet.pdf},
+  2015.
+\newblock Published: 2015-03.
 
 \bibitem{Kardakos2013}
 Evaggelos~G. Kardakos, Christos~K. Simoglou, and Anastasios~G. Bakirtzis.
@@ -264,7 +272,7 @@ Chunlian Jin, Ning Lu, Shuai Lu, Yuri~V. Makarov, and Roger~A. Dougal.
 \newblock {\em IEEE Transactions on Smart Grid}, 5(2):1043--1050, 2014.
 
 \bibitem{PJM2017b}
-PJM.
+PJM Interconnection.
 \newblock {PJM Manual 11 : Energy {\&} Ancillary Services Market Operations},
   2017.
 
@@ -280,7 +288,7 @@ Qi~Wang, Chunyu Zhang, Yi~Ding, George Xydis, Jianhui Wang, and Jacob
 \newblock {Demand Response Strategy}, 2017.
 
 \bibitem{PJM2017c}
-PJM.
+PJM Interconnection.
 \newblock {PJM Manual 12: Balancing Operations}, 2017.
 
 \bibitem{Brown2015}
@@ -298,6 +306,8 @@ IRENA.
 \bibitem{Tesla1}
 Tesla Inc.
 \newblock {POWERPACK Utility and Business Energy Storage}.
+\newblock \url{https://www.tesla.com/powerpack?redirect=no}.
+\newblock Accessed:2018-03-03.
 
 \bibitem{Akhil2015}
 Abbas {A. Akhil}, Georgianne Huff, Aileen {B. Currie}, Benjamin {C. Kaun}, Dan
@@ -311,14 +321,20 @@ Abbas {A. Akhil}, Georgianne Huff, Aileen {B. Currie}, Benjamin {C. Kaun}, Dan
 \bibitem{Tesla2}
 Tesla Inc.
 \newblock {Home Charging Installation}.
+\newblock \url{https://www.tesla.com/support/home-charging-installation}.
+\newblock Accessed: 2018-03-03.
 
 \bibitem{Tesla3}
 Tesla Inc.
 \newblock {Tesla Model S}.
+\newblock \url{https://www.tesla.com/models}.
+\newblock Accessed: 2018-03-03.
 
 \bibitem{NREL_TSDC}
 National Renewable~Energy Laboratory.
 \newblock {Transportation Secure Data Center}.
+\newblock \url{https://www.nrel.gov/tsdc}.
+\newblock Updated: 2017-01-15.
 
 \bibitem{NortheastGroup2016}
 {Northeast Group}.
@@ -337,6 +353,9 @@ National Renewable~Energy Laboratory.
 
 \bibitem{Bloomberg}
 Bloomberg L.P.
+\newblock {Currencies}.
+\newblock \url{https://www.bloomberg.com/markets/currencies}.
+\newblock Accessed: 2018-01-01.
 
 \bibitem{He2012}
 Xian He, Erik Delarue, William {D 'haeseleer}, and Jean-Michel Glachant.
@@ -351,10 +370,16 @@ AEMO.
 \bibitem{Eurostat_de_v}
 European Commission.
 \newblock {Passenger cars in the EU}.
+\newblock
+  \url{http://ec.europa.eu/eurostat/statistics-explained/index.php/Passenger_cars_in_the_EU}.
+\newblock Accessed: 2018-03-04.
 
 \bibitem{KBA2017}
 Kraftfahrt-Bundesamtes (KBA).
 \newblock {Monatliche Neuzulassungen}.
+\newblock
+  \url{https://www.kba.de/DE/Statistik/Fahrzeuge/Neuzulassungen/MonatlicheNeuzulassungen/monatl_neuzulassungen_node.html}.
+\newblock Accessed: 2018-01-12.
 
 \bibitem{Peng2017}
 Chao Peng, Jianxiao Zou, Lian Lian, and Liying Li.
@@ -381,5 +406,37 @@ R.~J. Bessa and M.~A. Matos.
 \newblock {Global against divided optimization for the participation of an EV
   aggregator in the day-ahead electricity market. Part II: Numerical analysis}.
 \newblock {\em Electric Power Systems Research}, 95:309--318, 2013.
+
+\bibitem{GEEnergyConsulting2014}
+{GE Energy Consulting}.
+\newblock {PJM Renewable Integration Study - Executive summary report}.
+\newblock Technical report, prepared for PJM Interconnection, LLC, 2014.
+
+\bibitem{EPEX_price_limit}
+EPEX~SPOT SE.
+\newblock {Day-ahead auction with delivery on the German/Austrian TSO zones}.
+\newblock
+  \url{https://www.epexspot.com/en/product-info/auction/germany-austria}.
+\newblock Accessed: 2018-01-01.
+
+\bibitem{PJM_price_limit_1}
+PJM Interconnection.
+\newblock {Energy Price Formation and Valuing Flexibility}.
+\newblock
+  \url{https://www.pjm.com/~/media/library/reports-notices/special-reports/20170615-energy-market-price-formation.ashx}.
+\newblock Updated: 2017-06-15.
+
+\bibitem{PJM_price_limit}
+PJM Interconnection.
+\newblock {\$1,000 Offer Cap in Markets Gateway}.
+\newblock
+  \url{http://www.pjm.com/-/media/committees-groups/committees/mic/20180207/20180207-item-13b-1000-offer-cap-in-markets-gateway.ashx}.
+\newblock Accessed: 2018-02-07.
+
+\bibitem{Schill2011}
+Wolf~Peter Schill and Claudia Kemfert.
+\newblock {Modeling strategic electricity storage: The case of pumped hydro
+  storage in Germany}.
+\newblock {\em Energy Journal}, 32(3):59--87, 2011.
 
 \end{thebibliography}

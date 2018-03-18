@@ -106,6 +106,7 @@ beta_peak = nlinfit(x_peak,y_peak,modelfun,beta0,opts);
 error_peak = y_peak - modelfun(beta_peak, x_peak);
 
 % Inflex
+%{
 x_inflex = 1 - G_inflex(index_inflex) ./ C_inflex(index_inflex);
 %i = x<0.95;
 %x = x(i);
@@ -116,20 +117,22 @@ opts = statset('nlinfit');
 opts.RobustWgtFun = 'bisquare';
 beta_inflex = nlinfit(x_inflex,y_inflex,modelfun,beta0);
 error_inflex = y_inflex - modelfun(beta_inflex, x_inflex);
-
+%}
+load('DE_MarketSimulation.mat');
+beta_inflex = Mdl_merit.beta_inflex;
 % Mid
 modelmid = @(b,x)(b(1)*x+b(2));
 
 x = G_flex(index_flex) ./ C_flex (index_flex);
 
-i = x <= 0.35;
+i = x <= 0.3;
 x_1 = x(i);
 
 y = P_E_DA(index_flex) - max (modelfun(beta_inflex,x));
 b_1 = [x(i)\y(i);max(modelfun(beta_inflex,x))];
 error_1 = y(i) - modelmid(b_1,x(i));
 
-i = x >= 0.65;
+i = x >= 0.5;
 y = min(modelfun(beta_peak,x)) - P_E_DA(index_flex);
 b_3 = [(1-x(i))\y(i); min(modelfun(beta_peak,x))-(1-x(i))\y(i)];
 error_3 = y(i) - modelmid(b_3,x(i));

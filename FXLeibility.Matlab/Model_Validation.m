@@ -1,8 +1,10 @@
 %% Model Validation Germany - DA
-load('DE_MarketSimulation.mat')
+load('PJM_MarketSimulation.mat')
+%load('DE_MarketSimulation.mat')
 %load('price_sim_2017.mat')
 %price_sim = p_sim;
-CaseName = 'Germany_DA_ESS';
+%CaseName = 'Germany_DA_ESS';
+CaseName = 'PJM_DA_ESS';
 cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab
 % Get parameters
 cd /Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/FXLeibility.Matlab/Cases
@@ -76,7 +78,11 @@ for i_scenario = 1:nb_scenario+2
     elseif i_scenario>1
         [Y1,E1] = simulate(EstMdl_stochastic,length(time_vector));
         Y = [Y,Y1];
-        DATA.PI_e_I(:,1) = price_sim+Y1*0.9;
+        if strcmp(Regime,'PJM')
+            DATA.PI_e_I(:,1) = max(price_sim+Y1*1.4,0);
+        else
+            DATA.PI_e_I(:,1) = price_sim+Y1*0.9;
+        end
     end
     for i_case =1:length(Parameters.r)
         E_D = zeros(length(time_vector),length(Parameters.I));

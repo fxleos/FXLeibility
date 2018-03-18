@@ -84,24 +84,24 @@
 \contentsline {subsection}{\numberline {5.1.2}Germany}{67}
 \contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{67}
 \contentsline {section}{\numberline {5.2}Quantitative studies and results}{68}
-\contentsline {subsection}{\numberline {5.2.1}Data, paramters and valuation metrics}{69}
-\contentsline {subsection}{\numberline {5.2.2}Value of markets under current market conditions}{74}
+\contentsline {subsection}{\numberline {5.2.1}Data, parameters and valuation metrics}{69}
+\contentsline {subsection}{\numberline {5.2.2}Value of markets under current market conditions}{75}
 \contentsline {subsubsection}{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}{75}
 \contentsline {subsubsection}{ESS in PJM: successful practice of frequency control product design for flexibility}{79}
-\contentsline {subsubsection}{ESS in NSW: most favorable market for arbitrage using flexibity yet still not profitable}{81}
-\contentsline {subsubsection}{Cost reduction: where is the break-even point for arbitrage using BESSs}{83}
-\contentsline {subsubsection}{EV2G in Germany: promissing and fast-growing opportunities}{86}
-\contentsline {subsubsection}{EV2G in PJM}{90}
-\contentsline {subsubsection}{EV2G in NSW: }{91}
-\contentsline {subsubsection}{Conclusion}{93}
-\contentsline {subsection}{\numberline {5.2.3}Impact analysis of changing market conditions}{93}
-\contentsline {subsubsection}{Model setup and validation}{93}
-\contentsline {subsubsection}{Impact of renewable penetration}{98}
-\contentsline {subsubsection}{Impact of increasing flexibility}{98}
-\contentsline {subsection}{\numberline {5.2.4}Sensitivity analysis}{98}
-\contentsline {subsubsection}{Limited predictability}{98}
-\contentsline {subsubsection}{Database}{98}
-\contentsline {subsubsection}{Locational price}{98}
-\contentsline {subsubsection}{Sensitivity analysis of other parameters}{98}
-\contentsline {chapter}{\numberline {6}Conclusions and outlook}{99}
-\contentsline {chapter}{\numberline {A}Accounting rules and electricity market data prepration}{101}
+\contentsline {subsubsection}{ESS in NSW: most favorable market for arbitrage using flexibity yet still not profitable}{82}
+\contentsline {subsubsection}{Cost reduction: where is the break-even point for arbitrage using BESSs}{84}
+\contentsline {subsubsection}{EV2G in Germany: changeling in developing business model}{86}
+\contentsline {subsubsection}{EV2G in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}{90}
+\contentsline {subsubsection}{EV2G in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}{92}
+\contentsline {subsubsection}{Summary}{93}
+\contentsline {subsection}{\numberline {5.2.3}Impact analysis of renewable penetration}{97}
+\contentsline {subsubsection}{Model setup and validation}{98}
+\contentsline {subsubsection}{Renewable penetration in Germany: at the inflection point}{104}
+\contentsline {subsubsection}{Renewable penetration: arbitrage potential bounded by non-negative pricing}{105}
+\contentsline {subsection}{\numberline {5.2.4}Sensitivity analysis}{106}
+\contentsline {subsubsection}{Limited predictability}{107}
+\contentsline {subsubsection}{Responsive price}{107}
+\contentsline {subsubsection}{Sensitivity analysis of other parameters}{107}
+\contentsline {chapter}{\numberline {6}Conclusions and outlook}{109}
+\contentsline {chapter}{\numberline {A}Accounting rules and electricity market data prepration}{111}
+\contentsline {chapter}{\numberline {B}Other}{113}

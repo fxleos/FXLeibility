@@ -73,7 +73,7 @@ The real-time market price is applied for all deviations from day-ahead planned 
 \pi_t^{e,j} = \pi_t^{e,i} ~~~~ i \in \{Real~Time\}, j \in \{RegD, RegA, SR, NSR, DASR\}
 \end{equation*}
 
-The capacity prices of reserves are computed using a complex algorithm, taking into account a list of specifications of the resrouce, e.g. the performance \& historical performance, benefits factor, milleage, etc. The detailed calculations can be found in appendix. As outputs, we will get deterministic values for $j \in \{RegA, SR, NSR, DASR\}$, and the upper and lower bounds, $\overline{\pi}_t^{r,j}$ and $\underline{\pi}_t^{r,j}$, for $i \in \{RegD\}$.
+The capacity prices of reserves are computed using a complex algorithm, taking into account a list of specifications of the resource, e.g. the performance \& historical performance, benefits factor, mileage, etc. The detailed calculations can be found in appendix. As outputs, we will get deterministic values for $j \in \{RegA, SR, NSR, DASR\}$, and the upper and lower bounds, $\overline{\pi}_t^{r,j}$ and $\underline{\pi}_t^{r,j}$, for $i \in \{RegD\}$.
 
 %Reg = RMCCP + RMPCP + LOC
 %LOC = 0
@@ -99,29 +99,29 @@ reBAP = \frac{\sum net imbalance energy cost}{\sum net imbalance energy volume}
 \end{equation}
 
 \subsection{Australia-New South Walse}
-The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geopraphies.
+The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geographies.
 
 \newpage
 
 \section{Quantitative studies and results}
-So far we have discussed qualitatively the existing and potential opportunities for flexibility managment in the three geographies, and screened the possible business cases. Further to that, it is necessary to perform quantitative analysis in order to understand:
+So far we have elaborated qualitatively the existing and potential opportunities for flexibility management in the three geographies, and screened the possible business cases. Further to that, it is necessary to perform quantitative analysis in order to understand:
 
 \begin{itemize}
-	\item \textbf{Market Size:} the potential value creation in the market for flexibility management solutions, subject to certain generic system dynamics but without respect to cost dyanamics of specific technologies
+	\item \textbf{Market Size:} the potential value creation in the market for flexibility management solutions, subject to certain generic system dynamics but without respect to cost dynamics of specific technologies
 	\item \textbf{Profitability:} the metric to judge whether a specific technology is profitable or not to extract certain amount of value from current or future markets taking into account cost elements
 \end{itemize}
 
-Based on the methodology introduced in Chapter \ref{ch:methodology}, we performed experiments with consideration of constaints from both markets and technologies. All three markets discuess previously and two technologies, i.e. energy storage system (ESS) and Electric vehicle to grid (EV2G), were studied. 
+Based on the methodology introduced in Chapter \ref{ch:methodology}, we performed experiments with consideration of constraints from both markets and technologies. All three markets discussed previously and two technologies, i.e. energy storage system (ESS) and Electric vehicle to grid (EV2G), were studied. 
 
-Specifically, the ESS with a system dyanmic that is able to release and absorb energy can be deemed as a generic flexibility source. The revenue derived using ESSs can be viewed as a reference of the maximum market potential from flexibility managment. Meanwhile, with cost parameters of a typical battery energy storage system (BESS), we can analyze the profitability of BESSs with results involoving elements of costs. 
+Specifically, the ESS with a system dynamic that is able to release and absorb energy can be deemed as a generic flexibility source. The revenue derived using ESSs can be viewed as a reference of the maximum market potential from flexibility management. Meanwhile, with cost parameters of a typical battery energy storage system (BESS), we can analyze the profitability of BESSs with results involving elements of costs. 
 
-On the other hand, EV2G is served as a more peculiar example of technology, with additional case-specific constaints like the EV driving behaviors compared to a generic ESS. Maximum revenue from this technology shall be bounded by values derived from the generic ESS, but the profits may deviate significantly from values of BESSs, as their cost dynamics and business models could be distinct with other. Details are to be introduced later in this section.
+On the other hand, EV2G is served as a more peculiar example of technology, with additional case-specific constraints like the EV driving behaviors compared to a generic ESS. Maximum revenue from this technology shall be bounded by values derived from the generic ESS, but the profits may deviate significantly from values of BESSs, as their cost dynamics and business models could be distinct with other. Details are to be introduced later in this section.
 
 Two types of works were carried out. We first examined the value of markets for flexibility management under current market conditions, i.e. based on historical observations without involving the market simulation module (Section \ref{sec:market-simulation}). This allows us to obtain some concrete numbers to establish a comprehensive understanding toward the value of flexibility management in nowadays' power markets. 
 
-Thereafter, as markets evlove rapidly especially with the disruption of fast-growing renewable generations, a view toward future market development is also necessary. As a immature business, valuation of markets for flexibility management would be sensitively affected by various factors. The multi-dimentional variances and unpredictable changes on non-technical issues like market design and regulatory adjustments make it almost impossible to accurately forecast the market size and profits in the future. Nonetheless, understanding the impacts of some key factors would provide us valuable guidances on the directional movement of the market and thus offer viable references for technology vendors' decision makers.
+Thereafter, as markets evolve rapidly especially with the disruption of fast-growing renewable generations, a view toward market development is also necessary. As a immature business, valuation of markets for flexibility management would be sensitively affected by various factors. The multi-dimensional variances and unpredictable changes on non-technical issues like market design and regulatory adjustments make it almost impossible to accurately forecast the market size and profits in the future. Nonetheless, understanding the impacts of some key factors would provide us valuable guidance on the directional movement of the market and thus offer viable references for technology vendors' decision makers.
 
-\subsection{Data, paramters and valuation metrics}
+\subsection{Data, parameters and valuation metrics}
 The electricity market data including price and volume in each marketplaces correspond to the actual market data from January 1st 2016 to December 31st 2016. While general rules for accounting and data availability have been discussed in Section \ref{sec:qualitative-analysis}, detailed pre-processes and how they were fitted in as inputs of our valuation model can be found in Appendix \ref{sec:accounting-data-prepare}.
 
 For cost determinations, we would first use figures based on the present market pricing level, and then make scenarios with reduced costs to find the break-even point if it is not yet profitable. According to the International Renewable Energy Agency (IRENA)\cite{IRENA2017}, the cost for battery energy storage systems was analyzed as proportional to their energy capacity, $\overline{s}$, and the energy cost coefficient, $C^s$, for state-of-the-art lithium-ion batteries were reported to be ca. $\$350/kWh$ in 2016. The replacement cost were based on actual price from Tesla\cite{Tesla1}, one of the leaders in battery and electric vehicle markets. The operating life is set to be 6000 FCEs, which corresponds to an optimistic estimation by Sandia National Laboratories\cite{Akhil2015}. Designed life time is assumed to be 10 years. Discount rate is made as 10\% as is discussed in Section \ref{sec:cost}. The technology costs were made to be zero so that the derived profits will be the margins that can be possibly realized by technology vendors. All the parameters for cost calculation are summarized in Table \ref{table:cost-parameters}. 
@@ -154,15 +154,6 @@ For cost determinations, we would first use figures based on the present market 
 
 It is worthwhile to point out again that by using the parameters described above, the ESSs are virtually battery energy storage systems (BESSs). This fits the purpose of case studies. However, the conclusions on profitability are not portal for other types of ESS, but it does not mean the methodology loses its generality. The value of revenue would still be valid for other types of technology as long as they can have the same function of shuffling energy between time slots. Furthermore, by using different data as inputs, our model can be utilized for analysis of profitability of other energy storage systems with different cost dynamics. 
 
-In terms of EV2G studies, we first determined the battery parameters of EVs.
-
-\begin{itemize}
-	\item EV charging rate is 10kW, corresponding to the guidance provided by Tesla\cite{Tesla2} and a typical home charging infrastructure with 50A current limit. 
-	\item The battery energy capacity per EV of 75kWh is taken from one of the most popular EV models\cite{Tesla3}.
-\end{itemize}
-
-Simulations are then performed to get EV driving profiles, which are based upon data from the California Department of Transportation's California Household Travel Survey for 2010-2012\cite{NREL_TSDC}. This survey carried out multiple objectives and included 79011 vehicles. For our work we focus on a proportion of the vehicles, 2910, which were fitted with GPS. These vehicles were monitored continuously for a 7-day window with the 1-second resolution. The GPS data is then processed into trip profiles, while include information of the location of each EV at each time step as well as the trips made by each EV. Furthermore, together with the parameters of the EV model we have selected above we simulated the SoC time series of the EV batteries. Finally, from the simulated results, we can statistically derive the value of probability distribution of EV plug-in $n^+$, plug-out $n^-$, and average state-of-charge (SoC) of batteries plug-in $s^+$, plug-out $s^-$, as introduced in Section \ref{sec:tech-simulation-module}. The results are shown as Figure \ref{fig:data-ev-number}-\ref{fig:data-soc} where we can see clear periodic patterns that are different between weekdays and weekends.
-
 \begin{figure}[h!]
 	\centering
 	\centering
@@ -178,18 +169,32 @@ Simulations are then performed to get EV driving profiles, which are based upon 
 	\label{fig:data-soc}
 \end{figure}
 
+In terms of EV2G studies, we first determined the battery parameters of EVs.
+
+\begin{itemize}
+	\item EV charging rate is 10kW, corresponding to the guidance provided by Tesla\cite{Tesla2} and a typical home charging infrastructure with 50A current limit. 
+	\item The battery energy capacity per EV of 75kWh is taken from one of the most popular EV models\cite{Tesla3}.
+\end{itemize}
+
+Simulations are then performed to get EV driving profiles, which are based upon data from the California Department of Transportation's California Household Travel Survey for 2010-2012\cite{NREL_TSDC}. This survey carried out multiple objectives and included 79011 vehicles. For our work we focus on a proportion of the vehicles, 2910, which were fitted with GPS. These vehicles were monitored continuously for a 7-day window with the 1-second resolution. The GPS data is then processed into trip profiles, while include information of the location of each EV at each time step as well as the trips made by each EV. Furthermore, together with the parameters of the EV model we have selected above we simulated the SoC time series of the EV batteries. Finally, from the simulated results, we can statistically derive the value of probability distribution of EV plug-in $n^+$, plug-out $n^-$, and average state-of-charge (SoC) of batteries plug-in $s^+$, plug-out $s^-$, as introduced in Section \ref{sec:tech-simulation-module}. The results are shown as Figure \ref{fig:data-ev-number}-\ref{fig:data-soc} where we can see clear periodic patterns that are different between weekdays and weekends.
+
 The metrics to evaluate the system performance are slightly different between ESS and EV2G. For ESS, the criteria in the evaluation metrics include
 \begin{itemize}
-	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue}, per annum
-	\item \textbf{Operating Profit}: the total revenue net of operation-dependent costs (degradation cost), per annum
+	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue} in Section \ref{sec:revenue}, per annum
+	\item \textbf{Operating cost:} the operation-dependent costs (essentially degradation cost); refer to Section \ref{sec:cost} and Equation \eqref{eq:degradation-damping}, per annum
+	\item \textbf{Operating Profit}: the total revenue net of the operating cost, per annum
+	\item \textbf{Fixed cost:} the equivalent annual cost (EAC) of operation-independent costs (essentially expenses on ESS infrastructure); refer to Section \ref{sec:cost}
 	\item \textbf{Profit:} the total revenue net of both operation-dependent and fixed costs, per annum
+	\item  \textbf{Profitability ratio}: the ratio between the profit and overall costs including both operating and fix costs
 \end{itemize}
 
 For EV2G, the fixed cost that is mainly related to procuring the battery stocks shall not be considered for a technology vendor. Furthermore, the implicit charging cost to compensate the energy consumed by EV driving are listed separately. Depending on the specific business model in practice, a portion of the implicit charging cost may be recovered by the technology vendors from the end-users, although in this thesis we did not exclude it from calculating the profit. As a result, the criteria are altered as:
 \begin{itemize}
 	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue}, per annum
+	\item \textbf{Operating cost:} the operation-dependent costs (essentially degradation cost), per annum
 	\item \textbf{Implicit Charging Cost}: the cost of energy compensation for EV driving demands, calculated as the total energy consumption multiplied by average price over the span of one operational cycle, per annum
 	\item \textbf{Profit:}: revenue net of costs including the implicit charging cost and battery degradation. The investments on technology are made to be zero as is discussed at the beginning of this section, per annum
+	\item  \textbf{Profitability ratio}: the ratio between the profit and overall costs including both operating and implicit charging costs
 \end{itemize}
 
 As a result, the profit of a EV2G system is closed to the concept of operating profits for a ESS, which excludes the investment of procuring batteries. This implies two disparate business models. Cautions shall be raised while comparisons between these two technologies are made.
@@ -363,10 +368,12 @@ Apart from RegD market, there are no other profiting opportunities existing in P
 Arbitrage in the energy market with flexibility through the so-called economic DR program, as is discussed in Section \ref{sec:qualitative-analysis}, is deemed not an ideal choice, especially in recent years when the electricity prices had fallen drastically with the shell gas revolution. As is discussed in Section \ref{sec:qualitative-analysis}, participating in the emergency DR program is a better option. However, the involvement of capacity market is not within our scope of quantifying the value, but the profiting mechanism is straightforward as is fully explained in the qualitative analysis. %It is also worthwhile to note that coupled operation in real-time and day-ahead markets will push the maximum revenue potential by 327 mUSD/a compared to 229 mUSD/a with participation in day-ahead market only.  
 
 Overall, PJM shows a perfect example on how to offer incentives for the emerging storage technologies that are beneficial to the system, by implementing proper market frameworks such as the RegD and the  emergency DR program. For technology vendors, this market is already quite mature without spare space for new entrants unless significant changes may occur on market conditions, e.g. vast renewable penetration. Nonetheless, existing business cases in PJM may offer viable references for technology vendors to conduct similar practices in other markets. 
+The upper-bounded values indicating the market potential are summarized in Table \ref{tab:pjm-summary}.
+
 
 \subsubsection{ESS in NSW: most favorable market for arbitrage using flexibity yet still not profitable}
 
-In New South Wales power markets, we only studied the real-time energy market, which was primarily due to the limitation of data availability.  Only information about total payment are available for the frequency control products. However, it was found that the overall size of these unaddressed markets are indeed negilible compared to the real-time energy market. The total payment for frequency control services in NSW was worth 23.4 mUSD (2933 USD/$(\text{a} \cdot \text{MW})$) in 2016, which was equal to just 0.53\% of the total payment in the real-time energy market that was 4.4 bUSD (\num{551516} USD/$(\text{a} \cdot \text{MW})$). It was also much smaller than merely the arbitrage value, being 2.7\% of the revenue from arbitrage of \num{109301} USD/$(\text{a} \cdot \text{MW})$ as shown by Figure \ref{fig:nsw-ess}. This reflects the philosophy of market design to fully exploit the ability of real-time energy market to response to the system imbalances which are otherwise tackled by frequency control markets\cite{AEMO2010}\cite{McConnell2015}.
+In New South Wales power markets, we only studied the real-time energy market, which was primarily due to the limitation of data availability.  Only information about total payment are available for the frequency control products. However, it was found that the overall size of these unaddressed markets are indeed negilible compared to the real-time energy market. The total payment in NSW's frequency control ancillary service (FCAS) market was worth 23.4 mUSD (2933 USD/$(\text{a} \cdot \text{MW})$) in 2016, which was equal to just 0.53\% of the total payment in the real-time energy market that was 4.4 bUSD (\num{551516} USD/$(\text{a} \cdot \text{MW})$). It was also much smaller than merely the arbitrage value, being 2.7\% of the revenue from arbitrage of \num{109301} USD/$(\text{a} \cdot \text{MW})$ as shown by Figure \ref{fig:nsw-ess}. This reflects the philosophy of market design to fully exploit the ability of real-time energy market to response to the system imbalances which are otherwise tackled by frequency control markets\cite{AEMO2010}\cite{McConnell2015}.
 As a result, the price volatility in NSW's real-time energy market is significantly higher than the energy markets in other geographies, as is shown by Table \ref{tab:price-3-geo}.
 
 \begin{table}[h!]
@@ -408,7 +415,7 @@ Nonetheless, even though in such a voltaile real-time energy market, it is still
 \subsubsection{Cost reduction: where is the break-even point for arbitrage using BESSs}
 According to the results above, using BESSs for balancing is already technically feasible while limitations lie on the aspect of market design. The value of arbitrage, however, is far away from being profitable due to high expenses on batteries. Overturn of arbitrage profitability using BESSs has to rely on reducing costs and changing market conditions. While the latter will be discussed in the proceeding section, hereby we present the results with reduced costs of battery stocks. 
 
-In each geography, the case with the highest arbitrage potential was selected, which is respectively arbitrage in coupled day-ahead and intra-day market in Germany (DA+ID), arbitrage in coupled day-ahead and real-time market in PJM (DA+RT), arbitrage in real-time market in NSW (RT). The profitability is evaluated by the profitability ratio that is the ratio between the profit and overall costs including both operating and fix costs. We would show the maximum profitability ratio that is realized by a small size of BESS and meanwhile present the maximum profitable system size that is obtained as in the ``max. System Size with pos. Profit" described previously. 
+In each geography, the case with the highest arbitrage potential was selected, which is respectively arbitrage in coupled day-ahead and intra-day market in Germany (DA+ID), arbitrage in coupled day-ahead and real-time market in PJM (DA+RT), arbitrage in real-time market in NSW (RT). We would show the maximum profitability ratio that is realized by a small size of BESS. Meanwhile  we would present the profitable revenue that is obtained as in the scenario of ``max. System Size with pos. Profit" to the maximum potential revenue derived from the scenario ``max. Revenue". It shall be pointed out the maximum revenue that is independent from costs would remain constant so adopted as the cardinal term to illustrate the growth of profitability. 
 
 \begin{figure}[h!]
 	\centering
@@ -433,11 +440,11 @@ In each geography, the case with the highest arbitrage potential was selected, w
 
 Figure \ref{fig:germany-ess-costreduction} - \ref{fig:nsw-ess-costreduction} illustrate how the profitability and market size will evolve with cost reduced by up to 95\% in three geographies. The break-even point of costs is found to be 84\%, 81\% and 68\%, respectively in Germany, PJM and NSW. If we adopt the forecast made by IRENA\cite{IRENA2017} who predict the cost reduction by up to 60\% by 2030, none of these markets will be profitable for arbitrage by 2030. Even if we applied a constant learning rate of 14\% per annum according to \cite{Nykvist2015}, the break-even point will be realized in 12, 11 and 8 years, respectively in Germany, PJM and NSW. 
 
-Moreover, it shall be noticed while the break-even point is just reached, the total profitable system size will be almost at zero. To materialize the whole potential of arbitrage revenue, it requires a cost reduction of 95\%+, 95\% and 90\%, respectively in Germany, PJM and NSW, which is almost impossible to be realized in the foreseeable future.
+Moreover, it shall be noticed while the break-even point is just reached, the total profitable revenue will be almost at zero. To materialize the whole potential of arbitrage revenue, it requires a cost reduction of 95\%+, 95\% and 90\%, respectively in Germany, PJM and NSW, which is almost impossible to be realized in the foreseeable future.
 
 As a conclusion, the cost reduction of BESS by learning effect alone will not turn over the profitability of arbitrage using BESSs in the near future. Unless revolutionary technical innovations happen, opportunities of arbitrage using BESS may only arise with drivers from the market, e.g. renewable penetrations, which are to be shown in Section \ref{sec:impact-market-condition}.
 
-\subsubsection{EV2G  in Germany: promissing and fast-growing opportunities}
+\subsubsection{EV2G  in Germany: changeling in developing business model}
 Implementing EV as a grid resource is not as straightforward as using generic ESSs that is discussed above. The main issue is that the energy demand for EV driving itself poses challenges to grid. It is not possible to deliver any services without incorporate a large-volume energy market. Therefore, the day-ahead energy market is always included for all the cases for EV2G. Moreover, in our case studies, it is found even with the day-ahead market, charging the EVs is not feasible while their number reached a certain level. In the optimization framework, the technology constraints would violate market constraints, especially the one that we set to restrict the activation of peak generation during non-peak hours, while the EV fleet grows beyond a certain scale. This corresponds to the situation where spare generation resources in the power system are not sufficient  to fulfill the energy needs of EVs. The electricity price may raise significantly in those scenarios compared to nowadays's level. As is shown by Figure \ref{fig:EV_nan_percentageg}, when the number of EV is higher than 1 million, it start to stress the electricity supply if the generation capacity remains at present level. 
 \begin{figure}[h!]
 	\centering
@@ -489,9 +496,11 @@ The numbers of EV that were taken for the scenario analysis are then determined 
 	\label{fig:Germany_EV}
 \end{figure}
 
-Based on these scenarios, we performed the case studies and the results are shown by Figure \ref{fig:Germany_EV}. All the business cases reported profits, especially the cases where frequency control markets were coupled. Furthermore, as we seen from the charts, the drastic growth of EVs was reflected on the growth of EV2G market potential from 2016 to 2017, and there are still much more growth space till the scenario of 2\% EV market share. However, it shall be noticed that our analysis has overlooked some factors which could make the business less profitable as shown here. The main issue is that we use a determinate approach to simulate the frequency control signal and EV driving behaviors which eliminated the risks of failing to deliver the frequency control services as planned. Alipour \textit{et. al.}\cite{Alipour2017} made a study on EV2G for frequency control services with a stochastic approach. It was found in a case where a profit of 7980 USD was expected, the conditional value-at-risk was 5720 USD, indicating the risking nature of such a business. In the outlook of this thesis, we proposed a stochastic method by using Markov chain to simulate the uncertain driving behavior of EVs and then the estimation of risk can be conducted. Nonetheless, while quantitative risk assessment against uncertainty is necessary for designing a specific project, it is beyond the focus of a study understanding the whole market value so is not included in our study. Besides, the battery degradation incured by EV driving was not included here while in reality it would be a challenging issue to account the degradation caused by providing EV2G services separately from driving. Finally, implementing EV2G for frequency control is not a mature technology due to its complexity\cite{Peng2017}\cite{Shafie-Khah2015}\cite{Bessa2014}\cite{Bessa2013}, which implies a high research and development cost.
+Based on these scenarios, we performed the case studies and the results are shown by Figure \ref{fig:Germany_EV}. It was found that the arbitrage only in day-ahead market was not profitable at all, while arbitrage in both day-ahead and intra-day market was barely able to maintain a revenue-cost balance. The revenues captured from arbitrage was at most compensating the cost of EV charging. Profits would be possible if a business model where services providers could charge service fees from the end-users (EV owners). Although the service fees can be much lower than the normal charging costs for the end-consumers, it would be still challenging in practice to implement such a business model because the charging cost become implicitly embedded when a EV was used for V2G services. Overall, the low arbitrage values in Germany's energy market makes these business cases not appealing. 
 
-It is also worthwhile to note that while the number of EVs (0.9 million ) in the scenario of ``2\% Market Share" has reached the edge of the affordable level (1 million) for the grid, revenues are significantly smaller than the maximum potential revenues derived in the case studies of ESSs. The shares of maximum achievable revenue by EV2G to the total market potential by generic ESS were between 25\%-50\% among different cases. This reveals that constrained by the limitations discussed above, EV2G will not be able fully cover the needs for flexibility by its own, even on a aggregated system level without considering the distributed manners. Other types of flexibility would still be necessary to complement the demands for flexibility in scenarios with high EV penetrations.
+Coupling frequency control markets increases indeed the profits and it was found to be more promising with the drastic of EVs as there are still much more growth space till the scenario of 2\% EV market share. However, it shall be noticed that our analysis has overlooked some factors which could make the business less profitable as shown here. The main issue is that we use a determinate approach to simulate the frequency control signal and EV driving behaviors which eliminated the risks of failing to deliver the frequency control services as planned. Alipour \textit{et. al.}\cite{Alipour2017} made a study on EV2G for frequency control services with a stochastic approach. It was found in a case where a profit of 7980 USD was expected, the conditional value-at-risk was 5720 USD, indicating the risking nature of such a business. In the outlook of this thesis, we proposed a stochastic method by using Markov chain to simulate the uncertain driving behavior of EVs and then the estimation of risk can be conducted. Nonetheless, while quantitative risk assessment against uncertainty is necessary for designing a specific project, it is beyond the focus of a study understanding the whole market value so is not included in our study. Besides, implementing EV2G for frequency control is not a mature technology due to its complexity\cite{Peng2017}\cite{Shafie-Khah2015}\cite{Bessa2014}\cite{Bessa2013}, which implies a high research and development cost.
+
+It is also worthwhile to note that while the number of EVs (0.9 million ) in the scenario of ``2\% Market Share" has reached the edge of the affordable level (1 million) for the grid, revenues are significantly smaller than the maximum potential revenues derived in the case studies of ESSs. The shares of maximum achievable revenue by EV2G to the total market potential by generic ESS were between 18-37\% among different cases. This reveals that constrained by the limitations discussed above, EV2G will not be able fully cover the needs for flexibility by its own, even on a aggregated system level without considering the distributed manners. Other types of flexibility would still be necessary to complement the demands for flexibility in scenarios with high EV penetrations.
 
 \subsubsection{EV2G  in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}
 
@@ -522,15 +531,15 @@ Table \ref{tab:ev-number-scenario-PJM} shows the number of EV in each scenario.
 
 With these numbers of EV, no generation shortage was observed, expect for only one week in the scenario of 2\% EV market share. The results in that week were discarded, i.e. no operations and thus no revenues in that week. This accounts for approximately 2\% of the time in a year so the impact on final results shall be negligible.
 
-Figure \ref{fig:PJM_EV} summarizes the results of cases in PJM. The revenue potential in energy-only cases are much smaller compared to the corresponding results in Germany, which is mainly because the values were dilluted by higher consumption rate per household (MP) in PJM (2.5 times the value in Germany referring to Table \ref{tab:MP}). 
+Figure \ref{fig:PJM_EV} summarizes the results of cases in PJM. Arbitrage in day-ahead market only was still not profitable. Coupled operations in real-time market lead to niche profits while the EV numbers are relative small, which is similar to the situation in Germany. However, with a 2\% EV market share, we saw a profit from business case while it incurred loss in Germany's DA+ID markets. This can be explained by the PJM's real-time market as a hub for all real-time settlements has much higher liquidity than the intra-day exchange in Germany.
 
-However, the incremental revenue by stacking RegD to DA+RT case was 455 USD/$(\text{a} \cdot \text{MW})$ in the scenario of ``EV Number 2016" while the addtional revenue by stacking SCR to DA+ID in Germany was merely 208 USD/$(\text{a} \cdot \text{MW})$, which again reveals the favor of RegD toward flexibility resources. 
+The incremental revenue by stacking RegD to DA+RT case was 462 USD/$(\text{a} \cdot \text{MW})$ in the scenario of ``EV Number 2016" while the addtional revenue by stacking SCR to DA+ID in Germany was merely 206 USD/$(\text{a} \cdot \text{MW})$, which again reveals the favor of RegD toward flexibility resources. 
 
-Noticing that the whole RegD market potential for generic flexiblity resources is merely 513 USD/$(\text{a} \cdot \text{MW})$ as was shown previously by \ref{fig:pjm-ess}.This market could be easily exhausted by a small size of EV fleet. 
+Noticing that the whole RegD market potential for generic flexiblity resources is merely 513 USD/$(\text{a} \cdot \text{MW})$ as was shown previously by \ref{fig:pjm-ess}. This market could be easily exhausted by a small size of EV fleet. 
  
-\subsubsection{EV2G  in NSW: a small portion of arbitrage potential to be capturned by EV2G yet still much valuable than in other geographies}
+\subsubsection{EV2G  in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}
 
-Using the same methodology as in PJM, scenarios are established by taking the identical EV numbers per household, as is shown by Table \ref{tab:ev-number-scenario-nsw}.
+Using the same methodology as in PJM, scenarios are established by taking the identical EV numbers per household, as is shown by Table \ref{tab:ev-number-scenario-nsw}. With these number of EV, no supply shortage was observed.  
 
 \begin{table}[h!]
 	\centering
@@ -554,22 +563,137 @@ Using the same methodology as in PJM, scenarios are established by taking the id
 	\label{fig:NSW_EV}
 \end{figure}
 
-Figure \ref{fig:NSW_EV} presents the results of three scenarios in NSW's real-time energy market. Although the size of EV fleet is merely 6.5\% of that in Germany and 11.1\% of that in PJM. The market sizes are generally on the same scale as the other two markets. The revenue per EV of around 560 USD/a and profit per EV of about 365 USD/a are significantly higher than other geographies, as a result of the price volatility in NSW's real-time market discussed previously. High unit return provides more incentives of the end-users to participate in the EV2G program, which makes the business more realizable.
+Figure \ref{fig:NSW_EV} presents the results of three scenarios in NSW's real-time energy market. Similar to the situations in ESS cases, the market potential of arbitrage is higher than the other two geographies due to the price volatility as is cussed previously. The potential profit obtained in the scenario of ``EV Number 2016" was \num{198} USD/$(\text{a} \cdot \text{MW})$, which was 66 and 9 times the numbers in corresponding cases in Germany and PJM respectively. It is even higher than profits from business cases where frequency control are involved in other two geographies. Since arbitrage using EV is much more feasible in technology, such a high arbitrage profitability shall provide more incentives for the market participates and makes the business appealing if the number of EV will indeed grow in line with our scenarios.
 
-Besides, it can be noticed the overall market size even in the last scenario where we see a revenue potential of 32.8 USD/a accounts for a small portion of the total arbitrage potential in NSW's real-time market revealed in the section for generic ESSs, leaving a vast space for other technologies.3.8\%
+Finally, it shall be noted that even in the scenario with 2\% EV market share, the market potential of arbitrage via EV2G was found to be \num{4105} USD/$(\text{a} \cdot \text{MW})$, which was just 3.8\% of the overall arbitrage potential using ample size of generic ESSs as was shown by Figure \ref{fig:nsw-ess}, leaving a vast space for other technologies.
 
-\subsubsection{Conclusion}
+\subsubsection{Summary}
 
+The key indicators for the market size and profitability, in both normalized and absolute values are summarized in Table \ref{tab:germany-summary}-\ref{tab:nsw-summary}. Values were extracted at different scenarios where they are maximized. Therefore, the maximum revenue and maximum profit may not be obtained at the same time, especially for ESSs, as has been discussed at the beginning of this section.
 
+\begin{table}
+	\centering
+	\begin{tabular}{l r r r r}
+		\hline
+		\multirow{2}{*}{\textbf{Item\footnote{Maximum values of items are obtained in different scenarios}}}& \textbf{Arbitrage} & \multicolumn{2}{c}{\textbf{Balancing}} & \textbf{Multitasking} \\
+		\multirow{2}{*}{}& DA+ID & BE & FCR\footnote{Frequency control reserve, including both PCR and SCR} & DA+ID+FCR \\
+		\hline
+		\multicolumn{5}{l}{\textbf{Energy Storage System}} \\
+		& & & & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{6426} & \num{3872} & \num{2012} & \num{10247} \\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & - & 17 & - & - \\
+		& & & & \\
+		Max. Revenue [mUSD/a] & \num{380} & \num{229} & \num{119} & \num{606} \\
+		Max. Profit [mUSD/a] & - & 1 & - & - \\
+		& & & & \\
+		Max. Profitability Ratio & (-92\%) & 7\% & (-40\%) & (-60\%) \\
+		Cost break-even\footnote{Cost reduction ratio} & (-84\%) & - &- & -\\
+		& & & &\\
+		\hline
+		\multicolumn{5}{l}{\textbf{Electric Vehicle to Grid}} \\
+		& & & & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{1961} & - & - & \num{3224} \\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & 8 & - & - & \num{1986} \\
+		& & & & \\
+		Max. Revenue [mUSD/a] & \num{116} & - & \- & \num{190} \\
+		Max. Profit [mUSD/a] & \num{0.5} & - & - & 117 \\
+		& & & & \\
+		Max. Profit per EV [USD/(a)] & \num{4} & - & - & \num{731} \\
+		& & & &\\
+		\hline
+	\end{tabular}
+	\caption{Summary of market size and profitability of flexibility management in Germany}\label{tab:germany-summary}
+\end{table}
 
-\subsection{Impact analysis of changing market conditions}
+\begin{table}
+	\centering
+	\begin{tabular}{l r r r r}
+		\hline
+		\multirow{2}{*}{\textbf{Item\footnote{Maximum values of items are obtained in different scenarios}}}& \textbf{Arbitrage} & \multicolumn{2}{c}{\textbf{Balancing}} & \textbf{Multitasking} \\
+		\multirow{2}{*}{}& DA+RT & RegD & RegA & DA+RT+Reg\footnote{Including both RegD and RegA}\\
+		\hline
+		\multicolumn{5}{l}{\textbf{Energy Storage System}} \\
+		& & & & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{6333} & \num{524} & \num{467} & \num{7324} \\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & 0 & 11 & 0 & 53\\
+		& & & &\\
+		Max. Revenue [mUSD/a] & \num{556} & \num{46} & \num{41} & \num{643}\\
+		Max. Profit [mUSD/a] & 0 & 1 & 0 & 3\\
+		& & & & \\
+		Max. Profitability Ratio & (-88\%) & 8\% & (-29\%) & 9\%\\
+		Cost break-even\footnote{Cost reduction ratio} & (-81\%) & - & - & -\\
+		& & & & \\
+		\hline
+		\multicolumn{5}{l}{\textbf{Electric Vehicle to Grid}} \\
+		& & & & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{1504} & - &  - & \num{2351}\\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & 261 & - & - & \num{1218} \\
+		& & & & \\
+		Max. Revenue [mUSD/a] & \num{132} & - &  - & \num{206}\\
+		Max. Profit [mUSD/a] & \num{23} & - &  - & \num{107} \\
+		& & &  & \\
+		Max. Profit per EV [USD/(a)] & \num{45} & - & - &\num{1657}\\
+		& & & & \\
+		\hline
+	\end{tabular}
+	\caption{Summary of market size and profitability of flexibility management in PJM}\label{tab:pjm-summary}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{l r r}
+		\hline
+		\multirow{2}{*}{\textbf{Item\footnote{Maximum values of items are obtained in different scenarios}}}& \textbf{Arbitrage} & \textbf{Balancing} \\
+		\multirow{2}{*}{}& DA+RT & FCAS\footnote{Values based on payment on a whole system level without involving technical analysis} \\
+		\hline
+		\multicolumn{3}{l}{\textbf{Energy Storage System}} \\
+		& & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{109301} & \num{2933} \\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & - & - \\
+		& & \\
+		Max. Revenue [mUSD/a] & \num{872} & \num{23} \\
+		Max. Profit [mUSD/a] & - & - \\
+		& & \\
+		Max. Profitability Ratio & (-70\%) & - \\
+		Cost break-even\footnote{Cost reduction ratio} & (-68\%) & \\
+		& & \\
+		\hline
+		\multicolumn{3}{l}{\textbf{Energy Storage System}} \\
+		& & \\
+		Max. Revenue [USD/$(\text{a} \cdot \text{MW})$] & \num{4105} & - \\
+		Max. Profit [USD/$(\text{a} \cdot \text{MW})$] & \num{2382} & - \\
+		& & \\
+		Max. Revenue [mUSD/a] & \num{33} & - \\
+		Max. Profit [mUSD/a] & 19 & - \\
+		& & \\
+		Max. Profit per EV [mUSD/a]& 326 & - \\
+		& & \\
+		\hline
+	\end{tabular}
+	\caption{Summary of market size and profitability of flexibility management in NSW}\label{tab:nsw-summary}
+\end{table}
+
+\newpage
+\subsection{Impact analysis of renewable penetration}
 \label{sec:impact-market-condition}
 
+As is mentioned at the beginning of this section, understanding the impact of some key factors is crucially viable to plan future business on flexibility management, as the market may evolve rapidly. Among all the factors, we have selected the renewable penetration as the most influencing factor and studied in this thesis. The rationale can be explained as the renewable penetration would change most radically compared to other factors and is viewed as the essential driver of growing needs for flexibility, which has been elaborated in Chapter \ref{ch:introduction}. 
+
+Growing capacity of renewable generations will influence both wholesale energy and frequency control markets as we have seen from the literature; refer to Chapter \ref{ch:LitRev}. However, determining the requirement for frequency control reserve is an extremely sophisticate process of grid planning, which is rarely addressed by academic articles. Grid planner may initiated large-scale research project dealing with this problem. Referring to a study ordered by PJM and conducted by a research consortium led by GE Consulting\cite{GEEnergyConsulting2014}, an average of 1533 MW frequency regulation reserve would be required in a scenario where the 14\% RPS (Renewable Portfolio Standard by each state in PJM region) is to be met by 2026. This is about 2.2 times of the amount in 2016 (700MW). Assuming the price stays at the same level, one may multiply the ratio of 2.2 to the valuation results presented in preceding section, in order to make a rough estimation of the future. Nonetheless, the penetration of renewable will not only influence the frequency control market physically but also institutionally where the design of market may be revised. Therefore, understanding quantitatively the impacts of renewables on both volume and price in frequency control market are significantly beyond the scope of this study. 
+
+In this thesis, we would only focus on the wholesale energy market. Day-head markets in both Germany and PJM are taken for case studies.
+
+In order to simulate price scenarios with different level of renewable generation, we adopted a simplified method by multiplying the time-series data of actual renewable generation in 2016 by a certain ratio. No simulations with wealth data were involved. 
+
+In Germany, the installed capacity of solar and wind has already accounted for a significant share, i.e. \num{83.85} GW as 41.7\% of the total generation capacity. Therefore, we made conservative scenarios where the assumed capacity of wind and solar are 85\% to 115\% of present level with a step length of 5\% of the existing capacity, equal to 4.19 GW per step. 
+
+%\num{105870 } GWh 2016 in Germany, including both wind and solar generations. Therefore, a change of 5\% in renewable generation can be deemed as equivalent to 4.19 GW or \num{8.29} GWh. 
+
+
+For PJM, the installed capacity of wind and solar was merely 6533 MW in 2016, which is 3.7\% of the total capacity. The 14\% RPS, as is mentioned above, requires PJM to install a total of \num{40190} MW solar and wind generations by 2026. Compared to the number in 2016, this indicates a compound annual growth rate (CAGR) of 20\%. Therefore, we created additional scenarios beyond the ones that are consistent with German cases (85-115\%) as 5-year forecasts the 20\% CAGR.
 
 \subsubsection{Model setup and validation}
-As is introduced in Section \ref{sec:market-simulation}, the market simulation module was designed to generate price scenarios with changed market conditions so that we can analyze the future trend of market value by understanding potential impacts of certain key factors. 
-
-The module is developed using the methodology in Section \ref{sec:market-simulation} and based on day-ahead market and generation data in Germany in 2016.
+In order to analyze the future trend of market value by understanding potential impacts of certain key factors, the market simulation module was designed as is introduced in Section \ref{sec:market-simulation}. In this section, we would demonstrate the setup and validation of the module  based on day-ahead market and generation data in Germany in 2016.
 
 First of all, the data of Germany day-ahead price and volume were collected and shown as Figure \ref{fig:merit-orignal}.
 
@@ -595,27 +719,23 @@ The pattern of merit-order effect is not clearly recognizable from the original 
 	\label{fig:merit-classified}
 \end{figure}
 
-Thereafter, we fitted the transformed data pattern with the piece-wise function defined by \eqref{eq:merit-order-model}. The estimated parameters are listed in Table \ref{tab:merit}. The fitted merit-order curve is illustrated by Figure \ref{fig:merit-fitted} and distribution of errors between the fitted price and actual price is shown by Figure \ref{fig:merit-error}.
+Thereafter, we fitted the transformed data pattern with the piece-wise function defined by \eqref{eq:merit-order-model}. The estimated parameters are listed in Table \ref{tab:merit}. It shall be noticed there are price limits applied in EPEX day-ahead market\cite{EPEX_price_limit} which is between -500 to 3000 EUR/MWh, equal to -600 to 3.6 USD/MWh using the specified currency exchange rate. The fitted merit-order curve is illustrated by Figure \ref{fig:merit-fitted} and distribution of errors between the fitted price and actual price is shown by Figure \ref{fig:merit-error}.
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{|l | r r r|}
+	\begin{tabular}{l  r r r}
 		\hline
-		Class & \multicolumn{3}{c|}{Parameters}\\
-		\hline
+		\multirow{2}{*}{\textbf{Class}} & \multicolumn{3}{c}{\textbf{Parameters}}\\
 		 & $a$ & $b$ & $c$\\
 		\hline
-		\hline
 		Inflex. & 17.05 & -1.49 & -12.35 \\
-		\hline
 		\multirow{3}{*}{Mid.} & 48.66 & 16.40 & \\
 		\multirow{3}{*}{} & 38.04 & 20.12 & \\
 		\multirow{3}{*}{} & 16.37 & 34.20 & \\
-		\hline
 		Peak & -194.95 & 491.46 & -0.69 \\
 		\hline
 	\end{tabular}
-	\caption{Parameters of the merit-order model}\label{tab:merit}
+	\caption{Parameters of the merit-order model in Germany}\label{tab:merit}
 \end{table}
 
 \begin{figure}[h!]
@@ -627,7 +747,7 @@ Thereafter, we fitted the transformed data pattern with the piece-wise function 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.95\linewidth]{Figures/4_Error-distribution}
+	\includegraphics[width=0.9\linewidth]{Figures/4_Error-distribution}
 	\caption{Distribution of errors between fitted merit-order price and actual price}
 	\label{fig:merit-error}
 \end{figure}
@@ -646,16 +766,15 @@ Unlike studies on valuation of a conventional generation resources where such a 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.95\linewidth]{Figures/6_Model_Validation}
-	\caption{The revenue with different price scenarios}
+	\caption{The revenue with different price scenarios for model validation in Germany}
 	\label{fig:model-validation}
 \end{figure}
 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{|r r|}
+	\begin{tabular}{r r}
 		\hline
-		\multicolumn{2}{|c|}{SARMA parameters}\\
-		\hline
+		\multicolumn{2}{c}{SARMA parameters}\\
 		\hline
 		$\phi_1 = 1.811$ & $\theta_1 = -1.063$ \\
 		$\phi_2 = -0.813$ & $\theta_{24} =0.692$ \\
@@ -663,25 +782,90 @@ Unlike studies on valuation of a conventional generation resources where such a 
 		$\phi_{168} = 0.692$ & \\
 		\hline
 	\end{tabular}
-	\caption{Parameters of the stochastic price movement of SARMA models}\label{tab:SARMA}
+	\caption{Parameters of the stochastic price movement of SARMA models in Germany}\label{tab:SARMA}
 \end{table}
 
 Therefore, a seasonal auto-regressed moving-average (SARMA) model as is described in \ref{sec:market-simulation} is applied to simulate the stochastic components of the price. The estimated parameters of the SARMA model based on the error signal characterized by\ref{fig:merit-error} is listed in Table \ref{tab:SARMA}. Thereafter, we conducted Monte-Carlo simulations and generated a number of scenarios of the stochastic parts of price which are then added to the determinate trends calculated by the merit-order model. The final simulated price scenarios are illustrated by the grey lines in Figure \ref{fig:price-example}. Using these generated price profiles, we calculated the revenue for 100 scenarios and compare the average and median value to the result obtained with actual price signal, which shew perfect fitness in Figure \ref{fig:model-validation}. There are no significant differences between the average and median value observed, but for robustness and avoiding effects of outliers, we would use the median value as the simulated result for experiments in proceeding sections.
 
-\subsubsection{Impact of renewable penetration}
+We applied the same procedure to develop the model for PJM. It was noticed that the situation when the residual load is in the range of inflexible generation is rarely observed in PJM, which can be explained by the relative low installed capacity of renewable generations. Therefore, we migrated part of the merit-order model for inflexible generation based on Germany's data here, which shall however have insignificant effects because the lowest price is bounded at 0. Negative pricing is not explicitly an issue in PJM's market so far although PJM is fully aware of this issue but waiting for FERC's initiative to address the potential negative price formation\cite{PJM_price_limit_1}. Without unambiguous rules, we would not allow negative prices in our modeling. The highest price, on the other hand in PJM is capped at 1000 USD/MWh\cite{PJM_price_limit}. 
+
+The parameters for the merit-order model in PJM are listed in Table \ref{tab:merit_pjm}. The SARMA parameters are presented in Table \ref{tab:SARMA_PJM}.
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{l  r r r}
+		\hline
+		\multirow{2}{*}{\textbf{Class}} & \multicolumn{3}{c}{\textbf{Parameters}}\\
+		& $a$ & $b$ & $c$\\
+		\hline
+		Inflex. & 17.05 & -1.49 & -12.35 \\
+		\multirow{3}{*}{Mid.} & 23.50 & 16.40 & \\
+		\multirow{3}{*}{} & 32.02 & 13.41 & \\
+		\multirow{3}{*}{} & 3.58 & 31.90 & \\
+		Peak & 10.70 & 501.35 & -5.32 \\
+		\hline
+	\end{tabular}
+	\caption{Parameters of the merit-order model in PJM}\label{tab:merit_pjm}
+\end{table}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{r r}
+		\hline
+		\multicolumn{2}{c}{SARMA parameters}\\
+		\hline
+		$\phi_1 = 0.690$ & $\theta_1 = 0.107$ \\
+		$\phi_2 = 0.125$ & $\theta_{24} =-0.003$ \\
+		$\phi_{24} = 0.298$ & $\theta_{168} = -0.399$ \\
+		$\phi_{168} = 0.560$ & \\
+		\hline
+	\end{tabular}
+	\caption{Parameters of the stochastic price movement of SARMA models in PJM}\label{tab:SARMA_PJM}
+\end{table}
 
 
+\subsubsection{Renewable penetration in Germany: at the inflection point}
 
-\subsubsection{Impact of increasing flexibility}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/RenewablePenetration_Germany}
+	\caption{Impacts of renewable generations on revenue and profitability of arbitrage using flexibility as well as on total amount of transations in day-ahead market in Germany}
+	\label{fig:renew_germany}
+\end{figure}
+
+The results are illustrated in Figure \ref{fig:renew_germany}. We can see while the revenue potential of arbitrage using flexibility grew insignificantly with renewable capacity growing from 85\% to the present level, it would accelerate rapidly afterwards. The potential revenue would almost double its value with 10\% additional renewable generation and triple with 15\% renewable growth. This indicates the day-ahead market in Germany is at a inflection point where the volatility will increase drastically with more renewable making it more favorable for arbitrage. Quantitatively, it was found when renewable capacity grew from 85\% to the present level, the addition of each 5\% growth would lead to a increase of 12-23\% on the
+the standard deviation of day-ahead price. In contrast, the rises of volatility would be 74-225\% for each additional 5\% growth of renewable growth from present level to 115\%.
+
+However, it is known that the renewable penetration will not only increase the price volatility but also lower the average level of price via the so-called merit-order effect. In our study, the merit-order effect was found to be 0.75 - 1.12 USD/MWh per additional GW of renewable generation, which accords with the number found by previous research where the merit-order effect was accounted to be 0.8-2.3 EUR/MWh  per additional GW in Germany by statistic studying on the real data between 2008 to 2012. 
+
+Without any interventions, this effect would soon make the price unacceptably low to generators. In the scenario with 15\% more renewable the average price in day-ahead energy market will reduce by 14 USD/MWh which would almost half the revenues received by generators as a whole. The growth of arbitrage revenue would be one order of magnitude smaller than the reduction of overall amount of payment to generators. It was certain that players will take actions against this trend. The policy supports on renewables may also be gradually abated as what have already been noticed from the real world and introduced in Section \ref{sec:qualitative-analysis}. 
+
+Market players with conventional generations that are suffering the pressure of decreasing price due to renewables may embrace flexibility in order to mitigate the conflicts of renewables and inflexible generations or even enhance their market power to strategically maintain the price level as is studied in \cite{Schill2011}. The effects of arbitrage using flexibility on wholesale energy market would be briefly discussed in Section \ref{sec:sensitivity} on a schematic level.
+
+Nevertheless, BESS might not be the right choice to achieve these goals. As the profitability ratios of the pre-defined BESS in our study were still deeply negative and raised insignificantly to be optimally -87\% from nowadays's level of -94\%.
+
+\subsubsection{Renewable penetration: arbitrage potential bounded by non-negative pricing}
+
+Similar work was conducted in PJM's day-ahead market. Results are shown by Figure \ref{fig:renew_pjm}. With trivial addition of renewable generations from 85-115\%, the potential arbitrage revenue would increase slightly by about 0.7-1\% for each 5\% increment. However, further growth of renewables will lead to a decreasing trend of arbitrage potential. This could be explained because of the non-negative price. Without compensation from negative prices, the arbitrage value dropped along with the shrink of average electricity price due to merit-order effects. The merit-order effect here was found to be 1.05 - 1.13 USD/MWh per additional GW of renewable capacity.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/RenewablePenetration_PJM}
+	\caption{Impacts of renewable generations on revenue and profitability of arbitrage using flexibility as well as on total amount of transations in day-ahead market in PJM}
+	\label{fig:renew_pjm}
+\end{figure}
+
+PJM reported that it had received negative offers from wind generation enabled by the federal wind production tax credit (PTC)\cite{PJM_price_limit_1}. However, without a clear framework of negative price formation, predictive studies would hardly be robust. 
 
 \subsection{Sensitivity analysis}
+\label{sec:sensitivity}
+Throughout the whole study, there are two most important assumption made, i.e. the perfect predictability assumption and fixed price assumption. Elaborated in the literature, this two assumption are common pragmatic tools in similar studies to indicate a idealistic value as upper bound. 
+
 \subsubsection{Limited predictability}
 
 
-\subsubsection{Database}
-
-\subsubsection{Locational price}
+\subsubsection{Responsive price}
 
 \subsubsection{Sensitivity analysis of other parameters}
 

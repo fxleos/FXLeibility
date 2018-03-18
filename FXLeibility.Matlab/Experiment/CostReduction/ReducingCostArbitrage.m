@@ -222,20 +222,26 @@ for i_scenario = 1:nb_scenario
     end
 end
 %{
+load('Germany_ESS_CostReduction.mat')
+cost_reduction_rate = [0,cost_reduction_rate];
+profit_ratio = [-0.9248,profit_ratio]; % PJM: -0.87546 NSW:-0.7057
+profitable_size = [0,profitable_size];
+max_size = 129674*1000; %NSW: 67289 %PJM: 75829
+base = 59138; %NSW: 7978 %PJM: 87793
+
 plot(cost_reduction_rate,profit_ratio,'LineWidth',3);
 hold on
 yyaxis right
-plot(cost_reduction_rate,profitable_size/59138,'LineWidth',3,'Color',[0.8500    0.3250    0.0980]);
-plot([cost_reduction_rate(end),1],[profitable_size(end),129674000]/59138,'--','LineWidth',3,'Color',[0.8500    0.3250    0.0980]);
-%NSW: 67289 | 7978
-%PJM: 75829 | 87793
+plot(cost_reduction_rate,profitable_size/max_size,'LineWidth',3,'Color',[0.8500    0.3250    0.0980]);
+plot([cost_reduction_rate(end),1],[profitable_size(end),max_size]/max_size,':','LineWidth',3,'Color',[0.8500    0.3250    0.0980]);
+
 set(gca,'YColor','k')
 set(gca,'linewidth',2)
 set(gca, 'FontSize', 14)
 xlabel('Cost reduction ratio','FontSize', 16)
-ylabel('(kW ESS)/(MW consumption)','FontSize', 16)
-set(gca,'YTick',[-1500:750:3000],'ylim',[-1500,3000])
+ylabel('Revenue ratio','FontSize', 16)
+set(gca,'YTick',[-0.6:0.3:1.2],'ylim',[-0.6,1.2])
 yyaxis left
 ylabel('Profitability ratio','FontSize', 16)
-legend({'Maximum profitability ratio','Profitable system size', 'Profitable system size projected to zero cost'},'Location','northwest','FontSize', 14)
+legend({'Maximum profitability ratio','Ratio of profitable revenue to maximum potential revenue', 'Projection to zero cost'},'Location','northwest','FontSize', 12)
 %}

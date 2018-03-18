@@ -239,6 +239,7 @@ Result_summary(6,2) = Result_OperatingProfit(1)/1000000;
 Result_summary(6,3) = Result_Profit(1)/1000000;
 Result_summary(6,4) = Result_SystemSize(1)/1000;
 
+Result_forEV = [Result_rev_cost(1,3);Result_rev_cost(1,6);Result_rev_cost(1,4);0;Result_rev_cost(2,3);Result_rev_cost(2,6);Result_rev_cost(2,4);0;Result_rev_cost(3,3);Result_rev_cost(3,6);Result_rev_cost(3,4);0];
 %{
 plot(Result_SystemSize/1000, Result_Revenue/1000000,'LineWidth',3);
 hold on

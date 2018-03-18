@@ -57,7 +57,7 @@ With this model, we can evaluate the profitability and risk associated with a ce
 \section{Market-based modules}
 
 \subsection{Revenue module}
-
+\label{sec:revenue}
 In this study, we only consider explicit revenues from power markets. At each time step ($t$), the revenue ($\text{REV}_t$) is calculate as the amount of energy ($e_t$, in MWh) offered in each energy market segment ($i$), and/or amount of reserve ($r_t$, in MW) offered in each reserve market segment ($j$), multiplied by their corresponding prices ($\pi_t$, in \$/MWh or \$/MW). In reserve market, there are additional revenues from energy provision while the committed capacities are activated. The amount of energy delivered in reserve market is determined as a proportion of the committed reserve using a term of ratio ($\delta_t$, in MWh/MW). The total revenue within a given period of time ($T$) and a set of selected energy markets ($I$) and a set of  selected reserve markets ($J$), can be then computed as:
 
 \begin{equation}

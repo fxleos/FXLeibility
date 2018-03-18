@@ -3,83 +3,55 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
-Warning--entry type for "GE" isn't style-file defined
---line 3500 of file thesis.bib
-Warning--entry type for "Siemens" isn't style-file defined
---line 3508 of file thesis.bib
 Repeated entry---line 3555 of file thesis.bib
  : @article{Sioshansi2009
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "Tesla1" isn't style-file defined
---line 3619 of file thesis.bib
-Warning--entry type for "Tesla2" isn't style-file defined
---line 3625 of file thesis.bib
-Warning--entry type for "Tesla3" isn't style-file defined
---line 3631 of file thesis.bib
-Warning--entry type for "NREL_TSDC" isn't style-file defined
---line 3651 of file thesis.bib
-Warning--entry type for "KBA2017" isn't style-file defined
---line 3658 of file thesis.bib
-I was expecting a `,' or a `}'---line 3662 of file thesis.bib
- :  
- :  urldate = {2018-01-12}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "Eurostat_de_v" isn't style-file defined
---line 3665 of file thesis.bib
-I was expecting a `,' or a `}'---line 3669 of file thesis.bib
- :  
- :  urldate = {2018-03-04}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "Bloomberg" isn't style-file defined
---line 3671 of file thesis.bib
 Warning--empty institution in Wartsila2014
 Warning--there's a number but no series in Grunewald2012
 Warning--empty school in Grunewald2012a
 Warning--empty institution in NortheastGroup2016
 Warning--empty journal in He2012
 Warning--there's a number but no volume in He2012
-You've used 67 entries,
+You've used 72 entries,
             1791 wiz_defined-function locations,
-            827 strings with 14945 characters,
-and the built_in function-call counts, 13628 in all, are:
-= -- 1187
-> -- 667
+            873 strings with 16774 characters,
+and the built_in function-call counts, 14565 in all, are:
+= -- 1305
+> -- 691
 < -- 11
-+ -- 253
-- -- 186
-* -- 918
-:= -- 2251
-add.period$ -- 187
-call.type$ -- 67
-change.case$ -- 66
++ -- 264
+- -- 192
+* -- 937
+:= -- 2422
+add.period$ -- 224
+call.type$ -- 72
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 73
-duplicate$ -- 528
-empty$ -- 1341
-format.name$ -- 186
-if$ -- 2926
+cite$ -- 78
+duplicate$ -- 558
+empty$ -- 1429
+format.name$ -- 192
+if$ -- 3144
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 38
-newline$ -- 323
-num.names$ -- 67
-pop$ -- 169
+int.to.str$ -- 72
+missing$ -- 39
+newline$ -- 370
+num.names$ -- 72
+pop$ -- 206
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 223
+skip$ -- 192
 stack$ -- 0
-substring$ -- 909
-swap$ -- 72
+substring$ -- 928
+swap$ -- 76
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 140
-width$ -- 69
-write$ -- 686
-(There were 3 error messages)
+while$ -- 147
+width$ -- 74
+write$ -- 779
+(There was 1 error message)

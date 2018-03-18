@@ -1,10 +1,10 @@
-setwd("/Users/fxleos/Downloads/Germany_data/2016")
+setwd("/Users/fxleos/Documents/MasterThesis/FXLeibility/FXLeibility/Data/Germany_data/2017")
 library(lubridate)
 
 rm(list = ls())
 #DA
 ##Price
-file = read.table("DE_Day-ahead prices_201601010000_201612312359_1.csv",sep = ";", header = TRUE,stringsAsFactors=FALSE)
+file = read.table("DE_Day-ahead prices_201701010000_201712312359_1.csv",sep = ";", header = TRUE,stringsAsFactors=FALSE)
 P_E_DA = as.numeric(gsub(",", "", file$Germany.Austria.Luxembourg.Euro.MWh.))
 ##Load
 file = read.table("DE_Forecasted consumption_201601010000_201612312345_1.csv",sep = ";", header = TRUE,stringsAsFactors=FALSE)
@@ -47,7 +47,7 @@ P_E_TRU = as.numeric(gsub(",", "", file$Price.of.activated.balancing.services...
 P_E_TRD = as.numeric(gsub(",", "", file$Price.of.activated.balancing.services.....Euro.MWh..1))
 
 # Generation
-file = read.table("DE_Actual generation_201601010000_201612312345_1.csv",sep = ";", header = TRUE,stringsAsFactors=FALSE)
+file = read.table("DE_Actual generation_201701010000_201712312345_1.csv",sep = ";", header = TRUE,stringsAsFactors=FALSE)
 G_bio = as.numeric(gsub(",", "", file$Biomass.MWh.))
 G_wind_on = as.numeric(gsub(",", "", file$Wind.onshore.MWh.))
 G_wind_off = as.numeric(gsub(",", "", file$Wind.offshore.MWh.))
@@ -97,8 +97,8 @@ for (v in c("R_PR","R_RD", "R_RU", "R_TRD", "R_TRU")){
   assign(v,value)
   assign(price.name,price.value)
 }
-
-for (v in c("E_DA", "G_gas", "G_coal_brown", "G_coal_hard", "G_bio", "G_hydro", "G_nuclear", "G_wind_on", "G_wind_off", "G_pv", "G_otherRE", "G_phes", "G_otherCONV")){
+#"E_DA",
+for (v in c( "G_gas", "G_coal_brown", "G_coal_hard", "G_bio", "G_hydro", "G_nuclear", "G_wind_on", "G_wind_off", "G_pv", "G_otherRE", "G_phes", "G_otherCONV")){
   value = get(v)
   value = unname(tapply(value,(seq_along(value)-1) %/% 4, sum))
   assign(v,value)
@@ -120,7 +120,9 @@ E_RD = -E_RD
 DataToBeWrite = data.frame(P_E_DA,E_DA, P_E_RT, E_RT, P_R_PR, R_PR, P_R_RU, P_R_RD, R_RU, R_RD, P_E_RU, P_E_RD, E_RU, E_RD)
 write.csv(DataToBeWrite,file = "DE_2016_EN_REG.csv")
 DataToBeWrite = data.frame(G_gas, G_coal_brown, G_coal_hard, G_bio, G_hydro, G_nuclear, G_wind_on, G_wind_off, G_pv, G_otherRE, G_phes, G_otherCONV)
-write.csv(DataToBeWrite,file = "DE_2016_GEN.csv")
+write.csv(DataToBeWrite,file = "DE_2017_GEN.csv")
+
+write.csv(P_E_DA, file = 'PI_e_I.csv')
 
 plot(P_R_RD,type = 'l')
 

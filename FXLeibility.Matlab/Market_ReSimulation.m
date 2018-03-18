@@ -80,5 +80,5 @@ for ti = 1:Ti
     end
 end
 
-p_sim (p_sim >3000) = 3000;
-p_sim (p_sim <-3000) = -3000;
+p_sim (p_sim >3600) = 3600;
+p_sim (p_sim <-500) = -600;
