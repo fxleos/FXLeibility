@@ -13,45 +13,45 @@ Warning--empty school in Grunewald2012a
 Warning--empty institution in NortheastGroup2016
 Warning--empty journal in He2012
 Warning--there's a number but no volume in He2012
-You've used 72 entries,
+You've used 73 entries,
             1791 wiz_defined-function locations,
-            873 strings with 16774 characters,
-and the built_in function-call counts, 14565 in all, are:
-= -- 1305
-> -- 691
+            880 strings with 16948 characters,
+and the built_in function-call counts, 14805 in all, are:
+= -- 1330
+> -- 695
 < -- 11
-+ -- 264
-- -- 192
-* -- 937
-:= -- 2422
-add.period$ -- 224
-call.type$ -- 72
-change.case$ -- 73
++ -- 266
+- -- 193
+* -- 956
+:= -- 2458
+add.period$ -- 227
+call.type$ -- 73
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 558
-empty$ -- 1429
-format.name$ -- 192
-if$ -- 3144
+cite$ -- 79
+duplicate$ -- 567
+empty$ -- 1455
+format.name$ -- 193
+if$ -- 3196
 int.to.chr$ -- 0
-int.to.str$ -- 72
-missing$ -- 39
-newline$ -- 370
-num.names$ -- 72
-pop$ -- 206
+int.to.str$ -- 73
+missing$ -- 40
+newline$ -- 375
+num.names$ -- 73
+pop$ -- 207
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 192
+skip$ -- 195
 stack$ -- 0
-substring$ -- 928
-swap$ -- 76
+substring$ -- 959
+swap$ -- 77
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 147
-width$ -- 74
-write$ -- 779
+while$ -- 150
+width$ -- 75
+write$ -- 790
 (There was 1 error message)

@@ -30,6 +30,16 @@ J \subseteq  \begin{cases}
 
 \subsection{PJM}
 \subsubsection{Organization of PJM power markets}
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
 Marketplaces
 Timeline
 
@@ -61,8 +71,18 @@ buyer or seller in Energy, and reserve market
 
 \subsubsection{Identify business model}
 
-\subsubsection{Accounting}
+(placeholder)
+\newpage
+(placeholder)
+\newpage
 
+\subsubsection{Accounting}
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
 
 
 
@@ -83,6 +103,21 @@ The capacity prices of reserves are computed using a complex algorithm, taking i
 %BF is determined with the average and upper, lower bounds
 
 \subsection{Germany}
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+
 $\pi_t^{e,i}, i \in \{Balancing\}$, is the the price for balancing energy (reBAP), which exist only in Germany
 
 $\pi_t^{r,j}$ and $\pi_t^{e,j}$ are based on principle of pay-as-bid. The weighted-average values are available in the datasets.
@@ -99,6 +134,17 @@ reBAP = \frac{\sum net imbalance energy cost}{\sum net imbalance energy volume}
 \end{equation}
 
 \subsection{Australia-New South Walse}
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+(placeholder)
+\newpage
+
 The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geographies.
 
 \newpage
@@ -263,7 +309,7 @@ Finally, we would normalize results with respect to the overall scale of the mar
 
 The currency exchange rates are determined as the real market data as of January 1st 2018, when 1 EUR is equal to 1.20 USD and 1 AUD is equal to 0.78 USD\cite{Bloomberg}.
 
-\subsection{Value of markets under current market conditions}
+\subsection{Valuation of markets under current market conditions}
 This section presents the results using historical market data. Since two types of technologies and markets in three geographies were studied, there are a total of six distinct setups with each comprises serveral use-cases. In addition, we included a cost break-even analysis specifically for ESSs as few profitable opportunities were found due to high costs on battery stocks.
 
 \subsubsection{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}
@@ -371,7 +417,7 @@ Overall, PJM shows a perfect example on how to offer incentives for the emerging
 The upper-bounded values indicating the market potential are summarized in Table \ref{tab:pjm-summary}.
 
 
-\subsubsection{ESS in NSW: most favorable market for arbitrage using flexibity yet still not profitable}
+\subsubsection{ESS in NSW: most favorable market for arbitrage using flexibility yet still not profitable}
 
 In New South Wales power markets, we only studied the real-time energy market, which was primarily due to the limitation of data availability.  Only information about total payment are available for the frequency control products. However, it was found that the overall size of these unaddressed markets are indeed negilible compared to the real-time energy market. The total payment in NSW's frequency control ancillary service (FCAS) market was worth 23.4 mUSD (2933 USD/$(\text{a} \cdot \text{MW})$) in 2016, which was equal to just 0.53\% of the total payment in the real-time energy market that was 4.4 bUSD (\num{551516} USD/$(\text{a} \cdot \text{MW})$). It was also much smaller than merely the arbitrage value, being 2.7\% of the revenue from arbitrage of \num{109301} USD/$(\text{a} \cdot \text{MW})$ as shown by Figure \ref{fig:nsw-ess}. This reflects the philosophy of market design to fully exploit the ability of real-time energy market to response to the system imbalances which are otherwise tackled by frequency control markets\cite{AEMO2010}\cite{McConnell2015}.
 As a result, the price volatility in NSW's real-time energy market is significantly higher than the energy markets in other geographies, as is shown by Table \ref{tab:price-3-geo}.
@@ -444,7 +490,7 @@ Moreover, it shall be noticed while the break-even point is just reached, the to
 
 As a conclusion, the cost reduction of BESS by learning effect alone will not turn over the profitability of arbitrage using BESSs in the near future. Unless revolutionary technical innovations happen, opportunities of arbitrage using BESS may only arise with drivers from the market, e.g. renewable penetrations, which are to be shown in Section \ref{sec:impact-market-condition}.
 
-\subsubsection{EV2G  in Germany: changeling in developing business model}
+\subsubsection{EV2G in Germany: changeling in developing business model}
 Implementing EV as a grid resource is not as straightforward as using generic ESSs that is discussed above. The main issue is that the energy demand for EV driving itself poses challenges to grid. It is not possible to deliver any services without incorporate a large-volume energy market. Therefore, the day-ahead energy market is always included for all the cases for EV2G. Moreover, in our case studies, it is found even with the day-ahead market, charging the EVs is not feasible while their number reached a certain level. In the optimization framework, the technology constraints would violate market constraints, especially the one that we set to restrict the activation of peak generation during non-peak hours, while the EV fleet grows beyond a certain scale. This corresponds to the situation where spare generation resources in the power system are not sufficient  to fulfill the energy needs of EVs. The electricity price may raise significantly in those scenarios compared to nowadays's level. As is shown by Figure \ref{fig:EV_nan_percentageg}, when the number of EV is higher than 1 million, it start to stress the electricity supply if the generation capacity remains at present level. 
 \begin{figure}[h!]
 	\centering
@@ -502,7 +548,7 @@ Coupling frequency control markets increases indeed the profits and it was found
 
 It is also worthwhile to note that while the number of EVs (0.9 million ) in the scenario of ``2\% Market Share" has reached the edge of the affordable level (1 million) for the grid, revenues are significantly smaller than the maximum potential revenues derived in the case studies of ESSs. The shares of maximum achievable revenue by EV2G to the total market potential by generic ESS were between 18-37\% among different cases. This reveals that constrained by the limitations discussed above, EV2G will not be able fully cover the needs for flexibility by its own, even on a aggregated system level without considering the distributed manners. Other types of flexibility would still be necessary to complement the demands for flexibility in scenarios with high EV penetrations.
 
-\subsubsection{EV2G  in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}
+\subsubsection{EV2G in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}
 
 \begin{figure}[h!]
 	\centering
@@ -537,7 +583,7 @@ The incremental revenue by stacking RegD to DA+RT case was 462 USD/$(\text{a} \c
 
 Noticing that the whole RegD market potential for generic flexiblity resources is merely 513 USD/$(\text{a} \cdot \text{MW})$ as was shown previously by \ref{fig:pjm-ess}. This market could be easily exhausted by a small size of EV fleet. 
  
-\subsubsection{EV2G  in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}
+\subsubsection{EV2G in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}
 
 Using the same methodology as in PJM, scenarios are established by taking the identical EV numbers per household, as is shown by Table \ref{tab:ev-number-scenario-nsw}. With these number of EV, no supply shortage was observed.  
 
@@ -845,7 +891,7 @@ Market players with conventional generations that are suffering the pressure of 
 
 Nevertheless, BESS might not be the right choice to achieve these goals. As the profitability ratios of the pre-defined BESS in our study were still deeply negative and raised insignificantly to be optimally -87\% from nowadays's level of -94\%.
 
-\subsubsection{Renewable penetration: arbitrage potential bounded by non-negative pricing}
+\subsubsection{Renewable penetration in PJM: arbitrage potential bounded by non-negative pricing}
 
 Similar work was conducted in PJM's day-ahead market. Results are shown by Figure \ref{fig:renew_pjm}. With trivial addition of renewable generations from 85-115\%, the potential arbitrage revenue would increase slightly by about 0.7-1\% for each 5\% increment. However, further growth of renewables will lead to a decreasing trend of arbitrage potential. This could be explained because of the non-negative price. Without compensation from negative prices, the arbitrage value dropped along with the shrink of average electricity price due to merit-order effects. The merit-order effect here was found to be 1.05 - 1.13 USD/MWh per additional GW of renewable capacity.
 
@@ -860,13 +906,102 @@ PJM reported that it had received negative offers from wind generation enabled b
 
 \subsection{Sensitivity analysis}
 \label{sec:sensitivity}
-Throughout the whole study, there are two most important assumption made, i.e. the perfect predictability assumption and fixed price assumption. Elaborated in the literature, this two assumption are common pragmatic tools in similar studies to indicate a idealistic value as upper bound. 
+Throughout the whole study, there are two crucial assumption made, i.e. the perfect predictability assumption and fixed price assumption. Elaborated in the literature, this two assumptions are common pragmatic ways in similar studies to indicate a idealistic value as upper bound. Nonetheless, it is necessary to study how reliable the results are based on these assumptions. Besides, the sensitivities of other parameters that were determined based on assumptions are also tested in this section.
 
 \subsubsection{Limited predictability}
+Validity and issues regarding this assumption was elaborated in Section \ref{sec:perfect-forecast} in the literature review. In reality, players have a set of methods to forecast the price in short run, some of which are quite efficient and accurate \cite{Weron2014} so close to the perfect forecast assumption. However, while valuing the total market, we shall view the market as whole where players' ability of predicting vary significantly. Therefore, here we would calculate the maximum deviations from our previous estimations in a worst case scenario, i.e. derive lower bounds, where players' forecasting ability is poor. This worst forecast method is defined as ``backcast" as is explained in Section \ref{sec:perfect-forecast}, via which market participates directly take the historical price to foresee the future price. This is the simplest way of forecasting the price and is feasible for all players without the needs for any modeling abilities, so shall indeed represent the lowest possible values.
 
+We tested two scenarios where the price is lagged by 1 day and 1 week respectively, i.e. taking the day-ahead and week-ahead price as the predicted price. The results are summarized in Table \ref{tab:sensitivity-predict-germany} to \ref{tab:sensitivity-predict-nsw}.
+
+ \begin{table}[h!]
+ 	\centering
+ 	\begin{tabular}{L{3.6cm} R{2cm} R{2cm} R{2cm} R{2cm}}
+ 		\hline
+ 		 \textbf{Case} & \multicolumn{2}{c}{\textbf{Backcast - 1 week}} & \multicolumn{2}{c}{\textbf{Backcast - 1 day}} \\
+ 		 & MR\footnote{Max. Revenue: difference in percentage }& MPR\footnote{Max. Profitability Ratio: difference in percentage point}& MR$^a$ & MPR$^b$ \\
+ 		 \hline
+ 		 \multicolumn{5}{l}{\textbf{ESS} }\\
+ 		 DA & -50.6\%& -2.3\% & -48.9\%& -2.1\% \\
+ 		 ID & -50.0\%& - 3.2\%&-52.5\%  & -4.1\%\\
+ 		 BE & -133.1\%& - 131.8\%&-101.3\%  & -112.2\%\\
+ 		 PCR & -0.0\%& - 0.0\%&N.A.\footnote{Primary and secondary control markets are organized by weekly auctions} & N.A.$^c$\\
+ 		 SCR & -10.3\%& - 0.6\%& N.A.$^c$ & N.A.$^c$ \\
+ 		 DA+ID & -52.3\%& - 4.1\%& -52.1\% & -4.7\% \\
+ 		 DA+ID+SCR & -35.9\%& - 0.9\%& -38.6\% & -1.3\% \\
+ 		 DA+ID+PCR+SCR & -33.3\%& - 0.0\%& -33.0\% & -0.1\% \\
+ 		 \hline
+ 		 \multicolumn{5}{l}{\textbf{EV2G} }\\
+ 		 DA & -36.1\%& -1.2\% & -58.6\% &-1.8\% \\
+ 		 DA+ID & -41.5\%& -2.3\% & -59.0\% &-3.0\% \\
+ 		 DA+ID+SCR & -22.3\%& -1.1\% & -30.4\% &-1.6\% \\
+ 		 DA+ID+PCR+SCR & -11.6\%& -1.1\% & -22.0\% &-1.5\% \\
+ 		 \hline
+ 	\end{tabular}
+ \caption{Summary of sensitivity analysis on predictability in Germany}\label{tab:sensitivity-predict-germany}
+ \end{table}
+
+First of all, it can be noticed the results for providing balancing energy dropped considerably, which verified our previous analysis that this market is not practically feasible for market players due to the volatility and unpredictability of balancing energy price, reBAP. 
+
+Besides, we can see the cases involving arbitrage is more sensitive than cases with frequency control services. This implies that predicting price precisely for selling frequency control reserves is not as a critical issue as for arbitrage.
+
+Finally, it was found while backcast for 1 day had sightly better performance than backcast for 1 week for ESS, the situation reversed for EV2G. This can be explained because EV driving behaviors embedded in our model also have a weekly pattern, as was shown in preceding section. It is necessary to matching EV driving profiles well with the price profiles.
+
+ \begin{table}[h!]
+	\centering
+	\begin{tabular}{L{3.6cm} R{2cm} R{2cm} R{2cm} R{2cm}}
+		\hline
+		\textbf{Case} & \multicolumn{2}{c}{\textbf{Backcast - 1 week}} & \multicolumn{2}{c}{\textbf{Backcast - 1 day}} \\
+		& MR\footnote{Max. Revenue: difference in percentage }& MPR\footnote{Max. Profitability Ratio: difference in percentage point}& MR$^a$ & MPR$^b$ \\
+		\hline
+		\multicolumn{5}{l}{\textbf{ESS} }\\
+		DA & -35.5\%& -1.9\% & -17.9\%& -1.1\% \\
+		RegD & -4.4\%& -6.4\%&-4.4\%  & -5.1\%\\
+		RegA & -33.3\%& -22.4\%&-26.7\%  & -19.3\%\\
+		DA+RT & -51.6\%& - 7.2\%&  -39.5\%& -6.1\% \\
+		DA+RT+RegD & -47.8\%& -5.4\%& - 36.7\%& -4.5\%\\
+		DA+RT+RegA & -48.6\%& - 12.9\%& -37.2\% & -11.2\% \\
+		DA+RT+RegD+RegA & -48.4\%& - 10.3\%& -34.7\% & -8.7\% \\
+		\hline
+		\multicolumn{5}{l}{\textbf{EV2G} }\\
+		DA & -32.9\%& -0.9\% & -18.3\% &-0.6\% \\
+		DA+RT & -50.3\%& -3.2\% & -43.8\% &-1.0\% \\
+		DA+RT+RegD & -39.5\%& -2.5\% & -34.8\% &-2.3\% \\
+		DA+RT+RegA & -41.9\%& -4.1\% & -36.4\% &-3.5\% \\
+		DA+RT+RegD+RegA& -34.4\%& -4.1\% & -29.9\% &-3.5\% \\
+		\hline
+	\end{tabular}
+	\caption{Summary of sensitivity analysis on predictability in PJM}\label{tab:sensitivity-predict-pjm}
+\end{table}
+
+Compared to results in Germany, the sensitivity of predictability shows a similar pattern. The revenue reduction is less significant in PJM's day-ahead market compared to Germany, implying a more stable price profile.  This can be explained that a power pool with capacity obligation can maximize the participation of all resources and suppress virtual transactions, thereby leading to a robuster price formation than a power exchange. Revenue potential from RegD altered sightly while the value from RegA significantly dropped. This is because in the original plans players were assigned with perfect predictability of frequency control signal as well so that they were able to better tackle the non-energy-neutral signal.  In reality, frequency control signals are impossible to forecast. Therefore, the merit of energy-neutral signal is again demonstrated. However, it shall be emphasized again that implementing energy-neutral signals is a complex and challenging task. A energy-neutral signal might be most beneficial to the system, since it might move to the same direction as the error in order to maintain energy neutrality. This is the rationale why PJM re-engineered the RegD to be conditional energy neutral. 
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{L{2.5cm} R{2cm} R{2cm} R{2cm} R{2cm}}
+		\hline
+		\textbf{Case} & \multicolumn{2}{c}{\textbf{Backcast - 1 week}} & \multicolumn{2}{c}{\textbf{Backcast - 1 day}} \\
+		& MR\footnote{Max. Revenue: difference in percentage }& MPR\footnote{Max. Profitability Ratio: difference in percentage point}& MR$^a$ & MPR$^b$ \\
+		\hline
+		\multicolumn{5}{l}{\textbf{ESS} }\\
+		RT & -58.8\%& -16.6\% & -47.6\%& -14.7\% \\
+		\hline
+		\multicolumn{5}{l}{\textbf{EV2G} }\\
+		RT & -56.4\%& -13.8\% & -51.3\% &-12.7\% \\
+		\hline
+	\end{tabular}
+	\caption{Summary of sensitivity analysis on predictability in NSW}\label{tab:sensitivity-predict-nsw}
+\end{table}
+
+In NSW, although we have pointed out the higher volatility in its real-time markets leads to a higher potential of arbitrage compared to markets in Germany and PJM, it also demands higher precision of price forecasting. The revenue and profitability dropped more sensitively than arbitrage cases in the other two geographies.
 
 \subsubsection{Responsive price}
+While the amount of flexibility reaches a significant level, their trading behaviors will certainly disturb the market and affect the price. Especially in the case of arbitrage where the price volatility is being utilized for value creation, the actual revenue would be more sensitively depending on the responsive price effect. Regarding frequency control market, the revenue relies on the average price level rather than the price volatility and the distinct price formation mechanism such as the pay-as-bid mode in German markets shall suppress significant disturbances of new players on market price. 
 
+Therefore, we studied the effect only on wholesale energy markets here. It shall be firstly pointed out, with a responsive price, there are still two distinct scenarios exist, i.e. price taker and price marker. In the price taker scenario, although the players' actions will affect the price formation, the market is highly competitive so each player has negligible market power. In contrast, price maker may exist in some markets where the competitions are sufficient and few players can strategically exert its market power to distort the market price. Among these two cases, it is clear that the price taker scenario would indicate a lower bound while price makers are more likely to receive higher payments or better fulfill their strategic goals. Therefore, in this section, we take the worst case scenario where players have no market power. It shall be noticed that in this scenario, their price forecast is not imperfect since the price formation takes place after their decisions are made. 
+
+The results for the day-ahead market in Germany as an illustrating example is shown by Table
+
+\textit{(To be continued)}
 \subsubsection{Sensitivity analysis of other parameters}
 
 
