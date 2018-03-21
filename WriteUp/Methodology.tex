@@ -1,9 +1,9 @@
 \chapter{Methodology for Quantitative Valuation of Flexibility Management Markets}
 \label{ch:methodology}
-\textit{This chapter presents the methodology for quantifying the value of flexibility managment markets. A modular approach is adopted to overcome the complexity from multi-dimensional market-technology contexts. Firstly, the modules are introduced, being categorized into market- and technology- based groups. Then we will explain how these modules are to be organized within a optimization.}
+\textit{This chapter presents the methodology for quantifying the value of flexibility management markets. A modular approach is adopted to overcome the complexity from multi-dimensional market-technology contexts. Firstly, the modules are introduced, being categorized into market- and technology- based groups. Then we will explain how these modules are to be organized within a optimization.}
 
 \section{Modular approach to build valuation models}
-In this thesis, a list of different markets and two different technologies are being studied. This results in a significate number of cases of environment. It is not possible to generalize the model for these cases due to multi-dimensional structural differences. On the other hand, building a model for each case will lead to redudancy and make the model less usable and harder to maintain. Therefore, we adopt a modular approach where the dynamics of markets (or technologies) are generalized and varable in market-based (or technology-based) modules. The modular approach does not reduce the complexity of the problem, but renders the model more structurally organized.
+In this thesis, a list of different markets and two different technologies are being studied. This results in a significant number of cases of environment. It is not possible to generalize the model for these cases due to multi-dimensional structural differences. On the other hand, building a model for each case will lead to redundancy and make the model less usable and harder to maintain. Therefore, we adopt a modular approach where the dynamics of markets (or technologies) are generalized and variable in market-based (or technology-based) modules. The modular approach does not reduce the complexity of the problem, but renders the model more structurally organized.
 
 \begin{table}
 	\label{tb:modules}
@@ -265,7 +265,7 @@ The design of reserve markets, on the contrary, is not as straightforward as ene
 
 \subsubsection{Day-ahead energy market}
 
-The simulation for day-ahead energy market is preliminarily based on work done by \cite{Grunewald2012a} where the merit-order curve at supply shortage and surplus is modeled by an uplift effect. We further extend this work to capture the limits of flexibility provision in current energy markets so that we can simulate the market conditions when the flexibility become a challenge with growing renewables and/ or the flexibility becomes ubiquitous.
+The simulation for day-ahead energy market is preliminary based on work done by \cite{Grunewald2012a} where the merit-order curve at supply shortage and surplus is modeled by an uplift effect. We further extend this work to capture the limits of flexibility provision in current energy markets so that we can simulate the market conditions when the flexibility become a challenge with growing renewables and/ or the flexibility becomes ubiquitous.
 
 In \cite{Grunewald2012a}, the peak price during periods of high demand is explained as fewer participants remain with spare generating capacity, putting these actors in a stronger bidding position to mark up the price. In contrast, when demand is low and plants with high SRMCs would not operate so further reduction in generation would favor plants with low SRMCs and thus reverse the bidding position. In both cases, the less available capacity remains, the stronger bidding position for the remaining players, which happens at the two end of merit-order curve where the prices are driven up or down to significantly depart from the marginal cost. The symmetric effect is model with a uplift function:
 
@@ -273,7 +273,7 @@ In \cite{Grunewald2012a}, the peak price during periods of high demand is explai
 U_t^g = 1 + \kappa~e^{-\alpha\left(\frac{C_t^g -P^g_t }{C^g}\right)}
 \end{equation}
 
-where $g$ denote the class of generation in merit order, e.g. peak, flexible, inflexible, etc. ($\kappa$) and ($\alpha$) are the parameters which can be obtained empirically \cite{Cox2009}. In case of peak period, $C^g_t$ represents total avaiable generation capacity of class $g$ and $P^g_t$ is the output of genertion of class g. During period of generation surplus, $C^g_t$ is the remaining generation capacity while $P^g_t$ is the curtailment required.
+where $g$ denote the class of generation in merit order, e.g. peak, flexible, inflexible, etc. ($\kappa$) and ($\alpha$) are the parameters which can be obtained empirically \cite{Cox2009}. In case of peak period, $C^g_t$ represents total available generation capacity of class $g$ and $P^g_t$ is the output of generation of class g. During period of generation surplus, $C^g_t$ is the remaining generation capacity while $P^g_t$ is the curtailment required.
 
 The middle of merit order curve can be modeled with a linear relationship.
 

@@ -3,55 +3,56 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: thesis.bib
-Repeated entry---line 3555 of file thesis.bib
+Repeated entry---line 3556 of file thesis.bib
  : @article{Sioshansi2009
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--empty note in Hagemann2015
 Warning--empty institution in Wartsila2014
 Warning--there's a number but no series in Grunewald2012
 Warning--empty school in Grunewald2012a
 Warning--empty institution in NortheastGroup2016
 Warning--empty journal in He2012
 Warning--there's a number but no volume in He2012
-You've used 73 entries,
+You've used 107 entries,
             1791 wiz_defined-function locations,
-            880 strings with 16948 characters,
-and the built_in function-call counts, 14805 in all, are:
-= -- 1330
-> -- 695
-< -- 11
-+ -- 266
-- -- 193
-* -- 956
-:= -- 2458
-add.period$ -- 227
-call.type$ -- 73
-change.case$ -- 74
+            1076 strings with 23644 characters,
+and the built_in function-call counts, 21898 in all, are:
+= -- 1952
+> -- 1097
+< -- 15
++ -- 415
+- -- 308
+* -- 1432
+:= -- 3699
+add.period$ -- 331
+call.type$ -- 107
+change.case$ -- 114
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 567
-empty$ -- 1455
-format.name$ -- 193
-if$ -- 3196
+cite$ -- 114
+duplicate$ -- 836
+empty$ -- 2084
+format.name$ -- 308
+if$ -- 4700
 int.to.chr$ -- 0
-int.to.str$ -- 73
-missing$ -- 40
-newline$ -- 375
-num.names$ -- 73
-pop$ -- 207
+int.to.str$ -- 107
+missing$ -- 60
+newline$ -- 547
+num.names$ -- 107
+pop$ -- 273
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 195
+skip$ -- 283
 stack$ -- 0
-substring$ -- 959
-swap$ -- 77
-text.length$ -- 11
+substring$ -- 1386
+swap$ -- 108
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 150
-width$ -- 75
-write$ -- 790
+warning$ -- 7
+while$ -- 218
+width$ -- 110
+write$ -- 1164
 (There was 1 error message)

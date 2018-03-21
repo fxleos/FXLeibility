@@ -1,4 +1,278 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
+
+\bibitem{Cochran2014}
+Jaquelin Cochran, Mackay Miller, Owen Zinaman, Michael Milligan, Doug Arent,
+  Bryan Palmintier, Mark~O Malley, Simon Mueller, Eamonn Lannoye, Aidan~Tuohy
+  Epri, Ben Kujala, Northwest Power, Morten Sommer, Hannele Holttinen, Juha
+  Kiviluoma, and S.K. Soonee.
+\newblock {Flexibility in 21st Century Power Systems}.
+\newblock Technical report, National Renewable Energy Laboratory, Golden, 2014.
+
+\bibitem{Wang2017}
+Qin Wang and Bri~Mathias Hodge.
+\newblock {Enhancing power system operational flexibility with flexible ramping
+  products: A review}.
+\newblock {\em IEEE Transactions on Industrial Informatics}, 13(4):1652--1664,
+  2017.
+
+\bibitem{Lund2015}
+Peter~D. Lund, Juuso Lindgren, Jani Mikkola, and Jyri Salpakari.
+\newblock {Review of energy system flexibility measures to enable high levels
+  of variable renewable electricity}.
+\newblock {\em Renewable and Sustainable Energy Reviews}, 45:785--807, 2015.
+
+\bibitem{Delft}
+Cherrelle EID.
+\newblock {\em {Towards the design of flexibility management in smart grids : A
+  techno - institutional perspective}}.
+\newblock PhD thesis, Technische Universiteit Delft, 2017.
+
+\bibitem{Bronski2015}
+Peter Bronski, Mark Dyson, Matt Lehrman, James Mandel, Jesse Morris, Titiaan
+  Palazzi, Sam Ramirez, and Herv{\'{e}} Touati.
+\newblock {The Economics of Demand Flexibility: How "Flexiwatts" Create
+  Quantifiable Value for Customers and the Grid}.
+\newblock Technical Report August, Rocky Mountain Institute, 2015.
+
+\bibitem{McKinsey&Company2010}
+{McKinsey {\&} Company}.
+\newblock {Transformation of Europe's power system until 2050}.
+\newblock Technical report, McKinsey {\&} Company, 2010.
+
+\bibitem{Agency2016}
+{International Energy Agency}.
+\newblock {World Energy Outlook 2016, Special Focus on Renewable Energy}.
+\newblock Technical report, International Energy Agency (IEA), 2016.
+
+\bibitem{FraunhoferIWES2015}
+{Fraunhofer IWES}.
+\newblock {The European Power System in 2030: Flexibility Challenges and
+  Integration Benefits. An Analysis with a Focus on the Pentalateral Energy
+  Forum Region}.
+\newblock Technical report, Analysis on behalf of Agora Energiewende, 2015.
+
+\bibitem{Muller2016}
+Theresa M{\"{u}}ller, Julia Michaelis, Rainer Elsland, Ulrich Reiter, Francesca
+  Fermi, Artur Wyrwa, Yi-kuang Chen, Christoph Z{\"{o}}phel, and Nicolas
+  Kronthaler.
+\newblock {Deliverable D4.1 Overview of techno-economic characteristics of
+  different options for system flexibility provision}.
+\newblock Technical Report 691685, Project REflex, 2016.
+
+\bibitem{Kwon2014}
+Pil~Seok Kwon and Poul {\O}stergaard.
+\newblock {Assessment and evaluation of flexible demand in a Danish future
+  energy scenario}.
+\newblock {\em Applied Energy}, 134:309--320, 2014.
+
+\bibitem{Kondziella2016}
+Hendrik Kondziella and Thomas Bruckner.
+\newblock {Flexibility requirements of renewable energy based electricity
+  systems - A review of research results and methodologies}.
+\newblock {\em Renewable and Sustainable Energy Reviews}, 53:10--22, 2016.
+
+\bibitem{Papaefthymiou2016}
+G.~Papaefthymiou and Ken Dragoon.
+\newblock {Towards 100{\%} renewable energy systems: Uncapping power system
+  flexibility}.
+\newblock {\em Energy Policy}, 92:69--82, 2016.
+
+\bibitem{Alizadeh2016}
+M.~I. Alizadeh, M.~{Parsa Moghaddam}, N.~Amjady, P.~Siano, and M.~K.
+  Sheikh-El-Eslami.
+\newblock {Flexibility in future power systems with high renewable penetration:
+  A review}.
+\newblock {\em Renewable and Sustainable Energy Reviews}, 57:1186--1193, 2016.
+
+\bibitem{Bertsch2016}
+Joachim Bertsch, Christian Growitsch, Stefan Lorenczik, and Stephan Nagl.
+\newblock {Flexibility in Europe's power sector-An additional requirement or an
+  automatic complement?}
+\newblock {\em Energy Economics}, 53:118--131, 2016.
+
+\bibitem{Edenhofer2013}
+Ottmar Edenhofer, Lion Hirth, Brigitte Knopf, Michael Pahle, Steffen
+  Schl{\"{o}}mer, Eva Schmid, and Falko Ueckerdt.
+\newblock {On the economics of renewable energy sources}.
+\newblock {\em Energy Economics}, 40:S12--S23, 2013.
+
+\bibitem{Ueckerdt2015}
+Falko Ueckerdt, Robert Brecha, Gunnar Luderer, Patrick Sullivan, Eva Schmid,
+  Nico Bauer, Diana B{\"{o}}ttger, and Robert Pietzcker.
+\newblock {Representing power sector variability and the integration of
+  variable renewables in long-term energy-economy models using residual load
+  duration curves}.
+\newblock {\em Energy}, 90:1799--1814, 2015.
+
+\bibitem{Ranci2013}
+Pippo Ranci and Guido Cervigni.
+\newblock {\em {The economics of electricity markets: theory and policy}}.
+\newblock Cheltenham : Edward Elgar, 2013.
+
+\bibitem{Srivastava2011}
+Anurag~K. Srivastava, Sukumar Kamalasadan, Daxa Patel, Sandhya Sankar, and
+  Khalid~S. AlOlimat.
+\newblock {Electricity markets: an overview and comparative study}.
+\newblock {\em International Journal of Energy Sector Management},
+  5(2):169--200, 2011.
+
+\bibitem{Hagemann2015}
+Simon Hagemann and Christoph Weber.
+\newblock {Trading Volumes in Intraday Markets - Theoretical Reference Model
+  and Empirical Observations}.
+\newblock 2015.
+
+\bibitem{GEEnergyConsulting2014}
+{GE Energy Consulting}.
+\newblock {PJM Renewable Integration Study - Executive summary report}.
+\newblock Technical report, prepared for PJM Interconnection, LLC, 2014.
+
+\bibitem{Krad2017}
+Ibrahim Krad, David~Wenzhong Gao, Erik Ela, Eduardo Ibanez, and Hongyu Wu.
+\newblock {Analysis of operating reserve demand curves in power system
+  operations in the presence of variable generation}.
+\newblock {\em IET Renewable Power Generation}, 11(7):959--965, 2017.
+
+\bibitem{Woo2016}
+C.~K. Woo, J.~Moore, B.~Schneiderman, T.~Ho, A.~Olson, L.~Alagappan, K.~Chawla,
+  N.~Toyama, and J.~Zarnikau.
+\newblock {Merit-order effects of renewable energy and price divergence in
+  California's day-ahead and real-time electricity markets}.
+\newblock {\em Energy Policy}, 92:299--312, 2016.
+
+\bibitem{Gonzalez-Aparicio2015}
+I.~Gonz{\'{a}}lez-Aparicio and A.~Zucker.
+\newblock {Impact of wind power uncertainty forecasting on the market
+  integration of wind energy in Spain}.
+\newblock {\em Applied Energy}, 159:334--349, 2015.
+
+\bibitem{Koch2009}
+Maik Koch, Michael Kr{\"{u}}ger, and Stefan Tenbohlen.
+\newblock {Ancillary Services for Renewable Integration}.
+\newblock In {\em IEEE Power and Energy Society General Meeting}, pages 1--6,
+  2009.
+
+\bibitem{Weber2010}
+Christoph Weber.
+\newblock {Adequate intraday market design to enable the integration of wind
+  energy into the European power systems}.
+\newblock {\em Energy Policy}, 38(7):3155--3163, 2010.
+
+\bibitem{Wartsila2014}
+Wartsila.
+\newblock {Delivering flexibility in the German electricity markets: are
+  current arrangements fit for purpose?}
+\newblock Technical report, 2014.
+
+\bibitem{Epia2016}
+{SolarPower Europe}.
+\newblock {Global Market Outlook For Solar Power 2016-2020}.
+\newblock Technical report, SolarPower Europe, 2016.
+
+\bibitem{Sawyer2016}
+Steve Sawyer, Sven Teske, and Morten Dyrholm.
+\newblock {The Global Wind Energy Outlook}.
+\newblock Technical report, Global Wind Energy Council, 2016.
+
+\bibitem{STEINKE2013826}
+Florian Steinke, Philipp Wolfrum, and Clemens Hoffmann.
+\newblock Grid vs. storage in a 100% renewable europe.
+\newblock {\em Renewable Energy}, 50:826 -- 832, 2013.
+
+\bibitem{InternationalEnergyAgency2017}
+{International Energy Agency}.
+\newblock {Global EV Outlook 2017}.
+\newblock Technical report, International Energy Agency (IEA), 2017.
+
+\bibitem{Size2016}
+Timotej Gavrilovic.
+\newblock {ELECTRIC VEHICLES AS A GRID RESOURCE : Market Size , Initiatives and
+  Resource Potential}.
+\newblock Technical Report October, GTM Research, 2016.
+
+\bibitem{Habib2015}
+Salman Habib, Muhammad Kamran, and Umar Rashid.
+\newblock {Impact analysis of vehicle-to-grid technology and charging
+  strategies of electric vehicles on distribution networks - A review}.
+\newblock {\em Journal of Power Sources}, 277:205--214, 2015.
+
+\bibitem{Foley2013}
+Aoife Foley, Barry Tyther, Patrick Calnan, and Brian {{\'{O}}
+  Gallach{\'{o}}ir}.
+\newblock {Impacts of Electric Vehicle charging under electricity market
+  operations}.
+\newblock {\em Applied Energy}, 101:93--102, 2013.
+
+\bibitem{Green2011}
+Robert~C. Green, Lingfeng Wang, and Mansoor Alam.
+\newblock {The impact of plug-in hybrid electric vehicles on distribution
+  networks: A review and outlook}.
+\newblock {\em Renewable and Sustainable Energy Reviews}, 15(1):544--553, 2011.
+
+\bibitem{DBLP:journals/corr/PournarasJZFS17}
+Evangelos Pournaras, Seoho Jung, Huiting Zhang, Xingliang Fang, and Lloyd
+  Sanders.
+\newblock Socio-technical smart grid optimization via decentralized charge
+  control of electric vehicles.
+\newblock {\em CoRR}, abs/1701.06811, 2017.
+
+\bibitem{EPEX_negative_price}
+EPEX~SPOT SE.
+\newblock {Negative Price - Questions and Answers}.
+\newblock
+  \url{https://www.epexspot.com/en/company-info/basics_of_the_power_market/negative_prices},
+  2018.
+\newblock Updated: 2018-02-02.
+
+\bibitem{AEMO2016SA}
+AEMO.
+\newblock {Black System South Australia 28 September 2016 - Final Report}.
+\newblock Technical report, Australia Energy Market Operator Limited, 3 2017.
+
+\bibitem{AEMO_tesla}
+Australia Energy System~Operator Limited.
+\newblock {Tesla Builds World's Largest Battery in South Australia}.
+\newblock
+  \url{http://energylive.aemo.com.au/Innovation-and-Tech/Tesla-builds-worlds-largest-battery-in-South-Australia},
+  2017.
+\newblock Updated: 2017-12-07.
+
+\bibitem{He2011}
+Xian He, Erik Delarue, William D'haeseleer, and Jean~Michel Glachant.
+\newblock {A novel business model for aggregating the values of electricity
+  storage}.
+\newblock {\em Energy Policy}, 39(3):1575--1585, 2011.
+
+\bibitem{Sioshansi2009}
+Ramteen Sioshansi, Paul Denholm, Thomas Jenkin, and Jurgen Weiss.
+\newblock {Estimating the value of electricity storage in PJM: Arbitrage and
+  some welfare effects}.
+\newblock {\em Energy Economics}, 31(2):269--277, 2009.
+
+\bibitem{Bathurst2003}
+Graeme~N. Bathurst and Goran Strbac.
+\newblock {Value of combining energy storage and wind in short-term energy and
+  balancing markets}.
+\newblock {\em Electric Power Systems Research}, 67(1):1--8, 2003.
+
+\bibitem{Drury2011}
+Easan Drury, Paul Denholm, and Ramteen Sioshansi.
+\newblock {The value of compressed air energy storage in energy and reserve
+  markets}.
+\newblock {\em Energy}, 36(8):4959--4973, 2011.
+
+\bibitem{Connolly2012}
+D.~Connolly, H.~Lund, B.~V. Mathiesen, E.~Pican, and M.~Leahy.
+\newblock {The technical and economic implications of integrating fluctuating
+  renewable energy using energy storage}.
+\newblock {\em Renewable Energy}, 43:47--60, 2012.
+
+\bibitem{Alipour2017}
+Manijeh Alipour, Behnam Mohammadi-Ivatloo, Mohammad Moradi-Dalvand, and Kazem
+  Zare.
+\newblock {Stochastic scheduling of aggregators of plug-in electric vehicles
+  for participation in energy and ancillary service markets}.
+\newblock {\em Energy}, 118:1168--1179, 2017.
 
 \bibitem{Sensfuss2008}
 Frank Sensfu{\ss}, Mario Ragwitz, and Massimo Genoese.
@@ -40,13 +314,6 @@ Stefano Cl{\`{o}}, Alessandra Cataldi, and Pietro Zoppoli.
   solar and wind generation on national wholesale electricity prices}.
 \newblock {\em Energy Policy}, 77:79--88, 2015.
 
-\bibitem{Woo2016}
-C.~K. Woo, J.~Moore, B.~Schneiderman, T.~Ho, A.~Olson, L.~Alagappan, K.~Chawla,
-  N.~Toyama, and J.~Zarnikau.
-\newblock {Merit-order effects of renewable energy and price divergence in
-  California's day-ahead and real-time electricity markets}.
-\newblock {\em Energy Policy}, 92:299--312, 2016.
-
 \bibitem{Cludius2014}
 Johanna Cludius, Hauke Hermann, Felix~Chr Matthes, and Verena Graichen.
 \newblock {The merit order effect of wind and photovoltaic electricity
@@ -65,60 +332,10 @@ Machiel Mulder and Bert Sctens.
   Netherlands}.
 \newblock {\em Renewable Energy}, 57:94--100, 2013.
 
-\bibitem{Alipour2017}
-Manijeh Alipour, Behnam Mohammadi-Ivatloo, Mohammad Moradi-Dalvand, and Kazem
-  Zare.
-\newblock {Stochastic scheduling of aggregators of plug-in electric vehicles
-  for participation in energy and ancillary service markets}.
-\newblock {\em Energy}, 118:1168--1179, 2017.
-
-\bibitem{He2011}
-Xian He, Erik Delarue, William D'haeseleer, and Jean~Michel Glachant.
-\newblock {A novel business model for aggregating the values of electricity
-  storage}.
-\newblock {\em Energy Policy}, 39(3):1575--1585, 2011.
-
-\bibitem{Sioshansi2009}
-Ramteen Sioshansi, Paul Denholm, Thomas Jenkin, and Jurgen Weiss.
-\newblock {Estimating the value of electricity storage in PJM: Arbitrage and
-  some welfare effects}.
-\newblock {\em Energy Economics}, 31(2):269--277, 2009.
-
-\bibitem{Bathurst2003}
-Graeme~N. Bathurst and Goran Strbac.
-\newblock {Value of combining energy storage and wind in short-term energy and
-  balancing markets}.
-\newblock {\em Electric Power Systems Research}, 67(1):1--8, 2003.
-
-\bibitem{Drury2011}
-Easan Drury, Paul Denholm, and Ramteen Sioshansi.
-\newblock {The value of compressed air energy storage in energy and reserve
-  markets}.
-\newblock {\em Energy}, 36(8):4959--4973, 2011.
-
-\bibitem{Connolly2012}
-D.~Connolly, H.~Lund, B.~V. Mathiesen, E.~Pican, and M.~Leahy.
-\newblock {The technical and economic implications of integrating fluctuating
-  renewable energy using energy storage}.
-\newblock {\em Renewable Energy}, 43:47--60, 2012.
-
-\bibitem{Wartsila2014}
-Wartsila.
-\newblock {Delivering flexibility in the German electricity markets: are
-  current arrangements fit for purpose?}
-\newblock Technical report, 2014.
-
 \bibitem{Moller2010}
 Christoph M{\"{o}}ller.
 \newblock {\em {Balancing energy in the German market design}}.
 \newblock PhD thesis, Universitat Karlsruhe, 2010.
-
-\bibitem{Srivastava2011}
-Anurag~K. Srivastava, Sukumar Kamalasadan, Daxa Patel, Sandhya Sankar, and
-  Khalid~S. AlOlimat.
-\newblock {Electricity markets: an overview and comparative study}.
-\newblock {\em International Journal of Energy Sector Management},
-  5(2):169--200, 2011.
 
 \bibitem{Ziel2015}
 Florian Ziel, Rick Steinert, and Sven Husmann.
@@ -406,11 +623,6 @@ R.~J. Bessa and M.~A. Matos.
 \newblock {Global against divided optimization for the participation of an EV
   aggregator in the day-ahead electricity market. Part II: Numerical analysis}.
 \newblock {\em Electric Power Systems Research}, 95:309--318, 2013.
-
-\bibitem{GEEnergyConsulting2014}
-{GE Energy Consulting}.
-\newblock {PJM Renewable Integration Study - Executive summary report}.
-\newblock Technical report, prepared for PJM Interconnection, LLC, 2014.
 
 \bibitem{EPEX_price_limit}
 EPEX~SPOT SE.
