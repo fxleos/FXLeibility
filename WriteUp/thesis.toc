@@ -4,10 +4,12 @@
 \contentsline {section}{\numberline {1.1}Defining flexibility and flexibility management}{1}
 \contentsline {section}{\numberline {1.2}Challenges in power system flexibility}{2}
 \contentsline {section}{\numberline {1.3}Technologies: options for system flexibility provision}{4}
-\contentsline {section}{\numberline {1.4}Applications, benefits and business models}{6}
-\contentsline {subsection}{\numberline {1.4.1}In liberalized market}{6}
-\contentsline {subsection}{\numberline {1.4.2}In vertically integrated market}{10}
-\contentsline {section}{\numberline {1.5}Scope and research questions}{11}
+\contentsline {section}{\numberline {1.4}Applications, benefits and business models}{8}
+\contentsline {subsection}{\numberline {1.4.1}In liberalized market}{9}
+\contentsline {subsection}{\numberline {1.4.2}In vertically integrated market}{9}
+\contentsline {section}{\numberline {1.5}Scope and research questions}{10}
+\contentsline {subsubsection}{Scope of benefits}{10}
+\contentsline {subsubsection}{Scope of technology}{10}
 \contentsline {chapter}{\numberline {2}Sizing and Valuation of Market for Flexibility Management: A Literature Review}{13}
 \contentsline {section}{\numberline {2.1}Stakeholders and their motivation}{14}
 \contentsline {section}{\numberline {2.2}Methodology for quantifying the value of flexibility}{17}

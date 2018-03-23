@@ -122,6 +122,12 @@ Simon Hagemann and Christoph Weber.
   and Empirical Observations}.
 \newblock 2015.
 
+\bibitem{Weber2010}
+Christoph Weber.
+\newblock {Adequate intraday market design to enable the integration of wind
+  energy into the European power systems}.
+\newblock {\em Energy Policy}, 38(7):3155--3163, 2010.
+
 \bibitem{GEEnergyConsulting2014}
 {GE Energy Consulting}.
 \newblock {PJM Renewable Integration Study - Executive summary report}.
@@ -132,6 +138,12 @@ Ibrahim Krad, David~Wenzhong Gao, Erik Ela, Eduardo Ibanez, and Hongyu Wu.
 \newblock {Analysis of operating reserve demand curves in power system
   operations in the presence of variable generation}.
 \newblock {\em IET Renewable Power Generation}, 11(7):959--965, 2017.
+
+\bibitem{Koch2009}
+Maik Koch, Michael Kr{\"{u}}ger, and Stefan Tenbohlen.
+\newblock {Ancillary Services for Renewable Integration}.
+\newblock In {\em IEEE Power and Energy Society General Meeting}, pages 1--6,
+  2009.
 
 \bibitem{Woo2016}
 C.~K. Woo, J.~Moore, B.~Schneiderman, T.~Ho, A.~Olson, L.~Alagappan, K.~Chawla,
@@ -145,18 +157,6 @@ I.~Gonz{\'{a}}lez-Aparicio and A.~Zucker.
 \newblock {Impact of wind power uncertainty forecasting on the market
   integration of wind energy in Spain}.
 \newblock {\em Applied Energy}, 159:334--349, 2015.
-
-\bibitem{Koch2009}
-Maik Koch, Michael Kr{\"{u}}ger, and Stefan Tenbohlen.
-\newblock {Ancillary Services for Renewable Integration}.
-\newblock In {\em IEEE Power and Energy Society General Meeting}, pages 1--6,
-  2009.
-
-\bibitem{Weber2010}
-Christoph Weber.
-\newblock {Adequate intraday market design to enable the integration of wind
-  energy into the European power systems}.
-\newblock {\em Energy Policy}, 38(7):3155--3163, 2010.
 
 \bibitem{Wartsila2014}
 Wartsila.
@@ -236,6 +236,30 @@ Australia Energy System~Operator Limited.
   \url{http://energylive.aemo.com.au/Innovation-and-Tech/Tesla-builds-worlds-largest-battery-in-South-Australia},
   2017.
 \newblock Updated: 2017-12-07.
+
+\bibitem{Despres2017}
+Jacques Despr{\'{e}}s, Silvana Mima, Alban Kitous, Patrick Criqui, Nouredine
+  Hadjsaid, and Isabelle Noirot.
+\newblock {Storage as a flexibility option in power systems with high shares of
+  variable renewable energy sources: a POLES-based analysis}.
+\newblock {\em Energy Economics}, 64:638--650, 2017.
+
+\bibitem{AgoraEnergiewende2017}
+{Agora Energiewende}.
+\newblock {Flexibility in thermal power plants with a focus on existing
+  coal-fired power plants}.
+\newblock Technical report, Agora Energiewende, 2017.
+
+\bibitem{Gunter2016}
+Niklas G{\"{u}}nter and Antonios Marinopoulos.
+\newblock {Energy storage for grid services and applications: Classification,
+  market review, metrics, and methodology for evaluation of deployment cases}.
+\newblock {\em Journal of Energy Storage}, 8:226--234, 2016.
+
+\bibitem{Nykvist2015}
+Bj{\"{o}}rn Nykvist and M{\aa}ns Nilsson.
+\newblock {Rapidly falling costs of battery packs for electric vehicles}.
+\newblock {\em Nature Climate Change}, 5(4):329--332, 2015.
 
 \bibitem{He2011}
 Xian He, Erik Delarue, William D'haeseleer, and Jean~Michel Glachant.
@@ -389,12 +413,6 @@ James Cox.
   electricity markets}.
 \newblock Technical Report September, P{\"{o}}yry Energy Ltd, 2009.
 
-\bibitem{AgoraEnergiewende2017}
-{Agora Energiewende}.
-\newblock {Flexibility in thermal power plants with a focus on existing
-  coal-fired power plants}.
-\newblock Technical report, Agora Energiewende, 2017.
-
 \bibitem{Siemens}
 Siemens AG.
 \newblock {Siemens gas turbine portfolio}.
@@ -422,11 +440,6 @@ Olivier Megel.
 \newblock {\em {Storage in Power Systems : Frequency Control , Scheduling of
   Multiple Applications, and Computational Complexity}}.
 \newblock PhD thesis, ETH Zurich, 2017.
-
-\bibitem{Nykvist2015}
-Bj{\"{o}}rn Nykvist and M{\aa}ns Nilsson.
-\newblock {Rapidly falling costs of battery packs for electric vehicles}.
-\newblock {\em Nature Climate Change}, 5(4):329--332, 2015.
 
 \bibitem{Barre2013}
 Anthony Barr{\'{e}}, Benjamin Deguilhem, S{\'{e}}bastien Grolleau, Mathias
