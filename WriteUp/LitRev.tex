@@ -1,5 +1,198 @@
 \chapter{Sizing and Valuation of Market for Flexibility Management: A Literature Review}
+\chaptermark{Literature Reveiw}
 \label{ch:LitRev}
+\textit{This chapter reviews the existing research works with a special focus on methodologies that are related to quantify the market for flexibility management. It was found that our research questions are not perfectly answered by the academic articles since they have different stakeholders and perspectives. However, researchers have developed a number of validated methodologies which are of great reference value for this study.}
+
+\section{Stakeholders and their perspectives}
+
+In this thesis, we aim at providing market analysis and valuations to support strategic decision making of technology vendors. There are similar works conducted by other firms and consultancies but their analysis along with the models are rarely made public \cite{Zucker2013}, because of concerns on commercial confidentiality. As a consequence, we referred to literature published either in academic journals or by regulated entities such as TSOs. Their motivations are normally disparate from ours in many ways since they were targeting at different audiences. We categorize those works into two groups with distinct perspectives and thus disparate modeling methodologies.
+
+\subsubsection{Micro-perspective}
+
+The first category refers to works that are concerned with the techno-economic performance of specific technologies in a given system/ market context as well as the value to one or few individual firms. This perspective is taken mainly to serve technical experts, flexibility project developers or investors. 
+
+In these works, valuation is usually a necessary component. The major of these studies are made to propose novel technologies, control algorithms and bidding strategies etc.. Valuation in these works is a metric to assess the technological feasibility and economic profitability in order to prove their concept. Beside, there are reports that exclusively focus on the valuation in order to provide references on specific technologies or real projects \cite{Mokrian2006,Walawalkar2007,Sioshansi2009,Byrne2012,Berrada2016,Salles2017}.
+
+Generally, this perspective shares the same interest as ours that is to maximize the financial benefits of market players. However, researchers tend to focus on a certain specific point and put extensive effort on it. The associated complexity does not always add much value to our aim of assessing the value of a whole market. Instead, due to limitations on computational tractability, it is challenging and time-consuming to apply these methodologies dealing with large-scale data-sets. Most of their results are proof-of-concept for their methodology so cannot be used as direct inputs for our analysis. Besides, their models have many implicit dependencies on market conditions so are less flexible while directly port into studies for a different markets. Finally, most of these studies would assume their system size small enough while some market constraints such as liquidity are ignored.
+
+Overall, while the aggregation of different works could well cover our demands, there exists no individual work that perfectly solves our questions. In order to piece together their methodologies to build our own which is flexible to value different market and different technologies, we need to extract the principle rationales behind their models and grid rid of some unnecessary complexity, which is to be discussed in the next section.
+
+\subsubsection{Macro-perspective}
+
+Another perspective is taken by publications made for the interests of policymakers, market designers and grid planners. These studies standking on a macro-perspective would investigate the benefits or requirements for flexibility for a whole power system. Their primarily pursue to achieve lowest system cost to ensure the adequate provision of flexibility. It is worthwhile to mention that these exercises done by grid planner are virtually investigations on deferred infrastructure expenses \cite{Siano2014,HDREngineeringInc.2014,Gunter2016}, which are however not within the core scope of this study.
+
+Disparate in objective, the results derived based on their models would be of less reference value for us, since we are primarily focusing on what can be retrieved by free players in power markets. Although their outputs are often in a whole system level which look closer to estimations for the total market potential than the direct results of studies with the micro-perspective, it shall be noted that it is not always symmetric between remunerations obtained by players and contributions they made to the system due to imperfect market design. For instance, in a paper that applied both the micro-perspective and macro-perspective methodologies, it was found that in several ISO markets in the US the revenue obtained by flexibility suppliers was substantially less than the net benefit contributed to the system\cite{Denholm2013}.
+
+Therefore, quantitative models developed in these reports will not be directly referred by our study. Nonetheless, analysis and conclusions in these studies could help us better understand the needs of those policymakers, market designers and grid planners, which would have significant impacts on the landscape of flexibility management, so will be incorporated in our qualitative assessments. 
+
+~\newline
+
+It is worthwhile to emphasize that both perspectives have its own limitations. The models with micro-perspective are generally more precise but often case specific without a global view, while models with macro-perspective are very inclusive but unable to adequately represent all constraints and needs of each entities \cite{Zucker2013}. However, for each group the stakeholders, it is virtually helpful to understand the rationales of the other group as well. Knowing the views of policymakers, market designers and grid planner will help players in power markets foresee the future movement of regulatory and market conditions so that make better decisions. On the other hand, policymakers shall consider the needs of market participates so that can better encourage their participation by well-designed incentives.
+
+As a consequence, there are researchers who would conduct studies either with both perspective in one piece of work such as \cite{Sioshansi2009,Denholm2009} or internalizing some decision factors from the other perspective into their own models, making the boundary less clearly demarcated. Nevertheless, in general we would base our methodology primarily on works with micro-perspective due to the match of interests.
+
+
+
+%Conventionally, their decision makings are supported primarily by commercial consulting firms who relied much on qualitative anlysis or quantitative data-anlytics. Even when sometimes it is possible that those firms have developed model with fundamental and physical approach, the model is always customized and not public 
+
+%most of the researches are focusing one specific technology and one specific market, due to the nature of their target audiences. However, the managment iof a technology vendor will likely to be interested in various markets and various technologies. 
+
+%The economics of flexibility solutions in power systems, especially electric energy storage (EES), is an active topic in research. It has drawn great attentions from the academics, investors and policy makers. 
+
+
+% electricity storage are currently in the focus of research, by academics, utilities, potential investors as well as policy makers. The present document is the result of the analysis of more than 200 publications on that subject. It aims at presenting the “state of the art” regarding research on the economics of electricity storage. Three particular aspects are given attention to: the methodologies used, the profitability results obtained and the impact of regulation on storage economics.
+
+
+%Policy maker: understanding the needs for flexibility, including the total amount and the mix, in order to provide guidance for regulated entities and market players
+
+%Market designer: understanding the impacts of flexibility on current market design and find the most efficient market approach to enable them
+
+%Grid planner (transmission and distribution system operator): understanding the value of flexibility that can help improve the reliability and stability of the grid with a lower cost
+
+%Project developer of technical experts: proposing
+
+%Depending on their role, different motivation and thus different methodologies. 
+
+\section{Methodologies for quantifying the value of flexibility}
+\sectionmark{Reveiw of Methodolgies}
+Since our study is focused on income of flexibility management from power markets, it is necessary to incorporate power market modeling techniques. These models are found to be typically built in an optimization framework \cite{Zucker2013,GRUNEWALD2012449,VENTOSA2005897}. An optimization is applied to select the best combination of decision variables that maximize the value of an objective function from some set of available alternatives, subject to some set of technical and economic constraints. In the studies of our interests, the combination of decision variables is typically the dispatching plan of the flexibility resources, and the objective function calculates the revenues or profits to resource owners, and thereby the optimization is to estimate the maximum possible value obtained by players with defined strategy and subject to constraints from markets and technologies. 
+
+In terms of detailed implementation, these models can be classified by many different approaches. Beyond briefly introducing these approaches, we would analyze the rationale and proper use-case for each approach and then decide which ones to follow.
+
+\subsection{Regarding market power: price taker versus price maker}
+In economics, market power refers to the capability of a market participate to manipulate the price of an item to raise its own financial or strategic benefits. Market players with market power are often referred to as ``price makers" while those without market power are called ``price takers". It is worthwhile to mention that in perfectly competitive markets, market participants have no market power \cite{Mankiw2011}. 
+
+In the business of flexibility management, players may be able to gain market power by deploying flexibility \cite{Zucker2013,Schill2011,He2012}.
+This topic has attracted extensive attentions from researcher and many methodologies have been developed based on multi-optimization equilibrium modeling and making price as a function of decisions. However, due to computational tractability, these methodologies are seldom used for valuation of real markets but for other use-cases, which is to be introduced in the reminder of this section.
+
+\subsubsection{Single-optimization modeling vs. multi-optimization equilibrium modeling}
+Single-optimization modeling is formulated with only one objective function, which represents the behavior of one entity without considering the  interactions with other actors. Single-optimization modeling is relatively easy to be formulated and solved with some established and powerful toolkit. Therefore, this modeling technique is adopted by most of studies on quantifying flexibility value, especially for those which were carried out based on real-world market data with a long span of time \cite{Walawalkar2007,Sioshansi2009,Byrne2012,Bradbury2014,McConnell2015,Berrada2016,Salles2017}
+
+Multi-optimization equilibrium modeling consider the simultaneous benefit maximization of several entities to simulate the competition behaviors between them. Besides the lower level problem where each entity has their own strategy and objective, there is a upper level problem where the market clearing is simulated with interaction between entities being considered. The upper level simulation usually requires advanced modeling techniques, e.g. agent-based modeling \cite{Yousefi2011,Dallinger2012,Zheng2014} and game theoretic approaches \cite{Schill2011,Gkatzikis2013,Lin2014,Kardakos2013}. The computational complexity will rise including the introduction of non-linearity, which will be discussed later in Section \ref{sec:formulating-solving}, and thus shall be only used for necessary cases. 
+
+The main use of multi-optimization equilibrium modeling is to understand the market power and price maker effects. This could help market participates who have certain level of market power to strategically gain advantages in competition. For instance, Schill \textit{et al.} \cite{Schill2011} studied a case in Germany how the strategy on energy storage operation of major players as price makers would influence their own and other price takers' profits. Similar works have been performed for distributed generation (DG) aggregators \cite{Zhang2016}, DR aggregators \cite{HenriquezAuba2017} and more specialized EV aggregators \cite{Shafie-Khah2015}. Market designers may also need it to understand the impacts of participation of new flexibility players and thus better organize their markets by eliminating possible market power \cite{Mohsenian-Rad2016,Vespermann2017,Huang2017}, or alternatively concentrating market power to regulated entities as proposed by \cite{He2012}.
+
+Besides the computational complexity, performing multi-optimization equilibrium modeling requires extensive information as the portfolio of each simulated entity, the fundamental determinant of market power, needs to be defined. Therefore, it is more often that studies are based on a testing pseudo-market  \cite{Kardakos2013,Shafie-Khah2015,HenriquezAuba2017} than a real market \cite{Schill2011}.
+
+%Therefore, equilibrium modeling is a helpful approach to understand the business rationales of price makers but is seldom used for estimating real market values considering computational tractability. 
+
+%In our study, we are primarily focused on the value of market as whole rather than for individual players, so the competition between market players is less of our interest. An efficient market design is not within our core scope as well. Therefore, a single-optimization model should suffice our need, while a multi-optimization equilibrium model may be abused and not feasible to be applied for several real markets.
+
+\subsubsection{Exogenous price vs. price as a function of decisions}
+
+With a single-optimization approach, the upper level problem, i.e. market clearing, becomes an exogenous progress. The output of market clearing, price (and volume as well which is however rarely considered in literature), is an fixed input to the single-optimization model. In this way, the decision making entity is virtually a price taker as its decision will not affect the price. 
+
+An alternative way to internalize the price formation is to market the price as a function of decision variables rather than constants. However, such a method will make the optimization become non-linear since the objective function is often the product of price and decision variables. The function has to be simple. For example, Sioshansi \textit{et al.} \cite{Sioshansi2009,Sioshansi2010} used the simplest linear function for price and performed the optimization with a quadratic objective function. Due to this limitation, recent research works would turn to the equilibrium model as is introduced earlier to study the situations with price makers. 
+
+~\newline
+
+Overall, although there is an abundance of literature studying price makers with flexibility, these methods were seldom applied for estimating real market values, which is however of most interest to us. Therefore, a pragmatic approach is to assume all participates are price takers. This assumption is definitely true when the market is perfectly competitive. Or according to the study based on actual market conditions in Germany \cite{Schill2011}, if energy storage capacities are allocated to generators reasonably (in line with their generation market share), total revenues from all players would remain almost unchanged whether dominate players act as price makers or price takers. Since we are primarily focused on the value of market as a whole rather than for each individual player, a price taker approach without considering the strategic interaction between players might suffice our needs, as is revealed by literature. Furthermore, perfect competitive market is not an exorbitant assumption and results based it shall anyway provide a decent reference.
+
+\subsection{Predicting the price}
+
+With the approach of single-optimization modeling using exogenous price, price is a crucial input to the optimization problem. It is of great importance how the price is obtained and how much foresight the decision makers have on price.
+
+\subsubsection{Actual price signal vs. simulated price signal}
+
+Some studies used real market data for valuation \cite{Walawalkar2007,Sioshansi2009,Byrne2012,Bradbury2014,McConnell2015,Berrada2016,Salles2017}. The merit of this approach is that they can provide the most accurate estimations although in a retrospective sense. The value will not depart significantly in short term since the power market was empirically found to stay relatively stable year over year, unless some exceptional events happened, e.g. the shale gas revolution in the US leading to drastic drop in electricity price around 2008 \cite{Brown2015,Salles2017}. However, those estimations cannot remain valid in the long run. Moreover, increasing renewable penetration is accelerating the changes \cite{Woo2011,Gelabert2011,Mulder2013,Forrest2013,Wurzburg2013,Clo2015,Cludius2014}. 
+For our study, this reveals the main drawback of using real market data being that it is not sufficient to provide long-term guidance and the short-term view has to be renewed frequently. For research works that are concerned less on long-term scenarios such as the studies that just need to perform valuation for proof-of-concept, there is another issue. Directly using historical data as input eliminated the uncertainty of price together with associated risks.
+%\cite{SaenzdeMiera2008} \cite{Tveten2013} \cite{McConnell2013}\cite{Gelabert2011}\cite{Clo2015} \cite{Woo2016}\cite{Cludius2014}\cite{He2013}\cite{Mulder2013}
+Therefore, many studies developed auxiliary simulation models to generate price scenarios in complemented to the main optimization program. For example, Grunewald \textit{et al.} \cite{Grunewald2012a} adopted a merit-order model to simulating wholesale electricity price setting behavior, thereby being able to generate price scenarios in the long run with changed generation mix as inputs for energy storage valuation. What are more commonly implemented by academic studies, as is mentioned, are simulating price uncertainties  in order to perform risk assessment. Seasonal autoregressive integrated moving average (SARIMA) is one of the most commonly used models to simulate the stochastic processes of electricity price \cite{Weron2014,Ziel2015,Mahmoudi2017,Alipour2017}. SARIMA model can be denoted as $(p,d,q)~\times~(P,D,Q)_s$. The terms $(p,d,q)$ represent orders of autoregressive, differentiating and moving-average respectively while $(P,D,Q)_s$ correspond to orders of the seasonal part.
+Alipour \textit{et al.} used a ARIMA $(2,0,2)~\times~(2,0,1)_s$ with seasonal part being AR (24,168) and MA (168)\footnote{The time step in this study is 1 hour. Therefore, 24 corresponds to the length of a day and 168 corresponds to the length of a week. The seasonal part is designed to capture the daily and weekly seasonality.} in this study where the profits of EV aggregators were assessed. Similarly, Mahmoudi \textit{et al.}\cite{Mahmoudi2017} implemented a ARIMA $(6,1,3)~\times~(1,0,0)_s$ with seasonal MA (168)\footnote{The time step is also 1 hour so 168 represents weekly seasonality.} to generate price scenarios for a stochastic program of DR aggregators. These stochastic models are estimated from historical data so cannot be applied solely to perform long-term forecast with changed generation mix.
+
+In our study, both approaches using real market data and developing auxiliary price simulation models are applied, to estimate the market value under current market conditions and changed market conditions (increased RES penetration) respectively. For the price simulation model, the merit-order model and stochastic SARIMA model and synergized, which will be discussed in detail in Chapter \ref{ch:methodology}.
+
+\subsubsection{Perfect foresight vs. limited predictability}
+\label{sec:perfect-forecast}
+While historical data is directly used as input to the optimization, it contains an assumption that the decision maker has perfect foresight of the future price. This is the case of the studies mentioned previously \cite{Walawalkar2007,Sioshansi2009,Byrne2012,Bradbury2014,McConnell2015,Berrada2016,Salles2017}. The perfect foresight assumption leads to overestimation of the value compared to what can be captured in reality \cite{Zucker2013}.
+
+Applying the stochastic price simulation as is introduced previously is certainly a powerful way to resolve the issue. However, the stochastic approach adds complexity and requires more computation time, so determinate approach is still favored in most cases. Therefore, some researchers ran sensitivity analysis to evaluate the level of overestimation caused by perfect foresight. Several authors applied methods such as reducing the forecast window \cite{Connolly2011} or using back-casting techniques, i.e. determine the future dispatch plan with historical data \cite{Sioshansi2009,Drury2011,Bathurst2003}. It was found that 60-90\% of the value with perfect foresight can be realized using primitive statistical price forecasting techniques. In reality, it is possible that players can apply some advance forecasting techniques to make the value close to the ideal value obtained with perfect foresight. 
+
+Therefore, the approach with perfect predictability is still useful to provide reference values as the upper bound. Sensitivity analysis might be necessary by reducing the predictability.
+
+\subsection{Stacking technologies or services}
+
+\subsubsection{Multitasking}
+
+RT as penalties \cite{Xu2017}
+
+
+\subsubsection{Hybrid system}
+
+DR DG PEV \cite{Xu2017}
+
+\subsection{Formulating and solving the problem}
+\label{sec:formulating-solving}
+\subsubsection{Deterministic modeling vs. stochastic modeling}
+
+Many uncertainties, beside price which have covered
+
+%predictability
+Not an issue for stochastic price, as players already subject to forecast errors of price
+
+Beyond price
+
+DG
+\cite{Zhang2016}
+
+DR
+
+%uncertainty of customers’ behaviour is modelled
+using PFdrp(t, w), which represents random scenarios between zero and one. Zero indicates no participations of DR customers in the
+%given DR programs \cite{Mahmoudi2017}
+
+EV
+%Have a mixed portfolio with DR, DG and PEV but particularly focused on the PEV uncertainty. Monte-Carlo simulation
+%sample the arrival/departure time, driving distance of each PEV based upon the historical probability distributions of these parame- ters \cite{Xu2017}
+%
+\subsubsection{Linear programming vs. non-linear programming}
+
+high level marker equilibrium % Evangolos
+\cite{Mohsenian-Rad2016,HenriquezAuba2017} 
+
+DR cost term; piecewise linear \cite{Mahmoudi2017}
+
+%The primal–dual approach [5] is applied to reformulate the proposed bilevel model to a solv- able mathematical program with equilibrium constraints (MPEC). \cite{Zhang2016}
+
+non-linear strong duality non-linear to milp \cite{HenriquezAuba2017}
+non-linear to mixed integer linear \cite{Mohsenian-Rad2016}
+
+non-linear primal-dual Interior Point (IP) algorithm based on approximate Newton directions \cite{Storage2015}
+primal-dual approach \cite{Zhang2016}
+
+
+
+Combining trival makes it nontrival
+
+Determinate versus stochastic 
+
+Perfect versus limited predictability 
+
+Fixed versus responsive price
+
+Price taker versus price maker
+
+Impacting factor: renewable penetration; ownership dispatch; market design
+
+%\subsection{Determining the value of flexibility for specific cases/ projects}
+%Firstly, the most abundance of articles were related to accessing the techno-economic performance of specific technologies, in given system system/ market contexts (typical one technology in one context). This corresponds to the view of a project developer or technical experts. In these researches, they would propose innovated technologies, or novel design/ operating strategies and validate by valuation. 
+
+
+
+%\subsection{Determining the demands for flexibility at a system level}
+
+
+
+
+%\subsubsection{Predictability and stochastic modeling}
+
+
+
+
+
+\section{Summary of existing works and the implications on our study}
+
+
 
 
 As is clearly revealed by the literuare review, there exist abused research articles generally on this topics of flexibility management. However, there exist very few academic works that serves the needs of our target audiences who are the management of technology vendors. The deviationsof interests result in gaps that make it difficult to directly use the existing works. These gaps include:
@@ -9,147 +202,3 @@ As is clearly revealed by the literuare review, there exist abused research arti
 	\item Scope
 	\item Mothed - proof of concept
 \end{itemize}
-
-
-
-
-Conventionally, their decision makings are supported primarily by commercial consulting firms who relied much on qualitative anlysis or quantitative data-anlytics. Even when sometimes it is possible that those firms have developed model with fundamental and physical approach, the model is always customized and not public 
-
-most of the researches are focusing one specific technology and one specific market, due to the nature of their target audiences. However, the managment iof a technology vendor will likely to be interested in various markets and various technologies. 
-
-The economics of flexibility solutions in power systems, especially electric energy storage (EES), is an active topic in research. It has drawn great attentions from the academics, investors and policy makers. 
-
-
-% electricity storage are currently in the focus of research, by academics, utilities, potential investors as well as policy makers. The present document is the result of the analysis of more than 200 publications on that subject. It aims at presenting the “state of the art” regarding research on the economics of electricity storage. Three particular aspects are given attention to: the methodologies used, the profitability results obtained and the impact of regulation on storage economics.
-\section{Stakeholders and their motivation}
-
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-
-\section{Methodology for quantifying the value of flexibility}
-%Two broad approaches have been taken to modelling UK electricity systems. As discussed in Section 2.2.1, system studies tend to employ a holistic and system wide perspective with only coarse temporal resolution. Other studies attempt to understand system balancing with high penetration of wind and issues arising from ramp and slew rates of wind and errors in wind forecasting. These studies require high temporal resol- ution and therefore tend to simulate short periods of time and make static assumptions for system context.(Black and Strbac, 2007, 2006; Pelacchi and Poli, 2010; Barton and Infield, 2004; Bathurst and Strbac, 2003)
-\subsection{Determining the demands for flexibility at a system level}
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-
-Engineering vs system
-Linear vs nonlinear
-Deterministic vs stochastic problems
-Solving techniques
-
-\subsection{Determining the value of flexibility for specific cases/ projects}
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-
-Price taker
-perfect forecast
-stochastic or dynamic programming
-Hybrid system
-Service mutualization
-
-\subsubsection{Predictability and stochastic modeling}
-\label{sec:perfect-forecast}
-\cite{He2011}
-\cite{Sioshansi2009}
-\cite{Bathurst2003}
-\cite{Drury2011}
-\cite{Connolly2012}
-\cite{Alipour2017}
-%Efficient modelling of 
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-
-(placeholder)
-\newpage
-
-
-\subsubsection{Market power and price maker effects}
-
-\section{Factors affecting the size and value of flexibility markets}
-\subsection{Techno-economic characteristics of power system}
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-\subsubsection{Generation}
-Generation mix (Renewable integration)
-Fuel Prices
-\subsubsection{Climate and weather}
-
-\subsubsection{Transmission}
-Grid topology
-Transmission capacity
-
-\subsubsection{Consumption}
-
-\subsubsection{Merit-order model}
-\cite{Sensfuss2008}
-
-\cite{SaenzdeMiera2008}
-\cite{Tveten2013}
-\cite{McConnell2013}
-\cite{Gelabert2011}
-\cite{Clo2015}
-\cite{Woo2016}
-\cite{Cludius2014}
-\cite{He2013}
-\cite{Mulder2013}
-
-\subsection{Power market degisn and policy regulation}
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-
-\subsubsection{Renewable Support Scheme}
-
-\subsubsection{Power Market Design}
-Market structure and rules: nodal, interval, reserve market
-Access
-
-In general, the seven ISOs/RTOs require companies that service loads (i.e., the energy re- quirements of end-use customers) to provide reserves in proportion to their loads. (ref to Project Report: A Survey of Operating Reserve Markets in U.S. ISO/RTO-managed Electric Energy Regions)
-
-Balancing market design \cite{Wartsila2014} \cite{Moller2010}
-
-\subsubsection{Player and competitive landscape}
-(placeholder)
-\newpage
-(placeholder)
-\newpage
-\subsubsection{Ownership and dispatch}
-
-\subsubsection{Direct policy support}
-Capacity market
-Feed-in premium or tariff
-Other program
-
-\section{Summary of existing works and the implications on our study}
-
-(placeholder)
-\newpage
-(placeholder)
-\newpage
