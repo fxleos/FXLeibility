@@ -23,45 +23,45 @@ Warning--empty school in Grunewald2012a
 Warning--empty school in Storage2015
 Warning--there's a number but no series in Grunewald2012
 Warning--empty institution in NortheastGroup2016
-You've used 146 entries,
+You've used 148 entries,
             1791 wiz_defined-function locations,
-            1290 strings with 31438 characters,
-and the built_in function-call counts, 30526 in all, are:
-= -- 2723
-> -- 1505
+            1302 strings with 31503 characters,
+and the built_in function-call counts, 31003 in all, are:
+= -- 2777
+> -- 1513
 < -- 20
-+ -- 568
-- -- 422
-* -- 2023
-:= -- 5097
-add.period$ -- 453
-call.type$ -- 146
-change.case$ -- 150
++ -- 571
+- -- 423
+* -- 2054
+:= -- 5165
+add.period$ -- 459
+call.type$ -- 148
+change.case$ -- 153
 chr.to.int$ -- 0
-cite$ -- 158
-duplicate$ -- 1187
-empty$ -- 2918
-format.name$ -- 422
-if$ -- 6583
+cite$ -- 160
+duplicate$ -- 1207
+empty$ -- 2970
+format.name$ -- 423
+if$ -- 6691
 int.to.chr$ -- 0
-int.to.str$ -- 146
-missing$ -- 94
-newline$ -- 746
-num.names$ -- 146
-pop$ -- 380
+int.to.str$ -- 148
+missing$ -- 97
+newline$ -- 756
+num.names$ -- 148
+pop$ -- 381
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 418
+skip$ -- 427
 stack$ -- 0
-substring$ -- 1981
-swap$ -- 168
+substring$ -- 2038
+swap$ -- 170
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 301
-width$ -- 149
-write$ -- 1589
+while$ -- 309
+width$ -- 151
+write$ -- 1611
 (There were 2 error messages)

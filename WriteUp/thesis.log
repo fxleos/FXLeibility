@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  28 MAR 2018 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  28 MAR 2018 05:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,9 +847,13 @@ Overfull \hbox (69.88579pt too wide) in paragraph at lines 201--221
 
 [13] [14] [15]) (./LitRev.tex [16]
 Chapter 2.
-[17
 
-] [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17
+
+]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -870,6 +874,12 @@ Overfull \hbox (6.21793pt too wide) in paragraph at lines 62--62
 []\T1/aer/bx/n/12 Regarding mar-ket power: price taker ver-sus price maker 
  []
 
+
+Overfull \hbox (0.91185pt too wide) in paragraph at lines 71--72
+[]\T1/aer/m/n/10.95 Multi-optimization equi-lib-rium mod-el-ing con-sid-ers the
+ si-mul-ta-ne-ous ben-
+ []
+
 [20]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
@@ -879,22 +889,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
  [23]
-[24]) (./Market.tex
-Overfull \hbox (77.1427pt too wide) has occurred while \output is active
-\T1/aer/m/sl/10.95 2.3.  SUMMARY OF EXISTING WORKS AND THE IMPLICATIONS ON OUR 
-STUDY \T1/aer/m/n/10.95 25
- []
-
-[25] [26
-
-]
+[24] [25]) (./Market.tex [26]
 Chapter 3.
 
 Overfull \hbox (5.3307pt too wide) in paragraph at lines 5--5
 []\T1/aer/bx/n/14.4 Power mar-ket frame-works: a com-par-a-tive anal-
  []
 
-[27]) (./Methodology.tex
+[27
+
+]) (./Methodology.tex
 Overfull \hbox (90.38373pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 28 \T1/aer/m/sl/10.95 CHAPTER 3.  POWER MARKETS AND THE ROLE 
 OF FLEXIBILITY MANAGEMENT
@@ -907,7 +911,7 @@ Overfull \hbox (38.5462pt too wide) in paragraph at lines 12--44
  [] 
  []
 
-<Figures/ModelFlow.pdf, id=137, 809.0225pt x 394.47375pt>
+<Figures/ModelFlow.pdf, id=139, 809.0225pt x 394.47375pt>
 File: Figures/ModelFlow.pdf Graphic file (type pdf)
 
 <use Figures/ModelFlow.pdf>
@@ -1438,115 +1442,115 @@ ns on Power Sys-tems\T1/aer/m/n/10.95 ,
  []
 
 [110] [111] [112] [113]
-Underfull \hbox (badness 10000) in paragraph at lines 738--744
+Underfull \hbox (badness 10000) in paragraph at lines 754--760
 []\T1/aer/m/n/10.95 Siemens AG.  Siemens gas tur-bine port-fo-lio.  $\T1/aett/m
 /n/10.95 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--744
+Underfull \hbox (badness 10000) in paragraph at lines 754--760
 \T1/aett/m/n/10.95 / / www . siemens . com / press / pool / de / feature / 2016
  / power-[]gas /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--744
+Underfull \hbox (badness 10000) in paragraph at lines 754--760
 \T1/aett/m/n/10.95 2016-[]04-[]1000-[]gasturbine / siemens-[]gas-[]turbine-[]po
 rtfolio-[]e .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--752
+Underfull \hbox (badness 10000) in paragraph at lines 762--768
 []\T1/aer/m/n/10.95 General Elec-tric Com-pany.  9HA.01/.02 GAS TUR-BINE.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--752
+Underfull \hbox (badness 10000) in paragraph at lines 762--768
 \T1/aett/m/n/10.95 https : / / www . gepower . com / content / dam / gepower-[]
 pgdp / global /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--752
+Underfull \hbox (badness 10000) in paragraph at lines 762--768
 \T1/aett/m/n/10.95 en _ US / documents / product / gas % 20turbines / Fact % 20
 Sheet /
  []
 
 [114]
-Underfull \hbox (badness 2671) in paragraph at lines 855--860
+Underfull \hbox (badness 2671) in paragraph at lines 865--870
 []\T1/aer/m/n/10.95 European Com-mis-sion.  Pas-sen-ger cars in the EU.  $\T1/a
 ett/m/n/10.95 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 855--860
+Underfull \hbox (badness 10000) in paragraph at lines 865--870
 \T1/aett/m/n/10.95 / / ec . europa . eu / eurostat / statistics-[]explained / i
 ndex . php /
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 862--867
+Underfull \hbox (badness 6445) in paragraph at lines 872--877
 []\T1/aer/m/n/10.95 Kraftfahrt-Bundesamtes (KBA).  Monatliche Neuzu-las-sun-gen
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--867
+Underfull \hbox (badness 10000) in paragraph at lines 872--877
 \T1/aett/m/n/10.95 https : / / www . kba . de / DE / Statistik / Fahrzeuge / Ne
 uzulassungen /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--867
+Underfull \hbox (badness 10000) in paragraph at lines 872--877
 \T1/aett/m/n/10.95 MonatlicheNeuzulassungen / monatl _ neuzulassungen _ node . 
 html$\T1/aer/m/n/10.95 .
  []
 
 [115]
-Underfull \hbox (badness 2495) in paragraph at lines 888--893
+Underfull \hbox (badness 2495) in paragraph at lines 897--902
 []\T1/aer/m/n/10.95 EPEX SPOT SE.  Day-ahead auc-tion with de-liv-ery on the
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 888--893
+Underfull \hbox (badness 1527) in paragraph at lines 897--902
 \T1/aer/m/n/10.95 Ger-man/Austrian TSO zones.  $\T1/aett/m/n/10.95 https : / / 
 www . epexspot . com / en /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--900
+Underfull \hbox (badness 10000) in paragraph at lines 904--909
 \T1/aett/m/n/10.95 special-[]reports / 20170615-[]energy-[]market-[]price-[]for
 mation .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--907
+Underfull \hbox (badness 10000) in paragraph at lines 911--916
 []\T1/aer/m/n/10.95 PJM In-ter-con-nec-tion.  $1,000 Of-fer Cap in Mar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--907
+Underfull \hbox (badness 10000) in paragraph at lines 911--916
 \T1/aer/m/n/10.95 kets Gate-way.  $\T1/aett/m/n/10.95 http : / / www . pjm . co
 m / -[] / media /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--907
+Underfull \hbox (badness 10000) in paragraph at lines 911--916
 \T1/aett/m/n/10.95 committees-[]groups / committees / mic / 20180207 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--907
+Underfull \hbox (badness 10000) in paragraph at lines 911--916
 \T1/aett/m/n/10.95 20180207-[]item-[]13b-[]1000-[]offer-[]cap-[]in-[]markets-[]
 gateway . ashx$\T1/aer/m/n/10.95 .
  []
 
 ) [116] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15994 strings out of 493089
- 310615 string characters out of 6134841
- 362821 words of memory out of 5000000
- 19162 multiletter control sequences out of 15000+600000
+ 15996 strings out of 493089
+ 310629 string characters out of 6134841
+ 362831 words of memory out of 5000000
+ 19164 multiletter control sequences out of 15000+600000
  65358 words of font info for 123 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,19n,42p,10373b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1572,7 +1576,7 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on thesis.pdf (120 pages, 4522396 bytes).
+Output written on thesis.pdf (120 pages, 4528469 bytes).
 PDF statistics:
  606 PDF objects out of 1000 (max. 8388607)
  376 compressed objects within 4 object streams

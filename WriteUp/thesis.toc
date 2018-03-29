@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{Outline of the thesis}{16}
 \contentsline {chapter}{\numberline {2}Sizing and Valuation of Market for Flexibility Management: A Literature Review}{17}
 \contentsline {section}{\numberline {2.1}Stakeholders and their perspectives}{17}
-\contentsline {subsubsection}{Micro-perspective}{17}
+\contentsline {subsubsection}{Micro-perspective}{18}
 \contentsline {subsubsection}{Macro-perspective}{18}
 \contentsline {section}{\numberline {2.2}Methodologies for quantifying the value of flexibility}{19}
 \contentsline {subsection}{\numberline {2.2.1}Regarding market power: price taker versus price maker}{20}
@@ -21,13 +21,12 @@
 \contentsline {subsection}{\numberline {2.2.2}Predicting the price}{22}
 \contentsline {subsubsection}{Actual price signal vs. simulated price signal}{22}
 \contentsline {subsubsection}{Perfect foresight vs. limited predictability}{23}
-\contentsline {subsection}{\numberline {2.2.3}Stacking technologies or services}{24}
-\contentsline {subsubsection}{Multitasking}{24}
+\contentsline {subsection}{\numberline {2.2.3}Stacking technologies or applications}{24}
 \contentsline {subsubsection}{Hybrid system}{24}
-\contentsline {subsection}{\numberline {2.2.4}Formulating and solving the problem}{24}
-\contentsline {subsubsection}{Deterministic modeling vs. stochastic modeling}{24}
-\contentsline {subsubsection}{Linear programming vs. non-linear programming}{24}
-\contentsline {section}{\numberline {2.3}Summary of existing works and the implications on our study}{24}
+\contentsline {subsubsection}{Multitasking}{24}
+\contentsline {subsection}{\numberline {2.2.4}Formulating the problem}{25}
+\contentsline {subsubsection}{Deterministic modeling vs. stochastic modeling}{25}
+\contentsline {subsubsection}{Linear programming vs. non-linear programming}{26}
 \contentsline {chapter}{\numberline {3}Power Markets and The Role of Flexibility Management}{27}
 \contentsline {section}{\numberline {3.1}Power market frameworks: a comparative analysis}{27}
 \contentsline {section}{\numberline {3.2}Proposed business model}{28}

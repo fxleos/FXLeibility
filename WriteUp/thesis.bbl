@@ -649,67 +649,83 @@ Graeme~N. Bathurst and Goran Strbac.
   balancing markets}.
 \newblock {\em Electric Power Systems Research}, 67(1):1--8, 2003.
 
+\bibitem{Han2017}
+Xuejiao Han, Evaggelos~G Kardakos, and Gabriela Hug.
+\newblock {Trading strategy for decentralized energy resources in sequential
+  electricity markets : A Swiss case study}.
+\newblock In {\em 7th Innovation Smart Grid Technologies}. IEEE, 2017.
+
+\bibitem{Calvillo2016}
+C.~F. Calvillo, A.~S{\'{a}}nchez-Miralles, J.~Villar, and F.~Mart{\'{i}}n.
+\newblock {Optimal planning and operation of aggregated distributed energy
+  resources with market participation}.
+\newblock {\em Applied Energy}, 182:340--357, 2016.
+
 \bibitem{Xu2017}
 Zhiwei Xu, Zechun Hu, Yonghua Song, and Jianhui Wang.
 \newblock {Risk-Averse Optimal Bidding Strategy for Demand-Side Resource
   Aggregators in Day-Ahead Electricity Markets under Uncertainty}.
 \newblock {\em IEEE Transactions on Smart Grid}, 8(1):96--105, 2017.
 
+\bibitem{Martin-Martinez2016}
+F.~Mart{\'{i}}n-Mart{\'{i}}nez, A.~S{\'{a}}nchez-Miralles, and M.~Rivier.
+\newblock {Prosumers' optimal DER investments and DR usage for thermal and
+  electrical loads in isolated microgrids}.
+\newblock {\em Electric Power Systems Research}, 140:473--484, 2016.
+
+\bibitem{Megel2017}
+Olivier Megel.
+\newblock {\em {Storage in Power Systems : Frequency Control , Scheduling of
+  Multiple Applications, and Computational Complexity}}.
+\newblock PhD thesis, ETH Zurich, 2017.
+
+\bibitem{Sortomme2012}
+Eric Sortomme and Mohamed~A. El-Sharkawi.
+\newblock {Optimal scheduling of vehicle-to-grid energy and ancillary
+  services}.
+\newblock {\em IEEE Transactions on Smart Grid}, 3(1):351--359, 2012.
+
+\bibitem{Cho2015}
+Joohyun Cho and Andrew~N. Kleit.
+\newblock {Energy storage systems in energy and ancillary markets: A backwards
+  induction approach}.
+\newblock {\em Applied Energy}, 147:176--183, 2015.
+
+\bibitem{Peng2017}
+Chao Peng, Jianxiao Zou, Lian Lian, and Liying Li.
+\newblock {An optimal dispatching strategy for V2G aggregator participating in
+  supplementary frequency regulation considering EV driving demand and
+  aggregator's benefits}.
+\newblock {\em Applied Energy}, 190:591--599, 2017.
+
+\bibitem{Roos2014}
+Aleksandra Roos, Stig~O. Ottesen, and Torjus~F. Bolkesj{\o}.
+\newblock {Modeling Consumer Flexibility of an Aggregator Participating in the
+  Wholesale Power Market and the Regulation Capacity Market}.
+\newblock {\em Energy Procedia}, 58(1876):79--86, 2014.
+
+\bibitem{Qin2012}
+Junjie Qin, Raffi Sevlian, David Varodayan, and Ram Rajagopal.
+\newblock {Optimal electric energy storage operation}.
+\newblock {\em IEEE Power and Energy Society General Meeting}, 94305:1--6,
+  2012.
+
+\bibitem{Xi2014}
+Xiaomin Xi, Ramteen Sioshansi, and Vincenzo Marano.
+\newblock {A stochastic dynamic programming model for co-optimization of
+  distributed energy storage}.
+\newblock {\em Energy Systems}, 5(3):475--505, 2014.
+
+\bibitem{Mahmoudi2014}
+Nadali Mahmoudi, Tapan~K. Saha, and Mehdi Eghbal.
+\newblock {Modelling demand response aggregator behavior in wind power offering
+  strategies}.
+\newblock {\em Applied Energy}, 133:347--355, 2014.
+
 \bibitem{Storage2015}
 Pascal Haefeli.
 \newblock {\em {Distributed Control Strategies for Distributed Storage}}.
 \newblock PhD thesis, 2015.
-
-\bibitem{Connolly2012}
-D.~Connolly, H.~Lund, B.~V. Mathiesen, E.~Pican, and M.~Leahy.
-\newblock {The technical and economic implications of integrating fluctuating
-  renewable energy using energy storage}.
-\newblock {\em Renewable Energy}, 43:47--60, 2012.
-
-\bibitem{Sensfuss2008}
-Frank Sensfu{\ss}, Mario Ragwitz, and Massimo Genoese.
-\newblock {The merit-order effect: A detailed analysis of the price effect of
-  renewable electricity generation on spot market prices in Germany}.
-\newblock {\em Energy Policy}, 36(8):3076--3084, 2008.
-
-\bibitem{SaenzdeMiera2008}
-Gonzalo {S{\'{a}}enz de Miera}, Pablo {del R{\'{i}}o Gonz{\'{a}}lez}, and
-  Ignacio Vizca{\'{i}}no.
-\newblock {Analysing the impact of renewable electricity support schemes on
-  power prices: The case of wind electricity in Spain}.
-\newblock {\em Energy Policy}, 36(9):3345--3359, 2008.
-
-\bibitem{Tveten2013}
-{\AA}sa~Grytli Tveten, Torjus~Folsland Bolkesj{\o}, Thomas Martinsen, and
-  H{\aa}vard Hvarnes.
-\newblock {Solar feed-in tariffs and the merit order effect: A study of the
-  German electricity market}.
-\newblock {\em Energy Policy}, 61(June 2011):761--770, 2013.
-
-\bibitem{McConnell2013}
-Dylan McConnell, Patrick Hearps, Dominic Eales, Mike Sandiford, Rebecca Dunn,
-  Matthew Wright, and Lachlan Bateman.
-\newblock {Retrospective modeling of the merit-order effect on wholesale
-  electricity prices from distributed photovoltaic generation in the Australian
-  National Electricity Market}.
-\newblock {\em Energy Policy}, 58:17--27, 2013.
-
-\bibitem{He2013}
-Yang He, Marcus Hildmann, Florian Herzog, and Goran Andersson.
-\newblock {Modeling the merit order curve of the european energy exchange power
-  market in Germany}.
-\newblock {\em IEEE Transactions on Power Systems}, 28(3):3155--3164, 2013.
-
-\bibitem{Moller2010}
-Christoph M{\"{o}}ller.
-\newblock {\em {Balancing energy in the German market design}}.
-\newblock PhD thesis, Universitat Karlsruhe, 2010.
-
-\bibitem{Han2017}
-Xuejiao Han, Evaggelos~G Kardakos, and Gabriela Hug.
-\newblock {Trading strategy for decentralized energy resources in sequential
-  electricity markets : A Swiss case study}.
-\newblock In {\em 7th Innovation Smart Grid Technologies}. IEEE, 2017.
 
 \bibitem{Mohammadi-Ivatloo2013}
 Behnam Mohammadi-Ivatloo, Hamidreza Zareipour, Nima Amjady, and Mehdi Ehsan.
@@ -749,12 +765,6 @@ General~Electric Company.
   \url{https://www.gepower.com/content/dam/gepower-pgdp/global/en_US/documents/product/gas%20turbines/Fact%20Sheet/9ha-fact-sheet.pdf},
   2015.
 \newblock Published: 2015-03.
-
-\bibitem{Megel2017}
-Olivier Megel.
-\newblock {\em {Storage in Power Systems : Frequency Control , Scheduling of
-  Multiple Applications, and Computational Complexity}}.
-\newblock PhD thesis, ETH Zurich, 2017.
 
 \bibitem{Barre2013}
 Anthony Barr{\'{e}}, Benjamin Deguilhem, S{\'{e}}bastien Grolleau, Mathias
@@ -865,13 +875,6 @@ Kraftfahrt-Bundesamtes (KBA).
   \url{https://www.kba.de/DE/Statistik/Fahrzeuge/Neuzulassungen/MonatlicheNeuzulassungen/monatl_neuzulassungen_node.html}.
 \newblock Accessed: 2018-01-12.
 
-\bibitem{Peng2017}
-Chao Peng, Jianxiao Zou, Lian Lian, and Liying Li.
-\newblock {An optimal dispatching strategy for V2G aggregator participating in
-  supplementary frequency regulation considering EV driving demand and
-  aggregator's benefits}.
-\newblock {\em Applied Energy}, 190:591--599, 2017.
-
 \bibitem{Bessa2014}
 R.~J. Bessa and M.~A. Matos.
 \newblock {Optimization models for an EV aggregator selling secondary reserve
@@ -883,6 +886,12 @@ R.~J. Bessa and M.~A. Matos.
 \newblock {Global against divided optimization for the participation of an EV
   aggregator in the day-ahead electricity market. Part II: Numerical analysis}.
 \newblock {\em Electric Power Systems Research}, 95:309--318, 2013.
+
+\bibitem{He2013}
+Yang He, Marcus Hildmann, Florian Herzog, and Goran Andersson.
+\newblock {Modeling the merit order curve of the european energy exchange power
+  market in Germany}.
+\newblock {\em IEEE Transactions on Power Systems}, 28(3):3155--3164, 2013.
 
 \bibitem{EPEX_price_limit}
 EPEX~SPOT SE.
