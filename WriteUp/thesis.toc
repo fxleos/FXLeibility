@@ -10,9 +10,9 @@
 \contentsline {subsubsection}{Scope of technology}{15}
 \contentsline {subsubsection}{Scope of geographies}{16}
 \contentsline {subsubsection}{Outline of the thesis}{16}
-\contentsline {chapter}{\numberline {2}Sizing and Valuation of Market for Flexibility Management: A Literature Review}{17}
+\contentsline {chapter}{\numberline {2}Sizing and Valuation of The Market for Flexibility Management: A Literature Review}{17}
 \contentsline {section}{\numberline {2.1}Stakeholders and their perspectives}{17}
-\contentsline {subsubsection}{Micro-perspective}{18}
+\contentsline {subsubsection}{Micro-perspective}{17}
 \contentsline {subsubsection}{Macro-perspective}{18}
 \contentsline {section}{\numberline {2.2}Methodologies for quantifying the value of flexibility}{19}
 \contentsline {subsection}{\numberline {2.2.1}Regarding market power: price taker versus price maker}{20}
@@ -21,72 +21,83 @@
 \contentsline {subsection}{\numberline {2.2.2}Predicting the price}{22}
 \contentsline {subsubsection}{Actual price signal vs. simulated price signal}{22}
 \contentsline {subsubsection}{Perfect foresight vs. limited predictability}{23}
-\contentsline {subsection}{\numberline {2.2.3}Stacking technologies or applications}{24}
+\contentsline {subsection}{\numberline {2.2.3}Stacking technologies or applications}{23}
 \contentsline {subsubsection}{Hybrid system}{24}
 \contentsline {subsubsection}{Multitasking}{24}
 \contentsline {subsection}{\numberline {2.2.4}Formulating the problem}{25}
 \contentsline {subsubsection}{Deterministic modeling vs. stochastic modeling}{25}
 \contentsline {subsubsection}{Linear programming vs. non-linear programming}{26}
-\contentsline {chapter}{\numberline {3}Power Markets and The Role of Flexibility Management}{27}
-\contentsline {section}{\numberline {3.1}Power market frameworks: a comparative analysis}{27}
-\contentsline {section}{\numberline {3.2}Proposed business model}{28}
-\contentsline {subsection}{\numberline {3.2.1}Offering}{28}
-\contentsline {subsection}{\numberline {3.2.2}Customer}{28}
-\contentsline {subsection}{\numberline {3.2.3}Application}{28}
-\contentsline {chapter}{\numberline {4}Methodology for Quantitative Valuation of Flexibility Management Markets}{29}
-\contentsline {section}{\numberline {4.1}Modular approach to build valuation models}{29}
-\contentsline {section}{\numberline {4.2}Market-based modules}{31}
-\contentsline {subsection}{\numberline {4.2.1}Revenue module}{31}
-\contentsline {subsection}{\numberline {4.2.2}Market simulation module}{35}
-\contentsline {subsubsection}{Day-ahead energy market}{35}
-\contentsline {subsubsection}{Real-time energy market and reserve market}{39}
-\contentsline {subsection}{\numberline {4.2.3}Market constraints}{39}
-\contentsline {section}{\numberline {4.3}Technology-based modules}{39}
-\contentsline {subsection}{\numberline {4.3.1}Cost module}{39}
-\contentsline {subsubsection}{Operation-independent costs}{39}
-\contentsline {subsubsection}{Operation-dependent costs}{40}
-\contentsline {subsection}{\numberline {4.3.2}Technology simulation module}{42}
-\contentsline {subsubsection}{Energy Storage}{42}
-\contentsline {subsubsection}{Electric Vehicle}{43}
-\contentsline {subsection}{\numberline {4.3.3}Technology constraints}{45}
-\contentsline {subsubsection}{Energy storage}{45}
-\contentsline {subsubsection}{Electric vehicle to grid}{46}
-\contentsline {section}{\numberline {4.4}Optimization Engine}{47}
-\contentsline {section}{\numberline {4.5}Addtional measures for special cases}{47}
-\contentsline {subsection}{\numberline {4.5.1}Backcast technique to reduce the predictability of price}{47}
-\contentsline {subsection}{\numberline {4.5.2}Coupling day-ahead and real-time energy market}{48}
-\contentsline {subsection}{\numberline {4.5.3}Dealing with non-energy-neutral signal for frequency control}{48}
-\contentsline {subsection}{\numberline {4.5.4}Final adjusted profit calculation}{49}
-\contentsline {chapter}{\numberline {5}Case Studies}{51}
-\contentsline {section}{\numberline {5.1}Analyzing the power market structures and business opportunities in select cases}{51}
-\contentsline {subsection}{\numberline {5.1.1}PJM}{51}
-\contentsline {subsubsection}{Organization of PJM power markets}{51}
-\contentsline {subsubsection}{Players}{52}
-\contentsline {subsubsection}{Balancing mechanism}{52}
-\contentsline {subsubsection}{PJM DR}{52}
-\contentsline {subsubsection}{Identify business model}{53}
-\contentsline {subsubsection}{Accounting}{53}
-\contentsline {subsection}{\numberline {5.1.2}Germany}{53}
-\contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{53}
-\contentsline {section}{\numberline {5.2}Quantitative studies and results}{54}
-\contentsline {subsection}{\numberline {5.2.1}Data, parameters and valuation metrics}{55}
-\contentsline {subsection}{\numberline {5.2.2}Valuation of markets under current market conditions}{61}
-\contentsline {subsubsection}{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}{61}
-\contentsline {subsubsection}{ESS in PJM: successful practice of frequency control product design for flexibility}{65}
-\contentsline {subsubsection}{ESS in NSW: most favorable market for arbitrage using flexibility yet still not profitable}{68}
-\contentsline {subsubsection}{Cost reduction: where is the break-even point for arbitrage using BESSs}{70}
-\contentsline {subsubsection}{EV2G in Germany: changeling in developing business model}{72}
-\contentsline {subsubsection}{EV2G in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}{76}
-\contentsline {subsubsection}{EV2G in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}{78}
-\contentsline {subsubsection}{Summary}{79}
-\contentsline {subsection}{\numberline {5.2.3}Impact analysis of renewable penetration}{83}
-\contentsline {subsubsection}{Model setup and validation}{84}
-\contentsline {subsubsection}{Renewable penetration in Germany: at the inflection point}{90}
-\contentsline {subsubsection}{Renewable penetration in PJM: arbitrage potential bounded by non-negative pricing}{91}
-\contentsline {subsection}{\numberline {5.2.4}Sensitivity analysis}{92}
-\contentsline {subsubsection}{Limited predictability}{93}
-\contentsline {subsubsection}{Responsive price}{95}
-\contentsline {subsubsection}{Sensitivity analysis of other parameters}{96}
-\contentsline {chapter}{\numberline {6}Conclusions and outlook}{97}
-\contentsline {chapter}{\numberline {A}Accounting rules and electricity market data prepration}{99}
-\contentsline {chapter}{\numberline {B}Other}{101}
+\contentsline {chapter}{\numberline {3}Power Markets And The Role of Flexibility Management: A Qualitative Analytical Framework}{27}
+\contentsline {section}{\numberline {3.1}Motivation for a framework over various power market regimes}{27}
+\contentsline {section}{\numberline {3.2}Flexibility management in energy market}{29}
+\contentsline {subsection}{\numberline {3.2.1}Market model: Power pool vs. power exchange}{30}
+\contentsline {subsubsection}{Implications for flexibility management}{31}
+\contentsline {subsection}{\numberline {3.2.2}Marketplaces}{32}
+\contentsline {subsection}{\numberline {3.2.3}Pricing scheme}{33}
+\contentsline {subsubsection}{Nodal pricing vs. zonal pricing}{33}
+\contentsline {subsubsection}{Resolution}{33}
+\contentsline {section}{\numberline {3.3}Flexibility management in ancillary service market}{34}
+\contentsline {subsection}{\numberline {3.3.1}Terminology for frequency control services}{34}
+\contentsline {subsection}{\numberline {3.3.2}Procurement and cost allocation}{35}
+\contentsline {subsection}{\numberline {3.3.3}Frequency control product design}{37}
+\contentsline {section}{\numberline {3.4}Flexibility management in capacity market}{38}
+\contentsline {subsubsection}{Examples}{38}
+\contentsline {section}{\numberline {3.5}Aggregator and demand side participation}{38}
+\contentsline {section}{\numberline {3.6}Summary and the analytical framework}{38}
+\contentsline {chapter}{\numberline {4}Methodology for Quantitative Valuation of Flexibility Management Markets}{41}
+\contentsline {section}{\numberline {4.1}Modular approach to build valuation models}{41}
+\contentsline {section}{\numberline {4.2}Market-based modules}{43}
+\contentsline {subsection}{\numberline {4.2.1}Revenue module}{43}
+\contentsline {subsection}{\numberline {4.2.2}Market simulation module}{47}
+\contentsline {subsubsection}{Day-ahead energy market}{47}
+\contentsline {subsubsection}{Real-time energy market and reserve market}{51}
+\contentsline {subsection}{\numberline {4.2.3}Market constraints}{51}
+\contentsline {section}{\numberline {4.3}Technology-based modules}{51}
+\contentsline {subsection}{\numberline {4.3.1}Cost module}{51}
+\contentsline {subsubsection}{Operation-independent costs}{51}
+\contentsline {subsubsection}{Operation-dependent costs}{52}
+\contentsline {subsection}{\numberline {4.3.2}Technology simulation module}{54}
+\contentsline {subsubsection}{Energy Storage}{54}
+\contentsline {subsubsection}{Electric Vehicle}{55}
+\contentsline {subsection}{\numberline {4.3.3}Technology constraints}{57}
+\contentsline {subsubsection}{Energy storage}{57}
+\contentsline {subsubsection}{Electric vehicle to grid}{58}
+\contentsline {section}{\numberline {4.4}Optimization Engine}{59}
+\contentsline {section}{\numberline {4.5}Addtional measures for special cases}{59}
+\contentsline {subsection}{\numberline {4.5.1}Backcast technique to reduce the predictability of price}{59}
+\contentsline {subsection}{\numberline {4.5.2}Coupling day-ahead and real-time energy market}{60}
+\contentsline {subsection}{\numberline {4.5.3}Dealing with non-energy-neutral signal for frequency control}{60}
+\contentsline {subsection}{\numberline {4.5.4}Final adjusted profit calculation}{61}
+\contentsline {chapter}{\numberline {5}Case Studies}{63}
+\contentsline {section}{\numberline {5.1}Analyzing the power market structures and business opportunities in select cases}{63}
+\contentsline {subsection}{\numberline {5.1.1}PJM}{64}
+\contentsline {subsubsection}{Organization of PJM power markets}{64}
+\contentsline {subsubsection}{Players}{64}
+\contentsline {subsubsection}{Balancing mechanism}{64}
+\contentsline {subsubsection}{PJM DR}{65}
+\contentsline {subsubsection}{Identify business model}{65}
+\contentsline {subsubsection}{Accounting}{65}
+\contentsline {subsection}{\numberline {5.1.2}Germany}{65}
+\contentsline {subsection}{\numberline {5.1.3}Australia-New South Walse}{66}
+\contentsline {section}{\numberline {5.2}Quantitative studies and results}{67}
+\contentsline {subsection}{\numberline {5.2.1}Data, parameters and valuation metrics}{68}
+\contentsline {subsection}{\numberline {5.2.2}Valuation of markets under current market conditions}{74}
+\contentsline {subsubsection}{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}{74}
+\contentsline {subsubsection}{ESS in PJM: successful practice of frequency control product design for flexibility}{78}
+\contentsline {subsubsection}{ESS in NSW: most favorable market for arbitrage using flexibility yet still not profitable}{81}
+\contentsline {subsubsection}{Cost reduction: where is the break-even point for arbitrage using BESSs}{83}
+\contentsline {subsubsection}{EV2G in Germany: changeling in developing business model}{85}
+\contentsline {subsubsection}{EV2G in PJM: RegD market would be saturated shortly if EV2G was indeed implemented}{89}
+\contentsline {subsubsection}{EV2G in NSW: arbitrage-only is more profitable than frequency control in the other two geographies}{91}
+\contentsline {subsubsection}{Summary}{92}
+\contentsline {subsection}{\numberline {5.2.3}Impact analysis of renewable penetration}{96}
+\contentsline {subsubsection}{Model setup and validation}{97}
+\contentsline {subsubsection}{Renewable penetration in Germany: at the inflection point}{103}
+\contentsline {subsubsection}{Renewable penetration in PJM: arbitrage potential bounded by non-negative pricing}{104}
+\contentsline {subsection}{\numberline {5.2.4}Sensitivity analysis}{105}
+\contentsline {subsubsection}{Limited predictability}{106}
+\contentsline {subsubsection}{Responsive price}{108}
+\contentsline {subsubsection}{Sensitivity analysis of other parameters}{109}
+\contentsline {chapter}{\numberline {6}Conclusions and outlook}{111}
+\contentsline {chapter}{\numberline {A}Terminology for frequency control service in different markets}{113}
+\contentsline {chapter}{\numberline {B}Accounting rules and electricity market data preparation}{115}

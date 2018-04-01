@@ -727,6 +727,178 @@ Pascal Haefeli.
 \newblock {\em {Distributed Control Strategies for Distributed Storage}}.
 \newblock PhD thesis, 2015.
 
+\bibitem{Brouthers2007}
+D.~Keith Brouthers and Jean~Fran{\c{c}}ois Hennart.
+\newblock {Boundaries of the firm: Insights from international entry mode
+  research}, 2007.
+
+\bibitem{Rebours2009}
+Yann Rebours.
+\newblock {\em {A Comprehensive Assessment of Markets for Frequency and Voltage
+  Control Ancillary Services}}.
+\newblock PhD thesis, University of Manchester, 2009.
+
+\bibitem{FrontierEconomics2016}
+{Frontier Economics}.
+\newblock {METIS Technical Note T4: Overview of European Electricity Markets}.
+\newblock Technical Report February, prepared for the European Commission,
+  2016.
+
+\bibitem{ofgem_m}
+Office of~Gas and Electricity~Markets (ofgem).
+\newblock {The GB electricity wholesale market}.
+\newblock
+  \url{https://www.ofgem.gov.uk/electricity/wholesale-market/gb-electricity-wholesale-market},
+  2018.
+
+\bibitem{ofgem_cm}
+Office of~Gas and Electricity~Markets (ofgem).
+\newblock {Capacity Market (CM) Rules}.
+\newblock
+  \url{https://www.ofgem.gov.uk/electricity/wholesale-market/market-efficiency-review-and-reform/electricity-market-reform/capacity-market-cm-rules},
+  2018.
+
+\bibitem{Cochran2013}
+Jaquelin Cochran, Mackay Miller, Michael Milligan, Erik Ela, Douglas Arent, and
+  Aaron Bloom.
+\newblock {Market Evolution: Wholesale Electricity Market Design for 21 st
+  Century Power Systems}.
+\newblock {\em Contract}, (October 2013):1--57, 2013.
+
+\bibitem{EllisonJ.F.TesfatsionL.S.LooseV.W.Byrne2012}
+R.~H. {Ellison, J. F., Tesfatsion, L. S., Loose, V. W., Byrne}.
+\newblock {A Survey of Operating Reserve Markets in U.S. ISO/RTO-Managed
+  Electric Energy Regions}.
+\newblock Technical Report September, Sandia National Laboratories, 2012.
+
+\bibitem{Gilstrap2015}
+Matthew Gilstrap, Shravan Amin, and Kevin Decoria-Souza.
+\newblock {United States Electricity Industry Primer}, 2015.
+
+\bibitem{Borenstein2015}
+Severin Borenstein and James Bushnell.
+\newblock {The U. S . Electricity Industry after 20 Years of Restructuring}.
+\newblock {\em Energy Institute at HAAS}, (May 2015):1--31, 2015.
+
+\bibitem{PJM_web}
+PJM Interconnection.
+\newblock {Official website}.
+\newblock \url{http://www.pjm.com}, 2018.
+
+\bibitem{PJM2017b}
+PJM Interconnection.
+\newblock {PJM Manual 11 : Energy {\&} Ancillary Services Market Operations},
+  2017.
+
+\bibitem{PJM2017c}
+PJM Interconnection.
+\newblock {PJM Manual 12: Balancing Operations}, 2017.
+
+\bibitem{NYISO_web}
+New York Independent~System Operator.
+\newblock {Official website}.
+\newblock \url{http://www.nyiso.com/public/index.jsp}, 2018.
+
+\bibitem{MISO_web}
+New York Independent~System Operator.
+\newblock {Official website}.
+\newblock \url{https://www.misoenergy.org}, 2018.
+
+\bibitem{ISO_NE_web}
+ISO New~England Inc.
+\newblock {Official website}.
+\newblock \url{https://www.iso-ne.com}, 2018.
+
+\bibitem{CAISO_web}
+California Independent~System Operator.
+\newblock {Official website}.
+\newblock \url{http://www.caiso.com/Pages/default.aspx}, 2018.
+
+\bibitem{SPP_web}
+Southwest~Power Pool.
+\newblock {Official website}.
+\newblock \url{https://www.spp.org}, 2018.
+
+\bibitem{ERCOT_web}
+Electric Reliability~Council of~Texas.
+\newblock {Official website}.
+\newblock \url{http://www.ercot.com}, 2018.
+
+\bibitem{Ontario_web}
+Independent Electricity System~Operator (Ontario).
+\newblock {Official website}.
+\newblock \url{http://www.ieso.ca/en}, 2018.
+
+\bibitem{Alberta_web}
+Alberta Electric~System Operator.
+\newblock {Official website}.
+\newblock \url{https://www.aeso.ca}, 2018.
+
+\bibitem{AEMO2010}
+AEMO.
+\newblock {An introduction to australia's national electricity market}, 2010.
+
+\bibitem{AEMO2015a}
+AEMO.
+\newblock {Guide To Ancillary Services in the National Electricity Market},
+  2015.
+
+\bibitem{ConsentecGmbH2014}
+{Consentec GmbH}.
+\newblock {Description of load-frequency control concept and market for control
+  reserves}.
+\newblock Technical Report February, prepared for 50Hertz Transmission GmbH,
+  2014.
+
+\bibitem{Deloitte2015}
+Deloitte.
+\newblock {European energy market reform Country profile : Germany Contents}.
+\newblock Technical report, 2015.
+
+\bibitem{EnergyUK2017}
+{Energy UK}.
+\newblock {Ancillary services report 2017}.
+\newblock Technical report, Energy UK, 2017.
+
+\bibitem{Barroso2005}
+Luiz~Auguste Barroso, Te{\'{o}}filo~H. Cavalcanti, Paul Giesbertz, and Konrad
+  Purchala.
+\newblock {Classification of electricity market models worldwide}.
+\newblock In {\em 2005 CIGRE/IEEE PES International Symposium}, pages 9--16,
+  2005.
+
+\bibitem{EuropeanCommission2016}
+{European Commission}.
+\newblock {DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on common
+  rules for the internal market in electricity}, 2016.
+
+\bibitem{Wang2015}
+Qi~Wang, Chunyu Zhang, Yi~Ding, George Xydis, Jianhui Wang, and Jacob
+  {\O}stergaard.
+\newblock {Review of real-time electricity markets for integrating Distributed
+  Energy Resources and Demand Response}.
+\newblock {\em Applied Energy}, 138:695--706, 2015.
+
+\bibitem{Ecogrid}
+EcoGrid EU~FP7 project.
+\newblock {Homepage}.
+\newblock \url{http://www.eu-ecogrid.net}, 2016.
+
+\bibitem{PJM2017}
+PJM.
+\newblock {PJM Manual 28: Operating Agreement Accounting}, 2017.
+
+\bibitem{ENTSO-e_handbook}
+European~Network of~Transmission System~Operator.
+\newblock {Continental Europe Operation Handbook}.
+\newblock
+  \url{https://www.entsoe.eu/publications/system-operations-reports/operation-handbook/Pages/default.aspx},
+  2004.
+
+\bibitem{AEMO2015}
+AEMO.
+\newblock {Settlements Guide To Ancillary Services Payment and Recovery}, 2015.
+
 \bibitem{Mohammadi-Ivatloo2013}
 Behnam Mohammadi-Ivatloo, Hamidreza Zareipour, Nima Amjady, and Mehdi Ehsan.
 \newblock {Application of information-gap decision theory to risk-constrained
@@ -790,22 +962,6 @@ Chunlian Jin, Ning Lu, Shuai Lu, Yuri~V. Makarov, and Roger~A. Dougal.
   slow and fast power regulating resources}.
 \newblock {\em IEEE Transactions on Smart Grid}, 5(2):1043--1050, 2014.
 
-\bibitem{PJM2017b}
-PJM Interconnection.
-\newblock {PJM Manual 11 : Energy {\&} Ancillary Services Market Operations},
-  2017.
-
-\bibitem{Wang2015}
-Qi~Wang, Chunyu Zhang, Yi~Ding, George Xydis, Jianhui Wang, and Jacob
-  {\O}stergaard.
-\newblock {Review of real-time electricity markets for integrating Distributed
-  Energy Resources and Demand Response}.
-\newblock {\em Applied Energy}, 138:695--706, 2015.
-
-\bibitem{PJM2017c}
-PJM Interconnection.
-\newblock {PJM Manual 12: Balancing Operations}, 2017.
-
 \bibitem{IRENA2017}
 IRENA.
 \newblock {Electricity storage and renewables: costs and market to 2030}.
@@ -856,10 +1012,6 @@ Bloomberg L.P.
 \newblock {Currencies}.
 \newblock \url{https://www.bloomberg.com/markets/currencies}.
 \newblock Accessed: 2018-01-01.
-
-\bibitem{AEMO2010}
-AEMO.
-\newblock {An introduction to australia's national electricity market}, 2010.
 
 \bibitem{Eurostat_de_v}
 European Commission.
