@@ -285,11 +285,11 @@ Toby Brown, Samuel Newell, David Oates, and Kathleen Spees.
 
 \bibitem{AEMO_DR}
 Australia Energy System~Operator Limited.
-\newblock {Demand Side Participation}.
+\newblock {DEMAND SIDE PARTICIPATION INFORMATION GUIDELINES CONSULTATION: FINAL
+  REPORT AND DETERMINATION}.
 \newblock
-  \url{https://www.aemo.com.au/Electricity/National-Electricity-Market-NEM/Planning-and-forecasting/Electricity-Forecasting-Insights/Key-component-consumption-forecasts/Demand-side-participation},
-  2017.
-\newblock Accessed: 2018-02-07.
+  \url{https://https://www.aemo.com.au/-/media/Files/Stakeholder_Consultation/Consultations/Electricity_Consultations/2017/DSPIG/Demand-Side-Participation-Information-Guidelines-Consultation---Final-Report-and-Determination.pdf},
+  4 2017.
 
 \bibitem{Lipari2017}
 Gianluca Lipari, Gerard {Del Rosario}, Cristina Corchero, Ferdinanda Ponci, and
@@ -898,6 +898,21 @@ European~Network of~Transmission System~Operator.
 \bibitem{AEMO2015}
 AEMO.
 \newblock {Settlements Guide To Ancillary Services Payment and Recovery}, 2015.
+
+\bibitem{Beaudin2014}
+Marc Beaudin, Hamidreza Zareipour, Anthony Schellenberg, and William Rosehart.
+\newblock {Energy Storage for Mitigating the Variability of Renewable
+  Electricity Sources}.
+\newblock {\em Energy Storage for Smart Grids: Planning and Operation for
+  Renewable and Variable Energy Resources (VERs)}, 14(4):1--33, 2014.
+
+\bibitem{FERC755}
+Federal Energy~Regulatory Commission.
+\newblock {Order No. 755: Frequency Regulation Compensation in the Organized
+  Wholesale Power Markets}.
+\newblock \url{https://www.ferc.gov/whats-new/comm-meet/2011/102011/E-28.pdf},
+  10 2011.
+\newblock Docket Nos. RM11-7-000 and AD10-11-000.
 
 \bibitem{Mohammadi-Ivatloo2013}
 Behnam Mohammadi-Ivatloo, Hamidreza Zareipour, Nima Amjady, and Mehdi Ehsan.
