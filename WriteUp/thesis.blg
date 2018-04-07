@@ -7,28 +7,37 @@ Repeated entry---line 3556 of file thesis.bib
  : @article{Sioshansi2009
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3956 of file thesis.bib
+Repeated entry---line 3970 of file thesis.bib
  : @article{Bathurst2003
  :                      ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4085 of file thesis.bib
+I was expecting a `,' or a `}'---line 4110 of file thesis.bib
  :  
  :  note={Accessed: 2018-03-07}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4092 of file thesis.bib
+I was expecting a `,' or a `}'---line 4117 of file thesis.bib
  :  
  :  note={Accessed: 2018-03-07}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4108 of file thesis.bib
+I was expecting a `,' or a `}'---line 4133 of file thesis.bib
  :  
  :  note={Accessed: 2018-01-09}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4115 of file thesis.bib
+I was expecting a `,' or a `}'---line 4140 of file thesis.bib
  :  
  :  note={Accessed: 2017-11-09}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 4169 of file thesis.bib
+ : @misc{ENTSO-e_handbook
+ :                       ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 4181 of file thesis.bib
+ :  
+ :  note={Accessed: 2018-02-27}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty note in Hagemann2015
@@ -46,45 +55,45 @@ Warning--there's a number but no volume in Borenstein2015
 Warning--empty institution in Deloitte2015
 Warning--there's a number but no series in Grunewald2012
 Warning--empty institution in NortheastGroup2016
-You've used 178 entries,
+You've used 183 entries,
             1791 wiz_defined-function locations,
-            1446 strings with 35828 characters,
-and the built_in function-call counts, 35390 in all, are:
-= -- 3144
-> -- 1692
-< -- 24
-+ -- 648
-- -- 470
-* -- 2194
-:= -- 5875
-add.period$ -- 543
-call.type$ -- 178
-change.case$ -- 184
+            1465 strings with 36626 characters,
+and the built_in function-call counts, 35847 in all, are:
+= -- 3175
+> -- 1705
+< -- 23
++ -- 656
+- -- 473
+* -- 2174
+:= -- 5950
+add.period$ -- 558
+call.type$ -- 183
+change.case$ -- 190
 chr.to.int$ -- 0
-cite$ -- 193
-duplicate$ -- 1391
-empty$ -- 3497
-format.name$ -- 470
-if$ -- 7694
+cite$ -- 198
+duplicate$ -- 1416
+empty$ -- 3576
+format.name$ -- 473
+if$ -- 7811
 int.to.chr$ -- 0
-int.to.str$ -- 178
-missing$ -- 101
-newline$ -- 900
-num.names$ -- 178
-pop$ -- 531
+int.to.str$ -- 183
+missing$ -- 100
+newline$ -- 925
+num.names$ -- 183
+pop$ -- 569
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 519
+skip$ -- 531
 stack$ -- 0
-substring$ -- 2105
-swap$ -- 204
-text.length$ -- 24
+substring$ -- 2055
+swap$ -- 209
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 15
-while$ -- 348
-width$ -- 181
-write$ -- 1908
-(There were 6 error messages)
+while$ -- 349
+width$ -- 186
+write$ -- 1957
+(There were 8 error messages)

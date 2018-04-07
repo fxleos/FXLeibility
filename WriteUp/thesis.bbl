@@ -273,8 +273,8 @@ Federal Energy~Regulatory Commission.
 Federal Energy~Regulatory Commission.
 \newblock {Order No. 841: Electric Storage Participation in Markets Operated by
   Regional Transmission Organizations and Independent System Operators}.
-\newblock \url{https://www.ferc.gov/whats-new/comm-meet/2018/021518/E-1.pdf}, 2
-  2018.
+\newblock \url{https://www.ferc.gov/whats-new/comm-meet/2018/021518/E-1.pdf},
+  February 2018.
 \newblock Docket Nos. RM16-23-000 and AD16-20-000.
 
 \bibitem{Brown2015}
@@ -285,11 +285,11 @@ Toby Brown, Samuel Newell, David Oates, and Kathleen Spees.
 
 \bibitem{AEMO_DR}
 Australia Energy System~Operator Limited.
-\newblock {DEMAND SIDE PARTICIPATION INFORMATION GUIDELINES CONSULTATION: FINAL
-  REPORT AND DETERMINATION}.
+\newblock {Demand Side Participation Information Guidelines Consultation: Final
+  Report and Determination}.
 \newblock
-  \url{https://https://www.aemo.com.au/-/media/Files/Stakeholder_Consultation/Consultations/Electricity_Consultations/2017/DSPIG/Demand-Side-Participation-Information-Guidelines-Consultation---Final-Report-and-Determination.pdf},
-  4 2017.
+  \url{https://www.aemo.com.au/-/media/Files/Stakeholder_Consultation/Consultations/Electricity_Consultations/2017/DSPIG/Demand-Side-Participation-Information
+  -Guidelines-Consultation---Final-Report-and-Determination.pdf}, April 2017.
 
 \bibitem{Lipari2017}
 Gianluca Lipari, Gerard {Del Rosario}, Cristina Corchero, Ferdinanda Ponci, and
@@ -305,7 +305,7 @@ ENTSO-E.
 \bibitem{EuropeanCommission2017}
 {European Commission}.
 \newblock {COMMISSION STAFF WORKING DOCUMENT Energy storage - the role of
-  electricity EN}.
+  electricity}.
 \newblock Technical report, 2017.
 
 \bibitem{Poganietz2017}
@@ -637,6 +637,12 @@ Manijeh Alipour, Behnam Mohammadi-Ivatloo, Mohammad Moradi-Dalvand, and Kazem
   for participation in energy and ancillary service markets}.
 \newblock {\em Energy}, 118:1168--1179, 2017.
 
+\bibitem{Scherer2016}
+Marc Scherer.
+\newblock {\em {Frequency Control in the European Power System Considering the
+  Organisational Structure and Division of Responsibilities}}.
+\newblock Doctoral thesis, ETH Zurich, 2016.
+
 \bibitem{Drury2011}
 Easan Drury, Paul Denholm, and Ramteen Sioshansi.
 \newblock {The value of compressed air energy storage in energy and reserve
@@ -914,29 +920,6 @@ Federal Energy~Regulatory Commission.
   10 2011.
 \newblock Docket Nos. RM11-7-000 and AD10-11-000.
 
-\bibitem{Mohammadi-Ivatloo2013}
-Behnam Mohammadi-Ivatloo, Hamidreza Zareipour, Nima Amjady, and Mehdi Ehsan.
-\newblock {Application of information-gap decision theory to risk-constrained
-  self-scheduling of GenCos}.
-\newblock {\em IEEE Transactions on Power Systems}, 28(2):1093--1102, 2013.
-
-\bibitem{Rockafellar2000}
-R.~Tyrrell Rockafellar and Stanislav Uryasev.
-\newblock {Optimization of conditional value-at-risk}.
-\newblock {\em Journal of Risk}, 2:21--41, 2000.
-
-\bibitem{Grunewald2012}
-Philipp Gr{\"{u}}newald.
-\newblock {Electricity storage in future GB networks - a market failure?}
-\newblock In {\em BIEE 9th Accademic Conference}, number August 2012, pages
-  1--23, 2012.
-
-\bibitem{Cox2009}
-James Cox.
-\newblock {How wind variability could change the shape of the British and Irish
-  electricity markets}.
-\newblock Technical Report September, P{\"{o}}yry Energy Ltd, 2009.
-
 \bibitem{Siemens}
 Siemens AG.
 \newblock {Siemens gas turbine portfolio}.
@@ -952,6 +935,24 @@ General~Electric Company.
   \url{https://www.gepower.com/content/dam/gepower-pgdp/global/en_US/documents/product/gas%20turbines/Fact%20Sheet/9ha-fact-sheet.pdf},
   2015.
 \newblock Published: 2015-03.
+
+\bibitem{Eager2010}
+Dan Eager, Janusz Bialek, and Tim Johnson.
+\newblock {Validation of a dynamic control model to simulate investment cycles
+  in electricity generating capacity}.
+\newblock In {\em IEEE PES General Meeting, PES 2010}, 2010.
+
+\bibitem{Grunewald2012}
+Philipp Gr{\"{u}}newald.
+\newblock {Electricity storage in future GB networks - a market failure?}
+\newblock In {\em BIEE 9th Accademic Conference}, number August 2012, pages
+  1--23, 2012.
+
+\bibitem{He2013}
+Yang He, Marcus Hildmann, Florian Herzog, and Goran Andersson.
+\newblock {Modeling the merit order curve of the european energy exchange power
+  market in Germany}.
+\newblock {\em IEEE Transactions on Power Systems}, 28(3):3155--3164, 2013.
 
 \bibitem{Barre2013}
 Anthony Barr{\'{e}}, Benjamin Deguilhem, S{\'{e}}bastien Grolleau, Mathias
@@ -976,6 +977,44 @@ Chunlian Jin, Ning Lu, Shuai Lu, Yuri~V. Makarov, and Roger~A. Dougal.
 \newblock {A coordinating algorithm for dispatching regulation services between
   slow and fast power regulating resources}.
 \newblock {\em IEEE Transactions on Smart Grid}, 5(2):1043--1050, 2014.
+
+\bibitem{FERC_web}
+Federal Energy~Regulatory Commission.
+\newblock {Official website}.
+\newblock \url{https://www.ferc.gov}, 2018.
+
+\bibitem{Bayer2015}
+Edith Bayer.
+\newblock {Report on the German power system}.
+\newblock Technical report, Agora Energiewende, 2015.
+
+\bibitem{AEMO_web}
+Australian Energy~Market Operator.
+\newblock {Official website}.
+\newblock \url{https://www.aemo.com.au/}, 2018.
+
+\bibitem{AEMC_rule}
+Australian Energy~Market Commission.
+\newblock {National Electricity Rules Version 106}.
+\newblock
+  \url{https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules/current},
+  2017.
+
+\bibitem{AEMO_DR_1}
+Australia Energy System~Operator Limited.
+\newblock {Demand Response Mechanism and Ancillary Services Unbundling -
+  Detailed Design}.
+\newblock
+  \url{https://www.aemo.com.au/-/media/Files/PDF/DRM_Detailed_Design_Final_181113.pdf},
+  April 2013.
+
+\bibitem{AEMO_DR_Pilot}
+Australia Energy System~Operator Limited.
+\newblock {AEMO and ARENA demand response trial to provide 200 megawatts of
+  emergency reserves for extreme peaks}.
+\newblock
+  \url{https://www.aemo.com.au/Media-Centre/AEMO-and-ARENA-demand-response-trial-to-provide-200MW-of-emergency-reserves-for-extreme-peaks},
+  October 2017.
 
 \bibitem{IRENA2017}
 IRENA.
@@ -1053,12 +1092,6 @@ R.~J. Bessa and M.~A. Matos.
 \newblock {Global against divided optimization for the participation of an EV
   aggregator in the day-ahead electricity market. Part II: Numerical analysis}.
 \newblock {\em Electric Power Systems Research}, 95:309--318, 2013.
-
-\bibitem{He2013}
-Yang He, Marcus Hildmann, Florian Herzog, and Goran Andersson.
-\newblock {Modeling the merit order curve of the european energy exchange power
-  market in Germany}.
-\newblock {\em IEEE Transactions on Power Systems}, 28(3):3155--3164, 2013.
 
 \bibitem{EPEX_price_limit}
 EPEX~SPOT SE.

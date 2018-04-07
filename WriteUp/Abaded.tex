@@ -1,0 +1,74 @@
+%\subsection{Risk module}
+In accordance with the revenue calculation, we consider the uncertain movement of price as the primary source of risk. Referring to similar works that performed risk management for flexibility sources, e.g. EV2G \cite{Alipour2017} and DER \cite{Han2017}, as well as for conventional energy trading companies \cite{Mohammadi-Ivatloo2013}, we developed a simple measure for risk control, by using the conditional value-at-risk (CVaR).
+
+The CVaR (also named expected shortfall) as an extension of value-at-risk (VaR) can be defined as the difference between the expected profit and the average of potential profit values which are less than VaR \cite{Rockafellar2000}, shown as:
+
+\begin{equation}
+\label{eq:CVaR}
+CVaR_\alpha (X) = \int_{\alpha}^{1} VaR_s(X) ds
+\end{equation}
+
+where $\alpha$ is the confidence level, and $X$ is the underlying (the price of energy/ reserve in our study). The VaR, as the negative of $\alpha$-quantile, can be computed as:
+
+\begin{equation}
+\label{VaR}
+VaR_\alpha(X) = inf \{x \in \mathbb{R}~|~ P(X+x<0)\leq 1-\alpha\}
+\end{equation}
+
+Specially, in case the underlying variable subject to normal distribution, i.e. $X \sim \mathcal{N}(\mu,\,\sigma^{2})\,$, we can derive the CVaR as:
+
+\begin{equation}
+CVaR_\alpha(X) = \mu - \sigma \frac{\phi(\Phi^{-1}(\alpha))}{1-\alpha}
+\end{equation}
+%http://blog.smaga.ch/expected-shortfall-closed-form-for-normal-distribution/
+where, $\Phi(\cdot)$ is cumulative distribution function and $\phi(\cdot)$ is the probability density function of normal distribution.
+
+Alternatively, if the uncertainties are dealt with in a discrete manner, the CVaR can be calculated as\cite{Rockafellar2000}:
+
+\begin{equation}
+CVaR_\alpha (X) = \underset{\zeta}{max}\left( \zeta - \frac{1}{1-\alpha} \sum_{s} P(X,s) (\zeta - f(X,s))\right)
+\end{equation}
+where, $P(X,s)$ is the probability distribution function of $X$ in the scenario $s$ and $f(X,s)$ is the profit function in the scenario $s$. $\zeta$ is an auxiliary variable constrained by
+
+\begin{equation*}
+\zeta - f(X,s) \leq \zeta_s
+\end{equation*}
+\begin{equation*}
+\zeta_s \geq 0
+\end{equation*}
+
+In our study, price terms $\tilde{\pi}$ are assumed to comprise a determinate part $\pi$ and an independent stochastic deviation $\epsilon$:
+\begin{equation}
+\label{eq:price-error}
+\tilde{\pi_t}= \pi_t + \epsilon_t
+\end{equation}
+
+Since the stochastic terms $\epsilon$ are assumed to be uncorrelated to each other, the CVaR of our portfolio that is built by  $X^T = [E^d~|~E^c~|~R]$
+in Equation \eqref{eq:decision-variable-1} can be aggregated as:
+
+\begin{equation}
+\begin{aligned}
+CVaR =\sum_{t}^{t \in T} \{&\\
+&\sum_{i}^{i \in I}  CVaR(\tilde{\pi_t}^{e,i}) (e_t^{d,i} - e_t^{c,i})  \\
+&+ \sum_{j}^{j \in J} \left(CVaR(\tilde{\pi_t}^{e,j}) \delta_t^{j} + CVaR(\tilde{\pi_t}^{r,j})\right) r_t^j \\
+&\}
+\end{aligned}
+\end{equation}
+
+Analogous to the formation in preceding section, the risk module is also formulated in vector and matrix form.
+
+\begin{equation*}
+CVaR= \textit{\textbf{f}}
+\begin{bmatrix}
+E^d \\ E^c \\ R
+\end{bmatrix}
+\end{equation*}
+
+where \textit{\textbf{f}} is calculated as:
+
+\begin{equation}
+\textit{\textbf{f}} =
+\begin{bmatrix}
+CVaR(\Pi^{e,I})\\-CVaR(\Pi^{e,I})\\CVaR(\Pi^{e,J}) \Delta^J + CVaR(\Pi^{r,J})
+\end{bmatrix}^T
+\end{equation}

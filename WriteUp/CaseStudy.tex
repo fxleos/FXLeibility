@@ -1,8 +1,179 @@
 \chapter{Case Studies}
 \label{ch:cases}
-\section{Analyzing the power market structures and business opportunities in select cases}
-\sectionmark{Market Structure and Business Opportunities}
+
+\textit{This chapter presents the results of three selected cases. We first apply the analytical frameworks established in Chapter \ref{ch:market} to characterize the market regimes in three cases and identify potential business opportunities for flexibility solutions. Thereafter, the quantitative methodology developed in Chapter \ref{ch:methodology} is used to estimate the market potential and profitability of selected flexibility solutions. It was found}
+
+\section{Case selection: rationale and definition}
+
+The goal of this thesis is to provide technology vendors, especially those who have an international ambition, a reference for strategic business planning regarding electricity flexibility solutions in different power market jurisdictions. This defines our rationale for case selections, explained below.
+
+First, the case studies should be carried out in markets that have an significant impact on business on a global scale, so that results from case studies can be direct references to help technology vendors establish a global view of the business landscape for flexibility solutions. Therefore, we determine three targeted countries as the Unite States, Germany and Australia, which are major economies in North America, Europe and Asia-Pacific respectively.
+
+Second, each case shall refer to an independent and integral power market jurisdiction. Based on our defined scope, the cases should be mature liberalized power markets with all necessary market components to manage and organize essential functions for power system operations. For this reason, the US and Australia are broken up to several market regimes and those that are managed by vertically integrated and regulated entities are exclude.
+
+Besides, power market structures should be heterogeneous so that the major structural attributes discussed in Chapter \ref{ch:market} can be compared and illustrated. 
+
+Finally, considering research feasibility, there shall be abundant literature and reliable data sources for the cases to be studied.
+
+Based on these considerations we define three cases, i.e. the PJM Interconnection power market, the power market in Germany, and New South Wales pricing zone in Australia's National Electricity Market. They will be referred to as \textbf{PJM}, \textbf{DE} and \textbf{NSW}, respectively in the reminder of this thesis. Their definitions and general information are introduced as following.
+
+\subsubsection{Case 1: PJM}
+
+The first case refers to the energy, capacity and ancillary service markets managed and organized by PJM Interconnection LLC.
+
+PJM Interconnection LLC.\footnote{PJM originally stands for ``Pennsylvania-New Jersey-Maryland area". Although that name is sometimes referred to in the literature, it has been never seen in official documents published in recent years by PJM and its regulator FERC.} is a independent system operator (ISO) that operates a competitive wholesale electricity market and manages the high-voltage electricity grid in all or parts of Delaware, Illinois, Indiana, Kentucky, Maryland, Michigan, New Jersey, North Carolina, Ohio, Pennsylvania, Tennessee, Virginia, West Virginia and the District of Columbia. Therefore, PJM Interconnection has the dual role of being both a market operator (MO) and a transmission system operator (TSO). The geographic coverage is illustrated in Figure \ref{fig:pjm-map}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/US_PowerMarkets}
+	\caption{The geographic coverage of electricity markets in the US \cite{FERC_web}}
+	\label{fig:pjm-map}
+\end{figure}
+
+PJM is regulated by the Federal Energy Regulatory Commission (FERC). Leading utility companies in PJM power markets including: Commonwealth Edison, American Electric Power (AEP), Pennsylvania Power \& Light (PP\&L), etc.
+
+\subsubsection{Case 2: DE}
+
+The second case refers to the power markets in Germany. The definition is less straightforward compared to the first case, since market organizations are unbundled from the physical systems. 
+
+First of all, we define the physical system as physical activities of power systems including generation, transmission \& distribution, and consumption in the territories of 4 TSOs, i.e. TenneT, 50Hertz, Amprion and TransnetBW, which operate the power grids covering the whole geography of Germany, illustrated by Figure \ref{fig:germany-map}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/Germany_TSOs}
+	\caption{The geographic coverage of 4 TSOs in Germany \cite{Bayer2015}}
+	\label{fig:germany-map}
+\end{figure}
+
+On the market aspect, the electricity market is fully liberalized and transactions can be made either through bilateral agreements over the counter (OTC) or through centralized power exchange. The major power exchanges are the European Energy Exchange (EEX) in Leipzig for forward products and the
+EPEX SPOT in Paris for spot trading. EPEX SPOT organizes a day-ahead market and an intra-day market. Territories of TSOs in Germany and Austria are coupled in a single bidding zone in the day-ahead market. Increasing proportion of electricity transactions is observed to made through EPEX SPOT \cite{Bayer2015}. In 2016, the trading volume in the Germany/ Austria day-ahead market of EPEX SPOT was equal to over 45\% of the total electricity demands in Germany\footnote{Own calculation based data described in Appendix \ref{sec:accounting-data-prepare}}. 
+
+Ancillary services in Germany are responsible by the 4 TSOs and coordinated by German grid control cooperation (in German Netzregelverbund, NRV). NRV was established by the German TSOs in 2012 and since it was founded, market activities for ancillary services among 4 TSOs have been unified. More details will be discussed in next section.
+
+There is no capacity market existing in Germany.
+
+The regulator for electricity sector is the Federal Network Agency (in German Bundesnetzagentur, BNetzA) and major utility companies include RWE, E.ON, EnBW, and Vattenfall, often referred to as the ``big 4".
+
+\subsubsection{Case 3: NSW}
+
+Case 3 refers to the pricing zone of New South Wales in Australia's National Electricity Market operated by Australia Energy Market Operator (AEMO) who is both the market operator (MO) and system operator (SO) in Australia.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/AEMO_map.jpg}
+	\caption{The geographic coverage and pricing zones of Australia's National Electricity Market \cite{Bayer2015}}
+	\label{fig:nsw-map}
+\end{figure}
+
+AEMO manages the National Electricity Market (NEM) for the power system in Australia's eastern and south-eastern seaboard, and Wholesale Electricity Market (WEM) for the power system in Western Australia. Within NEM, zonal pricing scheme is applied and market price is settled based on the Regional Reference Price (RRP) for five RRP zone areas: Queensland, New South Wales, Victoria, South Australia and Tasmania \cite{AEMO2010,AEMO_web}, as illustrated by Figure \ref{fig:nsw-map}.
+
+Besides, AEMO operates separate markets for the delivery of ancillary services, which are also settlement separately in the five RRP zones. 
+
+Among these zones, NSW is selected since it is the largest segment in terms of aggregated trading volume \cite{AEMO_web}.
+
+AEMO is governed by the Australian Energy Market Commission (AEMC) that is responsible for developing and making rules, and is regulated by the Australian Energy Regulator (AER) \cite{AEMO_web}. Key utility companies in New South Wales include Origin Energy, Energy Australia and AGL.
+
+\subsubsection{Indication of general market scale}
+
+Table \ref{tab:case-statistics} lists the key statistics that characterize physical properties of three cases. It should be able to provide readers an intuitive comparison of the general scale between different cases. Moreover, some numbers will be used as metrics in quantiative studies to be discussed in Section \ref{sec:quantitative}.
+
+\begin{table}[h!]
+	\small
+	\centering
+	\begin{tabular}{L{0.4\linewidth} R{0.1\linewidth} R{0.1\linewidth} R{0.1\linewidth}}
+		\hline
+		\textbf{Item} & \textbf{PJM} & \textbf{DE} & \textbf{NSW}\\
+		\hline
+		Population covered (million) & 65.0 & 82.7 & 7.5\\
+		Metering point (million) & 30.3&51.9 &3.4  \\
+		Generation capacity (MW, 2016) & \num{176569}& \num{200888}  & \num{16319}  \\
+		Consumption (2016) & & & \\
+		\multicolumn{1}{r}{\textit{Average rate, in MW}} & \num{87793} & \num{59138}&\num{7978} \\
+		\multicolumn{1}{r}{\textit{Aggregated volume, in TWh}} & 771.2& 519.5& 70.1\\
+		\hline
+	\end{tabular}
+\caption{Key statistics for comparison of scale across three cases }\label{tab:case-statistics}
+\end{table}
+
+From Table \ref{tab:case-statistics}, we can notice that PJM and DE are roughly on the same scale while NSW is one order of magnitude smaller than the other two.
+\section{Qualitative assessment on market regimes and business opportunities}
+\sectionmark{Qualitative assessment}
 \label{sec:qualitative-analysis}
+
+In this section, we first apply the analytical framework established in Chapter \ref{ch:market} to characterize and compare the market regimes in three cases, followed by detailed analysis of each case, based on which we identify potential business opportunities for flexibility solutions in those three regions.
+
+Table \ref{tab:qualitative-comparison} presents a high level comparative description of the market design in three cases.
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{L{0.25\linewidth} R{0.25\linewidth} R{0.25\linewidth} R{0.25\linewidth}}
+		\hline
+		\textbf{Characteristic} & \textbf{PJM} & \textbf{DE} & \textbf{NSW}\\
+		\hline
+		&&&\\
+		\multicolumn{4}{l}{\textit{\textbf{Energy market}}} \\
+		&&&\\
+		Power pool (PP) or power exchange (PX) &  PP& PX & PP\\
+		&&&\\
+		Demand-side participation & Yes & Yes & In process \\%\cite{AEMC_rule,AEMO_DR,AEMO_DR_1,AEMO_DR_Pilot}\\
+		&&&\\
+		\multirow{3}{*}{Marketplace} & Day-ahead & Day-ahead & \multirow{3}{*}{Real-time}\\
+		\multirow{3}{*}{} & & Intra-day & \multirow{3}{*}{}\\
+		\multirow{3}{*}{}&Real-time & Balancing & \multirow{3}{*}{} \\
+		&&&\\
+		Pricing scheme & Nodal pricing & Zonal pricing & Zonal pricing \\
+		&&&\\
+		\hline
+		&&&\\
+		\multicolumn{4}{l}{\textit{\textbf{Frequency control ancillary service market}}} \\
+		&&&\\
+		Marketplace & & &\\
+		\multicolumn{1}{r}{\textit{Primary control}} & \textit{No market}  & Primary control  & \textit{No market}\\
+		\multicolumn{1}{r}{\textit{Secondary control}} & Regulation RegD, Regulation RegA  & Secondary control & Regulation Lower, Regulation Raise\\
+		\multicolumn{1}{r}{\textit{Tertiary control}}  & Synchronous, Non-synchronous, Supplementary & Tertiary control & Contingency Lower (Fast, Slow, Delayed), Contingency Raise (Fast, Slow, Delayed)\\
+		&&&\\
+		Demand-side participation & Yes & No & Yes \\
+		&&&\\
+		Market model & Decentralize & Centralize & Centralized\\
+		&&&\\
+		\hline
+		&&&\\
+		\multicolumn{4}{l}{\textit{\textbf{Capacity remuneration mechanism}}} \\
+		Capacity market & Yes & Energy-only & Energy-only \\
+		Other remuneration mechanism& & Interruptible loads & Emergency DR\\
+		Demand-side participation & Yes & Yes & Piloting \\
+		&&&\\
+		\hline
+	\end{tabular}
+	\caption{Comparison of power market regimes in three cases}\label{tab:qualitative-comparison}
+\end{table}
+
+It can be seen that market structures are indeed diverse among the three cases. Overall, PJM offers the most comprehensive routines for participation of flexibility solutions. Through its specially designed ``Demand Response" program, all kinds of behind-the-meter flexibility solutions can participate in all segments of its power markets, including energy, capacity and ancillary service markets\cite{PJMInterconnection2017}. In NSW, AEMO is proactively innovating its market designs aiming at more incentives for flexibility solutions, although many of the implementations are still at pilot stage. In DE, hurdles against emerging flexibility solutions mainly exist in the ancillary service market, while its fully liberalized energy market is theoretically non-discriminatory to all technologies. More details are providing in the reminder of this section.
+
+\subsubsection{PJM}
+
+PJM
+Energy and frequency control market
+%Members that offer into the Synchronized Reserve market and do not provide complete, accurate and timely load data for all Synchronized Reserve events may be suspended from participating in the Synchronized Reserve Market until corrective measures are implemented and may be referred to the PJM Market Monitor and/or the FERC Office of Enforcement for further investigation as necessary.
+%PJM shall disallow settlements for demand reductions that do not meet the requirements set forth above. If the CSP continues to submit settlements for demand reductions that do not meet the requirements set forth above then PJM shall suspend the CSP’s Energy Market activity and refer the matter to the FERC Office of Enforcement.
+%The Office of the Interconnection may suspend the Regulation market activity of Economic Load Response Participants, including Curtailment Service Providers, that do not comply with the Economic Load Response and Regulation market requirements as set forth in Schedule 1 and the PJM Manuals, and may refer the matter to the Independent Market Monitor and/or the Federal Energy Regulatory Commission Office of Enforcement.
+
+%M11 page 121
+%PJM shall review the participation of a CSP, EDC and/or LSE in the Energy Market under the following circumstances:
+%• The CSPs registrations are disputed more than 10% of the time by the relevant EDC or LSE.
+%• The CSP’s settlements are disputed more than 10% of the time by the relevant EDC or LSE.
+%• The CSP’s settlements are denied by PJM more than 10% of the time.
+%PJM shall have 30 days to conduct the required review. PJM may refer the matter to the PJM MMU and/or the FERC Office of Enforcement if the review indicates the relevant CSP and/or EDC or LSE is engaging in activity that is inconsistent with the Economic Load Response rules.
+Demand
+
+Germany
+
+AEMO
+
+\subsection{Analysis of power market structure in selected jurisdictions}
+
+\subsection{Identified business opportunities in selected jurisdictions}
 
 PJM: symmetric (self-schedule, pool-auction), obligation (load contributing factor), market-based, imbalance(enforcement, 10\% waved for VRE),
 
@@ -130,7 +301,9 @@ The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not av
 
 \newpage
 
-\section{Quantitative studies and results}
+\section{Quantitative studies and results on market size and profitability}
+\sectionmark{Quantitative results}
+\label{sec:quantitative}
 So far we have elaborated qualitatively the existing and potential opportunities for flexibility management in the three geographies, and screened the possible business cases. Further to that, it is necessary to perform quantitative analysis in order to understand:
 
 \begin{itemize}
@@ -148,7 +321,8 @@ Two types of works were carried out. We first examined the value of markets for 
 
 Thereafter, as markets evolve rapidly especially with the disruption of fast-growing renewable generations, a view toward market development is also necessary. As a immature business, valuation of markets for flexibility management would be sensitively affected by various factors. The multi-dimensional variances and unpredictable changes on non-technical issues like market design and regulatory adjustments make it almost impossible to accurately forecast the market size and profits in the future. Nonetheless, understanding the impacts of some key factors would provide us valuable guidance on the directional movement of the market and thus offer viable references for technology vendors' decision makers.
 
-\subsection{Data, parameters and valuation metrics}
+\subsection{Data, parameters and scenarios}
+\label{sec:data-parameter}
 The electricity market data including price and volume in each marketplaces correspond to the actual market data from January 1st 2016 to December 31st 2016. While general rules for accounting and data availability have been discussed in Section \ref{sec:qualitative-analysis}, detailed pre-processes and how they were fitted in as inputs of our valuation model can be found in Appendix \ref{sec:accounting-data-prepare}.
 
 For cost determinations, we would first use figures based on the present market pricing level, and then make scenarios with reduced costs to find the break-even point if it is not yet profitable. According to the International Renewable Energy Agency (IRENA)\cite{IRENA2017}, the cost for battery energy storage systems was analyzed as proportional to their energy capacity, $\overline{s}$, and the energy cost coefficient, $C^s$, for state-of-the-art lithium-ion batteries were reported to be ca. $\$350/kWh$ in 2016. The replacement cost were based on actual price from Tesla\cite{Tesla1}. The operating life is set to be 6000 FCEs, which corresponds to an optimistic estimation by Sandia National Laboratories\cite{Akhil2015}. Designed life time is assumed to be 10 years. Discount rate is made as 10\% as is discussed in Section \ref{sec:cost}. The technology costs were made to be zero so that the derived profits will be the margins that can be possibly realized by technology vendors. All the parameters for cost calculation are summarized in Table \ref{table:cost-parameters}. 
@@ -755,11 +929,11 @@ Thereafter, we fitted the transformed data pattern with the piece-wise function 
 		\multirow{2}{*}{\textbf{Class}} & \multicolumn{3}{c}{\textbf{Parameters}}\\
 		 & $a$ & $b$ & $c$\\
 		\hline
-		Inflex. & 17.05 & -1.49 & -12.35 \\
+		Inflex. & 17.05 & 1.49 & 12.35 \\
 		\multirow{3}{*}{Mid.} & 48.66 & 16.40 & \\
 		\multirow{3}{*}{} & 38.04 & 20.12 & \\
 		\multirow{3}{*}{} & 16.37 & 34.20 & \\
-		Peak & -194.95 & 491.46 & -0.69 \\
+		Peak & -194.95 & 491.46 & 0.69 \\
 		\hline
 	\end{tabular}
 	\caption{Parameters of the merit-order model in Germany}\label{tab:merit}
@@ -803,10 +977,10 @@ Unlike studies on valuation of a conventional generation resources where such a 
 		\hline
 		\multicolumn{2}{c}{SARMA parameters}\\
 		\hline
-		$\phi_1 = 1.811$ & $\theta_1 = -1.063$ \\
-		$\phi_2 = -0.813$ & $\theta_{24} =0.692$ \\
-		$\phi_{24} = 0.090$ & $\theta_{168} = -0.600$ \\
-		$\phi_{168} = 0.692$ & \\
+		$\omega_1 = 1.811$ & $\theta_1 = -1.063$ \\
+		$\omega_2 = -0.813$ & $\theta_{24} =0.692$ \\
+		$\omega_{24} = 0.090$ & $\theta_{168} = -0.600$ \\
+		$\omega_{168} = 0.692$ & \\
 		\hline
 	\end{tabular}
 	\caption{Parameters of the stochastic price movement of SARMA models in Germany}\label{tab:SARMA}
@@ -825,11 +999,11 @@ The parameters for the merit-order model in PJM are listed in Table \ref{tab:mer
 		\multirow{2}{*}{\textbf{Class}} & \multicolumn{3}{c}{\textbf{Parameters}}\\
 		& $a$ & $b$ & $c$\\
 		\hline
-		Inflex. & 17.05 & -1.49 & -12.35 \\
+		Inflex. & 17.05 & 1.49 & 12.35 \\
 		\multirow{3}{*}{Mid.} & 23.50 & 16.40 & \\
 		\multirow{3}{*}{} & 32.02 & 13.41 & \\
 		\multirow{3}{*}{} & 3.58 & 31.90 & \\
-		Peak & 10.70 & 501.35 & -5.32 \\
+		Peak & 10.70 & 501.35 & 5.32 \\
 		\hline
 	\end{tabular}
 	\caption{Parameters of the merit-order model in PJM}\label{tab:merit_pjm}
@@ -841,10 +1015,10 @@ The parameters for the merit-order model in PJM are listed in Table \ref{tab:mer
 		\hline
 		\multicolumn{2}{c}{SARMA parameters}\\
 		\hline
-		$\phi_1 = 0.690$ & $\theta_1 = 0.107$ \\
-		$\phi_2 = 0.125$ & $\theta_{24} =-0.003$ \\
-		$\phi_{24} = 0.298$ & $\theta_{168} = -0.399$ \\
-		$\phi_{168} = 0.560$ & \\
+		$\omega_1 = 0.690$ & $\theta_1 = 0.107$ \\
+		$\omega_2 = 0.125$ & $\theta_{24} =-0.003$ \\
+		$\omega_{24} = 0.298$ & $\theta_{168} = -0.399$ \\
+		$\omega_{168} = 0.560$ & \\
 		\hline
 	\end{tabular}
 	\caption{Parameters of the stochastic price movement of SARMA models in PJM}\label{tab:SARMA_PJM}
