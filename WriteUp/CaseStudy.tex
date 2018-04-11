@@ -339,7 +339,7 @@ As we have seen, market for flexibility solutions in NSW is at a transition stat
 So far, participation of aggregators and demand-side resources are still limited, but grid-scale storage assets are able to participate in all market segments.
 
 
-\subsection{Summary of all three cases and inputs for quantitative studies}
+\subsection{Summary and implications}
 
 Based on the qualitative analysis provided above, we have seen that situations vary significantly among the cases. In markets organized in power pool model, the bundled physical and market operations have many legacy designs against emerging flexibility solutions. PJM has made successful actions to remove most of these barriers to grant new technologies more accessibility to its markets. What is remaining to settle, as we have identified, is the direct participation of storage systems in energy markets and the energy injection from behind-the-meter DERs. However, these issues have been noticed by PJM as well as the regulator FERC, and are expected to be resolve in near future. In NSW, AEMO is also proactively seeking to make the same exercise, and the market is at a transition with those on-going restructurings.
 
@@ -392,11 +392,29 @@ As discussed in both Chapter \ref{ch:LitRev} and Chapter \ref{ch:methodology}, w
 \subsection{Setup of quantitative cases}
 \subsubsection{Data and parameters}
 \label{sec:data-parameter}
-In order to obtain the expected results as discussed above, we need to find reliable data and parameters for further studies.
 
-Electricity market data, as we have seen clearly in Chapter \ref{ch:methodology}, is the crucial inputs for our model. It will be used both for direct valuation or as input to parameterize the market simulation module. In Chapter \ref{ch:LitRev}, we have argued that direct valuation using actual price is meaningful but only valid for the short rum. Therefore, we use the latest possible power market data by the time when this study was initiated, which corresponds to the actual market data from January 1st 2016 to December 31st 2016. The sources and preparation of power market data can be found in Appendix  \ref{sec:accounting-data-prepare}.
+In order to obtain the expected results as discussed above, we need to find reliable data and parameters for further studies. The details about the sources and preparation of data, as well as the determination of parameters can be found in Appendix \ref{Appendix-data}. Hereby, we provide a high-level overview of them.
 
-While most of the inputs for our model are strictly corresponding to actual market data, there are two assumptions that are made for the DE case and may have impacts on final results, which should be noted:
+\begin{itemize}
+	\item Data and parameters for market-based modules, for each market regime including:
+	\begin{itemize}
+		\item Existing marketplaces, i.e. the elements to make up the sets $\mathbb{I}$ and $\mathbb{I}$;
+		\item Price signals, including prices for energy and capacity in all marketplaces;
+		\item Liquidity constraints, i.e. trading volumes in all marketplaces;
+		\item Frequency control signals;
+		\item Generation data by fuel type.
+	\end{itemize}
+	\item Data and parameters for technology-based modules, for each technology type including:
+	\begin{itemize}
+		\item System parameters, e.g. efficiencies, energy-to-power ratio (the ratio of nominal energy capacity to power rate), etc.;
+		\item Cost parameters, i.e. the parameters required as inputs for the cost module, referring to Section \ref{sec:cost};
+		\item EV model, i.e. battery capacity and (dis)charge rate per EV;
+		\item EV driving profiles, which is obtained via simulations based on real-world transportation;
+		\item Number of EVs, real-world data for scenario generation.
+	\end{itemize}
+\end{itemize}
+
+Particularly, it is worth to mention two assumptions that are made for electricity market data in the DE case and may have notable impacts on final results:
 
 \begin{enumerate}
 	\item We use the total consumption in Germany as the day-ahead market volume rather the actual trading volumes in EPEX SPOT day-ahead market, for two reasons:
@@ -408,96 +426,7 @@ While most of the inputs for our model are strictly corresponding to actual mark
 	\item The frequency control signals in the DE case are calculated as the ratio between total procured capacity and total actual delivered energy, due to the limited data availability (for PJM where the data is available, we use the actual control signals).An issue associated with this consumption that should be noted, is that for primary control reserve (PCR), the energy delivery is not monitored and accounted for payment. Therefore, our derived control signal for PCR is actually a zero-signal. This does not affect the accounting results but has an impact on technological aspect, which should be noticed as well.
 \end{enumerate}
 
-For the ideal storage system for estimating maximum market potential, the only parameter needs to be defined is the energy-to-power ratio, which indicates the maximum duration of a single continuous process of service provision. We use 8-hour that is a reasonable upper bound among all energy storage and load-shifting technologies \cite{Muller2016}. We ignore all possible losses, i.e. all efficiencies are assumed to be 1 for the ideal storage system.
-
-In contrast, we model the losses for specific technologies, i.e. the battery energy storage system and electric vehicle to grid. The parameters are determined as shown in Table \ref{tab:battery-efficiency}. 
-
-\begin{table}
-	\centering
-	\begin{tabular}{l r}
-		\textbf{Items} & \textbf{Value} \\% & \textbf{Reduced Cost} \\
-		%\hline
-		\hline
-		Storage efficiency, $\eta^s$ & 100\% \\
-		Discharge efficiency, $\eta^+$ & 96\% \\
-		Charge efficiency, $\eta^-$ & 96\% \\
-		\hline		
-	\end{tabular}
-\caption{Battery efficiencies for modeling battery energy storage system and electric vehicle to grid}\label{tab:battery-efficiency}
-\end{table}
-
-With the discharge and charge efficiencies being 96\%, the round-trip efficiency is 92\% which corresponds to the numbers indicated in the literature \cite{Akhil2015,Megel2017,IRENA2017}.
-
-Regarding cost determination, operational costs are same for BESS and EV2G due to the physical process is identical. However, as mentioned in Section \ref{sec:cost}, we do not account fixed costs for EV2G.
-
-Cost parameters are first determined based on the present market pricing level. Scenarios with reduced costs will be made in certain cases to find the break-even point if it is not yet profitable. According to the International Renewable Energy Agency (IRENA) \cite{IRENA2017}, the cost for battery energy storage systems was analyzed as proportional to their energy capacity, $\overline{s}$, and the energy cost coefficient, $C^s$, for state-of-the-art lithium-ion batteries were reported to be ca. $\$350/kWh$ in 2016. The replacement cost were based on actual price from Tesla \cite{Tesla1}. The operating life is set to be 6000 FCEs, which corresponds to an optimistic estimation by Sandia National Laboratories \cite{Akhil2015}. Designed life time is assumed to be 10 years. Discount rate is made as 10\% as is discussed in Section \ref{sec:cost}. All the parameters for cost calculation are summarized in Table \ref{table:cost-parameters}. 
-
-\begin{table}[h!]
-	\begin{center}
-		\begin{tabular}{ l  l  R{2.7cm} } %R{2.7cm} |}
-			\hline
-			\textbf{Items} & \textbf{Unit} & \textbf{Value} \\% & \textbf{Reduced Cost} \\
-			%\hline
-			\hline
-			Energy cost coefficient, $C^s$ & $\$/kWh$ & 350 \\%& 140 \\
-			%\hline
-			Power cost coefficient, $C^r$ & $\$/kW$ & 0\\% & 0 \\
-			%\hline
-			Technology cost, $C^0$ &$\$$ & 0\\% &0\\
-			%\hline
-			Replacement cost coefficient, $C^s$ &$ \$/kWh$ & 150\\% & 60 \\
-			%\hline
-			Designed life time & \textit{year} & 10\\% \multicolumn{2}{c|}{10}\\
-			%\hline
-			Operating life time & \textit{FCE} & 6000\\% \multicolumn{2}{c|}{6000}\\
-			%\hline
-			Discount rate &$\%$ & 10\\% \multicolumn{2}{c|}{10}\\
-			\hline
-		\end{tabular}
-	\end{center}
-	\caption{Parameters for cost calculation}\label{table:cost-parameters}
-\end{table}
-
-%It is worthwhile to emphasize that by using the parameters described above, the ESSs are essentially battery energy storage systems. The conclusions on profitability are not portal for other types of ESSs, not to say other types of flexibility solutions in a broader sense. However, the value of revenue that is independent from these cost terms should still be valid for other types of technologies.
-
-For EV2G studies, we need to specify more parameters. Firstly, the model for a single EV is determined as:
-
-\begin{itemize}
-	\item EV charging rate is 10kW, corresponding to the guidance provided by Tesla\cite{Tesla2} and a typical home charging infrastructure with 50A current limit. 
-	\item The battery energy capacity per EV of 75kWh is taken from one of the most popular EV models\cite{Tesla3}.
-\end{itemize}
-
-Simulations are then performed to get EV driving profiles, which are based upon data from the California Department of Transportation's California Household Travel Survey for 2010-2012\cite{NREL_TSDC}. This survey carried out multiple objectives and included 79011 vehicles. For our work we focus on a proportion of the vehicles, 2910, which were fitted with GPS. These vehicles were monitored continuously for a 7-day window with the 1-second resolution. The GPS data is then processed into trip profiles, while include information of the location of each vehicle at each time step as well as the trips made by each vehicle. While vehicles surveyed are not only electric vehicle but also other types of vehicles using internal combustion engines, we assume their driving patterns are similar. Such a assumption should be generally valid since it is not likely that users will alter their driving behavior if they switch from a conventional car to a EV. 
-
-Further with the parameters of the EV model we have selected above we simulated the SoC time series of the EV batteries. Finally, from the simulated results, we can statistically derive the value of probability distribution of EV plug-in $n^+$, plug-out $n^-$, and average state-of-charge (SoC) of batteries plug-in $s^+$, plug-out $s^-$, as introduced in Section \ref{sec:tech-simulation-module}. The results are shown as Figure \ref{fig:data-ev-number}-\ref{fig:data-soc} where we can see clear periodic patterns that are different between weekdays and weekends.
-
-\begin{figure}[h!]
-	\centering
-	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/Data_EV_number}
-	\caption{Probability of EV plug-in/ plug-out}
-	\label{fig:data-ev-number}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Figures/Data_SoC}
-	\caption{Average SoC of EV when plug-in/ plug-out}
-	\label{fig:data-soc}
-\end{figure}
-
-Regarding the number of EV, we primarily refer to the official statistic for vehicle registration in Germany provided by the Federal Motor Transport Authority of Germany (Kraftfahrt-Bundesamtes, KBA)\cite{KBA2017}. Since the EV registered before 2010 is negligible, we conceived the cumulative registration since 2010 as the total number of EVs in Germany, shown as Figure \ref{fig:Germany_EV_number}. Besides, the total vehicle number in Germany is 45 million according to \cite{Eurostat_de_v}. We would refer to this number as well for scenario analysis.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.95\linewidth]{Figures/Germany_EV_number}
-	\caption{Cumulative registration of plug-in electric vehicles in Germany since 2010 \cite{KBA2017}}
-	\label{fig:Germany_EV_number}
-\end{figure}
-
-There are no reliable data found for PJM, because its geographic coverage is not strictly corresponding to the administrative divisions. It is an extremely sophisticated task to get the official number of EVs with the public data. Therefore, we projected the number in Germany to PJM by their ratio of household number. That means, in the corresponding scenarios, the EV ownership per household is identical in Germany and PJM. We further applied the same exercise for EV number in NSW. In this way, we actually reduce one layer of complexity that is caused by different EV penetration rate in different regions so that we can keep focused on the characteristics of power markets, which is our main purpose of this study. Such a approach is taken to make some indications of the market values, which however shall be noticed with caution that it may deviate from real conditions. 
-
-Finally, the currency exchange rates used to align the currencies used in different markets are determined as the real market data as of January 1st 2018, when 1 EUR is equal to 1.20 USD and 1 AUD is equal to 0.78 USD\cite{Bloomberg}.
+Besides, as mentioned in Chapter \ref{ch:methodology}, we align all the currencies used in different markets to the single currency as USD. The currency exchange rates used to align the currencies used in different markets are determined as the real market data as of January 1st 2018, when 1 EUR is equal to 1.20 USD and 1 AUD is equal to 0.78 USD\cite{Bloomberg}.
 
 \subsubsection{Use cases}
 
@@ -519,7 +448,7 @@ As determined in the scope, we will apply quantitative model for applications in
 		\multicolumn{3}{c}{\textit{\textbf{DE}}}\\
 		Arbitrage & Day-ahead & DA \\
 		Arbitrage & Intra-day & ID \\
-		Self-balancing & Balancing energy & BE \\
+		Arbitrage & Balancing energy & BE \\
 		Frequency control & Primary control reserve & PCR \\
 		Frequency control & Secondary control reserve & SCR \\
 		&&\\
@@ -531,7 +460,12 @@ As determined in the scope, we will apply quantitative model for applications in
 \caption{Business cases studied in quantitative analysis in different regimes}\label{tab:biz-cases}
 \end{table}
 
-It can be noticed that there is a unique case where we name the application as self-balancing. This corresponds to the situation where BGs in DE power markets may turn to flexibility resources to settle their imbalances in avoidance of charged from TSOs using balancing energy pricing scheme reBAP, as discussed in Section \ref{sec:quali-de}. This is a special case due to the balancing energy arrangement in Germany has unique attribute compared to other two market, that it is purely for imbalance cost recovery without a gateway for trading activities. In the other two regimes, real-time markets are available for trading so participation of flexibility resources in real-time markets is suitably referred to as arbitrage. In addition, cost recovery for imbalance settlements are made in different way and are not associated with the real-time markets as explained in Section \ref{sec:qualitative-analysis}. Therefore, we decide to introduce a unique term to distinguishing such a use-case in Germany only.
+It should be noted that the use-case of arbitrage in German balancing energy market is a unique one. 
+%It can be noticed that there is a unique case where we name the application as self-balancing.
+It corresponds to the situation where BGs in DE power markets may turn to flexibility resources to settle their imbalances in avoidance of charged from TSOs using balancing energy pricing scheme reBAP, as discussed in Section \ref{sec:quali-de}. 
+Therefore, the players act passively in this market rather than proactively compared to other markets.
+This specialty is due to the balancing energy arrangement in Germany is purely for imbalance cost recovery without a gateway for trading activities, while in the other two regimes, real-time markets are available for trading.% In addition, cost recovery for imbalance settlements are made in different way and are not associated with the real-time markets as explained in Section \ref{sec:qualitative-analysis}. Therefore, we decide to introduce a unique term to distinguishing such a use-case in Germany only.
+As a result, this case has a special dynamic which would be revealed in the results.
 
 Besides, for frequency control services, we evaluate only the primary and secondary control.
 
@@ -550,7 +484,7 @@ Since the marginal revenue is monotonically decreasing in our study due to liqui
 For studies on battery energy storage systems , we use the same technique:
 
 \begin{itemize}
-	\item \textbf{Profitability} is calculated at the scenarios with system in \textbf{``small size"}, referring to the situation where the operation of flexibility resources will not be limited by liquidity constraints.
+	\item \textbf{Profitability} is calculated at the scenarios with system in \textbf{``small size"}, referring to situations where the operation of flexibility resources will not be limited by liquidity constraints.
 	\item \textbf{Market potential} is determined at the state with \textbf{``profitable size"}. It is determined when the system size is maximized when net profits $P^{\text{net}}$ is positive:
 	\begin{equation*}
 	\underset{si}{\text{max}}~\overline{s}
@@ -567,20 +501,8 @@ For studies on battery energy storage systems , we use the same technique:
 	\end{equation*}
 \end{itemize}
 
-
-
-
-
-
-Correspondingly, the profitability analysis is performed at the state with ``small size". This indicates the maximum profitability ratio since the liquidity constraints are not activated at this state. For profitability analysis, we will normalize all values with respect to the system size, so the unit will be USD/(yr$\cdot$kWh ESS).%or USD$/(a \cdot \text{EV})$, 
-USD/(yr$\cdot$kWh ESS)
-%(or USD$/(a \cdot \text{EV})$) 
-indicates the annualized revenue, cost or profit per unit system. Such a unit is also comparable to the battery cost coefficient that is given in US/(kWh ESS). The profitability ratio as defined in Section \ref{sec:metrics} will be also used as an indicator.
-
-The market potential is detected with ``ample size". Despite a small residual revenue is curtailed, the revenue obtained the ``ample size" system size should still be able to reveal the potential upper bound of market value, since the liquidity is almost exhausted at that state. For market potential, we may represent in both absolute values that are in unit of USD/yr, i.e. annualized revenue, and normalized values. The normalization is performed with respect to the annual cumulative consumption given in Table \ref{tab:case-statistics}.
-%the number of metering points, given in Table \ref{tab:case-statistics}. %The number of metering points is taken as the base, not only because it is an indicator of the power system scale, but also because each metering point represents an end-consumer. Since many of emerging flexibility solutions are behind-the-meter distributed systems, a metering point is in fact standing for a smallest system unit. The normalized value in USD$/(a \cdot \text{MP})$ as the annualized revenue for an end-consumer. It should be informative for both aggregators who needs to approach the end-consumers and technology vendors who are interested in how flexibility is enabled from behind-the-meter applications.
-
-For electric vehicle to grid (EV2G), it is only studied for estimating the market value of its own without a general purpose as for ESS. Therefore, the scenarios are set differently. In order to obtain some reference values close to the reality, we generate three scenarios as:
+\subsubsection{Scenarios for profitability and market potential for battery energy storage system}
+Electric vehicles are not exclusively for providing flexibility to power systems. In fact, the number of EVs can be viewed as purely determined by external factors. Therefore, unlike energy storage systems, we do not assign arbitrary values to the system size and find the scenario based on the profitability analysis. Instead, we take the numbers introduced in Appendix \ref{app:tech} to generate the following scenarios:
 
 \begin{itemize}
 	\item \textbf{EV number 2016:} assuming all EVs available by 2016 are contracted for delivering EV2G services
@@ -588,7 +510,7 @@ For electric vehicle to grid (EV2G), it is only studied for estimating the marke
 	\item \textbf{2\% market share:} assuming EVs will account for 2\% of the total vehicle number
 \end{itemize}
 
-It shall be noted again that the EV number determined for three regions are actually based on the official data in Germany only while the other two regions are projected by assuming same EV number per household. The number of EV in each region and in each scenario are listed as Table \ref{tab:ev-scenario}.
+It shall be noted again that the EV number determined for three regions are actually based on the official data in Germany only while the other two regions are projected by assuming same EV number per household, due to limited data availability; referring to Appendix \ref{app:tech} for more details. The number of EV in each region and in each scenario are listed as Table \ref{tab:ev-scenario}.
 
 \begin{table}[h!]
 	\small
@@ -606,10 +528,102 @@ It shall be noted again that the EV number determined for three regions are actu
 \caption{The number of EV in each scenario for each case study}\label{tab:ev-scenario}
 \end{table}
 
-%\section{Market potential and accessibility of flexibility solution in general}
-%\section{Profitability and market potential of energy storage systems}
-%\section{Profitability and market potential of electric vehicle to grid system}
-\subsection{Valuation of markets under current market conditions}
+\subsubsection{Normalization of results}
+
+The direct outputs of our model are annualized values so are in the unit of USD/yr. In order to make the result comparable among different cases, we normalize them with respected to certain bases.
+
+For the market potential, we normalize the result to the aggregated annual consumption (in MWh/yr) that can be found in Table \ref{tab:case-statistics}. Thereby, the normalized results will be in the unit of USD/MWh. The aggregated annual consumption is taken as an indicator of the overall scale of the power system. Besides, in this way, results in USD/MWh can present an intuitive view on how much value is associated with each MWh of electricity consumed. 
+
+In terms of profitability, apart from the profitability ratio, the absolute values such as net profits will be normalized in accordance to the system size, i.e. kWh for ESS and number of EV for EV2G. Thereby, the final results will in the unit of USD/(yr$\cdot$kWh ESS) or USD/(yr$\cdot$EV) .
+
+
+%Correspondingly, the profitability analysis is performed at the state with ``small size". This indicates the maximum profitability ratio since the liquidity constraints are not activated at this state. For profitability analysis, we will normalize all values with respect to the system size, so the unit will be USD/(yr$\cdot$kWh ESS).%or USD$/(a \cdot \text{EV})$, 
+%USD/(yr$\cdot$kWh ESS)
+%%(or USD$/(a \cdot \text{EV})$) 
+%indicates the annualized revenue, cost or profit per unit system. Such a unit is also comparable to the battery cost coefficient that is given in US/(kWh ESS). The profitability ratio as defined in Section \ref{sec:metrics} will be also used as an indicator.
+
+%The market potential is detected with ``ample size". Despite a small residual revenue is curtailed, the revenue obtained the ``ample size" system size should still be able to reveal the potential upper bound of market value, since the liquidity is almost exhausted at that state. For market potential, we may represent in both absolute values that are in unit of USD/yr, i.e. annualized revenue, and normalized values. The normalization is performed with respect to the annual cumulative consumption given in Table \ref{tab:case-statistics}.
+
+
+%the number of metering points, given in Table \ref{tab:case-statistics}. %The number of metering points is taken as the base, not only because it is an indicator of the power system scale, but also because each metering point represents an end-consumer. Since many of emerging flexibility solutions are behind-the-meter distributed systems, a metering point is in fact standing for a smallest system unit. The normalized value in USD$/(a \cdot \text{MP})$ as the annualized revenue for an end-consumer. It should be informative for both aggregators who needs to approach the end-consumers and technology vendors who are interested in how flexibility is enabled from behind-the-meter applications.
+
+
+\subsection[Market potential of flexibility solutions in general]{Market potential of flexibility solutions in general%}
+	\sectionmark{Fexibility solutions in general}}
+\sectionmark{Fexibility solutions in general}
+As we have seen in Section \ref{sec:qualitative-analysis}, explicit barriers are being removed by market designers to embrace new flexibility technologies. However, in order to support strategic business planning, it is crucial to further understand quantitatively how large an opportunity those changes are bring to market players. Moreover, a quantitative study can help better see the market dynamics for value creation of flexibility solutions. In fact, we will see in this section that apart from the explicit barriers discussed in qualitative analysis, there are still some implicit hurdles making portions of markets technically inaccessible for emerging flexibility solutions. Although improving market designs for removal of the discrimination is a topic for regulators and market designers, understanding the rationale makes sense for market players by helping them prepare for potential disruptions in advance.
+
+%it should be doubted if that fully opens the gate for emerging flexibility solutions. In fact, results in this section reveal there are still some implicit hurdles existing where new technologies are not perfectly adapted to the market designs. In other words, there are still discrimination against emerging flexibility solutions in current market regimes. Although improving market designs for removal of the discrimination is a topic for regulators and market designers, it is crucial for technology vendors to understand what the implicit barriers are. Moreover, the 
+
+\subsubsection{Arbitrage in energy markets}
+
+We first focus on the applications of arbitrage in energy market. Figure \ref{fig:Potential-Arbitrage} shows the quantified results of market potentials, both in USD/MWh and in percentage of the total transaction in the corresponding marketplace, for arbitrage in energy markets using flexibility solutions. 
+	
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/Potential-Arbitrage}
+	\caption{Market potential of arbitrage in energy markets using flexibility solutions}
+	\label{fig:Potential-Arbitrage}
+\end{figure}
+
+By first focusing on the value in percentage of total transaction, we can observe clear distinctness between the day-ahead market  and the intra-day/ real-time/ balancing markets. In the day-ahead markets in both PJM and DE, arbitrage can capture only 2-3\% of the total transactions, where percentages are one order of magnitude higher, i.e. 20-40\% in other markets. This implies that even with irregularly large scales of flexibility resources, impacts on day-ahead market are still insignificant. In the real world, considering the competitions against established players, day-ahead market might not be an ideal marketplace for flexibility solutions. The reason for such a difference between different marketplaces can be explained by Table \ref{tab:price-3-geo}. As we can see, volatility reflected by standard deviation and amplitude of price movements raise significantly when the operation of market is close to real-time, and the market potential of arbitrage is highly dependent on the price volatility.
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{L{3cm} |R{1cm} R{1cm}| R{1cm} R{1cm} R{1.3cm}| R{1cm}}
+		\hline
+		& \multicolumn{2}{c|}{\textbf{PJM}}& \multicolumn{3}{c|}{\textbf{DE}}& \multicolumn{1}{c}{\textbf{NSW}}\\
+		& DA & RT & DA &ID & BE &RT \\
+		\hline
+		Average price & 30.0 & 27.6 & 34.8 & 35.1 &40.7 & 46.0 \\
+		Standard deviation & 11.6 & 14.8 & 15.0 & 16.1 &837.4 & 86.0 \\
+		Maximum amplitude &121.2 &284.3&282.2&324.1&\num{99250.0}&9124.7\\
+		\hline
+		\multicolumn{7}{r}{in USD/MWh}
+	\end{tabular}
+	\caption{The price profiles in energy markets in the three cases}\label{tab:price-3-geo}
+\end{table}
+
+In terms of value in USD/MWh, it is particularly high in NSW's real-time market being 17 USD/MWh, while the values in other marketplaces are much smaller, around 0.4-1.0 USD/MWh. This is mainly because the Australia' NEM settles all transactions in the real-time market. Therefore, high price volatility due to real-time operations impacts all bulk electricity transactions. Such a high potential shows clearly a much more promising opportunity in NSW than in other two regimes.
+
+Finally, we list the original results in USD/yr which indicate the estimated market potential in each regime without normalization. It shows that the total market potentials for arbitrage in all three case happen to be slightly over 1 bUSD/yr. However, considering the overall scale of the power market, NSW should be the most attractive region among the three for business of flexibility solutions.
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{R{1cm} R{1cm} R{1cm}| R{1cm} R{1cm} R{1.3cm} R{1cm}| R{1cm}}
+		\hline
+		 \multicolumn{3}{c|}{\textbf{PJM}}& \multicolumn{4}{c|}{\textbf{DE}}& \multicolumn{1}{c}{\textbf{NSW}}\\
+		 DA & RT & Total & DA &ID & BE & Total &RT \\
+		\hline
+		599 & 594 & 1194 & 515& 255 & 279 & 1049 & 1196\\
+		\hline
+		\multicolumn{8}{r}{in mUSD/yr}
+	\end{tabular}
+	\caption{The market potential in absoluate values}\label{tab:arbitrage-total}
+\end{table}
+
+\subsubsection{Frequency control in ancillary service markets}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/Potential-FC}
+	\caption{Market potential of frequency control in ancillary service markets using flexibility solutions}
+	\label{fig:Potential-FC}
+\end{figure}
+
+
+\subsection[Profitability and market potential of energy storage]{Profitability and market potential of energy storage%}
+	\sectionmark{Energy storage}}
+\sectionmark{Energy storage}
+	
+
+\subsection[Profitability and market potential of electric vehicle to grid]{Profitability and market potential of electric vehicle to grid%}
+	\sectionmark{Electric vehivle to grid}}
+\sectionmark{Electric vehivle to grid}
+
+%\subsection{Valuation of markets under current market conditions}
 This section presents the results using historical market data. Since two types of technologies and markets in three geographies were studied, there are a total of six distinct setups with each comprises several use-cases. In addition, we included a cost break-even analysis specifically for ESSs as few profitable opportunities were found due to high costs on battery stocks.
 
 \subsubsection{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}

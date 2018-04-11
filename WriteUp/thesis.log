@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  11 APR 2018 10:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.15)  11 APR 2018 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,7 +665,11 @@ File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `tab:price-3-geo' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -682,8 +686,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count166
 \scratchdimen=\dimen200
@@ -1194,401 +1197,466 @@ Overfull \hbox (0.87396pt too wide) in paragraph at lines 371--371
 []\T1/aer/bx/n/14.4 Quantitative stud-ies and re-sults on mar-ket size
  []
 
-[94] [95] [96] [97] <Figures/Data_EV_number.png, id=429, 1124.2pt x 843.15pt>
-File: Figures/Data_EV_number.png Graphic file (type png)
+[94]
+Overfull \hbox (2.14716pt too wide) in paragraph at lines 399--400
+[]\T1/aer/m/n/10.95 Data and pa-ram-e-ters for market-based mod-ules, for each 
+mar-ket regime
+ []
 
-<use Figures/Data_EV_number.png>
-Package pdftex.def Info: Figures/Data_EV_number.png used on input line 477.
-(pdftex.def)             Requested size: 288.0011pt x 215.99747pt.
+[95] [96] [97] [98] [99]
+<Figures/Potential-Arbitrage.png, id=435, 697.1646pt x 353.1594pt>
+File: Figures/Potential-Arbitrage.png Graphic file (type png)
 
-<Figures/Data_SoC.png, id=430, 1124.2pt x 843.15pt>
-File: Figures/Data_SoC.png Graphic file (type png)
- <use Figures/Data_SoC.png>
-Package pdftex.def Info: Figures/Data_SoC.png used on input line 484.
-(pdftex.def)             Requested size: 288.0011pt x 215.99747pt.
+<use Figures/Potential-Arbitrage.png>
+Package pdftex.def Info: Figures/Potential-Arbitrage.png used on input line 564
+.
+(pdftex.def)             Requested size: 341.9989pt x 173.24359pt.
+ [100 <./Figures/Potential-Arbitrage.png>] <Figures/Potential-FC.png, id=440, 4
+33.62pt x 216.81pt>
+File: Figures/Potential-FC.png Graphic file (type png)
 
+<use Figures/Potential-FC.png>
+Package pdftex.def Info: Figures/Potential-FC.png used on input line 611.
+(pdftex.def)             Requested size: 341.9989pt x 171.00673pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Germany_EV_number.png, id=431, 1124.2pt x 843.15pt>
-File: Figures/Germany_EV_number.png Graphic file (type png)
-
-<use Figures/Germany_EV_number.png>
-Package pdftex.def Info: Figures/Germany_EV_number.png used on input line 493.
-(pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[98 <./Figures/Data_EV_number.png (PNG copy)>]
-Underfull \vbox (badness 2644) has occurred while \output is active []
-
- [99 <./Figures/Data_SoC.png (PNG copy)> <./Figures/Germany_EV_number.png (PNG 
-copy)>]
-[100] [101]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[102] <Figures/Germany_ESS_profitability.png, id=448, 680.7834pt x 435.5472pt>
+<Figures/Germany_ESS_profitability.png, id=441, 680.7834pt x 435.5472pt>
 File: Figures/Germany_ESS_profitability.png Graphic file (type png)
 
 <use Figures/Germany_ESS_profitability.png>
 Package pdftex.def Info: Figures/Germany_ESS_profitability.png used on input li
-ne 620.
+ne 633.
 (pdftex.def)             Requested size: 323.9978pt x 207.27916pt.
-
-<Figures/Germany_ESS.png, id=449, 360.8682pt x 216.81pt>
+ [101]
+<Figures/Germany_ESS.png, id=446, 360.8682pt x 216.81pt>
 File: Figures/Germany_ESS.png Graphic file (type png)
 
 <use Figures/Germany_ESS.png>
-Package pdftex.def Info: Figures/Germany_ESS.png used on input line 627.
+Package pdftex.def Info: Figures/Germany_ESS.png used on input line 640.
 (pdftex.def)             Requested size: 323.9978pt x 194.67065pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[103 <./Figures/Germany_ESS_profitability.png>]
-<Figures/Germany_ESS_profitable_size.png, id=454, 361.35pt x 216.81pt>
+[102 <./Figures/Potential-FC.png> <./Figures/Germany_ESS_profitability.png>]
+<Figures/Germany_ESS_profitable_size.png, id=452, 361.35pt x 216.81pt>
 File: Figures/Germany_ESS_profitable_size.png Graphic file (type png)
 
 <use Figures/Germany_ESS_profitable_size.png>
 Package pdftex.def Info: Figures/Germany_ESS_profitable_size.png used on input 
-line 641.
+line 654.
 (pdftex.def)             Requested size: 323.9978pt x 194.39937pt.
 
-Underfull \vbox (badness 2961) has occurred while \output is active []
 
- [104 <./Figures/Germany_ESS.png> <./Figures/Germany_ESS_profitable_size.png>]
-Overfull \hbox (3.56245pt too wide) in paragraph at lines 650--651
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [103 <./Figures/Germany_ESS.png>]
+Overfull \hbox (3.56245pt too wide) in paragraph at lines 663--664
 []\T1/aer/m/n/10.95 Facing ei-ther lack of in-for-ma-tion trans-parency in bal-
 anc-ing en-ergy charges
  []
 
-[105]
-<Figures/Germany_ESS_profitability_multitasking.png, id=463, 628.749pt x 386.40
+
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [104 <./Figures/Germany_ESS_profitable_size.png>]
+<Figures/Germany_ESS_profitability_multitasking.png, id=461, 628.749pt x 386.40
 36pt>
 File: Figures/Germany_ESS_profitability_multitasking.png Graphic file (type png
 )
  <use Figures/Germany_ESS_profitability_multitasking.png>
 Package pdftex.def Info: Figures/Germany_ESS_profitability_multitasking.png use
-d on input line 660.
+d on input line 673.
 (pdftex.def)             Requested size: 341.9989pt x 210.1878pt.
 
-<Figures/Germany_ESS_multitasking.png, id=464, 360.8682pt x 216.81pt>
+<Figures/Germany_ESS_multitasking.png, id=462, 360.8682pt x 216.81pt>
 File: Figures/Germany_ESS_multitasking.png Graphic file (type png)
 
 <use Figures/Germany_ESS_multitasking.png>
 Package pdftex.def Info: Figures/Germany_ESS_multitasking.png used on input lin
-e 667.
+e 680.
 (pdftex.def)             Requested size: 341.9989pt x 205.48532pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[106 <./Figures/Germany_ESS_profitability_multitasking.png>]
-<Figures/PJM_ESS_profitability.png, id=469, 754.9806pt x 391.2216pt>
+[105 <./Figures/Germany_ESS_profitability_multitasking.png>]
+<Figures/PJM_ESS_profitability.png, id=467, 754.9806pt x 391.2216pt>
 File: Figures/PJM_ESS_profitability.png Graphic file (type png)
 
 <use Figures/PJM_ESS_profitability.png>
 Package pdftex.def Info: Figures/PJM_ESS_profitability.png used on input line 6
-83.
+96.
 (pdftex.def)             Requested size: 323.9978pt x 167.89368pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/PJM_ESS.png, id=470, 360.8682pt x 216.81pt>
+ [106 <./Figures/Germany_ESS_multitasking.png>] <Figures/PJM_ESS.png, id=472, 3
+60.8682pt x 216.81pt>
 File: Figures/PJM_ESS.png Graphic file (type png)
- <use Figures/PJM_ESS.png>
-Package pdftex.def Info: Figures/PJM_ESS.png used on input line 690.
+
+<use Figures/PJM_ESS.png>
+Package pdftex.def Info: Figures/PJM_ESS.png used on input line 703.
 (pdftex.def)             Requested size: 323.9978pt x 194.67065pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[107 <./Figures/Germany_ESS_multitasking.png>]
-<Figures/PJM_ESS_profitable_size.png, id=476, 360.8682pt x 216.81pt>
+ [107 <./Figures/PJM_ESS_profitability.png> <./Figures/PJM_ESS.png>]
+<Figures/PJM_ESS_profitable_size.png, id=479, 360.8682pt x 216.81pt>
 File: Figures/PJM_ESS_profitable_size.png Graphic file (type png)
 
 <use Figures/PJM_ESS_profitable_size.png>
 Package pdftex.def Info: Figures/PJM_ESS_profitable_size.png used on input line
- 699.
+ 712.
 (pdftex.def)             Requested size: 323.9978pt x 194.67065pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[108 <./Figures/PJM_ESS_profitability.png> <./Figures/PJM_ESS.png>]
-<Figures/PJM_multitasking_example.png, id=482, 426.8748pt x 419.6478pt>
+<Figures/PJM_multitasking_example.png, id=480, 426.8748pt x 419.6478pt>
 File: Figures/PJM_multitasking_example.png Graphic file (type png)
 
 <use Figures/PJM_multitasking_example.png>
 Package pdftex.def Info: Figures/PJM_multitasking_example.png used on input lin
-e 708.
+e 721.
 (pdftex.def)             Requested size: 323.9978pt x 318.53223pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[109 <./Figures/PJM_ESS_profitable_size.png>] [110 <./Figures/PJM_multitasking_
+[108 <./Figures/PJM_ESS_profitable_size.png>] [109 <./Figures/PJM_multitasking_
 example.png>]
-Overfull \hbox (1.57608pt too wide) in paragraph at lines 728--741
+Overfull \hbox (1.57608pt too wide) in paragraph at lines 741--754
  [][] 
  []
 
-<Figures/NSW_ESS_profitability.png, id=491, 392.1852pt x 225.9642pt>
+<Figures/NSW_ESS_profitability.png, id=489, 392.1852pt x 225.9642pt>
 File: Figures/NSW_ESS_profitability.png Graphic file (type png)
 
 <use Figures/NSW_ESS_profitability.png>
 Package pdftex.def Info: Figures/NSW_ESS_profitability.png used on input line 7
-46.
+59.
 (pdftex.def)             Requested size: 323.9978pt x 186.68825pt.
 
-<Figures/NSW_ESS.png, id=492, 360.8682pt x 216.81pt>
+<Figures/NSW_ESS.png, id=490, 360.8682pt x 216.81pt>
 File: Figures/NSW_ESS.png Graphic file (type png)
  <use Figures/NSW_ESS.png>
-Package pdftex.def Info: Figures/NSW_ESS.png used on input line 753.
+Package pdftex.def Info: Figures/NSW_ESS.png used on input line 766.
 (pdftex.def)             Requested size: 323.9978pt x 194.67065pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[111 <./Figures/NSW_ESS_profitability.png>]
-<Figures/CostReduction_Germany_ESS.png, id=497, 1124.2pt x 843.15pt>
+[110 <./Figures/NSW_ESS_profitability.png>] [111 <./Figures/NSW_ESS.png>]
+<Figures/CostReduction_Germany_ESS.png, id=499, 1124.2pt x 843.15pt>
 File: Figures/CostReduction_Germany_ESS.png Graphic file (type png)
 
 <use Figures/CostReduction_Germany_ESS.png>
 Package pdftex.def Info: Figures/CostReduction_Germany_ESS.png used on input li
-ne 769.
+ne 782.
 (pdftex.def)             Requested size: 323.9978pt x 242.98912pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CostReduction_PJM_ESS.png, id=498, 1124.2pt x 843.15pt>
+<Figures/CostReduction_PJM_ESS.png, id=500, 1124.2pt x 843.15pt>
 File: Figures/CostReduction_PJM_ESS.png Graphic file (type png)
 
 <use Figures/CostReduction_PJM_ESS.png>
 Package pdftex.def Info: Figures/CostReduction_PJM_ESS.png used on input line 7
-76.
+89.
 (pdftex.def)             Requested size: 323.9978pt x 242.98912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/CostReduction_NSW_ESS.png, id=499, 1124.2pt x 843.15pt>
+<Figures/CostReduction_NSW_ESS.png, id=501, 1124.2pt x 843.15pt>
 File: Figures/CostReduction_NSW_ESS.png Graphic file (type png)
 
 <use Figures/CostReduction_NSW_ESS.png>
 Package pdftex.def Info: Figures/CostReduction_NSW_ESS.png used on input line 7
-83.
+96.
 (pdftex.def)             Requested size: 323.9978pt x 242.98912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[112 <./Figures/NSW_ESS.png>]
-
-LaTeX Warning: Text page 113 contains only floats.
-
-[113 <./Figures/CostReduction_Germany_ESS.png (PNG copy)> <./Figures/CostReduct
-ion_PJM_ESS.png (PNG copy)>]
-<Figures/EV_nan_percentage.png, id=508, 1124.2pt x 843.15pt>
+<Figures/EV_nan_percentage.png, id=502, 1124.2pt x 843.15pt>
 File: Figures/EV_nan_percentage.png Graphic file (type png)
 
 <use Figures/EV_nan_percentage.png>
-Package pdftex.def Info: Figures/EV_nan_percentage.png used on input line 798.
+Package pdftex.def Info: Figures/EV_nan_percentage.png used on input line 811.
 (pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
- [114 <./Figures/CostReduction_NSW_ESS.png (PNG copy)>] [115 <./Figures/EV_nan_
-percentage.png (PNG copy)>]
-<Figures/Germany_EV_profit.png, id=515, 416.757pt x 457.71pt>
+ [112 <./Figures/CostReduction_Germany_ESS.png (PNG copy)>]
+
+LaTeX Warning: Text page 113 contains only floats.
+
+[113 <./Figures/CostReduction_PJM_ESS.png (PNG copy)> <./Figures/CostReduction_
+NSW_ESS.png (PNG copy)>] [114 <./Figures/EV_nan_percentage.png (PNG copy)>]
+<Figures/Germany_EV_profit.png, id=513, 416.757pt x 457.71pt>
 File: Figures/Germany_EV_profit.png Graphic file (type png)
 
 <use Figures/Germany_EV_profit.png>
-Package pdftex.def Info: Figures/Germany_EV_profit.png used on input line 816.
+Package pdftex.def Info: Figures/Germany_EV_profit.png used on input line 829.
 (pdftex.def)             Requested size: 341.9989pt x 375.61098pt.
- [116 <./Figures/Germany_EV_profit.png>]
-<Figures/PJM_EV_profit.png, id=520, 419.6478pt x 450.483pt>
-File: Figures/PJM_EV_profit.png Graphic file (type png)
-
-<use Figures/PJM_EV_profit.png>
-Package pdftex.def Info: Figures/PJM_EV_profit.png used on input line 831.
-(pdftex.def)             Requested size: 341.9989pt x 367.14383pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[117] [118 <./Figures/PJM_EV_profit.png>]
-<Figures/NSW_EV_profit.png, id=528, 424.4658pt x 447.1104pt>
+[115]
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
+ [116 <./Figures/Germany_EV_profit.png>]
+<Figures/PJM_EV_profit.png, id=521, 419.6478pt x 450.483pt>
+File: Figures/PJM_EV_profit.png Graphic file (type png)
+
+<use Figures/PJM_EV_profit.png>
+Package pdftex.def Info: Figures/PJM_EV_profit.png used on input line 844.
+(pdftex.def)             Requested size: 341.9989pt x 367.14383pt.
+ [117 <./Figures/PJM_EV_profit.png>]
+<Figures/NSW_EV_profit.png, id=526, 424.4658pt x 447.1104pt>
 File: Figures/NSW_EV_profit.png Graphic file (type png)
 
 <use Figures/NSW_EV_profit.png>
-Package pdftex.def Info: Figures/NSW_EV_profit.png used on input line 883.
+Package pdftex.def Info: Figures/NSW_EV_profit.png used on input line 896.
 (pdftex.def)             Requested size: 341.9989pt x 360.26082pt.
- [119 <./Figures/NSW_EV_profit.png>]
-Overfull \hbox (28.04745pt too wide) in paragraph at lines 898--927
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (28.04745pt too wide) in paragraph at lines 911--940
  [][] 
  []
 
 
-Overfull \hbox (33.72919pt too wide) in paragraph at lines 932--961
+Overfull \hbox (33.72919pt too wide) in paragraph at lines 945--974
  [][] 
  []
 
-[120] [121] [122] [123] [124]
-<Figures/Merit-order-original.png, id=549, 723.6636pt x 542.025pt>
+[118] [119] [120] [121] [122 <./Figures/NSW_EV_profit.png>]
+<Figures/Merit-order-original.png, id=544, 723.6636pt x 542.025pt>
 File: Figures/Merit-order-original.png Graphic file (type png)
 
 <use Figures/Merit-order-original.png>
 Package pdftex.def Info: Figures/Merit-order-original.png used on input line 10
-24.
+37.
 (pdftex.def)             Requested size: 341.9989pt x 256.15778pt.
 
-<Figures/Merit-order-transformed.png, id=550, 722.7pt x 542.025pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[123] <Figures/Merit-order-transformed.png, id=548, 722.7pt x 542.025pt>
 File: Figures/Merit-order-transformed.png Graphic file (type png)
 
 <use Figures/Merit-order-transformed.png>
 Package pdftex.def Info: Figures/Merit-order-transformed.png used on input line
- 1033.
+ 1046.
 (pdftex.def)             Requested size: 341.9989pt x 256.49687pt.
- [125 <./Figures/Merit-order-original.png>] <Figures/Merit-order-classified.png
-, id=556, 723.1818pt x 542.025pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Merit-order-classified.png, id=549, 723.1818pt x 542.025pt>
 File: Figures/Merit-order-classified.png Graphic file (type png)
 
 <use Figures/Merit-order-classified.png>
 Package pdftex.def Info: Figures/Merit-order-classified.png used on input line 
-1039.
+1052.
 (pdftex.def)             Requested size: 341.9989pt x 256.33147pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/Merit-order-fitted.png, id=557, 722.7pt x 542.025pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Merit-order-fitted.png, id=550, 722.7pt x 542.025pt>
 File: Figures/Merit-order-fitted.png Graphic file (type png)
 
 <use Figures/Merit-order-fitted.png>
-Package pdftex.def Info: Figures/Merit-order-fitted.png used on input line 1065
+Package pdftex.def Info: Figures/Merit-order-fitted.png used on input line 1078
 .
 (pdftex.def)             Requested size: 341.9989pt x 256.49687pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/4_Error-distribution.png, id=558, 1124.2pt x 843.15pt>
+<Figures/4_Error-distribution.png, id=551, 1124.2pt x 843.15pt>
 File: Figures/4_Error-distribution.png Graphic file (type png)
 
 <use Figures/4_Error-distribution.png>
 Package pdftex.def Info: Figures/4_Error-distribution.png used on input line 10
-72.
+85.
 (pdftex.def)             Requested size: 323.9978pt x 242.98912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[126 <./Figures/Merit-order-transformed.png>]
+<Figures/5_Example-simulated_price.png, id=552, 1124.2pt x 843.15pt>
+File: Figures/5_Example-simulated_price.png Graphic file (type png)
 
-LaTeX Warning: Text page 127 contains only floats.
+<use Figures/5_Example-simulated_price.png>
+Package pdftex.def Info: Figures/5_Example-simulated_price.png used on input li
+ne 1094.
+(pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
+ [124 <./Figures/Merit-order-original.png>]
+
+LaTeX Warning: Text page 125 contains only floats.
 
 
 Overfull \vbox (4.95078pt too high) has occurred while \output is active []
 
 
-[127 <./Figures/Merit-order-classified.png> <./Figures/Merit-order-fitted.png>]
-<Figures/5_Example-simulated_price.png, id=568, 1124.2pt x 843.15pt>
-File: Figures/5_Example-simulated_price.png Graphic file (type png)
-
-<use Figures/5_Example-simulated_price.png>
-Package pdftex.def Info: Figures/5_Example-simulated_price.png used on input li
-ne 1081.
-(pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
-
+[125 <./Figures/Merit-order-transformed.png> <./Figures/Merit-order-classified.
+png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/6_Model_Validation.png, id=569, 1124.2pt x 843.15pt>
+<Figures/6_Model_Validation.png, id=563, 1124.2pt x 843.15pt>
 File: Figures/6_Model_Validation.png Graphic file (type png)
 
 <use Figures/6_Model_Validation.png>
-Package pdftex.def Info: Figures/6_Model_Validation.png used on input line 1090
+Package pdftex.def Info: Figures/6_Model_Validation.png used on input line 1103
 .
 (pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[128 <./Figures/4_Error-distribution.png (PNG copy)>] [129 <./Figures/5_Example
--simulated_price.png (PNG copy)>]
-<Figures/RenewablePenetration_Germany.png, id=576, 426.8748pt x 481.3182pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [126 <./Figures/Merit-order-fitted.png>]
+
+LaTeX Warning: Text page 127 contains only floats.
+
+[127 <./Figures/4_Error-distribution.png (PNG copy)> <./Figures/5_Example-simul
+ated_price.png (PNG copy)>]
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [128 <./Figures/6_Model_Validation.png (PNG copy)>]
+<Figures/RenewablePenetration_Germany.png, id=574, 426.8748pt x 481.3182pt>
 File: Figures/RenewablePenetration_Germany.png Graphic file (type png)
 
 <use Figures/RenewablePenetration_Germany.png>
 Package pdftex.def Info: Figures/RenewablePenetration_Germany.png used on input
- line 1154.
+ line 1167.
 (pdftex.def)             Requested size: 341.9989pt x 385.64264pt.
- [130 <./Figures/6_Model_Validation.png (PNG copy)>] [131 <./Figures/RenewableP
-enetration_Germany.png>]
-<Figures/RenewablePenetration_PJM.png, id=585, 426.8748pt x 468.3096pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[129]
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [130 <./Figures/RenewablePenetration_Germany.png>]
+<Figures/RenewablePenetration_PJM.png, id=582, 426.8748pt x 468.3096pt>
 File: Figures/RenewablePenetration_PJM.png Graphic file (type png)
 
 <use Figures/RenewablePenetration_PJM.png>
 Package pdftex.def Info: Figures/RenewablePenetration_PJM.png used on input lin
-e 1176.
+e 1189.
 (pdftex.def)             Requested size: 341.9989pt x 375.21985pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[132] [133 <./Figures/RenewablePenetration_PJM.png>]
-Overfull \hbox (30.0521pt too wide) in paragraph at lines 1195--1217
+[131]
+Underfull \vbox (badness 3679) has occurred while \output is active []
+
+ [132 <./Figures/RenewablePenetration_PJM.png>]
+Overfull \hbox (30.0521pt too wide) in paragraph at lines 1208--1230
  [][] 
  []
 
-[134]
-Overfull \hbox (7.78084pt too wide) in paragraph at lines 1240--1240
+
+Overfull \hbox (7.78084pt too wide) in paragraph at lines 1253--1253
 \T1/aer/m/n/10.95 DA+RT+RegD+RegA|  
  []
 
 
-Overfull \hbox (7.78084pt too wide) in paragraph at lines 1247--1247
+Overfull \hbox (7.78084pt too wide) in paragraph at lines 1260--1260
 \T1/aer/m/n/10.95 DA+RT+RegD+RegA|  
  []
 
 
-Overfull \hbox (30.0521pt too wide) in paragraph at lines 1228--1250
+Overfull \hbox (30.0521pt too wide) in paragraph at lines 1241--1263
  [][] 
  []
 
-[135]) (./Conclusion.tex [136]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[133]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./Conclusion.tex [134] [135] [136
+
+]
 Chapter 6.
-[137
-
-] [138]) (./Appendix_1.tex [139] [140
+[137] [138]) (./Appendix_1.tex [139] [140
 
 ]
 Appendix A.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 34.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 41.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Overfull \hbox (45.8858pt too wide) in paragraph at lines 15--37
+Overfull \hbox (45.8858pt too wide) in paragraph at lines 22--44
  [][] 
  []
 
 [141] [142] [143]
-Overfull \hbox (45.8858pt too wide) in paragraph at lines 136--150
+Overfull \hbox (45.8858pt too wide) in paragraph at lines 143--157
  [][] 
  []
 
-[144] [145]) [146] (./thesis.bbl
+[144]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [145]
+Overfull \hbox (15.02948pt too wide) in paragraph at lines 245--245
+[]\T1/aer/bx/n/14.4 Data and pa-ram-e-ters for technology-based mod-
+ []
+
+[146] [147] <Figures/Data_EV_number.png, id=640, 1124.2pt x 843.15pt>
+File: Figures/Data_EV_number.png Graphic file (type png)
+
+<use Figures/Data_EV_number.png>
+Package pdftex.def Info: Figures/Data_EV_number.png used on input line 316.
+(pdftex.def)             Requested size: 288.0011pt x 215.99747pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Data_SoC.png, id=641, 1124.2pt x 843.15pt>
+File: Figures/Data_SoC.png Graphic file (type png)
+ <use Figures/Data_SoC.png>
+Package pdftex.def Info: Figures/Data_SoC.png used on input line 323.
+(pdftex.def)             Requested size: 288.0011pt x 215.99747pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Germany_EV_number.png, id=642, 1124.2pt x 843.15pt>
+File: Figures/Germany_EV_number.png Graphic file (type png)
+
+<use Figures/Germany_EV_number.png>
+Package pdftex.def Info: Figures/Germany_EV_number.png used on input line 332.
+(pdftex.def)             Requested size: 341.9989pt x 256.4978pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [148] [149 <./Figures/Data_EV_number.png (PNG copy)> <./Figures/Data_SoC.png 
+(PNG copy)>] [150 <./Figures/Germany_EV_number.png (PNG copy)>] (./thesis.bbl
 Underfull \hbox (badness 1152) in paragraph at lines 55--61
 []\T1/aer/m/n/10.95 Theresa Müller, Ju-lia Michaelis, Rainer El-s-land, Ul-rich
  Re-iter,
  []
 
-[147
+[151
 
 
-] [148] [149]
+] [152] [153]
 Underfull \hbox (badness 6332) in paragraph at lines 220--226
 []\T1/aer/m/n/10.95 EPEX SPOT SE.  Neg-a-tive Price - Ques-tions and An-
  []
@@ -1615,7 +1683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--239
 ustralia$\T1/aer/m/n/10.95 ,
  []
 
-[150]
+[154]
 Underfull \hbox (badness 10000) in paragraph at lines 287--293
 \T1/aett/m/n/10.95 Consultation / Consultations / Electricity _ Consultations /
 
@@ -1627,13 +1695,13 @@ Underfull \hbox (badness 1275) in paragraph at lines 323--327
 l
  []
 
-[151] [152] [153]
+[155] [156] [157]
 Underfull \hbox (badness 1681) in paragraph at lines 525--529
 \T1/aer/m/n/10.95 multi-period auc-tions.  \T1/aer/m/it/10.95 IEEE Trans-ac-tio
 ns on Power Sys-tems\T1/aer/m/n/10.95 ,
  []
 
-[154] [155] [156] [157]
+[158] [159] [160] [161]
 Underfull \hbox (badness 6893) in paragraph at lines 761--766
 \T1/aer/m/n/10.95 ket (CM) Rules.  $\T1/aett/m/n/10.95 https : / / www . ofgem 
 . gov . uk / electricity /
@@ -1645,7 +1713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 761--766
 form /
  []
 
-[158] [159]
+[162] [163]
 Underfull \hbox (badness 10000) in paragraph at lines 901--906
 \T1/aett/m/n/10.95 system-[]operations-[]reports / operation-[]handbook / Pages
  /
@@ -1686,7 +1754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 935--941
 Sheet /
  []
 
-[160]
+[164]
 Underfull \hbox (badness 5787) in paragraph at lines 1005--1011
 []\T1/aer/m/n/10.95 Australia En-ergy Sys-tem Op-er-a-tor Lim-ited.  De-mand Re
 -
@@ -1698,7 +1766,7 @@ Underfull \hbox (badness 4608) in paragraph at lines 1005--1011
 -
  []
 
-[161]
+[165]
 Underfull \hbox (badness 2293) in paragraph at lines 1044--1047
 []\T1/aer/m/n/10.95 50Hertz, Am-prion, Ten-neT, and TransnetBW.  REGELLEIS-
  []
@@ -1762,7 +1830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1102--1107
 html$\T1/aer/m/n/10.95 .
  []
 
-[162]
+[166]
 Underfull \hbox (badness 2671) in paragraph at lines 1109--1114
 []\T1/aer/m/n/10.95 European Com-mis-sion.  Pas-sen-ger cars in the EU.  $\T1/a
 ett/m/n/10.95 http :
@@ -1819,47 +1887,51 @@ Underfull \hbox (badness 2080) in paragraph at lines 1160--1163
 at-form -
  []
 
-) [163] (./thesis.aux) ) 
+) [167] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16207 strings out of 493089
- 314584 string characters out of 6134841
- 369622 words of memory out of 5000000
- 19328 multiletter control sequences out of 15000+600000
+ 16222 strings out of 493089
+ 314970 string characters out of 6134841
+ 369710 words of memory out of 5000000
+ 19341 multiletter control sequences out of 15000+600000
  86512 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,19n,42p,10373b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbxti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (171 pages, 6594388 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (175 pages, 6714846 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
+ 801 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
 
