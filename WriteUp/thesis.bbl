@@ -266,7 +266,7 @@ Federal Energy~Regulatory Commission.
 \newblock {Order No. 784: Third-Party Provision of Ancillary Services;
   Accounting and Financial Reporting for New Electric Storage Technologies}.
 \newblock \url{https://www.ferc.gov/whats-new/comm-meet/2013/071813/E-22.pdf},
-  7 2013.
+  July 2013.
 \newblock Docket Nos. RM11-24-000 and AD10-13-000.
 
 \bibitem{FERC841}
@@ -288,8 +288,8 @@ Australia Energy System~Operator Limited.
 \newblock {Demand Side Participation Information Guidelines Consultation: Final
   Report and Determination}.
 \newblock
-  \url{https://www.aemo.com.au/-/media/Files/Stakeholder_Consultation/Consultations/Electricity_Consultations/2017/DSPIG/Demand-Side-Participation-Information
-  -Guidelines-Consultation---Final-Report-and-Determination.pdf}, April 2017.
+  \url{https://www.aemo.com.au/-/media/Files/Stakeholder_Consultation/Consultations/Electricity_Consultations/2017/DSPIG/},
+  April 2017.
 
 \bibitem{Lipari2017}
 Gianluca Lipari, Gerard {Del Rosario}, Cristina Corchero, Ferdinanda Ponci, and
@@ -368,7 +368,7 @@ D.~Connolly, H.~Lund, P.~Finn, B.~V. Mathiesen, and M.~Leahy.
 Raymond~H. Byrne and C{\'{e}}sar~A. Silva-Monroy.
 \newblock {Estimating the Maximum Potential Revenue for Grid Connected
   Electricity Storage: Arbitrage and Regulation}.
-\newblock Technical Report December, Sandia National Laboratories, 2012.
+\newblock Technical Report SAND2012-3863, Sandia National Laboratories, 2012.
 
 \bibitem{Bradbury2014}
 Kyle Bradbury, Lincoln Pratson, and Dalia Pati{\~{n}}o-Echeverri.
@@ -404,7 +404,7 @@ Jim Eyer and Garth Corey.
 \newblock {Energy Storage for the Electricity Grid: Benefits and Market
   Potential Assessment Guide: A Study for the DOE Energy Storage Systems
   Program}.
-\newblock Technical Report February, Sandia National Laboratories, 2010.
+\newblock Technical Report SAND2010-0815, Sandia National Laboratories, 2010.
 
 \bibitem{Rastler2010}
 D.~Rastler.
@@ -418,8 +418,8 @@ Abbas {A. Akhil}, Georgianne Huff, Aileen {B. Currie}, Benjamin {C. Kaun}, Dan
   and Wiliam {D. Gauntlett}.
 \newblock {DOE/EPRI 2013 electricity storage handbook in collaboration with
   NRECA}.
-\newblock Technical Report January, Sandia National Laboratories, Livermore,
-  California, 2015.
+\newblock Technical Report SAND2013-5131, Sandia National Laboratories,
+  Livermore, California, 2015.
 
 \bibitem{PJMInterconnection2017}
 {PJM Interconnection}.
@@ -462,7 +462,7 @@ Paul Denholm and Ramteen Sioshansi.
 \newblock {\em Energy Policy}, 37(8):3149--3158, 2009.
 
 \bibitem{GRUNEWALD2012449}
-Philipp~H. Grünewald, Timothy~T. Cockerill, Marcello Contestabile, and
+Philipp~H. Gr{\"{u}}newald, Timothy~T. Cockerill, Marcello Contestabile, and
   Peter~J.G. Pearson.
 \newblock The socio-technical transition of distributed electricity storage
   into future networks - system value and stakeholder views.
@@ -491,7 +491,7 @@ Wolf~Peter Schill and Claudia Kemfert.
 Xian He, Erik Delarue, William {D 'haeseleer}, and Jean-Michel Glachant.
 \newblock {Coupling electricity storage with electricity markets: a welfare
   analysis in the French market}.
-\newblock (January):1--20, 2012.
+\newblock 2012.
 
 \bibitem{Yousefi2011}
 Shaghayegh Yousefi, Mohsen~Parsa Moghaddam, and Vahid~Johari Majd.
@@ -610,7 +610,7 @@ Johanna Cludius, Hauke Hermann, Felix~Chr Matthes, and Verena Graichen.
 \bibitem{Grunewald2012a}
 Philipp Gr{\"{u}}newald.
 \newblock {\em {The role of electricity storage in low carbon energy systems}}.
-\newblock PhD thesis, 2012.
+\newblock PhD thesis, Imperial College London, 2012.
 
 \bibitem{Weron2014}
 Rafa{\l} Weron.
@@ -731,12 +731,12 @@ Nadali Mahmoudi, Tapan~K. Saha, and Mehdi Eghbal.
 \bibitem{Storage2015}
 Pascal Haefeli.
 \newblock {\em {Distributed Control Strategies for Distributed Storage}}.
-\newblock PhD thesis, 2015.
+\newblock PhD thesis, ETH Zurich, 2015.
 
 \bibitem{Brouthers2007}
-D.~Keith Brouthers and Jean~Fran{\c{c}}ois Hennart.
-\newblock {Boundaries of the firm: Insights from international entry mode
-  research}, 2007.
+Keith~D. Brouthers and Jean-François Hennart.
+\newblock Boundaries of the firm: Insights from international entry mode
+  research, 2007.
 
 \bibitem{Rebours2009}
 Yann Rebours.
@@ -769,7 +769,8 @@ Jaquelin Cochran, Mackay Miller, Michael Milligan, Erik Ela, Douglas Arent, and
   Aaron Bloom.
 \newblock {Market Evolution: Wholesale Electricity Market Design for 21 st
   Century Power Systems}.
-\newblock {\em Contract}, (October 2013):1--57, 2013.
+\newblock Technical Report NREL/TP-6A20-57477, National Renewable Energy
+  Laboratory, 2013.
 
 \bibitem{EllisonJ.F.TesfatsionL.S.LooseV.W.Byrne2012}
 R.~H. {Ellison, J. F., Tesfatsion, L. S., Loose, V. W., Byrne}.
@@ -779,12 +780,14 @@ R.~H. {Ellison, J. F., Tesfatsion, L. S., Loose, V. W., Byrne}.
 
 \bibitem{Gilstrap2015}
 Matthew Gilstrap, Shravan Amin, and Kevin Decoria-Souza.
-\newblock {United States Electricity Industry Primer}, 2015.
+\newblock {United States Electricity Industry Primer}.
+\newblock Technical Report DOE/OE-0017, Office of Electricity Delivery and
+  Energy Reliability, 2015.
 
 \bibitem{Borenstein2015}
 Severin Borenstein and James Bushnell.
 \newblock {The U. S . Electricity Industry after 20 Years of Restructuring}.
-\newblock {\em Energy Institute at HAAS}, (May 2015):1--31, 2015.
+\newblock 2015.
 
 \bibitem{PJM_web}
 PJM Interconnection.
@@ -806,7 +809,7 @@ New York Independent~System Operator.
 \newblock \url{http://www.nyiso.com/public/index.jsp}, 2018.
 
 \bibitem{MISO_web}
-New York Independent~System Operator.
+Midcontinent Independent~System Operator.
 \newblock {Official website}.
 \newblock \url{https://www.misoenergy.org}, 2018.
 
@@ -841,8 +844,8 @@ Alberta Electric~System Operator.
 \newblock \url{https://www.aeso.ca}, 2018.
 
 \bibitem{AEMO2010}
-AEMO.
-\newblock {An introduction to australia's national electricity market}, 2010.
+Australian Energy~Market Operator.
+\newblock {An Introduction to Australia's National Electricity Market}, 2010.
 
 \bibitem{AEMO2015a}
 AEMO.
@@ -891,7 +894,7 @@ EcoGrid EU~FP7 project.
 \newblock \url{http://www.eu-ecogrid.net}, 2016.
 
 \bibitem{PJM2017}
-PJM.
+PJM Interconnection.
 \newblock {PJM Manual 28: Operating Agreement Accounting}, 2017.
 
 \bibitem{ENTSO-e_handbook}
@@ -902,7 +905,7 @@ European~Network of~Transmission System~Operator.
   2004.
 
 \bibitem{AEMO2015}
-AEMO.
+Australia Energy~Market Operator.
 \newblock {Settlements Guide To Ancillary Services Payment and Recovery}, 2015.
 
 \bibitem{Beaudin2014}
@@ -993,12 +996,10 @@ Australian Energy~Market Operator.
 \newblock {Official website}.
 \newblock \url{https://www.aemo.com.au/}, 2018.
 
-\bibitem{AEMC_rule}
-Australian Energy~Market Commission.
-\newblock {National Electricity Rules Version 106}.
-\newblock
-  \url{https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules/current},
-  2017.
+\bibitem{NortheastGroup2017a}
+{Northeast Group}.
+\newblock {Oceania Smart Grid: Market Forecast}.
+\newblock Technical Report March, Northeast Group, LLC, 2017.
 
 \bibitem{AEMO_DR_1}
 Australia Energy System~Operator Limited.
@@ -1012,9 +1013,60 @@ Australia Energy System~Operator Limited.
 Australia Energy System~Operator Limited.
 \newblock {AEMO and ARENA demand response trial to provide 200 megawatts of
   emergency reserves for extreme peaks}.
+\newblock \url{https://www.aemo.com.au/Media-Centre/}, October 2017.
+
+\bibitem{PJM2015}
+PJM Interconnection.
+\newblock {Virtual Transactions in the PJM Energy Markets}.
+\newblock 2015.
+
+\bibitem{Hertz_web}
+50Hertz~Transmission GmbH.
+\newblock {Official website}.
+\newblock \url{http://www.50hertz.com/en/}, 2018.
+
+\bibitem{Amprion_web}
+Amprion GmbH.
+\newblock {Official website}.
+\newblock \url{https://www.amprion.net/index-2.html}, 2018.
+
+\bibitem{TenneT_web}
+TenneT~TSO GmbH.
+\newblock {Official website}.
+\newblock \url{https://www.tennet.eu}, 2018.
+
+\bibitem{TransnetBW_web}
+TransnetBW GmbH.
+\newblock {Official website}.
+\newblock \url{https://www.transnetbw.com/en}, 2018.
+
+\bibitem{DE_as_web}
+50Hertz, Amprion, TenneT, and TransnetBW.
+\newblock {REGELLEISTUNG.NET: Internetplattform zur Vergabe von Regelleistung}.
+\newblock \url{https://www.regelleistung.net/ext/}, 2018.
+
+\bibitem{Moller2010}
+Christoph M{\"{o}}ller.
+\newblock {\em {Balancing energy in the German market design}}.
+\newblock PhD thesis, Universitat Karlsruhe, 2010.
+
+\bibitem{AEMC_rule}
+Australian Energy~Market Commission.
+\newblock {National Electricity Rules Version 106}.
 \newblock
-  \url{https://www.aemo.com.au/Media-Centre/AEMO-and-ARENA-demand-response-trial-to-provide-200MW-of-emergency-reserves-for-extreme-peaks},
-  October 2017.
+  \url{https://www.aemc.gov.au/regulation/energy-rules/national-electricity-rules/current},
+  2017.
+
+\bibitem{AEMO2013}
+Australia Energy~Market Operator.
+\newblock {NEM Settlement Estimates Policy}, 2013.
+
+\bibitem{AEMO_BESS}
+Australian Energy~Market Operator.
+\newblock {Interim arrangements - Utility Scale Battery Technology}.
+\newblock
+  \url{https://www.aemo.com.au/Electricity/National-Electricity-Market-NEM/Participant-information/New-participants/Interim-arrangements-Utility-Scale-Battery-Technology},
+  2017.
 
 \bibitem{IRENA2017}
 IRENA.
@@ -1046,26 +1098,12 @@ National Renewable~Energy Laboratory.
 \newblock \url{https://www.nrel.gov/tsdc}.
 \newblock Updated: 2017-01-15.
 
-\bibitem{NortheastGroup2016}
-{Northeast Group}.
-\newblock {Germany Smart Grid : Market Forecast ( 2016 - 2026 )}.
-\newblock Technical Report September, 2016.
-
-\bibitem{NortheastGroup2017}
-{Northeast Group}.
-\newblock {US Smart Grid: Market Forecast}.
-\newblock Technical Report October, Northeast Group, LLC, 2017.
-
-\bibitem{NortheastGroup2017a}
-{Northeast Group}.
-\newblock {Oceania Smart Grid: Market Forecast}.
-\newblock Technical Report March, Northeast Group, LLC, 2017.
-
-\bibitem{Bloomberg}
-Bloomberg L.P.
-\newblock {Currencies}.
-\newblock \url{https://www.bloomberg.com/markets/currencies}.
-\newblock Accessed: 2018-01-01.
+\bibitem{KBA2017}
+Kraftfahrt-Bundesamtes (KBA).
+\newblock {Monatliche Neuzulassungen}.
+\newblock
+  \url{https://www.kba.de/DE/Statistik/Fahrzeuge/Neuzulassungen/MonatlicheNeuzulassungen/monatl_neuzulassungen_node.html}.
+\newblock Accessed: 2018-01-12.
 
 \bibitem{Eurostat_de_v}
 European Commission.
@@ -1074,12 +1112,11 @@ European Commission.
   \url{http://ec.europa.eu/eurostat/statistics-explained/index.php/Passenger_cars_in_the_EU}.
 \newblock Accessed: 2018-03-04.
 
-\bibitem{KBA2017}
-Kraftfahrt-Bundesamtes (KBA).
-\newblock {Monatliche Neuzulassungen}.
-\newblock
-  \url{https://www.kba.de/DE/Statistik/Fahrzeuge/Neuzulassungen/MonatlicheNeuzulassungen/monatl_neuzulassungen_node.html}.
-\newblock Accessed: 2018-01-12.
+\bibitem{Bloomberg}
+Bloomberg L.P.
+\newblock {Currencies}.
+\newblock \url{https://www.bloomberg.com/markets/currencies}.
+\newblock Accessed: 2018-01-01.
 
 \bibitem{Bessa2014}
 R.~J. Bessa and M.~A. Matos.
@@ -1113,5 +1150,15 @@ PJM Interconnection.
 \newblock
   \url{http://www.pjm.com/-/media/committees-groups/committees/mic/20180207/20180207-item-13b-1000-offer-cap-in-markets-gateway.ashx}.
 \newblock Accessed: 2018-02-07.
+
+\bibitem{Data_miner_2}
+PJM~Interconnection LLC.
+\newblock {Data Miner 2}.
+\newblock \url{http://dataminer2.pjm.com/list}, 2018.
+
+\bibitem{Smarde_web}
+Bundesnetzagentur.
+\newblock {Electricity market information platform - Strommarktdaten (SMARD)}.
+\newblock \url{https://www.smard.de/blueprint/servlet/page/en/5790}, 2018.
 
 \end{thebibliography}

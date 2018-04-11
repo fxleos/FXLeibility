@@ -1,0 +1,51 @@
+\chapter{Conclusions and outlook}
+\label{conclusion}
+%\input{conclusion}
+%0.	Parametric analysis of battery capacity and PV power to estimate the optimal design of the building.
+\section{Conclusions and implications}
+
+In this thesis, based on a comprehensive study of  the academic research and the real-world market regimes, we developed an analytical framework for qualitative analysis and a techno-economic model for quantitative valuation of flexibility solutions. We further utilized them for final 
+
+Main conclusion and implications for technology vendors include:
+
+\begin{enumerate}
+	\item There are indeed no common rules among different market regimes but the methodology for analysis and valuation can be generalized:
+	
+	using the framework and model developed in this thesis, the opportunities and challenges for flexibility solutions in different markets can be easily analyzed. This exercise shall be carried out for each specific case.
+	
+	\item Market regimes may have explicit and implicit impacts on value of flexibility solutions:
+	
+	Explicit impacts, mainly regarding the accessibility of certain technologies to power markets, can be generally identified through the qualitative analysis, while implicit impacts that are reflected on profitability might have to be studied via quantitative studies.
+	
+	\item Market potential for flexibility solution could be significantly attractive. However, right technology and business model are needed to unlock the value.
+	
+	Batteries are shown to be still too expensive and such situation is not likely to change in the near future even with rapid decreasing price. Solutions such as demand response without CAPEX could be more attractive in terms of profitability but aggregating distributed resources is more complex than operating centralized unit and may face more barriers due to market rules.
+	
+	\item The impacts of renewable penetration is verified but it still depends on the market regime.
+	
+	The overall generation mix and market rules such as negative pricing are the determinate factor for the impact of renewable penetration.
+	
+	
+	%\item There are naturally more barriers due to legacy rules, in regimes with power pool arrangement than using  power exchange model, due to the bundled activities of on physical and market aspects. Therefore, technology vendors 
+\end{enumerate} 
+
+\section{Outlook and recommendation for future works}
+
+Overall, we find that there are a significant abundance of literature that are related to this topic. However, few of them are indeed sharing the same perspective as us, that is to support business decision making for companies with international scope. Therefore, we believe this thesis where we spent enormous efforts to align different market regimes and establish a comprehensive view could be a good guidance for future researchers who are interested in this topic. 
+
+Our work starts from a very broad scope and thus due to time limits, many of the aspects that were identified throughout the process cannot be fully incorporated into the study. This mean there is obviously space for further improvements and future works. Some recommendation for future works including:
+
+\begin{enumerate}
+	\item In Chapter \ref{ch:LitRev}, we sort out a comprehensive overview of major techniques used for quantitative valuation of flexibility solution. However, in order to keep agility and feasibility of the model, we adopt the relative simplified methods. Therefore, readers can refer to the analysis and test different methods for their effectiveness. Some examples including:
+	\begin{itemize}
+		\item Stochastic programming: as we have pointed out, there are three major stochastic terms related to flexibility solutions, i.e. price movement, frequency control signals and end-users' behaviors. Regarding the end-users' behaviors or more specifically the EV driving profiles, we believe a Markov chain model could be a good method by viewing the EV location profile as a stochastic process.
+		\item Hybrid system: in this thesis, we did not simulated a mixed portfolio, while for aggregators such an exercise is necessary;
+		\item Miscellaneous items like the price-maker effects, imperfect price foresight that have been fully elaborated in Chapter 2
+	\end{itemize} 
+	\item In this thesis, we implemented the market simulation module for forecasting long-term price trend in energy market. However, there are almost no literature found to make the similar exercise for frequency control prices. Although the frequency control markets are organized heterogeneously in different regimes as well as the pricing mechanisms, exercises for a single market shall still be valuable, since currently it seems to be black space.
+	\item Improve the degradation cost modeling: we used a linear relationship between energy throughput and degradation while the modeling could be much more sophisticated discussed in Section \ref{sec:cost}.
+	\item Implementation algorithm for evaluated performance of flexibility solution delivering frequency regulation: in some market as PJM, the actual performances are monitored and accounted for payments. However, this is not simulated in our study.
+	%\item Finally, we believe there are few similar works that have an approach to study multiple markets and technologies in one framework, so we believe improvement on implementation of this model itself shall be a meaningful work. Examples of limitation and possible improvements include: determination of degradation cost, 
+\end{enumerate}
+
+

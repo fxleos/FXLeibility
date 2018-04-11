@@ -51,7 +51,7 @@ Table \ref{tb:modules} offers an overview of all the modules and their inputs an
 	\label{fig:model-flow}
 \end{figure}
 
-Using this model, we can quantify the revenue and cost associated with the deployment of a given flexibility solution in a selected market and thus evaluate the profitability with any given scales of flexibility management system in the power market. By taking into account market constraints including liquidity, marginal revenue with respect to system scale will drop when liquidity becomes scarce. This allows us to derive the maximum revenue potential in a market. Furthermore, impacts of renewable penetration and cost reduction that are raised in our initial research questions can be assessed since the share of renewable resources in generation mix and the cost parameters of flexibility systems are all made to be variables of the model.
+Using this model, we can quantify the revenue and cost associated with the deployment of a given flexibility solution in a selected market and thus evaluate the profitability with any given scales of flexibility system in the power market. By taking into account market constraints including liquidity, marginal revenue with respect to system scale will drop when liquidity becomes scarce. This allows us to derive the maximum revenue potential in a market. Furthermore, impacts of renewable penetration and cost reduction that are raised in our initial research questions can be assessed since the share of renewable resources in generation mix and the cost parameters of flexibility systems are all made to be variables of the model.
 
 \section{Market-based modules}
 
@@ -93,7 +93,7 @@ In this equation, $e^+_{t,i}$, $e^-_{t,i}$ and $c_{t,j}$ are decision variables 
 e^+_{t,i}, e^-_{t,i}, c_{t,i} \geq 0 ~~~ \forall t \in \mathbb{T},~ \forall i \in \mathbb{I},~ \forall j \in \mathbb{J}
 \end{equation*}
 
-Price signals $\pi_{t,i}$, $\phi_{t,j}$ and $\psi_{t,j}$ and frequency control signals $\delta_{t,j}$ are inputs of the revenue module. $\mathbb{I}$ and $\mathbb{J}$ are determined according to the business case to be studied. For example, we can set $\mathbb{I} = \{Day~ahead~market\}$ and $ \mathbb{J}=\emptyset$ in order to value arbitrage in day-ahead energy market. 
+Price signals $\pi_{t,i}$, $\phi_{t,j}$ and $\psi_{t,j}$ and frequency control signals $\delta_{t,j}$ are inputs of the revenue module. $\mathbb{I}$ and $\mathbb{J}$ are determined according to the business case to be studied. For example, we can set $\mathbb{I} = \{1\}$ and $ \mathbb{J}=\emptyset$ in order to value arbitrage in day-ahead energy market. 
 
 %If there are multiple elements in $I \cup J$, it means the flexibility resource can be reallocated to make offers to different market segments, i.e. performing multitasking. These cases need to be carefully managed to comply with actual market rules. Detailed treatments regarding multitasking are illustrated in section \ref{sec:special}.
 
@@ -342,7 +342,7 @@ In order to quantitatively model the effect of inflexibility, we need to quantif
 		\item Middle capacity, denoted as $\tilde{c}_{t,f}^{\text{mid.}}$. It is the range of output can be flexibly adjusted and between inflexible and peak load, computed as:
 		
 		\begin{equation*}
-		\tilde{c}_{t,f}^{\text{flex.}} = \text{min} \{\mathcal{E}_f^+(g_{t,f}),~\overline{c}_f^{\text{peak}}\} - \overline{c}_f^{\text{inflex.}}
+		\tilde{c}_{t,f}^{\text{mid.}} = \text{min} \{\mathcal{E}_f^+(g_{t,f}),~\overline{c}_f^{\text{peak}}\} - \overline{c}_f^{\text{inflex.}}
 		\end{equation*}
 		
 	\end{itemize}
@@ -593,7 +593,7 @@ Thereby, the vector form of liquidity constraint is formulated as:
 where the element $\mathcal{I}_T$ is a $T$-order identity matrix\footnote{A $n$-order identity matrix is a $n \times n$ square matrix with ones on the main diagonal and zeros elsewhere.}, and it repeats $(2I+J)$ times along the latitudinal direction.
 %the notation, $\mathcal{I}_T \stackrel{\times (2I+J)}{\dots \dots}$, indicates the element $\mathcal{I}_T$  repeat for $(2I+J)$ times along the latitudinal direction.
 
-Besides the liquidity constraints, the other constraints are not applicable to all cases so have to be formulated on a case-specific base, especially some constraints that are resulted from market-specific rules. For example, offers in primary control reserve (PCR) market in Germany have to be made in weekly blocks. In such a case, $c_{t,j}$ for $j \in \{\text{PCR}\}$ have to identical within the period of one week.
+Besides the liquidity constraints, the other constraints are not applicable to all cases so have to be formulated on a case-specific base, especially some constraints that are resulted from market-specific rules. For example, offers in primary control reserve (PCR) market in Germany have to be made in weekly blocks. In such a case, $c_{t,j}$ for $j =1$ have to identical within the period of one week.
 
 However, it is worth to emphasize one constraint that is applied only for arbitrage in day-ahead market. In day-ahead markets where the large volume of energy is traded, we limit the arbitrage behaviors so that they will not activate additional peak generation nor aggravate pressure on inflexible load when residual load is below the inflexible capacity. In those cases, arbitrageurs are making negative contributions to whole system flexibility. Such cases should be not possible in reality as price will respond to the arbitrageurs' behaviors, but they will possibly occur in the simulation with fixed price signal is taken as input. For instance, at a peak hour when electricity price is high, arbitrageurs would tend to sell as much energy as possible if the price maintains at that level. In such a case, energy provision by arbitrageurs may be excessive and become a negative factor for the whole system, similar to the case with excessive RES generation.
 
@@ -780,22 +780,25 @@ The matrix of coefficient for degradation is the derived complying with the form
 K^{\text{deg.}}  = \mathcal{K} \cdot X
 \end{equation}
 
-\begin{equation*}
-K^{\text{deg.}} = \begin{bmatrix}
-Z~|~&Z~|~& \zeta (\Delta^{+} +\Delta^{-})
+\begin{equation}
+%K^{\text{deg.}} = \begin{bmatrix}
+%Z~|~&Z~|~& \zeta (\Delta^{+} +\Delta^{-})
+K^{\text{deg.}} = \zeta \cdot \begin{bmatrix}
+\mathcal{I}_I ~|~&\mathcal{I}_I ~|~& \Delta^{+} +\Delta^{-}
 \end{bmatrix} \begin{bmatrix}
 E^+ \\ E^- \\ C
 \end{bmatrix}
-\end{equation*}
-where, X is the vector of decision variables referring to Equation \eqref{eq:decision-variable-1}, and $Z$ is determined as following:
-\begin{equation*}
-Z = \zeta \cdot %\begin{bmatrix}
+\end{equation}
+where, X is the vector of decision variables referring to Equation \eqref{eq:decision-variable-1}, and $\mathcal{I}_I$ is determined as following:
+\begin{equation}
+\label{eq:I_I}
+\mathcal{I}_I  = %\begin{bmatrix}
 %\mathcal{I}_T \stackrel{\times I}{\dots \dots}
 %\end{bmatrix}
 \underbrace{\begin{bmatrix}
 	\mathcal{I}_T~|~\mathcal{I}_T~|~ \dots~|~\mathcal{I}_T 
 	\end{bmatrix}}_{I~\text{times}}
-\end{equation*}
+\end{equation}
 
 %\begin{equation*}
 %Z_i = \zeta \cdot \mathcal{I}_T ~~\forall i \in \mathbb{I} = \{1,2,\dots, I\}
@@ -847,7 +850,7 @@ A high-level summary about the key information for market simulation model is pr
 The technology simulation is applied to determine the state of the system, which would be used primarily for calibration of technology constraints but also for \textit{ex-post} analysis.
 
 \subsubsection{Energy Storage Systems (ESS)}
-Regardless of the type of technology, an energy storage system consists of three functional units, i.e. power input, power output, and storage. Each function unit is associated with an efficiency, i.e. conversion efficiencies of charge, discharge and storage efficiency, denoted as $\eta^c$, $\eta^d$ and $\eta^s$ respectively.
+Regardless of the type of technology, an energy storage system consists of three functional units, i.e. power input, power output, and storage. Each function unit is associated with an efficiency, i.e. conversion efficiencies of charge, discharge and storage efficiency, denoted as $\eta^-$, $\eta^+$ and $\eta^s$ respectively.
 
 Since the ramp up time for a small-to-medium storage system is typically within seconds \cite{Muller2016} we consider it negligible comparing to the time resolution (1 or 0.5 hour) in our study, the state of power input and output are deemed as strictly following the operational plan without transient process.
 
@@ -855,7 +858,7 @@ For the state of storage, we define a term, $s$ in MWh, which is the energy stor
 
 \begin{equation}
 \label{eq:tech-ESS}
-s_t = \eta^s s_{t-1} + \eta^c (\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{-} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{-} c_{t,j})- \frac{1}{\eta^d} (\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{+} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{+}c_{t,j})
+s_t = \eta^s s_{t-1} + \eta^- (\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{-} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{-} c_{t,j})- \frac{1}{\eta^+} (\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{+} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{+}c_{t,j})
 \end{equation}
 
 
@@ -864,7 +867,7 @@ In order to formulate Equation \eqref{eq:tech-ESS} into matrix form, we first ma
 
 \begin{equation}
 \label{eq:tech-ESS-example}
-s_t = s_{t-1} + \eta^c e_{t,1}^{-}  - \frac{1}{\eta^d} e_{t,1}^{+}
+s_t = s_{t-1} + \eta^- e_{t,1}^{-}  - \frac{1}{\eta^+} e_{t,1}^{+}
 \end{equation}
 
 The formulation of this equation at time steps is listed below:
@@ -872,20 +875,20 @@ The formulation of this equation at time steps is listed below:
 \begin{equation*}
 \begin{cases}
  s_0 = s_0 &  t = 0 \\
-s_1 = \eta^s s_0 +  \eta^c e_{1,1}^{-}  - \frac{1}{\eta^d} e_{1,1}^{+} & t = 1\\
-s_2 = \eta^s \left(\eta^s s_0 +  \eta^c e_{1,1}^{-}  - \frac{1}{\eta^d} e_{1,1}^{+}\right) + \eta^c e_{2,1}^{-}  - \frac{1}{\eta^d} e_{2,1}^{+} & t = 2 \\
-s_3 = \eta^s \left( \eta^s \left(\eta^s s_0 +  \eta^c e_{1,1}^{-}  - \frac{1}{\eta^d} e_{1,1}^{+}\right) + \eta^c e_{2,1}^{-}  - \frac{1}{\eta^d} e_{2,1}^{+}\right) + \eta^c e_{3,1}^{-}  - \frac{1}{\eta^d} e_{3,1}^{+} & t = 3 \\
+s_1 = \eta^s s_0 +  \eta^- e_{1,1}^{-}  - \frac{1}{\eta^+} e_{1,1}^{+} & t = 1\\
+s_2 = \eta^s \left(\eta^s s_0 +  \eta^- e_{1,1}^{-}  - \frac{1}{\eta^+} e_{1,1}^{+}\right) + \eta^- e_{2,1}^{-}  - \frac{1}{\eta^+} e_{2,1}^{+} & t = 2 \\
+s_3 = \eta^s \left( \eta^s \left(\eta^s s_0 +  \eta^- e_{1,1}^{-}  - \frac{1}{\eta^+} e_{1,1}^{+}\right) + \eta^- e_{2,1}^{-}  - \frac{1}{\eta^+} e_{2,1}^{+}\right) + \eta^- e_{3,1}^{-}  - \frac{1}{\eta^+} e_{3,1}^{+} & t = 3 \\
 ~~~\vdots \\
-s_T = {(\eta^s)}^{T} s_0+ \eta^c \left[ {(\eta^s)}^{T-1}  e_{T,1}^{-} + {(\eta^s)}^{T-2} e_{T-1,1}^{-} + \dots \right] \\
+s_T = {(\eta^s)}^{T} s_0+ \eta^- \left[ {(\eta^s)}^{T-1}  e_{T,1}^{-} + {(\eta^s)}^{T-2} e_{T-1,1}^{-} + \dots \right] \\
 ~~& t = T \\
-~~~~~~~- \frac{1}{\eta^d} \left[{(\eta^s)}^{T-1}  e_{T,1}^{+} + {(\eta^s)}^{T-2}  e_{T-1,1}^{+} + \dots \right]  
+~~~~~~~- \frac{1}{\eta^+} \left[{(\eta^s)}^{T-1}  e_{T,1}^{+} + {(\eta^s)}^{T-2}  e_{T-1,1}^{+} + \dots \right]  
 \end{cases}
 \end{equation*}
 
 Therefore, Equation \eqref{eq:tech-ESS-example} can be formulated in matrix form as:
 
 \begin{equation*}
-S = H^s S_0 + \eta^c  H E^-_1 - \frac{1}{\eta^d} H E^+_1
+S = H^s S_0 + \eta^-  H E^-_1 - \frac{1}{\eta^+} H E^+_1
 \end{equation*}
 where, $E^-_1$ and $E^+_1$ are derived by Equation \eqref{eq:Ei-Ei-Cj}, and:
 
@@ -934,7 +937,7 @@ In this way, the matrix form of Equation \eqref{eq:tech-ESS} can be derived as:
 \begin{equation}
 \label{eq:tech-ESS-M}
 S = H^s S_0 + \begin{bmatrix}
--\frac{1}{\eta^d} H_I~~|& \eta^c H_I~~|& H_J (-\frac{1}{\eta^d} \Delta^{+} + \eta^c \Delta^{-})
+-\frac{1}{\eta^+} H_I~~|& \eta^- H_I~~|& H_J \left(-\frac{1}{\eta^+} \Delta^{+} + \eta^- \Delta^{-}\right)
 \end{bmatrix} \cdot X
 \end{equation}
 where, $\Delta^{+}$ and $\Delta^{-}$ are given by Equation \eqref{eq:ratio-pos-m} and \eqref{eq:ratio-neg-m}, the vector for decision variables $X$ is formulated by Equation \eqref{eq:decision-variable-1}.
@@ -953,7 +956,7 @@ where
 \begin{equation}
 \label{eq:state-ESS-M-3}
 \mathcal{H}  = \begin{bmatrix}
--\frac{1}{\eta^d} H_I~~|& \eta^c H_I~~|& H_J (-\frac{1}{\eta^d} \Delta^{+} + \eta^c \Delta^{-})
+-\frac{1}{\eta^+} H_I~~|& \eta^- H_I~~|& H_J (-\frac{1}{\eta^+} \Delta^{+} + \eta^- \Delta^{-})
 \end{bmatrix}
 \end{equation}
 
@@ -999,7 +1002,7 @@ Thereby the state equation for an EV2G system is written as:
 \label{eq:tech-EV}
 \begin{aligned}
 s_t = & \eta^s s_{t-1} + s_t^+ n_t^+ - s_t^- n_t^- \\
-&+ \eta^c \left(\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{-} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{-} c_{t,j}\right)- \frac{1}{\eta^d} \left(\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{+} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{+}c_{t,j}\right)
+&+ \eta^- \left(\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{-} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{-} c_{t,j}\right)- \frac{1}{\eta^+} \left(\sum_{i}^{i \in \mathbb{I}} e_{t,i}^{+} + \sum_{j}^{j \in \mathbb{J}}\delta_{t,j}^{+}c_{t,j}\right)
 \end{aligned}
 \end{equation} 
 \newline
@@ -1045,7 +1048,7 @@ Following the same procedure and using the same notations made for storage syste
 \begin{aligned}
 S = &~ H^s S_0 + H S^+ N^+ - H S^- N^- \\
 &~+ \begin{bmatrix}
--\frac{1}{\eta^d} H_I~~|& \eta^c H_I~~|& H_J (-\frac{1}{\eta^d} \Delta^{+} + \eta^c \Delta^{-})
+-\frac{1}{\eta^+} H_I~~|& \eta^- H_I~~|& H_J (-\frac{1}{\eta^+} \Delta^{+} + \eta^- \Delta^{-})
 \end{bmatrix} X
 \end{aligned}
 \end{equation}
@@ -1062,7 +1065,7 @@ where
 \begin{equation}
 \label{eq:state-EV-M-3}
 \mathcal{H}  = \begin{bmatrix}
--\frac{1}{\eta^d} H_I~~|& \eta^c H_I~~|& H_J (-\frac{1}{\eta^d} \Delta^{+} + \eta^c \Delta^{-})
+-\frac{1}{\eta^+} H_I~~|& \eta^- H_I~~|& H_J (-\frac{1}{\eta^+} \Delta^{+} + \eta^- \Delta^{-})
 \end{bmatrix}
 \end{equation}
 \subsubsection{Summary}
@@ -1139,7 +1142,7 @@ Meanwhile, the energy stored is bounded between 0 and maximum capacity, $\overli
 
 Replacing $s_t$ using Equation \eqref{eq:tech-ESS}, the constraint is formulated as:
 \begin{equation*}
-0 \leq \eta^s s_{t-1} + \eta^c \left(\sum_{i}^{i \in \mathbb{I}} e^{-}_{t,i}  + \sum_{j}^{j \in \mathbb{J}} \delta_{t,j}^- c_{t,j}\right)- \frac{1}{\eta^d} \left( \sum_{i}^{i \in \mathbb{I}} e^{+}_{t,i} +\sum_{j}^{j \in \mathbb{J}} \delta_{t,j}^{+}c_{t,j}\right) \leq \overline{s}
+0 \leq \eta^s s_{t-1} + \eta^- \left(\sum_{i}^{i \in \mathbb{I}} e^{-}_{t,i}  + \sum_{j}^{j \in \mathbb{J}} \delta_{t,j}^- c_{t,j}\right)- \frac{1}{\eta^+} \left( \sum_{i}^{i \in \mathbb{I}} e^{+}_{t,i} +\sum_{j}^{j \in \mathbb{J}} \delta_{t,j}^{+}c_{t,j}\right) \leq \overline{s}
 \end{equation*}
 
 Applying the matrix format of the equations, we can get the constraints re-formulated the constraints of rates as:
@@ -1176,12 +1179,7 @@ where,
 		\overline{r}~~\overline{r}~~ \dots~~\overline{r}
 		\end{bmatrix}}_{T~\text{times}}}^T
 \end{equation*}
-and
-\begin{equation*}
-\mathcal{I}_I = {\underbrace{\begin{bmatrix}
-		\mathcal{I}_T ~|~\mathcal{I}_T ~|~ \dots~|~\mathcal{I}_T 
-		\end{bmatrix}}_{I~\text{times}}}
-\end{equation*}
+and $\mathcal{I}_I$ has been introduced by Equation \eqref{eq:I_I}. $\mathcal{I}_J$ and $\mathcal{O}_I$ can be derived in the same way:
 \begin{equation*}
 \mathcal{I}_J = {\underbrace{\begin{bmatrix}
 		\mathcal{I}_T ~|~\mathcal{I}_T ~|~ \dots~|~\mathcal{I}_T 
@@ -1262,7 +1260,7 @@ A high-level summary about the key information for market simulation model is pr
 
 
 
-\section{Optimization Engine}
+\section{Optimization engine}
 The performance of a flexibility resource depends primarily on the operation plan, which is represented as $X$ given by Equation \eqref{eq:decision-variable-1}. In order to value the market of technology vendors supplying flexibility to actors in power markets, we need to find reasonable operation patterns that simulate the behaviors of those players. For this sake, we employ an optimization engine. The value of the market calculated with the results from optimization gives the upper bound of the market value.
 
 Using the outputs of all the modules discussed above,  we can formulate the optimization problem as:
@@ -1277,12 +1275,15 @@ subject to:
 \begin{equation*}
 \mathcal{T} \cdot X \leq \mathbf{T}
 \end{equation*}
+\begin{equation*}
+X \geq 0
+\end{equation*}
 where, $\mathcal{R}$ comes from the revenue module (Section \ref{sec:revenue}), $\mathcal{K}$ is obtained by cost module (Section \ref{sec:cost}), $\mathcal{M} \cdot X \leq \mathbf{M}$ represents a set of market constraints derived from market constraint module (Section \ref{sec:market-constraints}), and $\mathcal{T} \cdot X \leq \mathbf{T}$ represents a set of technology constraints derived from technology constraint module (Section \ref{sec:tech-constraints}). 
 
 The optimization is implemented in MATLAB\textcopyright~and solved using Guobi optimizer. 
 
 \section{Valuation metrics}
-
+\label{sec:metrics}
 After the optimal operating plan, $X^*$, is obtained, we can re-calculate the revenue and cost separately and analyze the results in a certain metric. The metric to evaluate the system performance are slightly different between ESS and EV2G. For ESS, the criteria in the evaluation metric include:
 \begin{itemize}
 	\item \textbf{Revenue:} the total explicit revenue from electricity markets calculated as Equation \eqref{eq:module-revenue} in Section \ref{sec:revenue}, per annum:
@@ -1309,7 +1310,7 @@ After the optimal operating plan, $X^*$, is obtained, we can re-calculate the re
 	
 	\item  \textbf{Profitability ratio}: the ratio between the profit and overall costs including both operating and fix costs, denoted as $\rho$: 
 	\begin{equation*}
-	\rho = 	\frac{P^{\text{net}}}{\mathcal{K} \cdot X^* + K^{\text{fix}}}
+	\rho = 	\frac{P^{\text{net}}}{K^{\text{deg.}} + K^{\text{fix}}}
 	\end{equation*}
 	
 \end{itemize}
@@ -1331,7 +1332,8 @@ For EV2G, the fixed cost that is mainly related to procuring the battery stocks 
 	\begin{equation*}
 	K^{\text{imp.}} = \pi^* \cdot
 	 \begin{bmatrix}
-	\left(-\mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~\left( \mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~-\Delta^+ + \Delta^-
+	 -\mathcal{I}_I~|~ \mathcal{I}_I ~|~ -\Delta^+ + \Delta^-
+	%\left(-\mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~\left( \mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~-\Delta^+ + \Delta^-
 	\end{bmatrix} X^*
 	\end{equation*}
 	
@@ -1343,7 +1345,7 @@ For EV2G, the fixed cost that is mainly related to procuring the battery stocks 
 	
 	\item  \textbf{Profitability ratio}: the ratio between the profit and overall costs including both operating and implicit charging costs
 	\begin{equation*}
-	\rho = 	\frac{P^{\text{net}}}{\mathcal{K} \cdot X^* +K^{\text{imp.}}}
+	\rho = 	\frac{P^{\text{net}}}{K^{\text{deg.}}} %+K^{\text{imp.}}}
 	\end{equation*}
 	
 \end{itemize}
@@ -1371,8 +1373,8 @@ When we value a case where the market player player can participate in day-ahead
 
 In this thesis, the virtual arbitrage has already been damped by the technology degradation model as has been discussed in Section \ref{sec:cost} and restricted by the rate constraints in Section \ref{sec:tech-constraints}. In this way, although some arbitrage transactions do not physically activate the flexibility resources, they are conceived to incur operational costs and are always complied with the technology constraints. Therefore, the risk- and cost- free virtual arbitrage is eliminated in our study.
 
-\subsection{Dealing with non-energy-neutral signal for frequency control}
-Providing frequency control is an attractive option for flexibility management as it is more profitable than energy arbitrage in current market context. However, a challenge of performing frequency control with non-generating flexibility sources is the non-energy-neutral signals of frequency regulation. If the control signal is not energy-neutral or not auto-corrected, it is not possible for a non-generating resource to provide service for an extended period due to the limited energy capacity. For example, a battery cannot absorb any more energy while it is fully charged and fail to continue delivering frequency control services.
+\subsection{Dealing with non-energy-neutral control signal}
+Providing frequency control is an attractive option for flexibility solutions as it is more profitable than energy arbitrage in current market context. However, a challenge of performing frequency control with non-generating flexibility sources is the non-energy-neutral signals of frequency regulation. If the control signal is not energy-neutral or not auto-corrected, it is not possible for a non-generating resource to provide service for an extended period due to the limited energy capacity. For example, a battery cannot absorb any more energy while it is fully charged and fail to continue delivering frequency control services.
 
 Although some system operators have already implemented special energy neutral signals for the emerging flexibility resources, it is not a universal practice among the markets. 
 
@@ -1384,7 +1386,11 @@ In this study, we referred to the similar works \cite{Megel2017}\cite{Oudalov200
 %~\newline
 
 %\textit{(Descriptions about Data has been moved to the chapter of case study as they are market-specific rather than generic.)}
+~\newpage
 \section{Summary}
+In this chapter, we have established a techno-economic model for quantitative valuation of flexibility solutions using a modular approach. We have introduced not only the principles of the methodology but also provided guidance for implementation by deriving the equations in matrix format.
+
+This model is generally adaptive for various market regimes and different technologies. Specifically, we have implemented this model for three market jurisdictions and two technologies, i.e. energy storage and electric vehicle to grid as case studies to be introduced in the next chapter. If this model is reused for new market regimes, users may need to re-parameterize the market simulation module and edit market constraints according to real market rules of the target market. If other technologies are to be studied, the cost module, technology simulation module and technology constraints may need to be re-defined. In both of these two cases, the rest modules of the model remain unchanged, which verifies our initial motivation for such a modular approach.
 %In this chapter we have developed a methodology to quantitatively model 
 %The flexibility analysis is orginal
 %

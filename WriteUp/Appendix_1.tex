@@ -1,47 +1,236 @@
 %\chapter{Terminology for frequency control service in different markets}
 %\label{app:terminology-frequency-control}
 
-\chapter{Accounting rules and electricity market data preparation}
+\chapter{Sources and preparation of electricity market data}
+\chaptermark{Electricity market data}
 \label{sec:accounting-data-prepare}
-3 hour
+\textit{This appendix introduces the sources of electricity market data and how the original data is pre-processed into inputs for the model introduced in Chapter \ref{ch:methodology}.}
 
-$\mathbb{I}$:
+\section{PJM}
+All PJM electricity market data used in this study are retrieved from the official data management tool of PJM - Data Miner 2 \cite{Data_miner_2}. The sets of data used in this study are list in Table \ref{tab:pjm-data}.
+
 \begin{table}
-	\begin{tabular}{ll}
-		1 & Day-ahead energy market\\
-		2 & Real-time energy market
+	\footnotesize
+	\centering
+	\begin{tabular}{L{5cm} L{2cm} L{6cm} }
+		\hline
+		 \textbf{Data-set} & \textbf{Resolution} & \textbf{Description} \\
+		 \hline
+		 \hline
+		 Generation by Fuel Type & 15 min & Generation in MW for each fuel type, e.g. coal, hydro, wind, etc. \\
+		 \hline
+		 Hourly Day-Ahead Demand Bids & 1 hour & Aggregated hourly demand bids submitted to the Day-Ahead Energy Market, in MWh/h \\
+		 \hline
+		 Hourly Load: Metered & 1 hour & Actual load as consumed by the service territories within the PJM, in MWh/h \\
+		 \hline
+		 Day-Ahead Hourly LMPs & 1 hour & Hourly Day-Ahead Energy Market locational marginal pricing (LMP) data for all bus locations, including aggregates \\
+		 \hline
+		 Real-Time Hourly LMPs & 1 hour & Hourly Real-Time Energy Market locational marginal pricing (LMP) data for all bus locations, including aggregates\\
+		 \hline
+		 Ancillary Service Market Results & 1 hour & Hourly Ancillary service market results including MW quantities and prices\\
+		 \hline
+		 Regulation Market Data & 1 hour & Amount of Regulation that needs to be carried in the hour, adjusted by the effective MW, also including mileage ratios and overall performance scores \\
+		 \hline
+		 RTO Regulation Signal Data\footnote{This data set is not incorporated in Data Miner 2 but can be found at \url{http://www.pjm.com/markets-and-operations/ancillary-services.aspx}} & 2 second& Regulation control signal used within PJM RTO control area, including both RegD and RegA signals\\
+		 \hline
 	\end{tabular}
+\caption{List of data sets used for PJM electricity market data}\label{tab:pjm-data}
 \end{table}
 
-$\mathbb{J}$:
-%1 & RegD
-%2 & RegA
+In the reminder of this section, we will describe how these data are converted to the inputs for our model, with donations inheriting from what have been used in Chapter \ref{ch:methodology}.
 
+First of all, the sets of marketplaces are defined as:
 
-$\Pi_1$
+\begin{itemize}
+	\item Set of energy marketplace $\mathbb{I} = \{1,2\}$:
+	\begin{itemize}
+		\item \textbf{1}: day-ahead market;
+		\item \textbf{2}: real-time market.
+	\end{itemize}
+	\item Set of ancillary marketplace $\mathbb{J}=\{1,2\}$:
+	\begin{itemize}
+		\item \textbf{1}: regulation dynamic (RegD);
+		\item \textbf{2}: regulation conventional (RegA).
+	\end{itemize}
+\end{itemize}
 
+Preparation of price signals is related to the accounting rules\cite{PJM2017} so might be complicated especially for regulation price.
 
-$\mathbb{I}$:
-\begin{table}
-	\begin{tabular}{ll}
-		1 & Day-ahead energy market\\
-		2 & Intra-day energy market\\
-		3 & Balancing energy\\
-	\end{tabular}
-\end{table}
+\subsubsection{Energy market price $\Pi_1$ and $\Pi_2$}
 
+$\Pi_1$: Directly taken from \textit{Hourly Day-Ahead Demand Bids}.
 
+$\Pi_2$:
+Directly taken from \textit{Hourly Real-Time Demand Bids}.
+\subsubsection{Frequency control price $\Phi_1$, $\Phi_2$, $\Psi_1$ and $\Psi_2$}
 
-$\mathbb{J}$:
-\begin{table}
-	\begin{tabular}{ll}
-		1 & Primary control reserve\\
-		2 & Secondary control reserve up\\
-		3 & Secondary control reserve down\\
-	\end{tabular}
-\end{table}
+Firstly, the energy delivery is settled in real-time so:
+\begin{equation*}
+\Phi_1 = \Pi_1
+\end{equation*}
+\begin{equation*}
+\Phi_2 = \Pi_1
+\end{equation*}
 
+The rest of service delivery is priced based on both the amount of capacity and actual perform, calculated from a list of factors including:
 
+\begin{itemize}
+	\item \textbf{Regulation Market Capacity Clearing Price (RMCCP)}: obtained from \textit{ Regulation Market Data}
+	\item \textbf{Regulation Market Performance Clearing Price (RMPCP)}: obtained from \textit{ Regulation Market Data}
+	%\item \textbf{Hourly-integrated Regulation (MW)}: adjusted by the effective MW, directly obtained from \textit{Regulation Market Data}
+	\item \textbf{Actual Performance Score}: is defined as the measurement of accuracy, delay and precision. We use the overall performance for each service directly obtained from \textit{ Regulation Market Data}
+	\item \textbf{Mileage Ratio}: is the absolute sum of movement of the regulation signal in a given time period. We use the overall mileage ratio for each service directly obtained from \textit{ Regulation Market Data}
+	\item \textbf{Lost Opportunity Credit}: is the difference in net compensation from the Energy Market between what a resource. It is calculated only for resources providing energy along with regulation service so \$0 for non-energy regulation resources. Since none of the flexibility solutions studied quantitatively in this thesis are energy-providing resources, we exclude the lost opportunity credits from our optimization.
+\end{itemize}
+
+Thereby, the price signals are calculated as:
+
+\begin{equation*}
+\Psi_j = \left(\text{RMCCP} + \text{RMPCP} \times \text{Mileage Ratio}\right) \times \text{Actual Performance Score}
+\end{equation*}
+\begin{equation*}
+\forall j \in \mathbb{J} =\{1,2\}
+\end{equation*}
+
+\subsubsection{Liquidity: market volumes $\hat{E}_1$, $\hat{E}_1$, $\hat{C}_1$ and $\hat{C}_2$}
+Day-ahead market volume $\hat{E}_1$: is obtained directly from \textit{Hourly Day-Ahead Demand Bids}.
+
+Real-time market volume $\hat{E}_2$: is calculated as the differences between actual metered load obtained from \textit{Hourly Load: Metered} and day-ahead market volume $\hat{E}_1$.
+
+Regulation market volume $\hat{C}_1$ and $\hat{C}_2$: is obtained directly from \textit{Regulation Market Result} (including only pool-procured while excluding self-scheduled).
+
+\subsubsection{Regulation control signal $\Delta_1$ and $\Delta_2$}
+$\Delta_1$ and $\Delta_2$ are derived from the data-set \textit{RTO Regulation Signal Data} by binning the original signal to hourly blocks in order to comply with the time resolution of the model.
+
+\subsubsection{Generation data $g_{f}$}
+
+The generation data, $g_{f}$, and the sets of generation fuel types, $\mathbb{F}$, where $f \in \mathbb{F}$ are derived from the data-set \textit{Generation by Fuel Type}.  $g_{f}$ is calculated by binning the original signal to hourly blocks in order to comply with the time resolution of the model.
+
+\subsubsection{Notice}
+Credit for regulation services is calculated as the product of price and effective capacity. Effective capacity is determined as the nominal capacity multiplied by a so-called ``benefit factor". For RegA services, benefit factor is always 1 while for RegD the benefit factor is varying between 0 to 2.9 and is determined by the historical performance of a resource. For simplicity, we take the benefit factor being 1 as a system average level.
 %NSW Generation
 %https://www.aemo.com.au/Electricity/National-Electricity-Market-NEM/Planning-and-forecasting/Generation-information
+
+%\subsubsection{Accounting}
+
+%\subsection{Germany}
+
+
+%$\pi_t^{e,i}, i \in \{Balancing\}$, is the the price for balancing energy (reBAP), which exist only in Germany
+
+%$\pi_t^{r,j}$ and $\pi_t^{e,j}$ are based on principle of pay-as-bid. The weighted-average values are available in the datasets.
+
+
+%Prices for balacning energy are unified across TSOs and determined according to the  balancing energy price settlement system (BK6-12-024) developed by Federal Network Agency (FNA) as of 01/12/2012.
+
+
+%The unit prices of reserve products, $\pi_t^{r,j}$ and $\pi_t^{e,j}$, are not available in datasets published by AEMO. Only weekly summary for total payment and recovery are provided. Due to the limits of available data, we are only able to perform calculations of total potential revenues, rather than thorough studies as in the other two geographies.
+
+\section{DE}
+
+The electricity market data for Germany is primarily retrieved from the official electricity market information platform ``SMARD" \cite{Smarde_web} managed by Bundesnetzagentur (BNetzA), the energy sector regulation in Germany. The platform publishes all data that is required by the Energy Industry Act (Energiewirtschaftsgesetz - EnWG) to be made freely available for public use. Meanwhile, the we refer to the website of EPEX SPOT for the day-ahead and intra-day market data, including price and volume. Data from BNetzA are listed in Table \ref{tab:DE-data}.
+
+\begin{table}
+	\footnotesize
+	\centering
+	\begin{tabular}{L{5cm} L{2cm} L{6cm} }
+		\hline
+		\textbf{Data-set} & \textbf{Resolution} & \textbf{Description} \\
+		\hline
+		\hline
+		Electricity Generation - Actual Generation & 15 min & Generation in MWh for each fuel type, e.g. coal, hydro, wind, etc. \\
+		\hline
+		Electricity Consumption - Actual Consumption & 15 min & Consumption in MWh \\
+		\hline
+		Balancing energy & 15 min & Price (reBAP) in EUR/MWh and volume of balancing energy in MWh \\
+		Primary control reserve & 15 min & Price\footnote{Prices for frequency control are determined using pay-as-bid scheme, so they are volume-averaged prices on a overall level.} for capacity in EUR/MW and total procured capacity in MW\\
+		Secondary control reserve & 15 min & Price$^a$ for capacity in EUR/MW, price for energy in EUR/MWh, and total procured capacity in MW\\
+		\hline
+	\end{tabular}
+	\caption{List of data sets used for DE electricity market data from BNetzA}\label{tab:DE-data}
+\end{table}
+
+In the reminder of this section, we will describe how these data are converted to the inputs for our model, with donations inheriting from what have been used in Chapter \ref{ch:methodology}.
+
+First of all, the sets of marketplaces are defined as:
+
+\begin{itemize}
+	\item Set of energy marketplace $\mathbb{I} = \{1,2\}$:
+	\begin{itemize}
+		\item \textbf{1}: day-ahead market;
+		\item \textbf{2}: real-time market;
+		\item \textbf{3}: balancing market.
+	\end{itemize}
+	\item Set of ancillary marketplace $\mathbb{J}=\{1,2\}$:
+	\begin{itemize}
+		\item \textbf{1}: primary control reserve;
+		\item \textbf{2}: secondary control reserve.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Energy market price $\Pi_1$, $\Pi_2$, and $\Pi_3$}
+
+$\Pi_1$ and $\Pi_2$: Directly taken from EPEX SPOT website.
+
+$\Pi_3$:
+Directly taken from the data-set \textit{Balancing energy} from BNetzA
+
+\subsubsection{Frequency control price $\Phi_1$, $\Phi_2$, $\Psi_1$ and $\Psi_2$}
+
+All these items are taken from the data-sets \textit{Primary control reserve} and \textit{Second control reserve} from BNetzA. However, as mentioned in the table, it should be noted that these prices are pay-as-bid and what provided by BNetzA are the volume-averaged prices. We take the data from BNetzA as direct input, because the average prices on system-level suffice our needs of valuation for the whole market.
+
+\subsubsection{Liquidity: market volumes $\hat{E}_1$,$\hat{E}_1$,$\hat{C}_1$ and $\hat{C}_2$}
+Dealing with day-ahead market volume $\hat{E}_1$ is less straightforward. In the other two cases where electricity markets are organized in power pool arrangement and all electricity transactions would go through the day-ahead market gateway. Therefore, in order to make it comparable, we also use the total consumption from the data-set \textit{Consumption - Actual Consumption} as day-ahead market volume.
+
+Intra-day market volume $\hat{E}_2$: is obtained from EPEX SPOT webstie
+
+Volumes in balancing market  $\hat{E}_3$, primary control reserve $\hat{C}_1$ and secondary control reserve $\hat{C}_2$ are obtained directly from the data-sets from BNetzA.
+
+\subsubsection{Regulation control signal $\Delta_1$ and $\Delta_2$}
+
+No public data for control signals are found. Therefore, we take the ratio between total energy delivery and total committed capacity provided by the data-sets from BNetA as control signals $\Delta_1$ and $\Delta_2$. It should be noted that since the energy delivery for primary control reserve is not accounted for payments, $\Delta_1$ is virtually being 0 in our inputs.
+
+\subsubsection{Generation data $g_{f}$}
+
+The generation data, $g_{f}$, and the sets of generation fuel types, $\mathbb{F}$, where $f \in \mathbb{F}$ are obtained from \textit{Generation - Actual Generation} from BNetzA.
+
+\section{NSW}
+
+The electricity market data is obtained on the website of Australian Energy Market Operator (AEMO) where the real-time market price and volume, as well as the total payment for ancillary service are available. However, there is not price (unit payment) data available for frequency control services, and for this reason wo do not carry out quantitative studies for frequency control services in th case of NSW. 
+
+Therefore, there is only one marketplace studied so the set of marketplaces is defined as:
+
+\begin{itemize}
+	\item Set of energy marketplace $\mathbb{I} = \{1\}$:
+	\begin{itemize}
+		\item \textbf{1}: real-time market.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Real-time market price $\Pi_1$ and volume $\hat{E_1}$}
+
+Both the price and volume data are available on AEMO's website so are used directly in our study. It should be noticed that the settlement time interval for the energy market in the case of NSW is half hour, compared to 1 hour for the other two cases.
+%NSW Generation
+%https://www.aemo.com.au/Electricity/National-Electricity-Market-NEM/Planning-and-forecasting/Generation-information
+
+%\subsubsection{Accounting}
+
+
+
+
+
+%The real-time market price is applied for all deviations from day-ahead planned schedule, including Regulation, Primary and Supplementary Reserves.
+
+%\begin{equation*}
+%\pi_t^{e,j} = \pi_t^{e,i} ~~~~ i \in \{Real~Time\}, j \in \{RegD, RegA, SR, NSR, DASR\}
+%\end{equation*}
+
+%The capacity prices of reserves are computed using a complex algorithm, taking into account a list of specifications of the resource, e.g. the performance \& historical performance, benefits factor, mileage, etc. The detailed calculations can be found in appendix. As outputs, we will get deterministic values for $j \in \{RegA, SR, NSR, DASR\}$, and the upper and lower bounds, $\overline{\pi}_t^{r,j}$ and $\underline{\pi}_t^{r,j}$, for $i \in \{RegD\}$.
+
+%Reg = RMCCP + RMPCP + LOC
+%LOC = 0
+%RMCCP = 
+%RMPCP = Milleage
+%Effective MW = BF * MW
+%BF is determined with the average and upper, lower bounds
 
