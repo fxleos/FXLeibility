@@ -784,15 +784,15 @@ K^{\text{deg.}}  = \mathcal{K} \cdot X
 %K^{\text{deg.}} = \begin{bmatrix}
 %Z~|~&Z~|~& \zeta (\Delta^{+} +\Delta^{-})
 K^{\text{deg.}} = \zeta \cdot \begin{bmatrix}
-\mathcal{I}_I ~|~&\mathcal{I}_I ~|~& \Delta^{+} +\Delta^{-}
+\mathcal{I}_{T,I} ~|~&\mathcal{I}_{T,I} ~|~& \Delta^{+} +\Delta^{-}
 \end{bmatrix} \begin{bmatrix}
 E^+ \\ E^- \\ C
 \end{bmatrix}
 \end{equation}
-where, X is the vector of decision variables referring to Equation \eqref{eq:decision-variable-1}, and $\mathcal{I}_I$ is determined as following:
+where, X is the vector of decision variables referring to Equation \eqref{eq:decision-variable-1}, and $\mathcal{I}_{T,I}$ is determined as following:
 \begin{equation}
 \label{eq:I_I}
-\mathcal{I}_I  = %\begin{bmatrix}
+\mathcal{I}_{T,I}  = %\begin{bmatrix}
 %\mathcal{I}_T \stackrel{\times I}{\dots \dots}
 %\end{bmatrix}
 \underbrace{\begin{bmatrix}
@@ -1149,28 +1149,28 @@ Applying the matrix format of the equations, we can get the constraints re-formu
 
 \begin{equation}
 - \begin{bmatrix}
-~\left(\frac{1}{\Delta t} \cdot \mathcal{I}_I\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{O}_I\right)~|~ \mathcal{I}_J~
+~\left(\frac{1}{\Delta t} \cdot \mathcal{I}_{T,I}\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{O}_{T,I}\right)~|~ \mathcal{I}_{T,J}~
 %\left(\frac{1}{\Delta t} \cdot \mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~\left(\frac{1}{\Delta t} \cdot \mathcal{O}_T\right) \stackrel{\times I}{\dots \dots}~|~\mathcal{I}_T \stackrel{\times J}{\dots \dots}
 \end{bmatrix} X \leq 0
 \end{equation}
 
 \begin{equation}
 -\begin{bmatrix}
-~\left(\frac{1}{\Delta t} \cdot \mathcal{O}_I\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{I}_I\right)~|~\mathcal{I}_J~
+~\left(\frac{1}{\Delta t} \cdot \mathcal{O}_{T,I}\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{I}_{T,I}\right)~|~\mathcal{I}_{T,J}~
 \end{bmatrix} X \leq 0
 \end{equation}
 
 \begin{equation}
 \label{constraint:ESS-capacity}
 \begin{bmatrix}
-~\left(\frac{1}{\Delta t} \cdot \mathcal{I}_I\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{O}_I\right)~|~ \mathcal{I}_J~
+~\left(\frac{1}{\Delta t} \cdot \mathcal{I}_{T,I}\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{O}_{T,I}\right)~|~ \mathcal{I}_{T,J}~
 \end{bmatrix}X \leq \overline{R}
 \end{equation}
 
 \begin{equation}
 \label{constraint:ESS-capacity-2}
 \begin{bmatrix}
-~\left(\frac{1}{\Delta t} \cdot \mathcal{O}_I\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{I}_I\right)~|~\mathcal{I}_J~
+~\left(\frac{1}{\Delta t} \cdot \mathcal{O}_{T,I}\right) ~|~ \left(\frac{1}{\Delta t} \cdot \mathcal{I}_{T,I}\right)~|~\mathcal{I}_{T,J}~
 \end{bmatrix}X \leq \overline{R}
 \end{equation}
 where, 
@@ -1179,14 +1179,14 @@ where,
 		\overline{r}~~\overline{r}~~ \dots~~\overline{r}
 		\end{bmatrix}}_{T~\text{times}}}^T
 \end{equation*}
-and $\mathcal{I}_I$ has been introduced by Equation \eqref{eq:I_I}. $\mathcal{I}_J$ and $\mathcal{O}_I$ can be derived in the same way:
+and $\mathcal{I}_{T,I}$ has been introduced by Equation \eqref{eq:I_I}. $\mathcal{I}_{T,J}$ and $\mathcal{O}_{T,I}$ can be derived in the same way:
 \begin{equation*}
-\mathcal{I}_J = {\underbrace{\begin{bmatrix}
+\mathcal{I}_{T,J} = {\underbrace{\begin{bmatrix}
 		\mathcal{I}_T ~|~\mathcal{I}_T ~|~ \dots~|~\mathcal{I}_T 
 		\end{bmatrix}}_{J~\text{times}}}
 \end{equation*}
 \begin{equation*}
-\mathcal{O}_I = {\underbrace{\begin{bmatrix}
+\mathcal{O}_{T,I} = {\underbrace{\begin{bmatrix}
 		\mathcal{O}_T ~|~\mathcal{O}_T ~|~ \dots~|~\mathcal{I}_T 
 		\end{bmatrix}}_{I~\text{times}}}
 \end{equation*}
@@ -1332,7 +1332,7 @@ For EV2G, the fixed cost that is mainly related to procuring the battery stocks 
 	\begin{equation*}
 	K^{\text{imp.}} = \pi^* \cdot
 	 \begin{bmatrix}
-	 -\mathcal{I}_I~|~ \mathcal{I}_I ~|~ -\Delta^+ + \Delta^-
+	 -\mathcal{I}_{T,I}~|~ \mathcal{I}_{T,I} ~|~ -\Delta^+ + \Delta^-
 	%\left(-\mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~\left( \mathcal{I}_T\right) \stackrel{\times I}{\dots \dots}~|~-\Delta^+ + \Delta^-
 	\end{bmatrix} X^*
 	\end{equation*}

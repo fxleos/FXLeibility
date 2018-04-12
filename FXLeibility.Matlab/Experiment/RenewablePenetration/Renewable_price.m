@@ -326,23 +326,23 @@ cd(CaseFolderName);
 %save(strcat(CaseName,'-result.mat'),'payment','max_revenue','profitability_ratio');
 payment_plot = median(payment);
 payment_plot = payment_plot - payment_plot(4);
-payment_plot = payment_plot / 87793; %87793
+payment_plot = payment_plot / 771.2/10^6; %87793
 bar(MSOption.nondispatch,payment_plot,'FaceColor',[ 0    0.4470    0.7410],'EdgeColor',[ 0    0.4470    0.7410])
 set(gca,'XTick',MSOption.nondispatch,'xlim',[0.8,2.6])
-set(gca,'YTick',[-100000:25000:50000], 'ylim',[-100000 50000])
+%set(gca,'YTick',[-100000:25000:50000], 'ylim',[-100000 50000])
 set(gca,'linewidth',2)
 set(gca, 'FontSize', 14)
 legend({'Change of total payment in day-ahead market'},'Location','northeast','FontSize',16)
-ylabel('USD/(a-MW consumption)','FontSize',16);
-xlabel('Change of Renewable Capacity','FontSize',16);
-set(gca, 'YTickLabel', [-100000 -75000 -50000 -25000 0 25000 50000]);
+ylabel('USD/MWh','FontSize',16);
+%xlabel('Change of Renewable Capacity','FontSize',16);
+%set(gca, 'YTickLabel', [-100000 -75000 -50000 -25000 0 25000 50000]);
 xtickangle(60)
 
 max_revenue_plot = median(max_revenue);
 max_revenue_plot = max_revenue_plot/max_revenue_plot(4)*229000000;
-max_revenue_plot = max_revenue_plot / 87793;
+max_revenue_plot = max_revenue_plot / 87793/366/24;
 bar(MSOption.nondispatch,max_revenue_plot,'FaceColor',[0.3010    0.7450    0.9330],'EdgeColor',[ 0.3010    0.7450    0.9330])
-set(gca,'YTick',[0:1000:4000],'ylim',[0,4000])
+set(gca,'YTick',[0:0.3:1.2],'ylim',[0,1.2])
 hold on
 yyaxis right
 plot(MSOption.nondispatch,median(profitability_ratio),'LineWidth',3, 'Color', [0.8500    0.3250    0.0980])
@@ -354,6 +354,6 @@ set(gca, 'FontSize', 12)
 legend({'Maximum arbitrage revenue','Maximum profitability ratio'},'Location','northwest','FontSize',14)
 ylabel('Profitability ratio','FontSize',16);
 yyaxis left
-ylabel('USD/(a-MW consumption)','FontSize',16);
-xlabel('Change of renewable capacity','FontSize',16);
+ylabel('USD/MWh','FontSize',16);
+%xlabel('Change of renewable capacity','FontSize',16);
 xtickangle(60)
