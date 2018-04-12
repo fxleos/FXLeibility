@@ -199,7 +199,7 @@ Besides the behind-the-meter DERs, grid-scale energy storage systems are allowed
 \subsubsection{Summary and analysis of business opportunities}
 In PJM, all behind-the-meter distributed energy resources, such as distributed generation, load-shifting applications, and energy storage systems, are allowed to participated in all of its marketplaces by altering the load profile (but not allowed to inject energy beyond the meter). Grid-scale BESS is allowed to participate in ancillary service market but is not waiting for implementation to direct play in energy market. 
 
-Therefore, all three applications we proposed at Chapter \ref{ch:introduction}, i.e. arbitrage in energy market, frequency control in ancillary service market, and supply adequacy in capacity market,  are feasible using all kinds of technologies, but are generally constrained by behind-the-meter activities. 
+Therefore, all three applications we proposed at Chapter \ref{ch:introduction}, i.e. arbitrage in energy market, frequency control in ancillary service market, and supply adequacy in capacity market,  are feasible using all kinds of technologies. Moreover, the additional incentives such as the specially designed RegD product exclusively for emerging flexibility solutions makes PJM the best example that embraces new technologies for flexibility provision.
 
 \subsection{Opportunities of flexibility solutions in DE}
 \label{sec:quali-de}
@@ -390,6 +390,7 @@ However, such a market potential might not be really achieved, when costs are ta
 As discussed in both Chapter \ref{ch:LitRev} and Chapter \ref{ch:methodology}, we include two types of works in the quantitative part, i.e. using historical power market data and using simulated data considering changed market conditions. The former approach allow us to establish a comprehensive understanding toward the value of flexibility management in nowadays' power markets, while the latter may provide us valuable guidance on the directional movement of the market and thus offer viable references for technology vendors' decision makers.
 
 \subsection{Setup of quantitative cases}
+\label{sec:quant-case-setup}
 \subsubsection{Data and parameters}
 \label{sec:data-parameter}
 
@@ -454,7 +455,7 @@ As determined in the scope, we will apply quantitative model for applications in
 		&&\\
 		\multicolumn{3}{c}{\textit{\textbf{NSW}}}\\
 		Arbitrage & Real-time & RT \\
-		Frequency control & Frequency control ancillary services & FCAS \\
+		Frequency control & Frequency control ancillary services & FCAS\footnote{Due to data availability, only total system size will be referred to while detailed technical analysis cannot be performed.} \\
 		\hline
 	\end{tabular}
 \caption{Business cases studied in quantitative analysis in different regimes}\label{tab:biz-cases}
@@ -566,7 +567,9 @@ We first focus on the applications of arbitrage in energy market. Figure \ref{fi
 	\label{fig:Potential-Arbitrage}
 \end{figure}
 
-By first focusing on the value in percentage of total transaction, we can observe clear distinctness between the day-ahead market  and the intra-day/ real-time/ balancing markets. In the day-ahead markets in both PJM and DE, arbitrage can capture only 2-3\% of the total transactions, where percentages are one order of magnitude higher, i.e. 20-40\% in other markets. This implies that even with irregularly large scales of flexibility resources, impacts on day-ahead market are still insignificant. In the real world, considering the competitions against established players, day-ahead market might not be an ideal marketplace for flexibility solutions. The reason for such a difference between different marketplaces can be explained by Table \ref{tab:price-3-geo}. As we can see, volatility reflected by standard deviation and amplitude of price movements raise significantly when the operation of market is close to real-time, and the market potential of arbitrage is highly dependent on the price volatility.
+By first focusing on the value in percentage of total transaction, we can observe clear distinctness between the day-ahead market  and the intra-day/ real-time/ balancing markets. In the day-ahead markets in both PJM and DE, arbitrage can capture only 2-3\% of the total transactions, where percentages are one order of magnitude higher, i.e. 20-40\% in other markets. This implies that even with irregularly large scales of flexibility resources, impacts on day-ahead market are still insignificant. In the real world, considering the competitions against established players, day-ahead market might not be an ideal marketplace for flexibility solutions. The reason for such a difference between different marketplaces can be explained by Table \ref{tab:price-3-geo}. %The NSW real-time market and DE balancing energy prices are highly volatile, corresponded to the 
+%One may notice that ID and RT DA , 
+As we can see, volatility reflected by standard deviation and amplitude of price movements raise significantly when the operation of market is close to real-time, and the market potential of arbitrage is highly dependent on the price volatility.
 
 \begin{table}[h!]
 	\footnotesize
@@ -578,16 +581,16 @@ By first focusing on the value in percentage of total transaction, we can observ
 		\hline
 		Average price & 30.0 & 27.6 & 34.8 & 35.1 &40.7 & 46.0 \\
 		Standard deviation & 11.6 & 14.8 & 15.0 & 16.1 &837.4 & 86.0 \\
-		Maximum amplitude &121.2 &284.3&282.2&324.1&\num{99250.0}&9124.7\\
+		Maximum amplitude &121.2 &284.3&282.2&324.1&\num{1572.1}&9124.7\\
 		\hline
 		\multicolumn{7}{r}{in USD/MWh}
 	\end{tabular}
-	\caption{The price profiles in energy markets in the three cases}\label{tab:price-3-geo}
+	\caption{Price profiles in energy markets in the three cases}\label{tab:price-3-geo}
 \end{table}
 
 In terms of value in USD/MWh, it is particularly high in NSW's real-time market being 17 USD/MWh, while the values in other marketplaces are much smaller, around 0.4-1.0 USD/MWh. This is mainly because the Australia' NEM settles all transactions in the real-time market. Therefore, high price volatility due to real-time operations impacts all bulk electricity transactions. Such a high potential shows clearly a much more promising opportunity in NSW than in other two regimes.
 
-Finally, we list the original results in USD/yr which indicate the estimated market potential in each regime without normalization. It shows that the total market potentials for arbitrage in all three case happen to be slightly over 1 bUSD/yr. However, considering the overall scale of the power market, NSW should be the most attractive region among the three for business of flexibility solutions.
+Finally, we list the original results in USD/yr which indicate the estimated market potential in each regime without normalization. It shows that the total market potentials for arbitrage in all three case happen to be slightly over 1 bUSD/yr. However, considering the overall scale of the power market, NSW should be the most attractive region among the three for business of flexibility solutions as has been mentioned above.
 
 \begin{table}[h!]
 	\footnotesize
@@ -601,10 +604,15 @@ Finally, we list the original results in USD/yr which indicate the estimated mar
 		\hline
 		\multicolumn{8}{r}{in mUSD/yr}
 	\end{tabular}
-	\caption{The market potential in absoluate values}\label{tab:arbitrage-total}
+	\caption{Market potential for arbitrage in energy markets in non-normalized values}\label{tab:arbitrage-total}
 \end{table}
 
+In conclusion, flexibility solutions are not likely to play an important role in the day-ahead market. Instead, it should be of more significance in the market closer to real-time operations. NSW's real-time market that combines the attribute of large volume as in other day-ahead markets and high volatility in other real-time markets has the highest potential among the cases we have studied.
+
+
 \subsubsection{Frequency control in ancillary service markets}
+
+Figure \ref{fig:Potential-FC} illustrates the results for providing frequency control services in PJM and DE. The case of NSW is not studied due to data availability; referring to Appendix \ref{sec:accounting-data-prepare}. 
 
 \begin{figure}[h!]
 	\centering
@@ -613,33 +621,104 @@ Finally, we list the original results in USD/yr which indicate the estimated mar
 	\label{fig:Potential-FC}
 \end{figure}
 
+Firstly, all for different marketplaces in two regimes have roughly the same level of potential, being 0.06-0.17 USD/MWh, which are about one order of magnitude smaller than the ones for arbitrage. This is in line with their comparative scale in general that large amount of transactions are made through energy markets.
+
+What is more interesting is the value in percentage that reveals the accessibility of flexibility solutions to the frequency control markets. As we can see, the PCR that is made to have zero control signal as explained earlier in Section \ref{sec:data-parameter} (also referring to Appendix \ref{sec:accounting-data-prepare}), can be viewed as a control group and is shown to be fully accessible by our pre-defined flexibility solution. 
+
+In contrast, we use actual control signals for RegD and RegA in PJM. The RegD that is specifically designed for emerging technologies with conditional energy-neutral signal indeed has a high accessibility, with over 93\% of its capacity can be supplied by our defined flexibility solution. RegA is not energy-neutral, but PJM allows frequency control services providers to make offer in hourly block, which offers great operationality for flexibility resource owners so about 70\% percentage of services can be covered by our solution. 
+
+The SCR in Germany is a counter example, where offers have to be made in weekly peak/ off-peak blocks. Sustaining a service provision for such a prolonged duration is a challenging issue for the emerging flexibility technologies as explained in Section \ref{sec:neutral}. Even for the system in our study that is made to have ``ample size", it is only able to absorb or surplus energy in the grid, i.e. providing down regulation, while up regulation services is almost inaccessible since our system is not generating additional energy than what have been absorbed. It can be conceived that for real system without ``ample size" providing down regulation by constantly absorbing energy should also be an issue since the storage capacity will probably be exhausted.
+
+This result verifies our hypothesis that non-energy-neutral signals will be a technical barrier for emerging flexibility solutions.
+
+Further to what have been discussed in Section \ref{sec:neutral}, we tested the method to use third-party energy to self-neutralize the signal. In order to achieve this, we stack the operation of day-ahead arbitrage and providing frequency control service. In this way, the day-ahead energy is introduced to offset the frequency control signal. The results are depicted by Figure \ref{fig:Nuetralize}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.95\linewidth]{Figures/Neutralize}
+	\caption{Changes on accessibility by self-neutralizing the frequency control signals using energy from day-ahead market}
+	\label{fig:Nuetralize}
+\end{figure}
+
+It is illustrated that with neutralized signal, the accessibility to all marketplace has been improved significantly. The percentages of covered capacity using our solutions have all exceeded 93\%. This demonstrates that the issue of non-energy-neutral signal is indeed a hurdle for flexibility solutions. Although the self-neutralization is shown to be a solution for the issue, in reality when the system size is always limited, certain amount of capacity is required to spare for tackling third-party energy, which obviously increases the operational complexity and may lead to lower profitability.
+
+Finally, market potentials as annualized total revenues are provided as an additional reference for technology vendors in Table \ref{tab:fc-total}. Although we have seen a high percentage of value in this market can be captured, it is bounded by the overall market size of ancillary services which is relatively limited compared to the energy market.
+
+\begin{table}[h!]
+	\footnotesize
+	\centering
+	\begin{tabular}{R{2cm} R{1cm} R{1cm} R{1cm}| R{1cm} R{1cm} R{1cm}| R{1cm}}
+		\hline
+		&\multicolumn{3}{c|}{\textbf{PJM}}& \multicolumn{3}{c|}{\textbf{DE}}& \multicolumn{1}{c}{\textbf{NSW}}\\
+		&RegD & RegA & Total & PCR & SCR & Total & FCAS \\
+		\hline
+		with staking &44.8 & 31.4&76.2&89.7&31.1&120.8& \multirow{2}{*}{\textit{23.4\footnote{Total market size without technical analysis}}} \\
+		w/o staking & 46.7 & 40.8& 87.1&89.7& 58.1&147.8& \\
+		\hline
+		\multicolumn{8}{r}{in mUSD/yr}
+	\end{tabular}
+	\caption{Market potential in non-normalized values for providing frequency control services}\label{tab:fc-total}
+\end{table}
+
+To sum up, market potential for frequency control is smaller than energy arbitrage and emerging flexibility solutions may face technical difficulties to follow the control signal, if it is not designed to be energy-neutral.
 
 \subsection[Profitability and market potential of energy storage]{Profitability and market potential of energy storage%}
 	\sectionmark{Energy storage}}
 \sectionmark{Energy storage}
 	
+In last section, the potential of value creation using flexibility in power markets has been verified. Especially for arbitrage in energy market, a vast market is being unlocked with explicit barrier being removed. For market players, a further question would naturally be how to realize that potential, i.e. which technologies should be employed.
 
-\subsection[Profitability and market potential of electric vehicle to grid]{Profitability and market potential of electric vehicle to grid%}
-	\sectionmark{Electric vehivle to grid}}
-\sectionmark{Electric vehivle to grid}
+In this section, we evaluate the battery energy storage system (BESS). Firstly, the profitability of BESS is examined with ``small size" of system as introduced earlier in Section \ref{sec:quant-case-setup}. Furthermore, if there is use-cases that show a positive profitability, we will further extend the system size to find the ``profitable size" which indicates a market potential for BESS only, compared to the market potential for flexibility solutions in general without considering the cost.
+
+This section is organized by each regime and using historical electricity market data as input.
+
 
 %\subsection{Valuation of markets under current market conditions}
-This section presents the results using historical market data. Since two types of technologies and markets in three geographies were studied, there are a total of six distinct setups with each comprises several use-cases. In addition, we included a cost break-even analysis specifically for ESSs as few profitable opportunities were found due to high costs on battery stocks.
+%This section presents the results using historical market data. Since two types of technologies and markets in three geographies were studied, there are a total of six distinct setups with each comprises several use-cases. In addition, we included a cost break-even analysis specifically for ESSs as few profitable opportunities were found due to high costs on battery stocks.
 
-\subsubsection{ESS in Germany: opportunities hidden by adverse market design of balancing energy and frequency control}
+\subsubsection{BESS profitability and market potential in PJM}
+
+The profitability of BESS in PJM power markets with different use-cases are illustrated by Figure \ref{fig:pjm-ess-profitability}.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/Germany_ESS_profitability}
-	\caption{Profitability of ESS in Germany electricity markets in the scenario of ``max. marginal Revenue"}
-	\label{fig:germany-ess-profitability}
+	\includegraphics[width=0.9\linewidth]{Figures/PJM_ESS_profitability}
+	\caption{Profitability of  BESS with ``small size" in PJM electricity markets}
+	\label{fig:pjm-ess-profitability}
 \end{figure}
+
+
+As we can clearly see, the RegD marketplace that is specially designed for emerging flexible technologies is indeed profitable. This should give merit to PJM's RegD design including the conditional signal neutrality, operational flexibility, as well as higher price based on actual performance, as mentioned in Section \ref{sec:qualitative-analysis} (also referring to Appendix \ref{sec:accounting-data-prepare} for more details). Apart from RegD market, there are no other profiting opportunities existing in PJM. Even the conventional regulation service RegA will create losses to BESS players.
+
+Direct participation of BESS in the energy market is a pending issue, but can be indirectly realized by behind-the-meter distributed storage and through PJM's DR program, as discussed in Section \ref{sec:qualitative-analysis}. However, it is not profitable at all. The revenue is very niche, which shall be explained by its relatively low energy price (as a result of shale gas revolution since 2008) and low volatility as we have seen in Table \ref{tab:price-3-geo} in last section. The volatility in energy market is lower than the other two regions, which can be explained by many reasons, including the relative lower penetration and the existence of capacity market that bypasses some value that would otherwise be reflected on energy markets.
+
+Staking services to perform multitasking can improve the profitability slightly but does not flip over the profitability of any use-cases. 
+
+Furthermore, we detect the ``profitable size" and compared it to the maximum potential using flexibility solutions in general to see how much of the market potential can be realized by BESS. Since none of other markets expected for RegD are profitable with ``small size", the ``profitable sizes" for those use-cases are therefore zero. In contrast, it is found that 110\% of the RegD market can be realized with positive profits.
+
+%The market with a total size of 513 USD/$(\text{a} \cdot \text{MW})$ can be wholly materialized by 2 kW/(MW consumption) BESSs without writing a loss, although the margin is very niche, barely above zero; see Figure \ref{fig:pjm-ess-profitable-size}.
+
+%Those merits allow BESS players to offer RegD alone without coupled operations in the energy market. As a result, stacking it with the energy market does not improve the profitability and tangible market size as significantly as in Germany. As we can see from an example shown by Figure \ref{fig:pjm-multitasking}, the system with pre-defined parameters in this study will have slightly surplus energy while strictly following the RegD signal. The SoC would raise quite slowly so that the resource can sustain the provision of RegD service over a long period (at least 84 hours shown in the chart) without involving transactions in energy markets. Trading in energy market is activated to leverage the arbitrage potential due to extreme price movements, which is however infrequent. Serving RegD is preferred for most of the time due its higher profitability. 
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.9\linewidth]{Figures/PJM_multitasking_example}
+%	\caption{A example of operational plan with a 0.3MW battery energy storage system}
+%	\label{fig:pjm-multitasking}
+%\end{figure}
+
+
+%Overall, PJM shows a perfect example on how to offer incentives for the emerging storage technologies that are beneficial to the system, by implementing proper market frameworks such as the RegD and the  emergency DR program. For technology vendors, this market is already quite mature without spare space for new entrants unless significant changes may occur on market conditions, e.g. vast renewable penetration. Nonetheless, existing business cases in PJM may offer viable references for technology vendors to conduct similar practices in other markets. 
+%The upper-bounded values indicating the market potential are summarized in Table \ref{tab:pjm-summary}.
+
+
+\subsubsection{BESS profitability and market potential in DE}
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Figures/Germany_ESS}
-	\caption{Market size of ESS in Germany electricity markets in the scenario of ``max. Revenue"}
-	\label{fig:germany-ess}
+	\caption{Profitability of ESS in Germany electricity markets in the scenario of ``max. marginal Revenue"}
+	\label{fig:germany-ess-profitability}
 \end{figure}
 
 As is discussed, profitability analysis can be performed using the scenario ``max. marginal Revenue", the results of which are depicted by Figure \ref{fig:germany-ess-profitability}. By showing values per unit ESS system installed, we can see the maximum unit return of ESS in Germany power markets. 
@@ -688,47 +767,7 @@ While there are no significant synergies observed between day-ahead and intra-da
 
 To sum up, while arbitrage is mainly constrained by costs on the technology side, making profits from balancing services is limited by adverse market frameworks although it has already shown its ability to make a positive contribution to the system. Technology vendors shall consider other technologies than BESSs or expect drastic cost reduction of BESSs to unlock the arbitrage value worth over a total of 300 mUSD/a in Germany. Profits from balancing market are more technically tangible, yet adjustments on market frameworks are required.
 
-\subsubsection{ESS in PJM: successful practice of frequency control product design for flexibility}
-The results of case studies in PJM power markets are illustrated in Figure \ref{fig:pjm-ess-profitability} and Figure \ref{fig:pjm-ess}.
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/PJM_ESS_profitability}
-	\caption{Profitability of ESS in PJM electricity markets in the scenario of ``max. marginal Revenue"}
-	\label{fig:pjm-ess-profitability}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/PJM_ESS}
-	\caption{Market size of ESS in PJM electricity markets in the scenario of ``max. Revenue"}
-	\label{fig:pjm-ess}
-\end{figure}
-
-As we can clearly see, the RegD marketplace that is specially designed for emerging flexible technologies is indeed profitable. This shall give merit to PJM's RegD design including the conditional signal neutrality, operational flexibility, and higher price as a result of introducing mileage ratio and beneficial factor, as have sufficiently discussed in Section \ref{sec:qualitative-analysis}; also refer to Appendix \ref{sec:accounting-data-prepare}. The market with a total size of 513 USD/$(\text{a} \cdot \text{MW})$ can be wholly materialized by 2 kW/(MW consumption) BESSs without writing a loss, although the margin is very niche, barely above zero; see Figure \ref{fig:pjm-ess-profitable-size}.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/PJM_ESS_profitable_size}
-	\caption{Market size of ESS in PJM electricity markets in the scenario of ``max. System size with pos. Profit" and ``max. Profit"}
-	\label{fig:pjm-ess-profitable-size}
-\end{figure}
-
-Those merits allow BESS players to offer RegD alone without coupled operations in the energy market which is currently necessary in Germany's power markets. As a result, stacking it with the energy market does not improve the profitability and tangible market size as significantly as in Germany. As we can see from an example shown by Figure \ref{fig:pjm-multitasking}, the system with pre-defined parameters in this study will have slightly surplus energy while strictly following the RegD signal. The SoC would raise quite slowly so that the resource can sustain the provision of RegD service over a long period (at least 84 hours shown in the chart) without involving transactions in energy markets. Trading in energy market is activated to leverage the arbitrage potential due to extreme price movements, which is however infrequent. Serving RegD is preferred for most of the time due its higher profitability. 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Figures/PJM_multitasking_example}
-	\caption{A example of operational plan with a 0.3MW battery energy storage system}
-	\label{fig:pjm-multitasking}
-\end{figure}
-
-Apart from RegD market, there are no other profiting opportunities existing in PJM. Even the conventional regulation service RegA will create losses to BESS players.
-
-Arbitrage in the energy market with flexibility through the so-called economic DR program, as is discussed in Section \ref{sec:qualitative-analysis}, is deemed not an ideal choice, especially in recent years when the electricity prices had fallen drastically with the shell gas revolution. As is discussed in Section \ref{sec:qualitative-analysis}, participating in the emergency DR program is a better option. However, the involvement of capacity market is not within our scope of quantifying the value, but the profiting mechanism is straightforward as is fully explained in the qualitative analysis. %It is also worthwhile to note that coupled operation in real-time and day-ahead markets will push the maximum revenue potential by 327 mUSD/a compared to 229 mUSD/a with participation in day-ahead market only.  
-
-Overall, PJM shows a perfect example on how to offer incentives for the emerging storage technologies that are beneficial to the system, by implementing proper market frameworks such as the RegD and the  emergency DR program. For technology vendors, this market is already quite mature without spare space for new entrants unless significant changes may occur on market conditions, e.g. vast renewable penetration. Nonetheless, existing business cases in PJM may offer viable references for technology vendors to conduct similar practices in other markets. 
-The upper-bounded values indicating the market potential are summarized in Table \ref{tab:pjm-summary}.
 
 
 \subsubsection{ESS in NSW: most favorable market for arbitrage using flexibility yet still not profitable}
@@ -803,6 +842,9 @@ Figure \ref{fig:germany-ess-costreduction} - \ref{fig:nsw-ess-costreduction} ill
 Moreover, it shall be noticed while the break-even point is just reached, the total profitable revenue will be almost at zero. To materialize the whole potential of arbitrage revenue, it requires a cost reduction of 95\%+, 95\% and 90\%, respectively in Germany, PJM and NSW, which is almost impossible to be realized in the foreseeable future.
 
 As a conclusion, the cost reduction of BESS by learning effect alone will not turn over the profitability of arbitrage using BESSs in the near future. Unless revolutionary technical innovations happen, opportunities of arbitrage using BESS may only arise with drivers from the market, e.g. renewable penetrations, which are to be shown in Section \ref{sec:impact-market-condition}.
+\subsection[Profitability and market potential of electric vehicle to grid]{Profitability and market potential of electric vehicle to grid%}
+	\sectionmark{Electric vehivle to grid}}
+\sectionmark{Electric vehivle to grid}
 
 \subsubsection{EV2G in Germany: changeling in developing business model}
 Implementing EV as a grid resource is not as straightforward as using generic ESSs that is discussed above. The main issue is that the energy demand for EV driving itself poses challenges to grid. It is not possible to deliver any services without incorporate a large-volume energy market. Therefore, the day-ahead energy market is always included for all the cases for EV2G. Moreover, in our case studies, it is found even with the day-ahead market, charging the EVs is not feasible while their number reached a certain level. In the optimization framework, the technology constraints would violate market constraints, especially the one that we set to restrict the activation of peak generation during non-peak hours, while the EV fleet grows beyond a certain scale. This corresponds to the situation where spare generation resources in the power system are not sufficient  to fulfill the energy needs of EVs. The electricity price may raise significantly in those scenarios compared to nowadays's level. As is shown by Figure \ref{fig:EV_nan_percentageg}, when the number of EV is higher than 1 million, it start to stress the electricity supply if the generation capacity remains at present level. 
